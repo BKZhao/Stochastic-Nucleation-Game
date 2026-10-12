@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS01_recovery_unresolved.pdf",
+      "sha256": "cd60f7f6af8e35428559bcfa2070365f6bc8f0566b0359e2c49a57a20b786d60"
+    },
+    {
+      "path": "figures/nucleation/paper/figS01_recovery_unresolved.png",
+      "sha256": "33a0b807748c5f3725ab0d262866ac776b71c8c0a2c00988c2741805044cc22b"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/4d9560bf3c20c245/phase.json",
+      "sha256": "5a686afc2718faf4fb914e06896af2c1f0253236d53eee013c36a986dce63e28"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_phase.py",
+      "sha256": "cc545d715bb15160a7381bac9e80d7c45ce385e5ff627752d0f64ef428e3d21e"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Complete sampled grid; 64 trajectories per cell, T=10000, L=48, m=16. Cellwise A/U probabilities on [0,1], no interpolation or extrapolation. Cross: b=1.16, D=0.4. P_A+P_B+P_U=1 cellwise."
+}

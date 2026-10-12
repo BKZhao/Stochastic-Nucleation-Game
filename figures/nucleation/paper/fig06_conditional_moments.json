@@ -1,0 +1,41 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig06_conditional_moments.pdf",
+      "sha256": "7b3176d6774dfca980391d802850b7c81098d667acad260e88633bc5202b5c14"
+    },
+    {
+      "path": "figures/nucleation/paper/fig06_conditional_moments.png",
+      "sha256": "24b786ad90ccbbf75da1ce4a688308c099dfe6288be7c8bd23969f220d487144"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/412167a8b811e426/moments.json",
+      "sha256": "b53ee4dc2e9b8aee9c1fba69a8600ba5522d0f881a9b743b4de0a3b9ae7e6160"
+    },
+    {
+      "path": "data/nucleation/N06/campaigns/81038576bbae39c5/campaign.json",
+      "sha256": "bdca8f4074f5e938bcfc58a7037e272ddd7d77e128b2d7aada30101d7930d3da"
+    },
+    {
+      "path": "experiments/analyze_nucleation_moments.py",
+      "sha256": "bf6d1525624cd11b9ac083874d3381d1b6a03f247b5fb88dae81096034afd7d2"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_moments.py",
+      "sha256": "50e1ba856ec729ed621b2a2aa3198aadfd0025ab16ff08efb44843dacf12177c"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "First-5%-crossing configurations: 15 compact and 15 dispersed; 64 fresh continuations per configuration and treatment; 5760 total. Original, fixed-strategy-equilibrium adapted, and periodic resource translation (17,12); reference physical parameters. Average conditional mean increment / Delta and unbiased within-configuration increment variance / Delta at Delta=1,2,5,10,20 MCS. Count-based rates in defectors/MCS and defectors^2/MCS, not probabilities; signed drift is retained and variance-rate axes start at zero. Lines join only these windows, with no fitted scaling law. Pointwise 95% percentile bootstrap intervals are retained in the statistics file, not drawn; 10000 whole-configuration resamples; all arms and windows of a configuration remain paired; seed 20261008. These are finite-MCS empirical moments, not frozen first-visit identities."
+}

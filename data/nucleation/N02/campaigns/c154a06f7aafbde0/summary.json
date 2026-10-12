@@ -1,0 +1,2372 @@
+{
+  "cells": [
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "0d246ee894d4f674",
+      "damage": {
+        "count": 64,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3605.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3740.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3784.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4093.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4600.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 4632.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 4638.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 4666.0
+        }
+      ],
+      "max_depleted_cluster": 2233,
+      "max_strategy_cluster": 2238,
+      "median": 4093.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4219.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "166c579f394b0ccb",
+      "damage": {
+        "count": 128,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2006.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2022.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2310.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2362.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2452.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 2590.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 2690.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 2758.0
+        }
+      ],
+      "max_depleted_cluster": 2205,
+      "max_strategy_cluster": 2210,
+      "median": 2362.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2398.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "1797a75417645816",
+      "damage": {
+        "count": 16,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3452.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 4171.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 4200.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4206.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4908.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 5118.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 5861.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 6386.0
+        }
+      ],
+      "max_depleted_cluster": 2125,
+      "max_strategy_cluster": 2133,
+      "median": 4206.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4787.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "1dab4cefe01f73d5",
+      "damage": {
+        "count": 32,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 1083.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 1123.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 1304.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 1309.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 1335.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 1395.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 1413.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 1473.0
+        }
+      ],
+      "max_depleted_cluster": 2226,
+      "max_strategy_cluster": 2230,
+      "median": 1309.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 1304.375,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "4f44cd090345c6a7",
+      "damage": {
+        "count": 96,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3266.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3464.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3951.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4346.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4428.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 4747.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 4857.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 4862.0
+        }
+      ],
+      "max_depleted_cluster": 2139,
+      "max_strategy_cluster": 2143,
+      "median": 4346.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4240.125,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "64c600a6af030cae",
+      "damage": {
+        "count": 128,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2726.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3143.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3211.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3320.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3324.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3400.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3484.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3863.0
+        }
+      ],
+      "max_depleted_cluster": 2195,
+      "max_strategy_cluster": 2202,
+      "median": 3320.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3308.875,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "6ba7b9c60d7acdf9",
+      "damage": {
+        "count": 192,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 1857.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 1924.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2176.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2320.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2338.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 2507.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 2695.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 2797.0
+        }
+      ],
+      "max_depleted_cluster": 2171,
+      "max_strategy_cluster": 2182,
+      "median": 2320.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2326.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "6fd9228155fa1946",
+      "damage": {
+        "count": 64,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2355.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2599.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2720.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2843.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2928.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3036.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3271.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3500.0
+        }
+      ],
+      "max_depleted_cluster": 2242,
+      "max_strategy_cluster": 2244,
+      "median": 2843.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2906.5,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "77d8663ee78a7cc3",
+      "damage": {
+        "count": 96,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3316.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3408.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3420.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3670.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3745.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 4075.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 4105.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 4574.0
+        }
+      ],
+      "max_depleted_cluster": 2092,
+      "max_strategy_cluster": 2101,
+      "median": 3670.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3789.125,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "830bce216512969b",
+      "damage": {
+        "count": 64,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3470.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3522.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3651.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3723.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3725.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3752.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 4125.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 4192.0
+        }
+      ],
+      "max_depleted_cluster": 2184,
+      "max_strategy_cluster": 2191,
+      "median": 3723.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3770.0,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "980f467864da5c20",
+      "damage": {
+        "count": 192,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2922.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3167.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3455.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3462.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3571.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3733.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3929.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 4102.0
+        }
+      ],
+      "max_depleted_cluster": 2142,
+      "max_strategy_cluster": 2146,
+      "median": 3462.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3542.625,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "9c44bc1964abb8da",
+      "damage": {
+        "count": 64,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 721.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 753.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 764.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 858.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 930.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 932.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 934.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 940.0
+        }
+      ],
+      "max_depleted_cluster": 2251,
+      "max_strategy_cluster": 2252,
+      "median": 858.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 854.0,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "a01edcfe142572dd",
+      "damage": {
+        "count": 16,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 4064.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 4074.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 4096.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4371.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4473.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 5300.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 6113.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 6734.0
+        }
+      ],
+      "max_depleted_cluster": 2203,
+      "max_strategy_cluster": 2208,
+      "median": 4371.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4903.125,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "a3b75bb635208506",
+      "damage": {
+        "count": 128,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 487.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 509.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 530.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 557.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 2,
+          "survival": 0.25,
+          "time": 582.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 612.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 669.0
+        }
+      ],
+      "max_depleted_cluster": 2304,
+      "max_strategy_cluster": 2304,
+      "median": 557.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 566.0,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "bbe4a1c5d507c525",
+      "damage": {
+        "count": 96,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2039.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2296.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2326.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2416.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2434.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 2460.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 2948.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3301.0
+        }
+      ],
+      "max_depleted_cluster": 2276,
+      "max_strategy_cluster": 2277,
+      "median": 2416.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2527.5,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "c15faddee2e73b28",
+      "damage": {
+        "count": 32,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2216.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2230.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2245.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2451.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2612.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 2792.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 2934.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3098.0
+        }
+      ],
+      "max_depleted_cluster": 2242,
+      "max_strategy_cluster": 2246,
+      "median": 2451.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2572.25,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "c40d6897d6ae9f87",
+      "damage": {
+        "count": 192,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2517.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2874.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3030.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3177.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3215.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3304.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3547.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3721.0
+        }
+      ],
+      "max_depleted_cluster": 2264,
+      "max_strategy_cluster": 2267,
+      "median": 3177.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3173.125,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "c4354349c095c46a",
+      "damage": {
+        "count": 32,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3580.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3875.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3882.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4439.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4461.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 5018.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 5277.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 6164.0
+        }
+      ],
+      "max_depleted_cluster": 2186,
+      "max_strategy_cluster": 2192,
+      "median": 4439.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4587.0,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "c79cc0df73217e0d",
+      "damage": {
+        "count": 128,
+        "shape": "compact"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2905.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 3144.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 3450.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 3483.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 3578.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3647.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3868.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3916.0
+        }
+      ],
+      "max_depleted_cluster": 2179,
+      "max_strategy_cluster": 2183,
+      "median": 3483.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 3498.875,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "c99c44beca4f6953",
+      "damage": {
+        "count": 192,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 431.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 464.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 2,
+          "survival": 0.5,
+          "time": 468.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 474.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 486.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 504.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 526.0
+        }
+      ],
+      "max_depleted_cluster": 2304,
+      "max_strategy_cluster": 2304,
+      "median": 468.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 477.625,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "db3ad1bece6d8bbd",
+      "damage": {
+        "count": 16,
+        "shape": "four_patches"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 2337.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 2413.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 2733.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 2744.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 2799.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 3026.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 3083.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 3319.0
+        }
+      ],
+      "max_depleted_cluster": 2249,
+      "max_strategy_cluster": 2251,
+      "median": 2744.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 2806.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "e9e7cd33bc0a7fe7",
+      "damage": {
+        "count": 96,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 555.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 577.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 603.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 699.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 712.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 716.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 720.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 768.0
+        }
+      ],
+      "max_depleted_cluster": 2304,
+      "max_strategy_cluster": 2304,
+      "median": 699.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 668.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "ed564ca2170e6eb9",
+      "damage": {
+        "count": 32,
+        "shape": "stripe"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 3633.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 4165.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 4212.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 4429.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 4466.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 4947.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 5355.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 5751.0
+        }
+      ],
+      "max_depleted_cluster": 2180,
+      "max_strategy_cluster": 2191,
+      "median": 4429.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 4619.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    },
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "ffa461f6c77ad17a",
+      "damage": {
+        "count": 16,
+        "shape": "random"
+      },
+      "events": 8,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 1331.0
+        },
+        {
+          "at_risk": 7,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.75,
+          "time": 1536.0
+        },
+        {
+          "at_risk": 6,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.625,
+          "time": 1671.0
+        },
+        {
+          "at_risk": 5,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 1760.0
+        },
+        {
+          "at_risk": 4,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.375,
+          "time": 1773.0
+        },
+        {
+          "at_risk": 3,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.25,
+          "time": 1825.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.125,
+          "time": 2015.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 2151.0
+        }
+      ],
+      "max_depleted_cluster": 2147,
+      "max_strategy_cluster": 2154,
+      "median": 1760.0,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 1757.75,
+      "survival": 0.0,
+      "wilson95": [
+        0.6755924351161198,
+        1.0
+      ],
+      "zero_event_upper95": null
+    }
+  ],
+  "completed_runs": 192,
+  "elapsed_seconds": 22.169684566557407,
+  "expected_runs": 192,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "8558eb6303c63aff",
+  "total_site_visits": 1282998528
+}

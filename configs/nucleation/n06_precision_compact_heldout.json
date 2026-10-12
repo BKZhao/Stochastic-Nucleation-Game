@@ -1,0 +1,32 @@
+{
+  "master_seed": 202610084,
+  "replicas_original": 32,
+  "replicas_intervention": 16,
+  "arms": ["original"],
+  "shift": [17, 12],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "29e14097fcab0d98",
+    "rules": {
+      "compact_16": {"count": 35, "rule": "all"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000, "sample_every": 10, "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Precision round for the 35 held-out compact-16 mothers: 32 additional independent clones of the original arm (new master seed, so new clone seeds; existing 16-clone results are kept and pooled in the analysis to 48 clones per mother). Purpose: shrink the branch-level binomial noise floor of per-mother q_B from q(1-q)/15 to q(1-q)/47 so the previously detected mother-level risk heterogeneity (excess SD 11.1pp, p=0.0035) can be separated from measurement noise and re-tested against descriptors. No arm comparisons here.",
+  "interpretation": "clone-count augmentation for per-mother risk estimation; no intervention claims"
+}

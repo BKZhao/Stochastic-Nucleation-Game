@@ -1,0 +1,26 @@
+{
+  "build_inputs_sha256": "95ce1d909bdb90f886baa751f1fd79349b3b254c782642be94b660fccdbd3841",
+  "built_utc": "2026-10-12T09:17:12.169861+00:00",
+  "documents": {
+    "main": {
+      "log_sha256": "98a49ded682cff1a330a0e8b1faafdfa1fd3839a1d772292b59dd86bd6372e6a",
+      "path": "paper/main.pdf",
+      "pdf_sha256": "d6decb85b59d41e1fad84c92980de7f62c4d721def98c03f0636fc63d706badd"
+    },
+    "supplement": {
+      "log_sha256": "e62d96c3dd7c9f7d376ebe43a735073dc657782d5bdb59f8510581c20abacf94",
+      "path": "paper/supplement.pdf",
+      "pdf_sha256": "466edbf73fbc33c15e4f1ba365d952d27491cdca8cfb7e8152ecbb7138c7a1a2"
+    }
+  },
+  "log_checks": "Both PDFs: no undefined or duplicate references, missing characters or overfull boxes.",
+  "pdf_sha256": "d6decb85b59d41e1fad84c92980de7f62c4d721def98c03f0636fc63d706badd",
+  "phase": {
+    "analysis": "data/nucleation/analysis/4d9560bf3c20c245/phase.json",
+    "b_points": 41,
+    "diffusion_points": 41,
+    "runs": 215168,
+    "sha256": "5a686afc2718faf4fb914e06896af2c1f0253236d53eee013c36a986dce63e28"
+  },
+  "visual_review": "Both newly refreshed PDFs still require visual inspection."
+}

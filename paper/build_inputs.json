@@ -1,0 +1,233 @@
+{
+  "documents": {
+    "main": [
+      "0_abstract",
+      "1_introduction",
+      "2_model",
+      "3_phase",
+      "4_displacement",
+      "4_alignment",
+      "5_response",
+      "6_discussion",
+      "7_data_availability"
+    ],
+    "supplement": [
+      "A_derivations",
+      "B_checks",
+      "C_figures"
+    ]
+  },
+  "figure_validation": {
+    "checked_manifests": 18,
+    "missing_raw_inputs": {
+      "data/nucleation/N02/029120c84e08a371/seed-0020864355/states/initial.npz": "bc5cef48281058713ecbc4fe71daacee0582e12bd53703c09bfac25bc767fe77",
+      "data/nucleation/N02/14b39a8068e4efb7/seed-0076937852/states/initial.npz": "c15be95b8ec1c6472f9535c48fc8b10910991e4951284c1f4f18fb18749614da",
+      "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.05.npz": "fee177b3af0a7012ca779909286ceb61bc96c3267031b2a03a0b3b0a9eb8950a",
+      "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.2.npz": "f7dd7b573a116865428ace009b3a44759b4415143f11378497fc9da8cb23898d",
+      "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.5.npz": "e63e91ad0e56c21346abcf119518cc7fc60dddf56153c1f6f7fb4c2ac357fd0d",
+      "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.8.npz": "b6fc72ebfe7002ef793f58d20276cd52cab83c5cf2baaac3582d65a5e54e771b",
+      "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/initial.npz": "0f2e144ef0c73d486cdc9434c0594a3fec5b68d79b47abc39aea3fa133da1b78",
+      "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz": "1a907fc806210d2f01149b94b1eb477bcb5789a583c0dc9937039ca6dfa80ec4",
+      "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.05.npz": "f080f5acd009dd126b3a79ef69faa8b93fc3f5c79c2f8f5760c413289bc53250",
+      "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.2.npz": "ab13978087c94ccf3e8282050caeccf8b6309c531de60741c670d97c6182d541",
+      "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.5.npz": "10c33e126e0047c76dd4fb8392a1b154fb04883f085a8232b59276185b052a77",
+      "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.8.npz": "ec6b37ae159bc0426e749180dc8d436b169f0cab3f701f6333fab53a6158bcd6",
+      "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/initial.npz": "63d2d3606a49eab857fc31f097f6a50a08aedb5dad94cb7039d1e325714a59da"
+    },
+    "mode": "reuse_frozen_figures",
+    "scope": "All assets, plotting sources, and available inputs are hash-checked. Missing inputs are not revalidated in reuse mode."
+  },
+  "figures": [
+    "fig00_dynamical_regimes.pdf",
+    "fig01_phase.pdf",
+    "fig02_growth_fields.pdf",
+    "fig02_interventions.pdf",
+    "fig07_cumulative_response.pdf",
+    "fig08_coupled_response.pdf",
+    "fig03_fate_kinetics.pdf",
+    "fig05_phase_sections.pdf",
+    "figS01_recovery_unresolved.pdf",
+    "figS03_full_growth_fields.pdf",
+    "figS04_growth_distributions.pdf",
+    "fig04_interface_dynamics.pdf",
+    "fig06_conditional_moments.pdf",
+    "fig04_mechanism.pdf",
+    "figS06_resource_controls.pdf",
+    "fig09_initial_interfaces.pdf",
+    "fig10_resource_layers.pdf",
+    "fig11_growth_kinetics.pdf"
+  ],
+  "inputs": [
+    {
+      "path": "paper/drafts/0_abstract.md",
+      "sha256": "32d1bb84a9932b8d4d325223668d265514a915d7b53413cc76430fe99f0b0ce9"
+    },
+    {
+      "path": "paper/drafts/1_introduction.md",
+      "sha256": "402d77e88c6ec9ac6c3b2630eb0e02b7b4ba1c18f4f746429699d6ab16d62462"
+    },
+    {
+      "path": "paper/drafts/2_model.md",
+      "sha256": "004a86bce658a0f457d847d2317a06f2a8c6c35734d17450c313dcd6893ebd56"
+    },
+    {
+      "path": "paper/drafts/3_phase.md",
+      "sha256": "766d169050a0f5a1f12c4f4556220637f006cae9697caed35380072df263ece9"
+    },
+    {
+      "path": "paper/drafts/4_alignment.md",
+      "sha256": "8c490e3f41f66acda0cbb45683926886e859dccc6df7c394ff2e8ebfc4e971a3"
+    },
+    {
+      "path": "paper/drafts/4_displacement.md",
+      "sha256": "9d3da182484a24b780fb6c065fbb75385b86225e58ad2746c68219bd8c885ff7"
+    },
+    {
+      "path": "paper/drafts/5_response.md",
+      "sha256": "8ca5f489374a61d699f784804b8b40ea11eb551139b879019490aa3e362f7002"
+    },
+    {
+      "path": "paper/drafts/6_discussion.md",
+      "sha256": "6562266b430996086123641ccca06b6f2270c6e4cef4599376010cf2771d0e0b"
+    },
+    {
+      "path": "paper/drafts/7_data_availability.md",
+      "sha256": "cf962f21d278040f8ffc27278e4ad98b9f380c28294d72a704244175a4173ee7"
+    },
+    {
+      "path": "paper/drafts/A_derivations.md",
+      "sha256": "42e0d7ab3a3eca49d5e1a86c40fee0e0349fce330e600bc494dda38f6ad57de5"
+    },
+    {
+      "path": "paper/drafts/B_checks.md",
+      "sha256": "07e8679563ac14dc60c390670f8c7c7a2f9d1e17ef643477feee8eb7f88f748b"
+    },
+    {
+      "path": "paper/drafts/C_figures.md",
+      "sha256": "dc1ac25f83a07a9a19417c9a862f588f510a67ed3d22bc8a8bbb01e047ed60f5"
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "e80e4a1d3c7479d911b9ef82de77f8853903f110d7cc284691d54dfa842d5faa"
+    },
+    {
+      "path": "paper/supplement.tex",
+      "sha256": "225385e8bc6d5471c7f61d3c71d2fb24c97b269833a945537cf52c6228e6de7c"
+    },
+    {
+      "path": "paper/preamble.tex",
+      "sha256": "897a8eee62a27ea7e7227b6d9fb085ec080a62f95e8b1d70790b5a2c4da06eff"
+    },
+    {
+      "path": "paper/frontmatter.tex",
+      "sha256": "4ae07dd9f1b231ec38794493eb89d056cb1a15a6dc68843fe6afa1ee0e58ffd4"
+    },
+    {
+      "path": "paper/math_commands.tex",
+      "sha256": "6f5059edd53e9f4a510f1426617a190da4724ee6e031bc701778fb6543e9e08a"
+    },
+    {
+      "path": "paper/supplement_citations.tex",
+      "sha256": "d9da3e6efb16170eb0bce00bf732be5dc24197837239c3158bb0b1dfe522645c"
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "578fdf50f09129080d39a6047caf9e83b4f5895be9057a625f17ce0ddd721bfb"
+    },
+    {
+      "path": "paper/figure_captions.json",
+      "sha256": "bd341ff63de9382bab9ebd7efb6c7886b6071867e428e4b3c57c9cfd1b2c603a"
+    },
+    {
+      "path": "paper/phase_inputs.json",
+      "sha256": "3f27d1f9ae6502986a2ed31a171bf3193625183a7460be4e9cf05ed9f5bd6e7d"
+    },
+    {
+      "path": "paper/physics_inputs.json",
+      "sha256": "0976c56b3a27250eb42d7303b5ee178951fe9c3e20c81fe33d3680892552c70d"
+    },
+    {
+      "path": "paper/regimes_inputs.json",
+      "sha256": "58a2afd2c9cd1f4f30e2288d2102286eaf0e51be5bea4d2fb8d250ae1c317872"
+    },
+    {
+      "path": "paper/response_inputs.json",
+      "sha256": "bd1905216be03d9f3b1cefd01f4de6296ae0dec1f85fad548fa299e16c85b6b1"
+    },
+    {
+      "path": "paper/structure_inputs.json",
+      "sha256": "31c688cea3eb7d139a7618b3257f90ede4c40ccfacb0f36eb08651ad073542d4"
+    },
+    {
+      "path": "paper/microstructure_inputs.json",
+      "sha256": "5428c27b0f48b5ffcc1162bb7927ff46edeb1959664b3aa431ab58f498421fc0"
+    },
+    {
+      "path": "paper/phase_values.tex",
+      "sha256": "d0cfa6d7f43309a266057541df825005c64a659cf500b185271f07772d57717c"
+    },
+    {
+      "path": "experiments/build_nucleation_manuscript.py",
+      "sha256": "1ee08dc06e49fc6a99880a9afbef2c832e07ce9a429c9545a7f54e455f52ecdd"
+    },
+    {
+      "path": "data/nucleation/analysis/412167a8b811e426/moments.json",
+      "sha256": "b53ee4dc2e9b8aee9c1fba69a8600ba5522d0f881a9b743b4de0a3b9ae7e6160"
+    },
+    {
+      "path": "data/nucleation/analysis/9cf40e627ab5987f/growth.json",
+      "sha256": "b7a23177c655175e9fb02e7f10b5a6f8f65c740f3e450339fee92beecc31d515"
+    },
+    {
+      "path": "data/nucleation/analysis/9d20420d06db4296/interface.json",
+      "sha256": "f768fc7e3d15074a1eefe315b3e1ce9b5aff25fdd70c0ce95fd3ab6f08d876b5"
+    },
+    {
+      "path": "data/nucleation/analysis/c20406591965431c/growth.json",
+      "sha256": "6c1dd24d5591f860369d4a5733b595091848c10bffac9344db27593d06be7609"
+    },
+    {
+      "path": "data/nucleation/analysis/84e608ec76114c63/confirmation.json",
+      "sha256": "a0d134a64657d65a36399a4468feef7104affcb625caaade047f5cb548f24c13"
+    },
+    {
+      "path": "data/nucleation/analysis/f0d02c561cd72ebe/direction.json",
+      "sha256": "589aa80ab9b32e3fe848361669494c7d5822d01101d66d60f3200d90fb356108"
+    },
+    {
+      "path": "data/nucleation/analysis/102a4bb967083a9b/mechanism.json",
+      "sha256": "ed3b5e18f256e22bc14b7976c5d7508bc96edf2903405712c1569a34e3ba882e"
+    },
+    {
+      "path": "data/nucleation/analysis/658e0f7d77cd7dae/robustness.json",
+      "sha256": "754c2555afd26c941f62d10f832f1e3c266201f1d9fee9f2d1fa68646e36b190"
+    },
+    {
+      "path": "data/nucleation/analysis/2e9372f61ffee64b/r3.json",
+      "sha256": "533778e642a04a2daa7246c332d5b6cfb890adef1e1b9dd31b0a0c5b80c7ec95"
+    },
+    {
+      "path": "data/nucleation/analysis/88ad386a4538e7fb/post_confirmation.json",
+      "sha256": "3c3ad690b60430d4fa6b82d35835fbdc2384b92244a399ca31f9348f7076fd9d"
+    },
+    {
+      "path": "data/nucleation/analysis/71b13393bb500003/confirmation.json",
+      "sha256": "cdc116b71fd58b082785cdf8feaf6c3e60eeb992868223141afe116d60561777"
+    }
+  ],
+  "note": "Input/source consistency checked; PDF compilation is a separate step.",
+  "sections": [
+    "paper/sections/0_abstract.tex",
+    "paper/sections/1_introduction.tex",
+    "paper/sections/2_model.tex",
+    "paper/sections/3_phase.tex",
+    "paper/sections/4_alignment.tex",
+    "paper/sections/4_displacement.tex",
+    "paper/sections/5_response.tex",
+    "paper/sections/6_discussion.tex",
+    "paper/sections/7_data_availability.tex",
+    "paper/sections/A_derivations.tex",
+    "paper/sections/B_checks.tex",
+    "paper/sections/C_figures.tex"
+  ]
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+data/nucleation/N01/runs/
+data/nucleation/N02/runs/
+data/nucleation/N03/runs/
+data/nucleation/N06/runs/
+data/nucleation/archives/**/*.tar.gz
+tmp/
+.venv/
+.tools/
+paper/*.log
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/mainNotes.bib
+paper/supplementNotes.bib

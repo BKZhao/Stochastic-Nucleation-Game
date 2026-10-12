@@ -1,0 +1,317 @@
+{
+  "clone_seeds": 4,
+  "continuation_sweeps": 3000,
+  "direction_config": "configs/nucleation/n06_direction_controls.json",
+  "direction_config_sha256": "b8f1cadbfe62ea716cc2fc58b6ec9173af149750dcdf5f981069c2883d1876d1",
+  "interpretation": "post-confirmation continuation without the stopping rule: a reversal is any continuation whose cooperation fraction re-exceeds the 0.2 collapse threshold within the continuation window; zero reversals supports \"persistent macroscopic depletion\", any reversal demotes the claim to a finite-horizon statement",
+  "n_reversals": 0,
+  "n_states": 34,
+  "rows": [
+    {
+      "arm": "original",
+      "confirm_time": 16306,
+      "max_cooperation": 0.1254340277777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-0689558693"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 24632,
+      "max_cooperation": 0.1115451388888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-0802258279"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 6484,
+      "max_cooperation": 0.11067708333333333,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-2125849403"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 10747,
+      "max_cooperation": 0.0998263888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-2677917617"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 5708,
+      "max_cooperation": 0.06944444444444445,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-3720151555"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 33987,
+      "max_cooperation": 0.13194444444444445,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-4087207666"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 8702,
+      "max_cooperation": 0.14583333333333334,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-4125320611"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 6930,
+      "max_cooperation": 0.1462673611111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-0432563480"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 13973,
+      "max_cooperation": 0.11328125,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-1234991131"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 7089,
+      "max_cooperation": 0.09895833333333333,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-1644861091"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 11470,
+      "max_cooperation": 0.1032986111111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-2145483701"
+    },
+    {
+      "arm": "original",
+      "confirm_time": 38551,
+      "max_cooperation": 0.1440972222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-3882696247"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 14554,
+      "max_cooperation": 0.09505208333333333,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-0754856263"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 7577,
+      "max_cooperation": 0.06553819444444445,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-1757082992"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 10128,
+      "max_cooperation": 0.12109375,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-3240655762"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 9491,
+      "max_cooperation": 0.040364583333333336,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-3478712654"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 9371,
+      "max_cooperation": 0.10416666666666667,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-4249283818"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 5823,
+      "max_cooperation": 0.13585069444444445,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-0162358583"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 6706,
+      "max_cooperation": 0.14539930555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-0479276077"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 33669,
+      "max_cooperation": 0.1519097222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-1889030960"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 34323,
+      "max_cooperation": 0.08333333333333333,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-2361622809"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "confirm_time": 38923,
+      "max_cooperation": 0.08550347222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-4205703326"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 14275,
+      "max_cooperation": 0.0881076388888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-0203986966"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 15165,
+      "max_cooperation": 0.14149305555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1224547164"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 32089,
+      "max_cooperation": 0.1232638888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1253162774"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 32571,
+      "max_cooperation": 0.1640625,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1591827384"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 12750,
+      "max_cooperation": 0.09244791666666667,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1635117212"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 16853,
+      "max_cooperation": 0.1254340277777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1937538240"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 11175,
+      "max_cooperation": 0.0998263888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-1948571469"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 12417,
+      "max_cooperation": 0.1310763888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-3876367097"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 8625,
+      "max_cooperation": 0.09288194444444445,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/95083d1ec8e9553b/seed-0079084756"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 18053,
+      "max_cooperation": 0.1232638888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/95083d1ec8e9553b/seed-0325718690"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 8788,
+      "max_cooperation": 0.08246527777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/95083d1ec8e9553b/seed-2725553721"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "confirm_time": 7859,
+      "max_cooperation": 0.1384548611111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/95083d1ec8e9553b/seed-2900160006"
+    }
+  ]
+}

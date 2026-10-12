@@ -1,0 +1,76 @@
+{
+  "master_seed": 202610094,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        -17
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        10,
+        -34
+      ]
+    }
+  ],
+  "shift": [
+    17,
+    12
+  ],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "fda70f07e87e1eb9",
+    "snapshot": "growth-0.05.npz",
+    "rules": {
+      "compact_16": {
+        "count": 24,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 96,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Robustness cell size96 (frozen in robustness_plan.md): 24 smallest-seed outcome-bound compact-16 mothers from bank fda70f07e87e1eb9 at the growth-0.05.npz milestone; same lattice-unit shifts (2,1) and (5,-17) plus the scaled-medium check shift (10, -34); descriptive per-cell readout of the paired medium-minus-small contrast and Spearman(dB, delta_q_B), no confirmatory multiplicity claim. Endpoint campaign.",
+  "interpretation": "finite-horizon robustness cell; descriptive intervals only"
+}

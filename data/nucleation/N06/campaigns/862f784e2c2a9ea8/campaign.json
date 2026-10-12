@@ -1,0 +1,124 @@
+{
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        4,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        6,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        8,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        11,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        14,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        4
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        6
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        8
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        11
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        14
+      ]
+    }
+  ],
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "experiment_id": "N06",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 40000
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "bind_mother_identity": true,
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm",
+  "master_seed": 202610110,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {
+        "count": 48,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "replicas_intervention": 16,
+  "replicas_original": 16,
+  "selection_rationale": "Amplitude densification (frozen in follow-up plan): five magnitude layers 4/6/8/11/14 with two orthogonal axis directions each, on the 48 direction-round mothers, to locate the finite-time harm-to-protect turnover between |d|=2.24 and 17.72; per-mother direction means first, then mother-level resampling. Endpoint campaign.",
+  "shift": [
+    17,
+    12
+  ]
+}

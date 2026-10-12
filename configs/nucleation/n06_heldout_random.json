@@ -1,0 +1,54 @@
+{
+  "master_seed": 202610077,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original"
+  ],
+  "shift": [
+    17,
+    12
+  ],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "252d539cf24a4c7a",
+    "rules": {
+      "random_16": {
+        "count": 30,
+        "rule": "largest_seed"
+      }
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Held-out random-16 fate measurements on independent mothers (largest-seed 30 of the 63 crossing states, disjoint from the 15 smallest used in training); original arm only, 16 clones per mother. Test set for the nested model comparison M0/M1/M2; no model choices made on this batch before its q_B values exist.",
+  "interpretation": "held-out fate probabilities; model comparison test set"
+}

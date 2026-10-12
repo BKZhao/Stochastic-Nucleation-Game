@@ -1,0 +1,49 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig09_initial_interfaces.pdf",
+      "sha256": "5e34a8b6b8b8cc98bfcf2f6226df81840b0f82c618b6b0d088e1e518c69e13fa"
+    },
+    {
+      "path": "figures/nucleation/paper/fig09_initial_interfaces.png",
+      "sha256": "16810451e128aee1c8008fd047a4d544e5a202c87a32d784e112ee6f7963a2a8"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/9ebf2064a9d421a3/microstructure.json",
+      "sha256": "f1935643f36c66db2965065a592f1fc2b8920e7902281d9a49109bd738da2917"
+    },
+    {
+      "path": "experiments/analyze_nucleation_microstructure.py",
+      "sha256": "f0b9216e3b4f01223593d0aefde690ea416b0a7748078ec27dbf6ad175b2bd5d"
+    },
+    {
+      "path": "code/nucleation_interface.py",
+      "sha256": "05a57361dc58c02f6de9ae2fdaf80b954b0f34ad18923df0bce1da62df25d989"
+    },
+    {
+      "path": "data/nucleation/N02/14b39a8068e4efb7/seed-0076937852/states/initial.npz",
+      "sha256": "c15be95b8ec1c6472f9535c48fc8b10910991e4951284c1f4f18fb18749614da"
+    },
+    {
+      "path": "data/nucleation/N02/029120c84e08a371/seed-0020864355/states/initial.npz",
+      "sha256": "bc5cef48281058713ecbc4fe71daacee0582e12bd53703c09bfac25bc767fe77"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_microstructure.py",
+      "sha256": "6afafd82bca40d6ae8cf833e910c2a9aa39b9eaeb9762dba975d7e2df576e9ba"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "All 64 preparations per geometry. Illustrations: first lexical archived path, independent of outcomes. Initial strategy maps: red defectors, pale-blue cooperators. Motif frequencies are pooled edges, labels in percent. Curves evaluate the exact frozen initial-state formula, not new collapse probabilities or stochastic simulations; dots mark reference parameters. Scale bars: 12 sites."
+}

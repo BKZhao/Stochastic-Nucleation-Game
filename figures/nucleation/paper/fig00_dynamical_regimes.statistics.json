@@ -1,0 +1,34 @@
+{
+  "groups": {
+    "compact": {
+      "half_time_measured_cells": 667,
+      "half_time_not_reached_cells": 1014,
+      "measured_half_time_range": [
+        812.0,
+        9916.0
+      ],
+      "regime_cell_counts": {
+        "A": 740,
+        "B": 653,
+        "None": 129,
+        "U": 159
+      }
+    },
+    "random": {
+      "half_time_measured_cells": 770,
+      "half_time_not_reached_cells": 911,
+      "measured_half_time_range": [
+        484.0,
+        9712.0
+      ],
+      "regime_cell_counts": {
+        "A": 577,
+        "B": 752,
+        "None": 92,
+        "U": 260
+      }
+    }
+  },
+  "horizon": 10000,
+  "source_sha256": "5b5f7ea59590f67bcc0917c9bae6d229a64965b39c05925a8a9d9a3280ec86c8"
+}

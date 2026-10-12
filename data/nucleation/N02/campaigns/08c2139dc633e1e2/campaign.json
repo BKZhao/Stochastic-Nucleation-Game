@@ -1,0 +1,69 @@
+{
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 16,
+      "resource_field": "equilibrium",
+      "resource_value": 0.0,
+      "shape": "compact"
+    },
+    "experiment_id": "N02",
+    "interface": {
+      "equilibrium_times": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        20,
+        50,
+        100,
+        200,
+        500
+      ]
+    },
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 500,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 500
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage": [
+      {
+        "count": 16,
+        "resource_field": "equilibrium",
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "resource_field": "equilibrium",
+        "shape": "random"
+      }
+    ]
+  },
+  "master_seed": 202610071,
+  "replicas": 64,
+  "selection_rationale": "Pre-registered differential intervention derived from verified J arithmetic before execution: planting the compact16 damage on the fixed-strategy resource equilibrium field flips the initial interface diagnostic from -2.8 to +0.36 and should remove early erosion; random16 on the same field keeps J near +16 and should barely change. Mechanism screening for the interface-adaptation race; fresh-field trajectories come from the early-interface campaign under the same source."
+}

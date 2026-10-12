@@ -1,0 +1,73 @@
+{
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        -17
+      ]
+    }
+  ],
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "experiment_id": "N06",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 40000
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "bind_mother_identity": true,
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm",
+  "master_seed": 202610111,
+  "mothers": {
+    "campaign": "0b0d50e0b1a4711a",
+    "defector_window": [
+      80,
+      140
+    ],
+    "rules": {
+      "compact_16": {
+        "count": 24,
+        "rule": "smallest_seed"
+      }
+    },
+    "snapshot": "t-00010000.npz"
+  },
+  "replicas_intervention": 16,
+  "replicas_original": 16,
+  "selection_rationale": "Sampling-mode check (R3d, frozen in robustness_plan.md): fixed-time count-matched mothers from the dense-snapshot bank 0b0d50e0b1a4711a at t=10000 with defector count in [80,140] (5% equivalent 110 +/- 30, selected for yield without touching any continuation outcome), 24 smallest-seed mothers; the same three core arms. Readout: sign of the paired medium-minus-small contrast under an alternative, non-crossing mother sampling mode.",
+  "shift": [
+    17,
+    12
+  ]
+}

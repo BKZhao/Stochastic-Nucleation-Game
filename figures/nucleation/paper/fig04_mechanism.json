@@ -1,0 +1,49 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig04_mechanism.pdf",
+      "sha256": "eb093d342bbd440fda1f6dc15a5485ff8c6afa3847de4ff450bf06e64ca86fef"
+    },
+    {
+      "path": "figures/nucleation/paper/fig04_mechanism.png",
+      "sha256": "87fd8082764f04fef7ead1082456e27538195732bb84f88da56a2f58edaae9b1"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/102a4bb967083a9b/mechanism.json",
+      "sha256": "ed3b5e18f256e22bc14b7976c5d7508bc96edf2903405712c1569a34e3ba882e"
+    },
+    {
+      "path": "data/nucleation/analysis/f0d02c561cd72ebe/direction.json",
+      "sha256": "589aa80ab9b32e3fe848361669494c7d5822d01101d66d60f3200d90fb356108"
+    },
+    {
+      "path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "sha256": "1a907fc806210d2f01149b94b1eb477bcb5789a583c0dc9937039ca6dfa80ec4"
+    },
+    {
+      "path": "code/nucleation_rearrange.py",
+      "sha256": "90a38b15affe01d63cf0e2b8dbbd4d8e50adff7844ddb11abedc0423afc3e89c"
+    },
+    {
+      "path": "code/nucleation_interface.py",
+      "sha256": "05a57361dc58c02f6de9ae2fdaf80b954b0f34ad18923df0bce1da62df25d989"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_paper_results.py",
+      "sha256": "9c84dd50136faeb4efa5ff65e2fd6e5b6e61d11ffb5830f7b1af0e5245572f68"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Outcome-blind spatial example, same configuration as the alignment figure. Effective diffusion-mixed sensitivity and resource increments from the two exact existing allocation rules; no new stochastic simulation. Strategies and boundary resource multiset remain fixed. Shared signed scale for increments; 24-by-24 periodic window at maximum sensitivity, 6-site bars."
+}

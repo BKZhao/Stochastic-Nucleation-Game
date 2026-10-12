@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig05_phase_sections.pdf",
+      "sha256": "2aba8594a4880cd1c5a17e107fe547b8c6e3020ad8b93afdcfe775e2a5807242"
+    },
+    {
+      "path": "figures/nucleation/paper/fig05_phase_sections.png",
+      "sha256": "2edbd5f0f7dc0d19da615b724d71399d0b003c375fa59aa37b2ef1fae3ea2db2"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/4d9560bf3c20c245/phase.json",
+      "sha256": "5a686afc2718faf4fb914e06896af2c1f0253236d53eee013c36a986dce63e28"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_phase.py",
+      "sha256": "cc545d715bb15160a7381bac9e80d7c45ce385e5ff627752d0f64ef428e3d21e"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Nine panels: recovery, collapse and unresolved outcomes as rows; D=0.2,0.4,0.6 as columns. 64 trajectories at every sampled payoff value, T=10000. Only two geometry curves per panel. All 41 payoff values retained as sampled probabilities, no smoothing. Axis margins expose P=0 and P=1 curves; all probabilities remain in [0,1]."
+}

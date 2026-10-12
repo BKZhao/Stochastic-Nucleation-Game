@@ -1,0 +1,327 @@
+{
+  "cells": [
+    {
+      "L": 64,
+      "collapse_risk": 0.1484375,
+      "config_hash": "5e49901a7eaea661",
+      "damage": {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "compact"
+      },
+      "events": 38,
+      "horizon": 40000,
+      "km": [
+        {
+          "at_risk": 256,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 256,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.99609375,
+          "time": 11287.0
+        },
+        {
+          "at_risk": 255,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9921875,
+          "time": 11584.0
+        },
+        {
+          "at_risk": 254,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.98828125,
+          "time": 12273.0
+        },
+        {
+          "at_risk": 253,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.984375,
+          "time": 12300.0
+        },
+        {
+          "at_risk": 252,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.98046875,
+          "time": 13226.0
+        },
+        {
+          "at_risk": 251,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9765625,
+          "time": 13400.0
+        },
+        {
+          "at_risk": 250,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.97265625,
+          "time": 13672.0
+        },
+        {
+          "at_risk": 249,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.96875,
+          "time": 13876.0
+        },
+        {
+          "at_risk": 248,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.96484375,
+          "time": 14665.0
+        },
+        {
+          "at_risk": 247,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9609375,
+          "time": 15300.0
+        },
+        {
+          "at_risk": 246,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.95703125,
+          "time": 15821.0
+        },
+        {
+          "at_risk": 245,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.953125,
+          "time": 16652.0
+        },
+        {
+          "at_risk": 244,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.94921875,
+          "time": 18266.0
+        },
+        {
+          "at_risk": 243,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9453125,
+          "time": 18625.0
+        },
+        {
+          "at_risk": 242,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.94140625,
+          "time": 19652.0
+        },
+        {
+          "at_risk": 241,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9375,
+          "time": 21893.0
+        },
+        {
+          "at_risk": 240,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.93359375,
+          "time": 22875.0
+        },
+        {
+          "at_risk": 239,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9296875,
+          "time": 22882.0
+        },
+        {
+          "at_risk": 238,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.92578125,
+          "time": 24184.0
+        },
+        {
+          "at_risk": 237,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.921875,
+          "time": 24499.0
+        },
+        {
+          "at_risk": 236,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.91796875,
+          "time": 24892.0
+        },
+        {
+          "at_risk": 235,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.9140625,
+          "time": 25082.0
+        },
+        {
+          "at_risk": 234,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.91015625,
+          "time": 25806.0
+        },
+        {
+          "at_risk": 233,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.90625,
+          "time": 25890.0
+        },
+        {
+          "at_risk": 232,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.90234375,
+          "time": 28621.0
+        },
+        {
+          "at_risk": 231,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.8984375,
+          "time": 31238.0
+        },
+        {
+          "at_risk": 230,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.89453125,
+          "time": 33492.0
+        },
+        {
+          "at_risk": 229,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.890625,
+          "time": 34206.0
+        },
+        {
+          "at_risk": 228,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.88671875,
+          "time": 34698.0
+        },
+        {
+          "at_risk": 227,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.8828125,
+          "time": 35772.0
+        },
+        {
+          "at_risk": 226,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.87890625,
+          "time": 36330.0
+        },
+        {
+          "at_risk": 225,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.875,
+          "time": 36625.0
+        },
+        {
+          "at_risk": 224,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.87109375,
+          "time": 36997.0
+        },
+        {
+          "at_risk": 223,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.8671875,
+          "time": 37601.0
+        },
+        {
+          "at_risk": 222,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.86328125,
+          "time": 38356.0
+        },
+        {
+          "at_risk": 221,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.859375,
+          "time": 38367.0
+        },
+        {
+          "at_risk": 220,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.85546875,
+          "time": 38387.0
+        },
+        {
+          "at_risk": 219,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.8515625,
+          "time": 39431.0
+        },
+        {
+          "at_risk": 218,
+          "censored": 218,
+          "events": 0,
+          "survival": 0.8515625,
+          "time": 40000.0
+        }
+      ],
+      "max_depleted_cluster": 3676,
+      "max_strategy_cluster": 3691,
+      "median": null,
+      "n": 256,
+      "not_collapsed_not_recovered": 25,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.4,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.16
+      },
+      "recovered": 193,
+      "rmst": 37729.38671875,
+      "survival": 0.8515625,
+      "wilson95": [
+        0.11009474695863963,
+        0.19717515209080122
+      ],
+      "zero_event_upper95": null
+    }
+  ],
+  "completed_runs": 256,
+  "elapsed_seconds": 225.22056267783046,
+  "expected_runs": 256,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "2bd89c8c6f482037",
+  "total_site_visits": 39562129408
+}

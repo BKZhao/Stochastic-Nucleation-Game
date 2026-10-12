@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig08_coupled_response.pdf",
+      "sha256": "47da5ff0f9b41e94582b9b1b14a17082365084c43c8e1d33ce3d121e2908712c"
+    },
+    {
+      "path": "figures/nucleation/paper/fig08_coupled_response.png",
+      "sha256": "ad55f36ecc145235049e2f878c69877eff33f2e14f5e8caf635805b8cedfdd39"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/046677470a7a2a82/response.json",
+      "sha256": "f2e4642153b88ba4b524459c164ac828cbff7b471b274268f400f37bc56661d0"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_response.py",
+      "sha256": "7440832c95126fc81688d41cab5c04ee590b398c333cc658e2e6a8e2dce3701b"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Top: ensemble-mean paths over MCS 0..20, initial open circle, final filled circles, arrows in increasing time. These are not a deterministic phase portrait or a probability flow. Bottom: strategy-resource covariance differences over MCS 0..19, reconstructed trajectory by trajectory from the exact resource balance and checked at saved initial fields. Curves show ensemble means; paired uncertainty remains in the underlying analysis."
+}

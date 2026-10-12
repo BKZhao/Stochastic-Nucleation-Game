@@ -1,0 +1,10 @@
+{
+  "campaign_hash": "9224b6205f2eadd2",
+  "jobs": 192,
+  "maximum_site_visits": 17694720000,
+  "old_config_expansion": "identical to HEAD implementation for all 8 formal configurations",
+  "overlapping_seeds": 0,
+  "previous_jobs": 2816,
+  "protocol_sha256": "67a35c1d9ddc617ed9885fb8b7cce9c80c7aef812cc2e366d09daec2963a4c2f",
+  "timestamp_utc": "2026-10-05T17:07:50.174407+00:00"
+}

@@ -1,0 +1,459 @@
+{
+  "completed_runs": 1152,
+  "elapsed_seconds": 436.94995169201866,
+  "groups": {
+    "compact_16/original": {
+      "mean_q_A": 0.5416666666666666,
+      "mean_q_B": 0.3828125,
+      "mean_q_U": 0.07552083333333333,
+      "mothers": [
+        {
+          "n": 16,
+          "parent_defectors": 99,
+          "parent_run_id": "seed-0052899809",
+          "q_A": 0.75,
+          "q_B": 0.1875,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 138,
+          "parent_run_id": "seed-0413205355",
+          "q_A": 0.3125,
+          "q_B": 0.5625,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 97,
+          "parent_run_id": "seed-0555680080",
+          "q_A": 0.875,
+          "q_B": 0.0625,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 119,
+          "parent_run_id": "seed-0694171820",
+          "q_A": 0.5,
+          "q_B": 0.4375,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 136,
+          "parent_run_id": "seed-0778854490",
+          "q_A": 0.5625,
+          "q_B": 0.3125,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 86,
+          "parent_run_id": "seed-0900391700",
+          "q_A": 0.6875,
+          "q_B": 0.25,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 84,
+          "parent_run_id": "seed-1009846514",
+          "q_A": 0.4375,
+          "q_B": 0.375,
+          "q_U": 0.1875,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 134,
+          "parent_run_id": "seed-1040453187",
+          "q_A": 0.4375,
+          "q_B": 0.5,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 112,
+          "parent_run_id": "seed-1193513737",
+          "q_A": 0.625,
+          "q_B": 0.375,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 114,
+          "parent_run_id": "seed-1202281706",
+          "q_A": 0.375,
+          "q_B": 0.625,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 88,
+          "parent_run_id": "seed-1307214216",
+          "q_A": 0.5625,
+          "q_B": 0.4375,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 95,
+          "parent_run_id": "seed-1326404059",
+          "q_A": 0.3125,
+          "q_B": 0.5,
+          "q_U": 0.1875,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 103,
+          "parent_run_id": "seed-1723324344",
+          "q_A": 0.25,
+          "q_B": 0.625,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 120,
+          "parent_run_id": "seed-1776856827",
+          "q_A": 0.6875,
+          "q_B": 0.1875,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 98,
+          "parent_run_id": "seed-1970857242",
+          "q_A": 0.4375,
+          "q_B": 0.4375,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 100,
+          "parent_run_id": "seed-2482470262",
+          "q_A": 0.5625,
+          "q_B": 0.375,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 133,
+          "parent_run_id": "seed-2542914708",
+          "q_A": 0.375,
+          "q_B": 0.625,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 89,
+          "parent_run_id": "seed-3049431150",
+          "q_A": 0.375,
+          "q_B": 0.4375,
+          "q_U": 0.1875,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 86,
+          "parent_run_id": "seed-3064440566",
+          "q_A": 0.375,
+          "q_B": 0.625,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 112,
+          "parent_run_id": "seed-3084456994",
+          "q_A": 0.5625,
+          "q_B": 0.3125,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 87,
+          "parent_run_id": "seed-3090778671",
+          "q_A": 0.8125,
+          "q_B": 0.0625,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 84,
+          "parent_run_id": "seed-3472601301",
+          "q_A": 0.8125,
+          "q_B": 0.1875,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 118,
+          "parent_run_id": "seed-3565062471",
+          "q_A": 0.5,
+          "q_B": 0.5,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 16,
+          "parent_defectors": 104,
+          "parent_run_id": "seed-3696466767",
+          "q_A": 0.8125,
+          "q_B": 0.1875,
+          "q_U": 0.0,
+          "source_time": 10000
+        }
+      ],
+      "n_mothers": 24,
+      "n_runs": 384
+    },
+    "compact_16/shifted": {
+      "mean_q_A": 0.5143229166666666,
+      "mean_q_B": 0.3958333333333333,
+      "mean_q_U": 0.08984375,
+      "mothers": [
+        {
+          "n": 32,
+          "parent_defectors": 99,
+          "parent_run_id": "seed-0052899809",
+          "q_A": 0.625,
+          "q_B": 0.3125,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 138,
+          "parent_run_id": "seed-0413205355",
+          "q_A": 0.53125,
+          "q_B": 0.375,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 97,
+          "parent_run_id": "seed-0555680080",
+          "q_A": 0.625,
+          "q_B": 0.25,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 119,
+          "parent_run_id": "seed-0694171820",
+          "q_A": 0.46875,
+          "q_B": 0.375,
+          "q_U": 0.15625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 136,
+          "parent_run_id": "seed-0778854490",
+          "q_A": 0.53125,
+          "q_B": 0.46875,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 86,
+          "parent_run_id": "seed-0900391700",
+          "q_A": 0.59375,
+          "q_B": 0.34375,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 84,
+          "parent_run_id": "seed-1009846514",
+          "q_A": 0.625,
+          "q_B": 0.25,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 134,
+          "parent_run_id": "seed-1040453187",
+          "q_A": 0.5,
+          "q_B": 0.40625,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 112,
+          "parent_run_id": "seed-1193513737",
+          "q_A": 0.65625,
+          "q_B": 0.28125,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 114,
+          "parent_run_id": "seed-1202281706",
+          "q_A": 0.5625,
+          "q_B": 0.34375,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 88,
+          "parent_run_id": "seed-1307214216",
+          "q_A": 0.5625,
+          "q_B": 0.40625,
+          "q_U": 0.03125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 95,
+          "parent_run_id": "seed-1326404059",
+          "q_A": 0.34375,
+          "q_B": 0.53125,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 103,
+          "parent_run_id": "seed-1723324344",
+          "q_A": 0.53125,
+          "q_B": 0.40625,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 120,
+          "parent_run_id": "seed-1776856827",
+          "q_A": 0.5625,
+          "q_B": 0.3125,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 98,
+          "parent_run_id": "seed-1970857242",
+          "q_A": 0.53125,
+          "q_B": 0.40625,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 100,
+          "parent_run_id": "seed-2482470262",
+          "q_A": 0.625,
+          "q_B": 0.28125,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 133,
+          "parent_run_id": "seed-2542914708",
+          "q_A": 0.5,
+          "q_B": 0.4375,
+          "q_U": 0.0625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 89,
+          "parent_run_id": "seed-3049431150",
+          "q_A": 0.4375,
+          "q_B": 0.46875,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 86,
+          "parent_run_id": "seed-3064440566",
+          "q_A": 0.3125,
+          "q_B": 0.53125,
+          "q_U": 0.15625,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 112,
+          "parent_run_id": "seed-3084456994",
+          "q_A": 0.46875,
+          "q_B": 0.4375,
+          "q_U": 0.09375,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 87,
+          "parent_run_id": "seed-3090778671",
+          "q_A": 0.5,
+          "q_B": 0.375,
+          "q_U": 0.125,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 84,
+          "parent_run_id": "seed-3472601301",
+          "q_A": 0.28125,
+          "q_B": 0.53125,
+          "q_U": 0.1875,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 118,
+          "parent_run_id": "seed-3565062471",
+          "q_A": 0.4375,
+          "q_B": 0.5625,
+          "q_U": 0.0,
+          "source_time": 10000
+        },
+        {
+          "n": 32,
+          "parent_defectors": 104,
+          "parent_run_id": "seed-3696466767",
+          "q_A": 0.53125,
+          "q_B": 0.40625,
+          "q_U": 0.0625,
+          "source_time": 10000
+        }
+      ],
+      "n_mothers": 24,
+      "n_runs": 768
+    }
+  },
+  "interpretation": "same-scale finite-horizon fate probabilities per mother and arm; committor-style screening, not infinite-time or causal claims",
+  "source_hash": "8b2ade8b3911f598",
+  "total_site_visits": 78351245568
+}

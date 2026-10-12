@@ -1,0 +1,4164 @@
+{
+  "analysis": {
+    "formal_hypothesis_test": false,
+    "interim_testing": false,
+    "outcome_times": [
+      1000,
+      5000,
+      10000
+    ],
+    "representative_rule": "smallest dynamic seed within each geometry/resource cell and 10000-sweep outcome",
+    "scope": "Exploratory geometry x resource-intervention comparison; no equivalence, natural mutation or metastability claim.",
+    "spatial_times": [
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000
+    ],
+    "unresolved_landmark": 5000
+  },
+  "analysis_sources": {
+    "code/b0_fast.py": "1d05a3111fa1f87bf7837dfdf9add31a55850300f6e12a82a7aa76b7934a0e68",
+    "code/b_eco.py": "660c8c320fa286da463f27d7c22c2e52ee133c00c47f532bb211cc65089c4acb",
+    "code/b_eco_multilayer.py": "5560d99522839e29d80c4eff5dcbb3c51355694087097d006fac57a8c760722c",
+    "code/b_eco_unified.py": "ed3ec7436e3066a50e7a61c2d936f1b29dd97938057cf9083e1b70acffb4f682",
+    "code/lattice.py": "c69c6d58d3d07bf9821fafb1a51c41636c22520783634a1bc1465e55a27e428a",
+    "code/mean_field.py": "143e4a2ecd2e219f9cd49b4eacccb845d17ebac33f1eb4aa6304ae3bdfea31b4",
+    "code/nucleation_diagnostics.py": "b4c9b831c0c225488f42b76784a7885ea0c6abed1229aed04388fe5fefd67b6d",
+    "code/nucleation_progress.py": "e1b858e4099f5211a759efcad22dcd0b14916055c35c854b827a3ee41ff7adc2",
+    "code/nucleation_seeds.py": "e4d2521d86aeba9cb64d328da55330e4d7c4556c7d9b0146357313687c9b4ae6",
+    "code/nucleation_survival.py": "7c06865a6529e69c04cbe0d007f932801667d182e5df4048789a22b6b4fe3fac",
+    "code/observables.py": "3b4dd17677ebd953b2642835c0aa60ddbf3aa22107b1442439aeb0f5b88fab69",
+    "code/plotstyle.py": "43a5ea1cd3b356f4f9c9068509e1d181b125533ceebe8e853c8199ff587a04bc",
+    "code/research_clusters.py": "a0f2c0e0e4b3b34bd83e93bf7f82bd9071c221e13f118aca11ac4bd779ea6406",
+    "code/research_events.py": "3bd8d09112bf31ed14ea0e203feeb886db3351c2e8ec7958d38a6afdb8d11e21",
+    "code/research_state.py": "15f6d08b52c18ffe00c6003aa7e9d8da40fe9164a172d23d9f94841aaa80ca39",
+    "experiments/analyze_nucleation_confirmation.py": "14d22ac118094b79ddd47414f90fcb98d64ceab98c2a9106656dbe708ebeeb49",
+    "experiments/analyze_nucleation_followup.py": "85f78d9377f00c576e4e23ffc10482f0e9b0d1feb1852e30bbac5eff8c2e615c",
+    "experiments/analyze_nucleation_founders.py": "8dca1521291c32b75b0ce7cfcbc0e7c08d8502785d1307914ad0dd06d2932e9a",
+    "experiments/analyze_nucleation_growth.py": "a7cdcc401f1b5a2870850df1457845ca4c4742ce38b1463acd3e97303cdf6e0c",
+    "experiments/common.py": "da0c9f57bcd659da224f46647661b25ffb6ebaa6fdcaf6ac41b9810d235ddcbd",
+    "experiments/fig01_trajectories.py": "e1bde56a44775df73bd17550bb22977352360d6419dc2078ad6c8e5a2f598e55",
+    "experiments/fig02_phase.py": "3f1a1b4f004a8145f71ff6a22b1ce925e4ebfc5ac2961f2726a8d62e010131f7",
+    "experiments/fig03_hysteresis.py": "786178b6cebebc4695d259ddd0dcd645bd8629d0950d299ed3713cae5a1c827e",
+    "experiments/fig04_wave.py": "16f9ab049d2055fce9d5e9fd196829984d9295d58faa20a5b16049eab938df44",
+    "experiments/fig05_csd.py": "c51b162af13212ad6d228153a2d0fe70f00e498c5cee2a4cf7abf1119f467d0e",
+    "experiments/fig06_multilayer_temp.py": "9f762ba479a55817cbe490a45c42ba54d6c9958844748c0bfd4519eb5877fe0a",
+    "experiments/front_summary.py": "74e53ba030c18d8eb16177adf23a758d2f9b543da6a82eb213098a5ced2a01e6",
+    "experiments/multilayer_response.py": "a8f06c0e46bfcc6f8ec9f0c2b97958ce4b690cea91e8e78a36df3822f40e298c",
+    "experiments/nucleation_campaign.py": "5d274110667aa4a81a76dba85b15a03e411836d57378ce12d3ff1f2c528630a9",
+    "experiments/nucleation_growth_analysis.py": "6e363c21a590b34df018ec31740a3352b0befbe5c366e759459a007a546779ad",
+    "experiments/nucleation_observation.py": "c6485c7c5e59df142e6b45c70c4643c03d975ad98176cac36c2c57aeb5c7a334",
+    "experiments/nucleation_runner.py": "f4ec1d9ccb6d17df3de2b889d18cc599ea0311de810fa2efb5b6fbe8b48ac4a0",
+    "experiments/plot_fig1_detrule.py": "a9a2358cbfe35f5a1f5433b901e7c39c0b2b7927540b29d45b206f7e9d9b7fc3",
+    "experiments/plot_fig2_multilayer.py": "0bc0e2254b11d21e0139286db2feec4746e59b9785f91c544aaa0c2f0d540790",
+    "experiments/plot_fig3_v3.py": "c562905f8099e81acbd71b91410caa9c528f717200747fd9f99bc8c00e1044f7",
+    "experiments/plot_fig4_v3.py": "f874934f1f97be028b4faa1c315746216b64a95f7686daa0239e0bba55070f8c",
+    "experiments/plot_fig5_v3.py": "0d244d48f074fe6a41c86cb9dbf610079f50166bdd1d63de7337ca5c2128ea29",
+    "experiments/plot_fig_amplitude.py": "200ba1a0c746a23b8a13c81d874624a9c8f4d1c88371c0a3f3665c9003c65762",
+    "experiments/plot_fig_atlas.py": "3110c733449e2398550cbb5ea58a8cbc79d705af8a35757494336c36597d8c10",
+    "experiments/plot_fig_dynamics.py": "e46cb7a09a68d35895a5871ac84ccb6190871b7e19d6f95c60b13784fdc6db47",
+    "experiments/plot_fig_mscaling.py": "ef1dcb98cd22bee856233c8875fe26153e10e0037b035fb31bcba52667832a6e",
+    "experiments/plot_fig_multisync.py": "e94c57912124b3a24c153abc8c8749d4c459e66c1aa66de4e33e199cb89c1fbe",
+    "experiments/plot_fig_networks.py": "6b1b55af3d77a488919f667a2106faeea94ad3b4932e778a60cc0b23733aeb93",
+    "experiments/plot_fig_pattern.py": "e0fb49afbc2b841fac6834903c8fda237f4f2dd76aaad24a1cfcfbcb0f5e852c",
+    "experiments/plot_fig_robustness.py": "3594e122fc903f8fd8379ca6d78ed566191236211b3a0310db6bfad959c618bf",
+    "experiments/plot_fig_robustness_maps.py": "cd7ceadea935f13f61d0d51c0407511ae90107d71d3f8234313400cf2f0010e2",
+    "experiments/plot_fig_topology.py": "3f648c31352686606acc77f521efd8bd48ca71a47da66064ffe8b9b44d615c4d",
+    "experiments/plot_fig_traj.py": "f88402baf08be2ada5e39413f90999ceab955ac2bd17a4a46578e34300daef2f",
+    "experiments/plot_fig_wavecrit.py": "bbfb277bb96ab495262fc6af81838dd17d5b79a39ea54289aaab1e2e419e9272",
+    "experiments/plot_fig_wavespeed.py": "5ff33a097873d1cfac1784791d6a1bcf06dde2bedd865b4bcdd2b7fbcd606ba1",
+    "experiments/plot_nucleation_confirmation.py": "827a5004c14eede026c55e91b2b74baf15d2a999b63314c34300feeab8937418",
+    "experiments/plot_nucleation_followup.py": "cda05ff0a843a2f8fd4030a8a02114f88c61ca6b91bf66792b576f2fa80894d1",
+    "experiments/plot_nucleation_founders.py": "eb3d4c23e73f3bbc249c5e265a34e5777e878ac888d94efde93a83a24e464615",
+    "experiments/plot_nucleation_growth.py": "d23ddf19ce1dcb4bcd3f584d09e56fa27e36b72209871af6168059e749a4e425",
+    "experiments/plot_nucleation_screening.py": "683f174ff86e38ed7c9732cd6684bbcdfbf837729b1440bb1d100e75b6bdded0",
+    "experiments/plot_style.py": "3948512c91778ba787e7743cb95d1c0664de39e5c6da062cbe37f732d2440d92",
+    "experiments/pubstyle.py": "56ac26730bd241cd122b6d6a02e50e8c6d590add70b12f5615e86d334021da94",
+    "experiments/research_common.py": "629f89bb1687dc0474b5e9812bdd1faeb24833e7c4141c0f56a11260c6f2d7c1",
+    "experiments/revision_contract.py": "0263a253bc2998b118a48d2a6c5c8479ad35488e5e1c5be9dcf38b01f1504b87",
+    "experiments/revision_io.py": "8256efb6afe0274d35280f95726a94505d6ef1105601908caa1cdcd057900d4c",
+    "experiments/run_collapse_wave.py": "c56431d76c22aa489dc68b77bc824466d6a9b32d21e1d5d9240634802f5522ee",
+    "experiments/run_coupling_comparison.py": "052b7e170bb73bfff741343968036a322dd318ed17a9d745c39ec163f1a01eff",
+    "experiments/run_csd.py": "7a228fcaf1a3a6d591f5b684132c8e1c5632e5af2dde142d0b320e331dd8b061",
+    "experiments/run_dynamics_examples.py": "f41bebfc8cbebf85092eb4708f1b210dcca1003d414034c8e63a02146d3c93b1",
+    "experiments/run_early_warning.py": "af3a56cce18c5ee533f6c5438d7abde649c111e9980874bd90b296f6d3f8bf36",
+    "experiments/run_eco_bistab.py": "5a35f093e0977d827f3716e9be7e7bc7d72b971df6fe06041093c5fd5391f0bc",
+    "experiments/run_eco_hyst.py": "bf78d5a2a82fd3f23bae278ef9ea1af0093240177cbbdd1c8bc2e9d34695177d",
+    "experiments/run_eco_phase.py": "d29b9997110ed118bd67201380df62f9a5933f13cf866de2d83e48e86e98f22d",
+    "experiments/run_hysteresis.py": "8bbc86dd7cd1298afda1a5d8a0f41c30c65fb2a84d6f7b77295b03cd5849c45f",
+    "experiments/run_mscaling.py": "f5b1effa8adc60f0f61f3c326ae2791907b20d15df7aeb9c4c2fb2057235048a",
+    "experiments/run_multilayer_map.py": "466336b1be3e163cf77be81d7123babd835792a55f6f79482f2e4ed1269ebd23",
+    "experiments/run_multilayer_phase.py": "96ca22b33ffcc65af2fab4e2a42a0127b577f28361d80804b47a5d8aaa886727",
+    "experiments/run_nucleation_confirmation.py": "4615fd9520c11b30403d9cc7da39b7af923bcabd3e9aed3d8880be45a147ec2c",
+    "experiments/run_nucleation_pilot.py": "f268c6c32e9b9b41ea2d06df6994c63f6f39619e0b11e54eac32ec181f698fcd",
+    "experiments/run_nucleation_seeds.py": "5b132eeaeecb7573e27289aa00bf426faee3316a65b7fe058eabfc0643f53853",
+    "experiments/run_oscillation_validation.py": "50b1da4f0a47496657eba0a71ff9a7d10b44527ed40d77e38d71df91efe0ff55",
+    "experiments/run_pgg_topo.py": "213d54ffdd7e90dfaef7467e6081ee788dcdb8d28067dedeb93a104a6102da11",
+    "experiments/run_phase_maps.py": "d0f5912671e8431b684f84e250c75635b4dddbb35d1a27af2be1b67cf878c483",
+    "experiments/run_phase_scaling.py": "49664d7d2b1773b42fdab4fa3894c91692a035eb313d9219a872035e16b62ae8",
+    "experiments/run_robustness.py": "b664b1b01a8319498e019ce2bcc33a5a89c29deb59bb126268db80da653e3e8d",
+    "experiments/run_stats.py": "09360f28329d8da74e6ca9d7d44cee12d5ec910587c3953c7608f63fe5a853be",
+    "experiments/run_topology.py": "f02b680f110a33719b151e277174caf29717ad2fc1e1bd660059a533246ad172",
+    "experiments/run_topology_prod.py": "949a52b3bd5884541af58a89d200e7555ff4cca002bd30f8ae7d4b6063b68995",
+    "experiments/run_transition_scan.py": "f91c431658a71519676c20f7a81034d28d7d24b6a05a47f9d150f7712638d00c",
+    "experiments/run_unified_phase.py": "429b088aa5bc80aa4b57dd387d7f5ecbfd0def985a1a304670b4bf853df82f4a",
+    "experiments/run_wave_critical.py": "df29417f0495649cae02ace8e1894e82cbf4a4fc4b43f6fe1d0a3852c9a11fd6",
+    "experiments/run_wave_map.py": "f3a6f4a4cdaf7aadd1e37b9784dd928c87061f80355a51403c47f761b8b48dae",
+    "experiments/run_wave_scaling.py": "0462136ae532e151d4ecccf9a200bfd074e217d628d96f4586aa7e89b68e6dd7",
+    "experiments/run_wave_speed.py": "4c7d002cbd0993dcb1345e4bd836831300ce4ccbf4b54d084098ef0529abfb64"
+  },
+  "campaign": "fea7b10c32991e9c",
+  "groups": {
+    "compact_16_r0": {
+      "damage": {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "compact"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 1000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 1000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 7,
+          "rmst": 1000.0,
+          "survival": 1.0,
+          "unresolved": 57,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 5000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 5000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 24,
+          "rmst": 5000.0,
+          "survival": 1.0,
+          "unresolved": 40,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 40,
+          "rmst": 10000.0,
+          "survival": 1.0,
+          "unresolved": 24,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 5779.2,
+              "median": 5883.0,
+              "n": 10,
+              "q25": 3612.25,
+              "q75": 7258.5
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 10,
+              "5000": 4
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.3,
+                "median": 2.0,
+                "n": 10,
+                "q25": 1.25,
+                "q75": 2.75
+              },
+              "depleted_fraction": {
+                "mean": 0.04587673611111111,
+                "median": 0.046440972222222224,
+                "n": 10,
+                "q25": 0.04470486111111111,
+                "q75": 0.046875
+              },
+              "largest_share": {
+                "mean": 0.8712874744651156,
+                "median": 0.961864406779661,
+                "n": 10,
+                "q25": 0.8560783167738165,
+                "q75": 0.9957983193277311
+              },
+              "resource": {
+                "mean": 0.9344720441859659,
+                "median": 0.9370760790868221,
+                "n": 10,
+                "q25": 0.9308715888864472,
+                "q75": 0.938267546721751
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 10,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 8975.0,
+              "median": 8975.0,
+              "n": 1,
+              "q25": 8975.0,
+              "q75": 8975.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 1,
+              "5000": 0
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 3.0,
+                "median": 3.0,
+                "n": 1,
+                "q25": 3.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.19227430555555555,
+                "median": 0.19227430555555555,
+                "n": 1,
+                "q25": 0.19227430555555555,
+                "q75": 0.19227430555555555
+              },
+              "largest_share": {
+                "mean": 0.9913232104121475,
+                "median": 0.9913232104121475,
+                "n": 1,
+                "q25": 0.9913232104121475,
+                "q75": 0.9913232104121475
+              },
+              "resource": {
+                "mean": 0.7742562551213337,
+                "median": 0.7742562551213337,
+                "n": 1,
+                "q25": 0.7742562551213337,
+                "q75": 0.7742562551213337
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 1,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": null,
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 0,
+              "5000": 0
+            },
+            "spatial": {
+              "clusters": null,
+              "depleted_fraction": null,
+              "largest_share": null,
+              "resource": null,
+              "winding": null
+            }
+          },
+          "0.8": {
+            "first_time": null,
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 0,
+              "5000": 0
+            },
+            "spatial": {
+              "clusters": null,
+              "depleted_fraction": null,
+              "largest_share": null,
+              "resource": null,
+              "winding": null
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 5002.0,
+              "median": 5002.0,
+              "n": 1,
+              "q25": 5002.0,
+              "q75": 5002.0
+            },
+            "end": "0.2",
+            "not_reached_both": 63,
+            "original_n": 64,
+            "reached_both": 1,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": null,
+            "end": "0.5",
+            "not_reached_both": 64,
+            "original_n": 64,
+            "reached_both": 0,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": null,
+            "end": "0.8",
+            "not_reached_both": 64,
+            "original_n": 64,
+            "reached_both": 0,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": null,
+            "end": "B_confirm",
+            "not_reached_both": 64,
+            "original_n": 64,
+            "reached_both": 0,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": null,
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/d5fdc53874cce94c/seed-0299165840",
+          "seed": 299165840
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/d5fdc53874cce94c/seed-0009307555",
+          "seed": 9307555
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 1.578125,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.003302680121527778,
+            "median": 0.0030381944444444445,
+            "n": 64,
+            "q25": 0.0013020833333333333,
+            "q75": 0.004340277777777778
+          },
+          "depleted_fraction": {
+            "mean": 0.001946343315972222,
+            "median": 0.001519097222222222,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0030381944444444445
+          },
+          "largest_share": {
+            "mean": 0.8712589594242254,
+            "median": 1.0,
+            "n": 63,
+            "q25": 0.7638888888888888,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.993306024982243,
+            "median": 0.9933374097580119,
+            "n": 64,
+            "q25": 0.9907146641865415,
+            "q75": 0.9965521464693545
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 63
+        },
+        {
+          "clusters": {
+            "mean": 1.625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.004055447048611111,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.005750868055555556
+          },
+          "depleted_fraction": {
+            "mean": 0.002888997395833334,
+            "median": 0.001519097222222222,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004014756944444444
+          },
+          "largest_share": {
+            "mean": 0.8583604468991786,
+            "median": 0.9565217391304348,
+            "n": 59,
+            "q25": 0.7008928571428572,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9921042113560177,
+            "median": 0.9938163495357062,
+            "n": 64,
+            "q25": 0.9886834603706436,
+            "q75": 0.9968263748463595
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 59
+        },
+        {
+          "clusters": {
+            "mean": 1.65625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.25
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.004916720920138888,
+            "median": 0.003255208333333333,
+            "n": 64,
+            "q25": 0.0013020833333333333,
+            "q75": 0.007378472222222222
+          },
+          "depleted_fraction": {
+            "mean": 0.003628200954861111,
+            "median": 0.001953125,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.005316840277777778
+          },
+          "largest_share": {
+            "mean": 0.8280712266267097,
+            "median": 1.0,
+            "n": 57,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9904523441568649,
+            "median": 0.9922291366220315,
+            "n": 64,
+            "q25": 0.9855427561973232,
+            "q75": 0.9962748350214399
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 57
+        },
+        {
+          "clusters": {
+            "mean": 1.65625,
+            "median": 2.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.00466579861111111,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.005316840277777778
+          },
+          "depleted_fraction": {
+            "mean": 0.003431532118055555,
+            "median": 0.0008680555555555555,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.003689236111111111
+          },
+          "largest_share": {
+            "mean": 0.813797849240413,
+            "median": 0.9166666666666666,
+            "n": 55,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9913122969162134,
+            "median": 0.9937874670419615,
+            "n": 64,
+            "q25": 0.9886203252906455,
+            "q75": 0.9969193518134635
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 55
+        },
+        {
+          "clusters": {
+            "mean": 1.328125,
+            "median": 1.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.005703396267361111,
+            "median": 0.001736111111111111,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.005642361111111111
+          },
+          "depleted_fraction": {
+            "mean": 0.004625108506944444,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004774305555555556
+          },
+          "largest_share": {
+            "mean": 0.8503480710135906,
+            "median": 0.9399038461538461,
+            "n": 40,
+            "q25": 0.75,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9902564748294627,
+            "median": 0.9954888051857125,
+            "n": 64,
+            "q25": 0.9875163234443847,
+            "q75": 0.9999999999999998
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 40
+        },
+        {
+          "clusters": {
+            "mean": 1.109375,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 1.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.01171196831597222,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.008680555555555556
+          },
+          "depleted_fraction": {
+            "mean": 0.010565863715277778,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0035807291666666665
+          },
+          "largest_share": {
+            "mean": 0.8305283595375795,
+            "median": 0.9638946819603754,
+            "n": 24,
+            "q25": 0.6446428571428572,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9844897366369192,
+            "median": 0.9999999999999998,
+            "n": 64,
+            "q25": 0.9817791713155318,
+            "q75": 0.9999999999999998
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 24
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 40,
+              "events": 0,
+              "survival": 1.0,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 40,
+          "recovered": 16,
+          "rmst": 10000.0,
+          "survival": 1.0,
+          "unresolved": 24,
+          "wilson95": [
+            6.938893903907228e-18,
+            0.0876216011972866
+          ]
+        },
+        "landmark": 5000,
+        "n": 40,
+        "original_n": 64,
+        "pending_confirmation": 0
+      }
+    },
+    "compact_16_r1": {
+      "damage": {
+        "count": 16,
+        "resource_value": 1.0,
+        "shape": "compact"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 1000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 1000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 3,
+          "rmst": 1000.0,
+          "survival": 1.0,
+          "unresolved": 61,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 5000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 5000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 17,
+          "rmst": 5000.0,
+          "survival": 1.0,
+          "unresolved": 47,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.015625,
+          "events": 1,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 9068.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 63,
+              "events": 0,
+              "survival": 0.984375,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 28,
+          "rmst": 9985.4375,
+          "survival": 0.984375,
+          "unresolved": 35,
+          "wilson95": [
+            0.002763541923337512,
+            0.08334101600094262
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 4896.333333333333,
+              "median": 5400.0,
+              "n": 9,
+              "q25": 3304.0,
+              "q75": 6265.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 9,
+              "5000": 4
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.3333333333333335,
+                "median": 2.0,
+                "n": 9,
+                "q25": 1.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.04480131172839506,
+                "median": 0.044270833333333336,
+                "n": 9,
+                "q25": 0.04383680555555555,
+                "q75": 0.045572916666666664
+              },
+              "largest_share": {
+                "mean": 0.9459511439903596,
+                "median": 0.9666666666666667,
+                "n": 9,
+                "q25": 0.9401709401709402,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.9354465896104069,
+                "median": 0.9357312406883425,
+                "n": 9,
+                "q25": 0.9334483936092437,
+                "q75": 0.9366720078394225
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 9,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 7024.6,
+              "median": 7311.0,
+              "n": 5,
+              "q25": 6435.0,
+              "q75": 7778.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 5,
+              "5000": 1
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.4,
+                "median": 2.0,
+                "n": 5,
+                "q25": 1.0,
+                "q75": 2.0
+              },
+              "depleted_fraction": {
+                "mean": 0.19253472222222223,
+                "median": 0.19227430555555555,
+                "n": 5,
+                "q25": 0.19227430555555555,
+                "q75": 0.1931423611111111
+              },
+              "largest_share": {
+                "mean": 0.986635138154465,
+                "median": 0.9978401727861771,
+                "n": 5,
+                "q25": 0.9956803455723542,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.7736246453133677,
+                "median": 0.7761012080944096,
+                "n": 5,
+                "q25": 0.770343292336232,
+                "q75": 0.776478967667733
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 5,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 8837.0,
+              "median": 8943.0,
+              "n": 3,
+              "q25": 8286.5,
+              "q75": 9440.5
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 3,
+              "5000": 0
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 3.0,
+                "median": 3.0,
+                "n": 3,
+                "q25": 2.5,
+                "q75": 3.5
+              },
+              "depleted_fraction": {
+                "mean": 0.49074074074074076,
+                "median": 0.4921875,
+                "n": 3,
+                "q25": 0.4891493055555556,
+                "q75": 0.4930555555555556
+              },
+              "largest_share": {
+                "mean": 0.9965307840307841,
+                "median": 0.9965277777777778,
+                "n": 3,
+                "q25": 0.9965277777777778,
+                "q75": 0.9965322871572871
+              },
+              "resource": {
+                "mean": 0.46425116747062045,
+                "median": 0.46560124256091284,
+                "n": 3,
+                "q25": 0.4617397779510298,
+                "q75": 0.4674375945353574
+              },
+              "winding": {
+                "mean": 0.3333333333333333,
+                "median": 0.0,
+                "n": 3,
+                "q25": 0.0,
+                "q75": 0.5
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 8819.0,
+              "median": 8819.0,
+              "n": 1,
+              "q25": 8819.0,
+              "q75": 8819.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 1,
+              "5000": 0
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 1,
+                "q25": 1.0,
+                "q75": 1.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7990451388888888,
+                "median": 0.7990451388888888,
+                "n": 1,
+                "q25": 0.7990451388888888,
+                "q75": 0.7990451388888888
+              },
+              "largest_share": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 1,
+                "q25": 1.0,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.17635130390638878,
+                "median": 0.17635130390638878,
+                "n": 1,
+                "q25": 0.17635130390638878,
+                "q75": 0.17635130390638878
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 1,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 3749.2,
+              "median": 3092.0,
+              "n": 5,
+              "q25": 2907.0,
+              "q75": 4812.0
+            },
+            "end": "0.2",
+            "not_reached_both": 59,
+            "original_n": 64,
+            "reached_both": 5,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2873.3333333333335,
+              "median": 2627.0,
+              "n": 3,
+              "q25": 2567.5,
+              "q75": 3056.0
+            },
+            "end": "0.5",
+            "not_reached_both": 61,
+            "original_n": 64,
+            "reached_both": 3,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1189.0,
+              "median": 1189.0,
+              "n": 1,
+              "q25": 1189.0,
+              "q75": 1189.0
+            },
+            "end": "0.8",
+            "not_reached_both": 63,
+            "original_n": 64,
+            "reached_both": 1,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 249.0,
+              "median": 249.0,
+              "n": 1,
+              "q25": 249.0,
+              "q75": 249.0
+            },
+            "end": "B_confirm",
+            "not_reached_both": 63,
+            "original_n": 64,
+            "reached_both": 1,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/67750747c41d1c85/seed-1096659481",
+          "seed": 1096659481
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/67750747c41d1c85/seed-0138071756",
+          "seed": 138071756
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/67750747c41d1c85/seed-0009406413",
+          "seed": 9406413
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 1.265625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0031060112847222225,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.004774305555555556
+          },
+          "depleted_fraction": {
+            "mean": 0.00201416015625,
+            "median": 0.001519097222222222,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.003146701388888889
+          },
+          "largest_share": {
+            "mean": 0.936369858440171,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9936779702841279,
+            "median": 0.9940914004273048,
+            "n": 64,
+            "q25": 0.9913537190016639,
+            "q75": 0.9967696509052884
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 1.5,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.003031412760416667,
+            "median": 0.001736111111111111,
+            "n": 64,
+            "q25": 0.0011935763888888888,
+            "q75": 0.004014756944444444
+          },
+          "depleted_fraction": {
+            "mean": 0.002000596788194444,
+            "median": 0.0008680555555555555,
+            "n": 64,
+            "q25": 0.00043402777777777775,
+            "q75": 0.0030381944444444445
+          },
+          "largest_share": {
+            "mean": 0.8597252432165803,
+            "median": 1.0,
+            "n": 63,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9935920639902387,
+            "median": 0.9949037822455151,
+            "n": 64,
+            "q25": 0.9918899495250326,
+            "q75": 0.9968365674352982
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 63
+        },
+        {
+          "clusters": {
+            "mean": 1.578125,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.003411187065972222,
+            "median": 0.001953125,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.004774305555555556
+          },
+          "depleted_fraction": {
+            "mean": 0.002353244357638889,
+            "median": 0.0008680555555555555,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0026041666666666665
+          },
+          "largest_share": {
+            "mean": 0.8433418888336921,
+            "median": 1.0,
+            "n": 61,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.992921779988619,
+            "median": 0.9952838593867118,
+            "n": 64,
+            "q25": 0.9911583047092479,
+            "q75": 0.9969647593735003
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 61
+        },
+        {
+          "clusters": {
+            "mean": 1.46875,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0054931640625,
+            "median": 0.0028211805555555555,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.006184895833333334
+          },
+          "depleted_fraction": {
+            "mean": 0.004218207465277778,
+            "median": 0.001953125,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004448784722222222
+          },
+          "largest_share": {
+            "mean": 0.8870899095244433,
+            "median": 1.0,
+            "n": 59,
+            "q25": 0.7573099415204678,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9902093149457403,
+            "median": 0.9929313755913513,
+            "n": 64,
+            "q25": 0.9879246652304285,
+            "q75": 0.9970656049197788
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 59
+        },
+        {
+          "clusters": {
+            "mean": 1.5,
+            "median": 1.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.012688530815972224,
+            "median": 0.003255208333333333,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.007921006944444444
+          },
+          "depleted_fraction": {
+            "mean": 0.011393229166666666,
+            "median": 0.001736111111111111,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.005425347222222222
+          },
+          "largest_share": {
+            "mean": 0.8659600971834817,
+            "median": 0.9928057553956835,
+            "n": 47,
+            "q25": 0.75,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9817300758301516,
+            "median": 0.9921705539440782,
+            "n": 64,
+            "q25": 0.9841024021022369,
+            "q75": 0.9999999682517478
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 47
+        },
+        {
+          "clusters": {
+            "mean": 1.1746031746031746,
+            "median": 1.0,
+            "n": 63,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 1,
+          "defector_fraction": {
+            "mean": 0.03169780643738977,
+            "median": 0.00043402777777777775,
+            "n": 63,
+            "q25": 0.0,
+            "q75": 0.004123263888888889
+          },
+          "depleted_fraction": {
+            "mean": 0.030416391093474424,
+            "median": 0.0,
+            "n": 63,
+            "q25": 0.0,
+            "q75": 0.003472222222222222
+          },
+          "largest_share": {
+            "mean": 0.8604491377457143,
+            "median": 0.9958018471872376,
+            "n": 35,
+            "q25": 0.6904761904761905,
+            "q75": 1.0
+          },
+          "observed_nonB": 63,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9629956365440662,
+            "median": 0.9972699621168992,
+            "n": 63,
+            "q25": 0.9911601183039778,
+            "q75": 0.9999999999999998
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.015873015873015872,
+            "median": 0.0,
+            "n": 63,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 35
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.02127659574468085,
+          "events": 1,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9787234042553191,
+              "time": 9068.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 46,
+              "events": 0,
+              "survival": 0.9787234042553191,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 47,
+          "recovered": 11,
+          "rmst": 9980.170212765957,
+          "survival": 0.9787234042553191,
+          "unresolved": 35,
+          "wilson95": [
+            0.003765768038596788,
+            0.11112981041629325
+          ]
+        },
+        "landmark": 5000,
+        "n": 47,
+        "original_n": 64,
+        "pending_confirmation": 0
+      }
+    },
+    "random_16_r0": {
+      "damage": {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "random"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 1000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 1000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 0,
+          "rmst": 1000.0,
+          "survival": 1.0,
+          "unresolved": 64,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.125,
+          "events": 8,
+          "horizon": 5000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3479.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3746.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 4016.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 4248.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 4863.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 4865.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 4866.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 4923.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 56,
+              "events": 0,
+              "survival": 0.875,
+              "time": 5000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 0,
+          "rmst": 4921.96875,
+          "survival": 0.875,
+          "unresolved": 56,
+          "wilson95": [
+            0.06472242663330453,
+            0.2277456182112994
+          ]
+        },
+        {
+          "collapse_risk": 0.53125,
+          "events": 34,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3479.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3746.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 4016.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 4248.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 4863.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 4865.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 4866.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 4923.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 5063.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 5082.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.828125,
+              "time": 5398.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 5532.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.796875,
+              "time": 5551.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 5835.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.765625,
+              "time": 5985.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 6021.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.734375,
+              "time": 6138.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 6257.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.703125,
+              "time": 6283.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6875,
+              "time": 6672.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.671875,
+              "time": 6674.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.65625,
+              "time": 6703.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.640625,
+              "time": 6734.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.625,
+              "time": 6952.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.609375,
+              "time": 6998.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.59375,
+              "time": 7218.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.578125,
+              "time": 7602.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5625,
+              "time": 7713.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.546875,
+              "time": 7986.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.53125,
+              "time": 8109.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.515625,
+              "time": 9032.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5,
+              "time": 9067.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.484375,
+              "time": 9071.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.46875,
+              "time": 9240.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 30,
+              "events": 0,
+              "survival": 0.46875,
+              "time": 10000.0
+            }
+          ],
+          "median": 9067.0,
+          "n": 64,
+          "recovered": 3,
+          "rmst": 8030.03125,
+          "survival": 0.46875,
+          "unresolved": 27,
+          "wilson95": [
+            0.41072087051471007,
+            0.6482401257482395
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 600.5,
+              "median": 329.5,
+              "n": 64,
+              "q25": 170.5,
+              "q75": 582.75
+            },
+            "reached_by_time": {
+              "1000": 58,
+              "10000": 64,
+              "5000": 64
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 12.171875,
+                "median": 12.0,
+                "n": 64,
+                "q25": 9.0,
+                "q75": 15.0
+              },
+              "depleted_fraction": {
+                "mean": 0.03706868489583333,
+                "median": 0.037760416666666664,
+                "n": 64,
+                "q25": 0.035590277777777776,
+                "q75": 0.039496527777777776
+              },
+              "largest_share": {
+                "mean": 0.43004655184305984,
+                "median": 0.39316239316239315,
+                "n": 64,
+                "q25": 0.3101163542340013,
+                "q75": 0.5159192987539843
+              },
+              "resource": {
+                "mean": 0.9176774172881222,
+                "median": 0.917739089030177,
+                "n": 64,
+                "q25": 0.914120860982569,
+                "q75": 0.9207916276069159
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 64,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 3697.4,
+              "median": 2925.0,
+              "n": 45,
+              "q25": 1949.0,
+              "q75": 5365.0
+            },
+            "reached_by_time": {
+              "1000": 2,
+              "10000": 45,
+              "5000": 32
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 4.466666666666667,
+                "median": 4.0,
+                "n": 45,
+                "q25": 3.0,
+                "q75": 6.0
+              },
+              "depleted_fraction": {
+                "mean": 0.19087577160493827,
+                "median": 0.1909722222222222,
+                "n": 45,
+                "q25": 0.1892361111111111,
+                "q75": 0.19270833333333334
+              },
+              "largest_share": {
+                "mean": 0.940178638938923,
+                "median": 0.9676724137931034,
+                "n": 45,
+                "q25": 0.9331896551724138,
+                "q75": 0.9891774891774892
+              },
+              "resource": {
+                "mean": 0.7661141980502374,
+                "median": 0.7670035928386697,
+                "n": 45,
+                "q25": 0.763842019504354,
+                "q75": 0.771778683153796
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 45,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 5510.775,
+              "median": 4932.0,
+              "n": 40,
+              "q25": 3925.0,
+              "q75": 6943.5
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 40,
+              "5000": 20
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.45,
+                "median": 2.0,
+                "n": 40,
+                "q25": 2.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.4906575520833333,
+                "median": 0.4913194444444444,
+                "n": 40,
+                "q25": 0.4889322916666667,
+                "q75": 0.4921875
+              },
+              "largest_share": {
+                "mean": 0.9967127916932634,
+                "median": 0.9982698948991084,
+                "n": 40,
+                "q25": 0.9971827680847629,
+                "q75": 0.999135879461984
+              },
+              "resource": {
+                "mean": 0.46051965535576506,
+                "median": 0.4599480122349837,
+                "n": 40,
+                "q25": 0.4585275433329125,
+                "q75": 0.4624705349391284
+              },
+              "winding": {
+                "mean": 0.475,
+                "median": 0.0,
+                "n": 40,
+                "q25": 0.0,
+                "q75": 1.0
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 6130.828571428571,
+              "median": 5993.0,
+              "n": 35,
+              "q25": 4791.5,
+              "q75": 7133.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 35,
+              "5000": 10
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.8,
+                "median": 2.0,
+                "n": 35,
+                "q25": 1.0,
+                "q75": 2.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7939484126984127,
+                "median": 0.7938368055555556,
+                "n": 35,
+                "q25": 0.79296875,
+                "q75": 0.7947048611111112
+              },
+              "largest_share": {
+                "mean": 0.9993965782426567,
+                "median": 0.9994582881906826,
+                "n": 35,
+                "q25": 0.9989183342347214,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.17166525131935986,
+                "median": 0.17164707011026412,
+                "n": 35,
+                "q25": 0.168260231178407,
+                "q75": 0.17457041289742836
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 35,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 3239.177777777778,
+              "median": 2608.0,
+              "n": 45,
+              "q25": 1612.0,
+              "q75": 4461.0
+            },
+            "end": "0.2",
+            "not_reached_both": 19,
+            "original_n": 64,
+            "reached_both": 45,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2359.8,
+              "median": 2221.5,
+              "n": 40,
+              "q25": 1808.25,
+              "q75": 2686.75
+            },
+            "end": "0.5",
+            "not_reached_both": 24,
+            "original_n": 64,
+            "reached_both": 40,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1160.6285714285714,
+              "median": 1007.0,
+              "n": 35,
+              "q25": 909.5,
+              "q75": 1354.5
+            },
+            "end": "0.8",
+            "not_reached_both": 29,
+            "original_n": 64,
+            "reached_both": 35,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 274.29411764705884,
+              "median": 261.0,
+              "n": 34,
+              "q25": 252.25,
+              "q75": 290.0
+            },
+            "end": "B_confirm",
+            "not_reached_both": 30,
+            "original_n": 64,
+            "reached_both": 34,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/2f697ae8e0135dd6/seed-0125807374",
+          "seed": 125807374
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/2f697ae8e0135dd6/seed-1146966780",
+          "seed": 1146966780
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/2f697ae8e0135dd6/seed-0124140438",
+          "seed": 124140438
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 15.375,
+            "median": 15.0,
+            "n": 64,
+            "q25": 13.0,
+            "q75": 18.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.027594672309027776,
+            "median": 0.025173611111111112,
+            "n": 64,
+            "q25": 0.021158854166666668,
+            "q75": 0.0322265625
+          },
+          "depleted_fraction": {
+            "mean": 0.015760633680555556,
+            "median": 0.013237847222222224,
+            "n": 64,
+            "q25": 0.0107421875,
+            "q75": 0.019965277777777776
+          },
+          "largest_share": {
+            "mean": 0.2613843963891006,
+            "median": 0.22832080200501254,
+            "n": 64,
+            "q25": 0.20078798691644367,
+            "q75": 0.3160919540229885
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9407357045531282,
+            "median": 0.9433769306879951,
+            "n": 64,
+            "q25": 0.934609670723247,
+            "q75": 0.9483797359614096
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 10.65625,
+            "median": 11.0,
+            "n": 64,
+            "q25": 9.0,
+            "q75": 13.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.05330403645833333,
+            "median": 0.04665798611111111,
+            "n": 64,
+            "q25": 0.03331163194444445,
+            "q75": 0.07356770833333334
+          },
+          "depleted_fraction": {
+            "mean": 0.043707953559027776,
+            "median": 0.03602430555555555,
+            "n": 64,
+            "q25": 0.025065104166666664,
+            "q75": 0.06391059027777778
+          },
+          "largest_share": {
+            "mean": 0.47307696768286883,
+            "median": 0.4459090909090909,
+            "n": 64,
+            "q25": 0.32219061166429586,
+            "q75": 0.5732473544973544
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9116332019304175,
+            "median": 0.9166503805068476,
+            "n": 64,
+            "q25": 0.8852558768956944,
+            "q75": 0.9367787809220784
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 7.671875,
+            "median": 8.0,
+            "n": 64,
+            "q25": 6.0,
+            "q75": 9.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.07359483506944445,
+            "median": 0.06184895833333333,
+            "n": 64,
+            "q25": 0.038519965277777776,
+            "q75": 0.08658854166666667
+          },
+          "depleted_fraction": {
+            "mean": 0.06557210286458334,
+            "median": 0.054253472222222224,
+            "n": 64,
+            "q25": 0.031792534722222224,
+            "q75": 0.07758246527777778
+          },
+          "largest_share": {
+            "mean": 0.6188669817773959,
+            "median": 0.6189833558254612,
+            "n": 64,
+            "q25": 0.46889744824265767,
+            "q75": 0.749891122278057
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.8924876269800507,
+            "median": 0.9069007617613742,
+            "n": 64,
+            "q25": 0.8718574650790313,
+            "q75": 0.9358662419502694
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 5.890625,
+            "median": 5.5,
+            "n": 64,
+            "q25": 4.0,
+            "q75": 8.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.10995144314236112,
+            "median": 0.0763888888888889,
+            "n": 64,
+            "q25": 0.03200954861111111,
+            "q75": 0.1501736111111111
+          },
+          "depleted_fraction": {
+            "mean": 0.10272894965277779,
+            "median": 0.06901041666666667,
+            "n": 64,
+            "q25": 0.027886284722222224,
+            "q75": 0.1408420138888889
+          },
+          "largest_share": {
+            "mean": 0.7719037814836855,
+            "median": 0.802728194414575,
+            "n": 64,
+            "q25": 0.6225961538461539,
+            "q75": 0.9543494152046784
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.8594045960559336,
+            "median": 0.8897769999995021,
+            "n": 64,
+            "q25": 0.8137138067979064,
+            "q75": 0.9466044387975453
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 3.6785714285714284,
+            "median": 3.0,
+            "n": 56,
+            "q25": 2.0,
+            "q75": 5.0
+          },
+          "confirmed_before_or_at": 8,
+          "defector_fraction": {
+            "mean": 0.2502867683531746,
+            "median": 0.12977430555555555,
+            "n": 56,
+            "q25": 0.034613715277777776,
+            "q75": 0.412109375
+          },
+          "depleted_fraction": {
+            "mean": 0.24414837549603177,
+            "median": 0.12348090277777779,
+            "n": 56,
+            "q25": 0.027560763888888888,
+            "q75": 0.4041883680555556
+          },
+          "largest_share": {
+            "mean": 0.8371482108441202,
+            "median": 0.9853940217391304,
+            "n": 56,
+            "q25": 0.6910014005602241,
+            "q75": 0.9984110559234731
+          },
+          "observed_nonB": 56,
+          "pending_confirmation": 2,
+          "resource": {
+            "mean": 0.7224589821150366,
+            "median": 0.8423875583549341,
+            "n": 56,
+            "q25": 0.5432077099513326,
+            "q75": 0.9431427614927572
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.19642857142857142,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 56
+        },
+        {
+          "clusters": {
+            "mean": 2.7333333333333334,
+            "median": 3.0,
+            "n": 30,
+            "q25": 1.25,
+            "q75": 4.0
+          },
+          "confirmed_before_or_at": 34,
+          "defector_fraction": {
+            "mean": 0.21681134259259263,
+            "median": 0.06358506944444445,
+            "n": 30,
+            "q25": 0.009331597222222222,
+            "q75": 0.4560546875
+          },
+          "depleted_fraction": {
+            "mean": 0.2117621527777778,
+            "median": 0.060980902777777776,
+            "n": 30,
+            "q25": 0.007269965277777778,
+            "q75": 0.4478081597222222
+          },
+          "largest_share": {
+            "mean": 0.8629628845736071,
+            "median": 0.9942857142857143,
+            "n": 27,
+            "q25": 0.809375,
+            "q75": 0.9990973717908592
+          },
+          "observed_nonB": 30,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.7611439193334066,
+            "median": 0.9164388501848466,
+            "n": 30,
+            "q25": 0.5034333392941921,
+            "q75": 0.9807260265977287
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.16666666666666666,
+            "median": 0.0,
+            "n": 30,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 27
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.4642857142857143,
+          "events": 26,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9821428571428571,
+              "time": 5063.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9642857142857142,
+              "time": 5082.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9464285714285714,
+              "time": 5398.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9285714285714285,
+              "time": 5532.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9107142857142856,
+              "time": 5551.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8928571428571427,
+              "time": 5835.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8749999999999998,
+              "time": 5985.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8571428571428569,
+              "time": 6021.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.839285714285714,
+              "time": 6138.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8214285714285711,
+              "time": 6257.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8035714285714283,
+              "time": 6283.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7857142857142854,
+              "time": 6672.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7678571428571426,
+              "time": 6674.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7499999999999997,
+              "time": 6703.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7321428571428568,
+              "time": 6734.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7142857142857139,
+              "time": 6952.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.696428571428571,
+              "time": 6998.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.678571428571428,
+              "time": 7218.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6607142857142853,
+              "time": 7602.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6428571428571425,
+              "time": 7713.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6249999999999996,
+              "time": 7986.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6071428571428567,
+              "time": 8109.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5892857142857139,
+              "time": 9032.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5714285714285711,
+              "time": 9067.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5535714285714283,
+              "time": 9071.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5357142857142855,
+              "time": 9240.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 30,
+              "events": 0,
+              "survival": 0.5357142857142855,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 56,
+          "recovered": 3,
+          "rmst": 8552.071428571428,
+          "survival": 0.5357142857142855,
+          "unresolved": 27,
+          "wilson95": [
+            0.3401985291222378,
+            0.5929581806433882
+          ]
+        },
+        "landmark": 5000,
+        "n": 56,
+        "original_n": 64,
+        "pending_confirmation": 2
+      }
+    },
+    "random_16_r1": {
+      "damage": {
+        "count": 16,
+        "resource_value": 1.0,
+        "shape": "random"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 1000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 1000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 0,
+          "rmst": 1000.0,
+          "survival": 1.0,
+          "unresolved": 64,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.09375,
+          "events": 6,
+          "horizon": 5000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3402.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3909.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 4114.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 4132.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 4139.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 4626.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 58,
+              "events": 0,
+              "survival": 0.90625,
+              "time": 5000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 0,
+          "rmst": 4911.28125,
+          "survival": 0.90625,
+          "unresolved": 58,
+          "wilson95": [
+            0.04367825258519838,
+            0.1898287959964559
+          ]
+        },
+        {
+          "collapse_risk": 0.5,
+          "events": 32,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3402.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3909.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 4114.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 4132.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 4139.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 4626.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 5242.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 5496.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 5809.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 6009.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.828125,
+              "time": 6099.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 6138.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.796875,
+              "time": 6354.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 6492.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.765625,
+              "time": 6506.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 6606.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.734375,
+              "time": 6757.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 6884.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.703125,
+              "time": 7112.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6875,
+              "time": 7513.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.671875,
+              "time": 7522.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.65625,
+              "time": 7575.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.640625,
+              "time": 7620.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.625,
+              "time": 7853.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.609375,
+              "time": 8101.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.59375,
+              "time": 8321.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.578125,
+              "time": 8648.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5625,
+              "time": 8793.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.546875,
+              "time": 9347.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.53125,
+              "time": 9812.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.515625,
+              "time": 9863.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5,
+              "time": 9958.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 32,
+              "events": 0,
+              "survival": 0.5,
+              "time": 10000.0
+            }
+          ],
+          "median": 9958.0,
+          "n": 64,
+          "recovered": 4,
+          "rmst": 8386.75,
+          "survival": 0.5,
+          "unresolved": 28,
+          "wilson95": [
+            0.3810209474394701,
+            0.6189790525605299
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 697.5238095238095,
+              "median": 248.0,
+              "n": 63,
+              "q25": 184.0,
+              "q75": 624.0
+            },
+            "reached_by_time": {
+              "1000": 52,
+              "10000": 63,
+              "5000": 62
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 11.682539682539682,
+                "median": 12.0,
+                "n": 63,
+                "q25": 9.0,
+                "q75": 14.0
+              },
+              "depleted_fraction": {
+                "mean": 0.03736772486772487,
+                "median": 0.03732638888888889,
+                "n": 63,
+                "q25": 0.03515625,
+                "q75": 0.03884548611111111
+              },
+              "largest_share": {
+                "mean": 0.46752690880965125,
+                "median": 0.42857142857142855,
+                "n": 63,
+                "q25": 0.33477011494252873,
+                "q75": 0.5769230769230769
+              },
+              "resource": {
+                "mean": 0.9186919419046939,
+                "median": 0.9173013297014021,
+                "n": 63,
+                "q25": 0.9137597453111392,
+                "q75": 0.9221369318831043
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 63,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 3607.342105263158,
+              "median": 2798.0,
+              "n": 38,
+              "q25": 2009.5,
+              "q75": 4895.25
+            },
+            "reached_by_time": {
+              "1000": 1,
+              "10000": 38,
+              "5000": 29
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 4.473684210526316,
+                "median": 4.5,
+                "n": 38,
+                "q25": 2.0,
+                "q75": 6.0
+              },
+              "depleted_fraction": {
+                "mean": 0.19036686769005848,
+                "median": 0.1909722222222222,
+                "n": 38,
+                "q25": 0.1889105902777778,
+                "q75": 0.1925998263888889
+              },
+              "largest_share": {
+                "mean": 0.9245849492727528,
+                "median": 0.9826675493703694,
+                "n": 38,
+                "q25": 0.9264069264069265,
+                "q75": 0.9930633687801691
+              },
+              "resource": {
+                "mean": 0.7666744564934271,
+                "median": 0.7687553738778248,
+                "n": 38,
+                "q25": 0.7633666017753704,
+                "q75": 0.7719172877556929
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 38,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 5406.212121212121,
+              "median": 5260.0,
+              "n": 33,
+              "q25": 4367.0,
+              "q75": 6287.0
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 33,
+              "5000": 15
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.8484848484848486,
+                "median": 3.0,
+                "n": 33,
+                "q25": 2.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.4904776936026936,
+                "median": 0.4904513888888889,
+                "n": 33,
+                "q25": 0.4891493055555556,
+                "q75": 0.4921875
+              },
+              "largest_share": {
+                "mean": 0.9967453583334028,
+                "median": 0.9974003466204506,
+                "n": 33,
+                "q25": 0.9956634865568084,
+                "q75": 0.9991334488734835
+              },
+              "resource": {
+                "mean": 0.4601598137527791,
+                "median": 0.4602845348116189,
+                "n": 33,
+                "q25": 0.4584726572912967,
+                "q75": 0.4623447239929056
+              },
+              "winding": {
+                "mean": 0.45454545454545453,
+                "median": 0.0,
+                "n": 33,
+                "q25": 0.0,
+                "q75": 1.0
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 6487.5,
+              "median": 6409.0,
+              "n": 32,
+              "q25": 5421.25,
+              "q75": 7618.25
+            },
+            "reached_by_time": {
+              "1000": 0,
+              "10000": 32,
+              "5000": 7
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.71875,
+                "median": 1.0,
+                "n": 32,
+                "q25": 1.0,
+                "q75": 2.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7941623263888888,
+                "median": 0.7940538194444444,
+                "n": 32,
+                "q25": 0.7925347222222222,
+                "q75": 0.7955729166666666
+              },
+              "largest_share": {
+                "mean": 0.9994922994673885,
+                "median": 1.0,
+                "n": 32,
+                "q25": 0.9994582147879985,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.1722034242022942,
+                "median": 0.17193101916036752,
+                "n": 32,
+                "q25": 0.17087180714951283,
+                "q75": 0.17361803584217694
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 32,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 3007.3947368421054,
+              "median": 2495.0,
+              "n": 38,
+              "q25": 1601.5,
+              "q75": 3968.0
+            },
+            "end": "0.2",
+            "not_reached_both": 26,
+            "original_n": 64,
+            "reached_both": 38,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2465.4545454545455,
+              "median": 2416.0,
+              "n": 33,
+              "q25": 1997.0,
+              "q75": 2902.0
+            },
+            "end": "0.5",
+            "not_reached_both": 31,
+            "original_n": 64,
+            "reached_both": 33,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1224.125,
+              "median": 1195.0,
+              "n": 32,
+              "q25": 1013.5,
+              "q75": 1487.5
+            },
+            "end": "0.8",
+            "not_reached_both": 32,
+            "original_n": 64,
+            "reached_both": 32,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 286.0,
+              "median": 267.0,
+              "n": 32,
+              "q25": 249.0,
+              "q75": 287.75
+            },
+            "end": "B_confirm",
+            "not_reached_both": 32,
+            "original_n": 64,
+            "reached_both": 32,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/b10f0aa47ff58bd8/seed-0136523543",
+          "seed": 136523543
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/b10f0aa47ff58bd8/seed-0340816839",
+          "seed": 340816839
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/b10f0aa47ff58bd8/seed-0106833257",
+          "seed": 106833257
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 14.90625,
+            "median": 15.0,
+            "n": 64,
+            "q25": 13.0,
+            "q75": 16.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.026509602864583336,
+            "median": 0.025390625,
+            "n": 64,
+            "q25": 0.020724826388888888,
+            "q75": 0.030598958333333332
+          },
+          "depleted_fraction": {
+            "mean": 0.015163845486111112,
+            "median": 0.013671875,
+            "n": 64,
+            "q25": 0.010850694444444444,
+            "q75": 0.018663194444444444
+          },
+          "largest_share": {
+            "mean": 0.29165591882424946,
+            "median": 0.2714987714987715,
+            "n": 64,
+            "q25": 0.2264246947082768,
+            "q75": 0.34657190635451507
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.943166639159821,
+            "median": 0.9425150746927242,
+            "n": 64,
+            "q25": 0.9350097974455238,
+            "q75": 0.9519373325644283
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 10.234375,
+            "median": 10.0,
+            "n": 64,
+            "q25": 9.0,
+            "q75": 12.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.04915364583333333,
+            "median": 0.044487847222222224,
+            "n": 64,
+            "q25": 0.0322265625,
+            "q75": 0.06087239583333333
+          },
+          "depleted_fraction": {
+            "mean": 0.03974745008680555,
+            "median": 0.033854166666666664,
+            "n": 64,
+            "q25": 0.024522569444444444,
+            "q75": 0.05045572916666667
+          },
+          "largest_share": {
+            "mean": 0.47281819625174554,
+            "median": 0.443531202435312,
+            "n": 64,
+            "q25": 0.3483791280228829,
+            "q75": 0.6061892652801744
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9175622234959366,
+            "median": 0.9197384345729553,
+            "n": 64,
+            "q25": 0.900409718880362,
+            "q75": 0.938322516612976
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 8.546875,
+            "median": 8.0,
+            "n": 64,
+            "q25": 6.75,
+            "q75": 10.25
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.06053331163194445,
+            "median": 0.048394097222222224,
+            "n": 64,
+            "q25": 0.030381944444444448,
+            "q75": 0.07801649305555555
+          },
+          "depleted_fraction": {
+            "mean": 0.05228678385416667,
+            "median": 0.0390625,
+            "n": 64,
+            "q25": 0.023871527777777776,
+            "q75": 0.06901041666666667
+          },
+          "largest_share": {
+            "mean": 0.5735543642128282,
+            "median": 0.5756549232158988,
+            "n": 64,
+            "q25": 0.46705483490566035,
+            "q75": 0.6742659514398645
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9084433799419271,
+            "median": 0.9197925279322419,
+            "n": 64,
+            "q25": 0.8848489332116177,
+            "q75": 0.944265332550251
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 5.890625,
+            "median": 6.0,
+            "n": 64,
+            "q25": 4.0,
+            "q75": 7.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.09357367621527778,
+            "median": 0.06705729166666667,
+            "n": 64,
+            "q25": 0.024522569444444444,
+            "q75": 0.1392144097222222
+          },
+          "depleted_fraction": {
+            "mean": 0.08650716145833334,
+            "median": 0.0627170138888889,
+            "n": 64,
+            "q25": 0.018771701388888888,
+            "q75": 0.13118489583333334
+          },
+          "largest_share": {
+            "mean": 0.7005026084081326,
+            "median": 0.7701351351351351,
+            "n": 64,
+            "q25": 0.43710045662100455,
+            "q75": 0.9414930555555556
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.878347327116286,
+            "median": 0.9075129484767654,
+            "n": 64,
+            "q25": 0.8265616223425228,
+            "q75": 0.957407967329986
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 3.5517241379310347,
+            "median": 3.0,
+            "n": 58,
+            "q25": 2.0,
+            "q75": 5.0
+          },
+          "confirmed_before_or_at": 6,
+          "defector_fraction": {
+            "mean": 0.20051335009578544,
+            "median": 0.06901041666666666,
+            "n": 58,
+            "q25": 0.01052517361111111,
+            "q75": 0.3650173611111111
+          },
+          "depleted_fraction": {
+            "mean": 0.19494582136015326,
+            "median": 0.06293402777777778,
+            "n": 58,
+            "q25": 0.008029513888888888,
+            "q75": 0.3546006944444444
+          },
+          "largest_share": {
+            "mean": 0.8330439355276443,
+            "median": 0.9785277545809696,
+            "n": 58,
+            "q25": 0.6885714285714286,
+            "q75": 0.9972763483827563
+          },
+          "observed_nonB": 58,
+          "pending_confirmation": 1,
+          "resource": {
+            "mean": 0.7755697105628149,
+            "median": 0.9097127075440954,
+            "n": 58,
+            "q25": 0.5952054892164403,
+            "q75": 0.9762336753581431
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.1206896551724138,
+            "median": 0.0,
+            "n": 58,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 58
+        },
+        {
+          "clusters": {
+            "mean": 1.96875,
+            "median": 1.5,
+            "n": 32,
+            "q25": 1.0,
+            "q75": 3.0
+          },
+          "confirmed_before_or_at": 32,
+          "defector_fraction": {
+            "mean": 0.0751953125,
+            "median": 0.008029513888888888,
+            "n": 32,
+            "q25": 0.0016276041666666665,
+            "q75": 0.016059027777777776
+          },
+          "depleted_fraction": {
+            "mean": 0.0726318359375,
+            "median": 0.003689236111111111,
+            "n": 32,
+            "q25": 0.0,
+            "q75": 0.014539930555555556
+          },
+          "largest_share": {
+            "mean": 0.8546486359161489,
+            "median": 0.9978867167528878,
+            "n": 28,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 32,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9129311543469815,
+            "median": 0.9853763026636655,
+            "n": 32,
+            "q25": 0.9714935123568195,
+            "q75": 0.9949945494157598
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.03125,
+            "median": 0.0,
+            "n": 32,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 28
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.4482758620689655,
+          "events": 26,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9827586206896551,
+              "time": 5242.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9655172413793103,
+              "time": 5496.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9482758620689654,
+              "time": 5809.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9310344827586206,
+              "time": 6009.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9137931034482758,
+              "time": 6099.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8965517241379309,
+              "time": 6138.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8793103448275861,
+              "time": 6354.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8620689655172412,
+              "time": 6492.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8448275862068964,
+              "time": 6506.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8275862068965515,
+              "time": 6606.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8103448275862066,
+              "time": 6757.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7931034482758618,
+              "time": 6884.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7758620689655169,
+              "time": 7112.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.758620689655172,
+              "time": 7513.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7413793103448273,
+              "time": 7522.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7241379310344824,
+              "time": 7575.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7068965517241376,
+              "time": 7620.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6896551724137927,
+              "time": 7853.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6724137931034478,
+              "time": 8101.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.655172413793103,
+              "time": 8321.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6379310344827582,
+              "time": 8648.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6206896551724135,
+              "time": 8793.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6034482758620686,
+              "time": 9347.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5862068965517238,
+              "time": 9812.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5689655172413789,
+              "time": 9863.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5517241379310341,
+              "time": 9958.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 32,
+              "events": 0,
+              "survival": 0.5517241379310341,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 58,
+          "recovered": 4,
+          "rmst": 8834.999999999998,
+          "survival": 0.5517241379310341,
+          "unresolved": 28,
+          "wilson95": [
+            0.32749854047781224,
+            0.5754791687415536
+          ]
+        },
+        "landmark": 5000,
+        "n": 58,
+        "original_n": 64,
+        "pending_confirmation": 1
+      }
+    }
+  },
+  "input_versions": [
+    [
+      "3bc69847e1b07697221566a45f75d1bf152e2db8",
+      "2d8ee8c582cbd1d5"
+    ]
+  ],
+  "interpretation": "finite-window first-depletion and conditional growth descriptions; not causal, metastable or infinite-time conclusions",
+  "manifests": {
+    "N02/2f697ae8e0135dd6/seed-0124140438": "0b6aa40b192413ad01e26e7248d3fe24fd593e1c1c1b6e33a5e1ae317e0b7114",
+    "N02/2f697ae8e0135dd6/seed-0125807374": "79ab05b71236698195396c45ba8fc68c748dc57fe6b7f433ba3a5bbe63c95465",
+    "N02/2f697ae8e0135dd6/seed-0180308866": "2772632daa3e8c69cae8d9bd757da6378ad841a90324a81d009075747f6fc880",
+    "N02/2f697ae8e0135dd6/seed-0237551412": "f9d577ae6224a4a831119cd41790498728130e7d61cb0c02a729d7907c3858f2",
+    "N02/2f697ae8e0135dd6/seed-0261644457": "b53222b10b5138699bb290b690b557754aa04976bb7f5f1d774eae81f03d9402",
+    "N02/2f697ae8e0135dd6/seed-0291050642": "245b80bc1a0f37f22c3c2b57e9b51428e63007b2aebed0d086ce9470f59f9f83",
+    "N02/2f697ae8e0135dd6/seed-0352516284": "dc72b57689c61bc79ec1de9b39e890e570c9468a292097ee4049a9e6610db045",
+    "N02/2f697ae8e0135dd6/seed-0352814158": "4711027d2bb66ef0aa66a6f6598ccf535fdf940d6cc96e61161fbf6a215b627b",
+    "N02/2f697ae8e0135dd6/seed-0364897966": "d65af0b5cf914d67fe6f8275e6b03df051c579586320cec1450ca5b113d9056f",
+    "N02/2f697ae8e0135dd6/seed-0472967839": "ff09076c78d864bcf9b1ab73136cc09b9a996580209b22c039656298579c02f0",
+    "N02/2f697ae8e0135dd6/seed-0524035778": "32bd815e9d6d1eb1b429496fe0c889624a716263bc09097d60306c54dc275f53",
+    "N02/2f697ae8e0135dd6/seed-0608927335": "adf948647f1e3f1bf22a4db0d7df9e5ef5d30738256881875dfa47b7381199a9",
+    "N02/2f697ae8e0135dd6/seed-0717548032": "1a5bee47be01b2c3e07fa6ac5f6d00aa4b70f121647c5b74423f94bceb7667de",
+    "N02/2f697ae8e0135dd6/seed-0802420204": "bc02fa078323d6fc12327ea66d92efd8a99d6d25d032b5fee1ab8af42a239313",
+    "N02/2f697ae8e0135dd6/seed-0808323214": "0819be52b0978d3837e73332f9e2f85598a471d522435f4295ed4f9aa3aa40b6",
+    "N02/2f697ae8e0135dd6/seed-0924690751": "53b38a471e0b501deea5600a9f53620914e326069420bf5d3674bd6e89dbfd7a",
+    "N02/2f697ae8e0135dd6/seed-1050198737": "490009eca4154c15974f05b081cc64f301aae1db0867ad2ce1c907ea313e524d",
+    "N02/2f697ae8e0135dd6/seed-1052791248": "082c4345e64a01f795fcbbd62266ce0f016990091a9129e3bf52c1a4f7a0b72f",
+    "N02/2f697ae8e0135dd6/seed-1065707098": "dc56b0ecec7f16022529984b45d07127451f5f25bc3144ccd4c54c3d7947bb62",
+    "N02/2f697ae8e0135dd6/seed-1146966780": "b48216f253ad484a29356ce9d95dfd4b4bf284b7a4d9954def17b7cf2e5afba2",
+    "N02/2f697ae8e0135dd6/seed-1178051692": "e8c3fc80d717120b7c3974697b04760afeedd901217802017b385b9cf3b65f76",
+    "N02/2f697ae8e0135dd6/seed-1186225615": "926970963ceee60cfae7df98bef4d62ee9ea0bfdc06604c597d5290aa23a5bf3",
+    "N02/2f697ae8e0135dd6/seed-1313046303": "692ece7a3cc8fa19eab945db9fbcec86cbbcd02d27005dbe5b0f05e4fc1a1c03",
+    "N02/2f697ae8e0135dd6/seed-1322679141": "054593751545383e696b42ad75b13b99b9e37acd692eeafef4cc62fdc36eba67",
+    "N02/2f697ae8e0135dd6/seed-1660029295": "2adad36ead840a5d13f634881b029ff7c61bf6834b6a0514f18fb30f710ae6d1",
+    "N02/2f697ae8e0135dd6/seed-1663792635": "03b4f7de26c340f15717a5ab5aaeb32af5735fcf78659a78bd53dfb404efeeb5",
+    "N02/2f697ae8e0135dd6/seed-1744455528": "ce53b5912b220a2adffbc425b6436c032f58e7b9feab79779dbbc10f87021ffb",
+    "N02/2f697ae8e0135dd6/seed-1765544224": "100e9d88987e47158e2c495740d2a26ce87a343268e2ed0bed7fdec437fd4b16",
+    "N02/2f697ae8e0135dd6/seed-1785443651": "82e04c3002182a8c4babc3bbacd4d195b953a41634bdf4f06c77666d5dc9c600",
+    "N02/2f697ae8e0135dd6/seed-1826843182": "0c61395def54b4a2745d0935c3e79656080b79a861726ad3f09f6e22ada7756f",
+    "N02/2f697ae8e0135dd6/seed-1866009392": "02c26db3b88296a83038558d4008bcb6d176bb8d668971dae99d7da0ac4440d6",
+    "N02/2f697ae8e0135dd6/seed-1869395951": "cb629996cbce522378f64681ffe6dcd52e1ac17a58b358330f6bbdd1552aedc6",
+    "N02/2f697ae8e0135dd6/seed-1897665737": "b8c6c28c79ae9a2b4112ab3ccde387f238e963d4ed9da6e55af9a34310e026c7",
+    "N02/2f697ae8e0135dd6/seed-1979099721": "b68ea9c5e1f565f4dc4abebc3584bda30ae2f18467f5cad73e47596b6bb74c4c",
+    "N02/2f697ae8e0135dd6/seed-2065080414": "96cee893b4801ab3b95465ecc5b02b0ec412c8708fca617b6da7d11f2cc0ffeb",
+    "N02/2f697ae8e0135dd6/seed-2118243081": "199ff918739f322a5b3721ef7920f78c69b682d8982b5a3a791c3c2ae4dca978",
+    "N02/2f697ae8e0135dd6/seed-2158395211": "c60751395575fd7a95046609b39530353737705ba77ecaae84f423cd0692d910",
+    "N02/2f697ae8e0135dd6/seed-2337067645": "f145ee1b63c0f4cc39b15c8bf2c06f445faee61121fd69cef885db26843e5868",
+    "N02/2f697ae8e0135dd6/seed-2400153340": "44441c983a7612a2f2e02d1bcb3f39b7bcd7f2ffed38e1b985585583fabfc09c",
+    "N02/2f697ae8e0135dd6/seed-2492949982": "e5b65f9b864b3179aa3543e10897b9ab9163ea3e3878ae9d0bb3ea76d3da52e2",
+    "N02/2f697ae8e0135dd6/seed-2678458778": "d0825f18f2215e3f848e84026c076987da234714beaa851f82c7a5f10f1e7a92",
+    "N02/2f697ae8e0135dd6/seed-2685204726": "c66d48a43daaa831db02f728670d141004fd4d784030632b545aad9fce2e6dac",
+    "N02/2f697ae8e0135dd6/seed-2787651209": "d2414bca407673d55a9b33be2ef6e491fd64c17ad637a3722c25b3b872bf5786",
+    "N02/2f697ae8e0135dd6/seed-2808708716": "a02f026353a224252803d2dff6d40566dbb820bf2095db4afde74aa05ddb28ce",
+    "N02/2f697ae8e0135dd6/seed-2824412763": "80a87745a649f2a87dea8fc60c538f08dd2c601aa5985593391f386b4217ae06",
+    "N02/2f697ae8e0135dd6/seed-2869353221": "8ee1493667a12898d707209f3b27c36a9166c6ef43236b6e62ec06e393299e8d",
+    "N02/2f697ae8e0135dd6/seed-2889437772": "063aacb9c7dbb771832eb7cbd495fe32ca6b38b27d30c94cadf1522ec679d238",
+    "N02/2f697ae8e0135dd6/seed-2898213239": "64e03b7f1dcff3c465f6c7a0149cf897c1e6c1c06921670b44e11f59ca4dfec8",
+    "N02/2f697ae8e0135dd6/seed-2946890633": "4a8c10aef9ed023c49281150ba8ba3174e7bf46fc057c41480fce8b7346407b0",
+    "N02/2f697ae8e0135dd6/seed-2956130810": "264eb81c6d8053914f74b1f70aec81bc9ea7b88aa10b5578d4812bc4a65ca18c",
+    "N02/2f697ae8e0135dd6/seed-2959565412": "1dcf17c6fcc225a0c8511de1c0830ac63eddc8dc71757a24cc404f55df32619a",
+    "N02/2f697ae8e0135dd6/seed-2967947469": "0234928b6caaf6e7bd97856d0dc7d9cbd6eb290c1233da20be26de606fefa8a5",
+    "N02/2f697ae8e0135dd6/seed-2984138216": "09e7a7fbb450cb0dbaebe8ac8d279a694b3f31a06492a03083ee28dbef20fc2a",
+    "N02/2f697ae8e0135dd6/seed-3137978619": "4042523f1d981dbdaf9bccec428d5e67f531ae1dd4b0eca00fb63e96d0d00f7c",
+    "N02/2f697ae8e0135dd6/seed-3155009265": "33a89b6a57d5a50b2ff69a4f1b9d1a352a1a847ee7e01105a63ea9e5649f3a35",
+    "N02/2f697ae8e0135dd6/seed-3256142959": "7e79ea044074be3ffede2ddfa7d7335352a74f955b49bfddf299610cbd5b282e",
+    "N02/2f697ae8e0135dd6/seed-3280008248": "a3b580710441705d84bb714651bc7dea890b68e4ee6e40b2c6199f78a4d5959c",
+    "N02/2f697ae8e0135dd6/seed-3522559297": "d1c14746469044cf69d9786a273749170989511b2525a9da2b472cfb7eb6bd6c",
+    "N02/2f697ae8e0135dd6/seed-3690309885": "fc64f4e3c52d9480ee935798d98c45c84f4ecc5636c4b55ae00cdfc47157e1bc",
+    "N02/2f697ae8e0135dd6/seed-3702326160": "5cfe4434d0a71fac4c9409812fc0e15e9639e070f2aac7caf69be3181ce59142",
+    "N02/2f697ae8e0135dd6/seed-3753160995": "915701d152dc644facfd29f9586c0a5aedb3a07feea657cae98c72cf8e95df10",
+    "N02/2f697ae8e0135dd6/seed-4079846633": "51f5fceb3418bd656213c48c9669d8ac42a39a31b4f225b03c1b8ff11c5a85d1",
+    "N02/2f697ae8e0135dd6/seed-4157204135": "308fcc3c5458120d0d49686223e3e2e2d5567e4c4211b5bab7f47ae1336c2458",
+    "N02/2f697ae8e0135dd6/seed-4277854297": "cbcd6fae2bb08d3d56c77470f039c6d084e6313f10eaeaee2f1a8202e022200a",
+    "N02/67750747c41d1c85/seed-0009406413": "8c43b8604c1650260e4e7c42c72e358ccb2b0565c362485ebb40677dfddf8db9",
+    "N02/67750747c41d1c85/seed-0120736015": "ed2fdb36ad33bdd5057e2194758825c9ab60a141f5bb37792b249bf072eca4cf",
+    "N02/67750747c41d1c85/seed-0138071756": "ff201cf4165a49cfde00b228ca3bbb1239baf5b101229378ae46d59742f46504",
+    "N02/67750747c41d1c85/seed-0194976237": "6941e04c46d31b942f8d16f113eba01d27f95862128f95d869f721cdd51d2cdc",
+    "N02/67750747c41d1c85/seed-0219610139": "78e92f8a8ffb5c04f7e1f9c51f5b6249f999a2bd1085fe9edc4df76488449114",
+    "N02/67750747c41d1c85/seed-0358241161": "74538ae5cdaacd84f617876e8f0245d9621212cb90511f0b0948182969fd1416",
+    "N02/67750747c41d1c85/seed-0383210705": "a7d8dd57314f76270325401d39c36fe008be92549f4df149da41c12ec0c31c75",
+    "N02/67750747c41d1c85/seed-0446471282": "de6e2a2c703e3f1b1b7ba14c1e010d51152ff4fb2d88c0fe79684ec9440fbb29",
+    "N02/67750747c41d1c85/seed-0542258967": "28093b7849e424e74d55e925de0c792744998ade7f936bd8d7f43533be5f32a0",
+    "N02/67750747c41d1c85/seed-0556371530": "020999227a1a7e8eec2bd57d6fbbf81ffba391146208b304d48cc55e1bf1e567",
+    "N02/67750747c41d1c85/seed-0610266410": "f86c810b33c0a568f33abc00f5382fd9a135320ce3c07536214c7d415043ae5e",
+    "N02/67750747c41d1c85/seed-0645986432": "4caf1e84fc130689eeb16774269f0814ad19337e8af214a065f53fb60365b736",
+    "N02/67750747c41d1c85/seed-0702764920": "e9bb07cfd5ad073b12482d80c1777a9d5367c52a89213a43f1bdb60e99d81a19",
+    "N02/67750747c41d1c85/seed-0840147893": "8af146b774cb945f6eff465a6d31d8a25db730a7023bae03f1e2c9858eb20d32",
+    "N02/67750747c41d1c85/seed-0870141438": "d429d62687f2540fb93f04ccf77b6b69bc6436bb6cdb598ff165a85c9f8ab717",
+    "N02/67750747c41d1c85/seed-0915125862": "d6af3e85cf0126ec1474fdf18b246e99d97a751635a3ae8d7cad54a71f7d31e2",
+    "N02/67750747c41d1c85/seed-1023283491": "046400115b51c75db57bec26690d9a784d05fdb2860c46ef5f3366d5b1d98987",
+    "N02/67750747c41d1c85/seed-1025203709": "489bdc8ea5b59ad55d3b08946c48e856a6194881175a955e129e76bd3a4e02e8",
+    "N02/67750747c41d1c85/seed-1096659481": "5ef68def7246ad47ffabcd04c1abd1bac68107ffb013ab6fb7609a236e3cad24",
+    "N02/67750747c41d1c85/seed-1151772552": "448959317de7056bf906260fb036af4a0cab3575fb058b5261d3d6b2a0a3eb00",
+    "N02/67750747c41d1c85/seed-1165692436": "969f78dc23e24972744f9ee9ed8add470105f1b44db45cf1a94978bf24e80b5d",
+    "N02/67750747c41d1c85/seed-1193091178": "cd96262c8e6fe54dc353a969133d9a4b92de8436f6f78b17542a03b5ad7d741c",
+    "N02/67750747c41d1c85/seed-1376862678": "43aa4561d5c1481f0aafff1af66a235b3445793cccd2bf4c8f1c4b7c828043e1",
+    "N02/67750747c41d1c85/seed-1384405236": "c89810f4ba71323caa352024c915abb87795e122e7be2c5c2e664c7c1013e10b",
+    "N02/67750747c41d1c85/seed-1385590305": "1a3df3d2a7f57104ee7b47d3b4398443820d55696954e99abea577727e0ad66c",
+    "N02/67750747c41d1c85/seed-1389542766": "023bd05710843587993230d304d42f5b397a7f8cb0b63f9773b68b8acb8e272c",
+    "N02/67750747c41d1c85/seed-1399273470": "a6a9bfe7d2af4b441f376c3f80c81cf85f647f8fbdaece81f16a9f79c8dedc29",
+    "N02/67750747c41d1c85/seed-1551592232": "720bd30d630bfd854626d2941ca64b66944c9215c5234fe1e4c95540e605da53",
+    "N02/67750747c41d1c85/seed-1597439462": "7699330e4b5f672b017e2ab97d613dc79cad7cc018e43dc254615ac4ed6b98d4",
+    "N02/67750747c41d1c85/seed-1648341409": "7431397e61333d436677423a75ceb9686fb53625ceb3f26ea2e9c6af77157d7e",
+    "N02/67750747c41d1c85/seed-1733511318": "5f5badb9ab91936353e19fe97078011e04c18d92b7cba559f9c9d7f8bb18233d",
+    "N02/67750747c41d1c85/seed-1850370743": "2a5c6411233c483c39394bf749482bd4bef573ea56843ec1461d56c9b52ba4b0",
+    "N02/67750747c41d1c85/seed-1974026382": "8804601cf3aaf03236bda81ee0d58d715a0252aa80c05c0187505f971cf0bab6",
+    "N02/67750747c41d1c85/seed-1996605984": "d81b676b96e5b8145677448593c167b651aa0a19ff7f31e84c52680e8a07c82e",
+    "N02/67750747c41d1c85/seed-2072197618": "88546267f76781a742a9a72d1ff997977b16888234fef4731f107a216143b080",
+    "N02/67750747c41d1c85/seed-2144386822": "6a7da6b3cf5ba5200ee6ad42c8667ac74f0cd0e3b76dc95164cfb0b0b98ff8ce",
+    "N02/67750747c41d1c85/seed-2180992012": "76917b8b297818f486136135d32f38ffbfa58197e16b6a31e86f817ec0343cbc",
+    "N02/67750747c41d1c85/seed-2391302361": "4b4ab0e7b42a32bbee811eaf4f21fc50599ea90b947a5d243ce0f314fcfdf533",
+    "N02/67750747c41d1c85/seed-2393763380": "ebded5070ac40d89d6dc0d226938fe9b93b63e8f33ee66fd0478ceb4ced8281c",
+    "N02/67750747c41d1c85/seed-2547244878": "4bc87d2935355711e825da1dd0361e38a5319ad0d3b40b9d583deb8e2bf7686a",
+    "N02/67750747c41d1c85/seed-2555289152": "b42c460f37bbe2a3d9c996762dd20c4f93b9d0db38efb8b581d6915641d1da85",
+    "N02/67750747c41d1c85/seed-2649328747": "5a43cde43cd2b68708cd662450f76747b9f17d05a543ae6334dfa058a7134157",
+    "N02/67750747c41d1c85/seed-2808433140": "81368834783ab20590b09827112d5824c5c1c47f238e222676508d8daf7a44d9",
+    "N02/67750747c41d1c85/seed-2875764525": "559642d45dc4a0f5efd84f11c73201bbd5661e3e2fad09f66b4da4072a53f315",
+    "N02/67750747c41d1c85/seed-3000457898": "03144e6ece7a80394c819f812ada7d74ec8be9ed539f347ef05140620176e1d2",
+    "N02/67750747c41d1c85/seed-3088046962": "4eb28d62ecae77f1ced31758a4ac898566dedae9e22e2c0810de7b231bbfe702",
+    "N02/67750747c41d1c85/seed-3099277086": "33b2c3c7bb8f8c8fa3141a0104513d376a2591ee63d770080f24ed1fa7bf0017",
+    "N02/67750747c41d1c85/seed-3132387061": "c4d366f7be53621eff678d874bd657ec22451cbedc054715a437deaf7db898c1",
+    "N02/67750747c41d1c85/seed-3185389948": "6720cbabaa858d2ca729c79889dae828572ecb631f135bceb30fab1bcc958bbc",
+    "N02/67750747c41d1c85/seed-3209985529": "bac525f319cad34ac3a312554cd3e6232c4cc12a763232f9516df9497814ce33",
+    "N02/67750747c41d1c85/seed-3294252372": "c516ce56fb16d1356e645ca1763d0560465beedfff10890fa42f84a4b1ba1e6d",
+    "N02/67750747c41d1c85/seed-3299986684": "e1dc2a2ee340dbe8026886d988c39f5b132e041b9435c297f0b30befc9c31b04",
+    "N02/67750747c41d1c85/seed-3308173160": "e3bf11d463a98f17697970e641352fa5669eb9503adb8f4901238950c79ac934",
+    "N02/67750747c41d1c85/seed-3392050090": "9eb880321d930cc7d52046c252074ec4e9abc98c5b34097527cc695956a553c8",
+    "N02/67750747c41d1c85/seed-3460002905": "d6d52aef76b862f566438b65a5ca8b517a2653feb5525c4e1be3d2d25a34ec27",
+    "N02/67750747c41d1c85/seed-3574592379": "c4a771f5655e885295541601f2bac45ba962b8416f857feb421faf146b7aaedc",
+    "N02/67750747c41d1c85/seed-3576945495": "1ebb1ace8db87a4847ac24c2b3ee746011e14cfbeb84953c30f781ee495cd377",
+    "N02/67750747c41d1c85/seed-3889500517": "33bc30241dd234185670123d176c529bd85fc4e370f2a29cab306d5011b2f850",
+    "N02/67750747c41d1c85/seed-4050320919": "1448e8abe74a6696731b023970ca2c6820aa817e7e00281b0cfd2e24d16bcb94",
+    "N02/67750747c41d1c85/seed-4103357982": "c926ee67718f7575df93117eb28b4a3afa0dacd0346b9e5f9c3c989ecc5c4f52",
+    "N02/67750747c41d1c85/seed-4106462414": "a533cf1c6544d9b5777ea123e3cbb2fc096041a25c8302e7c32165983d64ee51",
+    "N02/67750747c41d1c85/seed-4107754626": "b05272282808571adc0cef10a8a29e020979737e734ed4f801c21ff83f98d2be",
+    "N02/67750747c41d1c85/seed-4158870653": "c9f0d276fbff024e01884bd1cf15412eefc6c96676825aaf74074feadf54d534",
+    "N02/67750747c41d1c85/seed-4251248641": "675e6beae392fb98278be33c730af08c554e57e76ace5d3e1459b53d55ec8e20",
+    "N02/b10f0aa47ff58bd8/seed-0106833257": "7f7450b7d3743acbf8ead517530c4fdd0b9c95d0a49d0af508fb4fe892c2e891",
+    "N02/b10f0aa47ff58bd8/seed-0136523543": "632737294778eeb115f47a4df27c9a68732d79f7678437f4806633a9c6a41b2d",
+    "N02/b10f0aa47ff58bd8/seed-0326679669": "136d865fcbf99bebc2ebbe522df558f38733cd6f2a7016e10658f0b9e030f9d5",
+    "N02/b10f0aa47ff58bd8/seed-0330389607": "d9ac9d05af417449aa1caaca9358192be81e6c621221b110724885c827d2bcac",
+    "N02/b10f0aa47ff58bd8/seed-0340816839": "a4dcb0de472e06d43717ff7a2c956e3a1e352eedd97933823c9c805284fc5c00",
+    "N02/b10f0aa47ff58bd8/seed-0514839409": "5ad063160a82021b7fa088658a7ec74369055e98d3113b922873675761df4712",
+    "N02/b10f0aa47ff58bd8/seed-0766506126": "563f895c56b855c0a6ff701d00d2f242bc46d05f285ca1ca93204d9d15a898b1",
+    "N02/b10f0aa47ff58bd8/seed-0815567038": "e7a3dea98eec1e41bfc0a6c0289984c83e6e6a829403ff304261e3c876217a81",
+    "N02/b10f0aa47ff58bd8/seed-0851807490": "0291a3a20fdb84918725d33758e606f3a97f3c15c181533f5853c82476e2c333",
+    "N02/b10f0aa47ff58bd8/seed-0860673683": "a66dbeaf15cee1a1853a6d44ab2141c6b8c1721aee244ae734f015011eec010c",
+    "N02/b10f0aa47ff58bd8/seed-0901174670": "62f0f79d7afc0d4f3001cd8ec798504f6fee27187af0d25b8fdd006532d6d406",
+    "N02/b10f0aa47ff58bd8/seed-1023550917": "c2676c53ecdef9905985919ebfc7954859f48c304646e77c19a6e482ade39da9",
+    "N02/b10f0aa47ff58bd8/seed-1118977133": "a5b43f1e118b5de2fe28e1fd86afbcda8ff8e79b5a52862b0c6a9bbd449c51a5",
+    "N02/b10f0aa47ff58bd8/seed-1136194797": "b4d4a262f652a9c6181ac11c7e8d50eaceb1b5f123372f1eb38098091e34c069",
+    "N02/b10f0aa47ff58bd8/seed-1184159559": "a7f7b72dfcc70029dc6c8723d59ed61e1195588ef847e68111d08e6a26a64424",
+    "N02/b10f0aa47ff58bd8/seed-1218948001": "51c0026d9930ce7a2575d8c3ef757e10ebeff025359b67456b1a68eb46fa9c12",
+    "N02/b10f0aa47ff58bd8/seed-1299694032": "20107e7992b570b826ddf2a945df609e382c074523be2b8847c63eacb68ba5d1",
+    "N02/b10f0aa47ff58bd8/seed-1302396790": "4e50d2912b6bf65c34afd7a32e3e16be1716836057588542f9d42dbb860666ab",
+    "N02/b10f0aa47ff58bd8/seed-1349714457": "1edd14699974842d08b6b21f0addcb5851f7cd97edbe029265d7a1477bb3151d",
+    "N02/b10f0aa47ff58bd8/seed-1390254240": "d6a00c3a229ad5525c899e15b971b00fbed8c2b046fd77639e05c6401c74baed",
+    "N02/b10f0aa47ff58bd8/seed-1433559265": "5ffb81d90cf97fd92edca8730ebde3a453fddd01a57f1472bd4805bc9f44ee3d",
+    "N02/b10f0aa47ff58bd8/seed-1474018111": "a119161a8cb7010d0d16b8ad39439134b20ae5a0ef078194be043b0bf54f909d",
+    "N02/b10f0aa47ff58bd8/seed-1481478981": "0002e1cc294225c50c9c6a6c2de93b69d987db43b4eaa98c6abce8e16765f355",
+    "N02/b10f0aa47ff58bd8/seed-1506057798": "99c2b9a6f978ad2098433c56f5c3c06408f51a85204e5e2cd092c2fdd24bb64c",
+    "N02/b10f0aa47ff58bd8/seed-1537743698": "c13b11f25d2351026e5b3165b4ed1c2c68b2fb39da395025249409a5212c0fd8",
+    "N02/b10f0aa47ff58bd8/seed-1558157293": "2fa88a3a416f7e46071d76acd4daf964f4e39ee25ee1a31be493b293a452fb5e",
+    "N02/b10f0aa47ff58bd8/seed-1567999530": "d387dab1bbb75e6cd00c556d17e0d9a9bbbbb87e10377e59cb9763b8768f54f1",
+    "N02/b10f0aa47ff58bd8/seed-1647236613": "912a15cb84eb0c9f35eb2aa0de5e0083e96e4b3c6b89284589a9ccef95a2deae",
+    "N02/b10f0aa47ff58bd8/seed-1715323318": "6c3599700b6ea5921ef69679a0adf40b75fa3f302c299960056de9a706150458",
+    "N02/b10f0aa47ff58bd8/seed-1754241812": "c8b4bc1a86c3322f9e529868c56935ba212e7cbe3cacd460616cc2b4b6088213",
+    "N02/b10f0aa47ff58bd8/seed-1764488936": "9aa34085a9405ad88240bed51b2abeb9d354137aa67af8b66be2a218bd063044",
+    "N02/b10f0aa47ff58bd8/seed-1798280634": "55532a46e2f00ea598a3cd5c4bee87ae588f58b342a6d64878b8be68e455c03f",
+    "N02/b10f0aa47ff58bd8/seed-1803894728": "bbc1db880737cf548bb683ca1c5af3bd3ba5d67843a08004a056e4404b2a5d35",
+    "N02/b10f0aa47ff58bd8/seed-1846900464": "eade0cacdd821e1b435136b4104ac87aae150c2ab2d7b715d9ac65721071bb08",
+    "N02/b10f0aa47ff58bd8/seed-1871817161": "a1fa82a8038de752f5c6f409ba220398279af7a6f3ade72fad777fb81dfab007",
+    "N02/b10f0aa47ff58bd8/seed-2176634033": "71a7c283b3cc83db548dac08adf82acf16823d6573cb645137919113d0525bc5",
+    "N02/b10f0aa47ff58bd8/seed-2194794599": "209c0e49950af2943f2633d34cc1fc25f4af1cb6b80177bcdd9cebed80e128ff",
+    "N02/b10f0aa47ff58bd8/seed-2418936087": "9a4ff031625c23b39f0188ccd27e9e1fb1bc992c0d6bbc4ba482ff0411c89320",
+    "N02/b10f0aa47ff58bd8/seed-2469266613": "96a7d59a25486470bd168778e3997bc1bf9e6493b5099fd13a156212e756d3d9",
+    "N02/b10f0aa47ff58bd8/seed-2478606372": "7088dc559a15747b3b39dc06d26e4bc87aeee3b8207153fb6ba6a015d32c1e72",
+    "N02/b10f0aa47ff58bd8/seed-2497661329": "88d9949f2493d4a16292675afd6c0a624613b3783fcba262230f6328eb221161",
+    "N02/b10f0aa47ff58bd8/seed-2616334230": "df58c022c50438320151ed7af3d8209f8f05eb806de72d6b4d018d01b5840abd",
+    "N02/b10f0aa47ff58bd8/seed-2631416188": "47f05dbc0999a2cda8a33a970fb20a80181b00299500e188b8499491be0e21f6",
+    "N02/b10f0aa47ff58bd8/seed-2647223985": "40d3e01c3163f7429db51ca6f5967caaeaf3d1e02513c7b71433436fe4c0c655",
+    "N02/b10f0aa47ff58bd8/seed-2846987764": "d040771f8e5c70fbd0648251e5d5d6e00ad83b41ce4970559216e2c8260411ea",
+    "N02/b10f0aa47ff58bd8/seed-3048200265": "a80f6794d98e52cd60b4fe602b84476459d7d52086c1ef3539ccae508bb65eca",
+    "N02/b10f0aa47ff58bd8/seed-3164668611": "adc2646f0eb6b68b6da1577c5f9e438862166e1f8a0228a960a51ae2af0b31cd",
+    "N02/b10f0aa47ff58bd8/seed-3208643190": "621a1bb44f1623b9fc638b151f8c0e2021078e4f74d697c883adbb7fca5bb6a5",
+    "N02/b10f0aa47ff58bd8/seed-3380207001": "55155255c692c7bfb9f8dbd42bef107947d1751921a7d53635d4a27e5ad07c37",
+    "N02/b10f0aa47ff58bd8/seed-3408809157": "2bc7f82b2add13cbeb23216e0168fdd402d7f31aa609e46df3a0c11bb38e399c",
+    "N02/b10f0aa47ff58bd8/seed-3490276826": "b5a391916d913745f4bdcce8a89f015293612fb74255b83a395278dec3ed7c07",
+    "N02/b10f0aa47ff58bd8/seed-3585931081": "ab9cd27a577791749f3d336b3d7bcd52824cec9f8a9eab21dae57f37e398b873",
+    "N02/b10f0aa47ff58bd8/seed-3668285419": "f5ee5fb4efbc8a0de3af53430062bcb8cef9b0c2147fb900c02656b0c9f4ade2",
+    "N02/b10f0aa47ff58bd8/seed-3757751889": "c3441a50245f099d24d8fad0dd07c45c35d451ff0473a5b5964e7261cc135f28",
+    "N02/b10f0aa47ff58bd8/seed-3780454980": "89f5d93a9279836b71c875423b811fef393e81169e2598c27e8e235e1326a6f9",
+    "N02/b10f0aa47ff58bd8/seed-3804362082": "eb6d52614aadd38b5a1703ed4342e9e9db8e537643dd5e945fb15a857a156330",
+    "N02/b10f0aa47ff58bd8/seed-3808623308": "6b1a24435fd48efecde30c425261cb786af98d4a35f35b10c24d6ea05c071994",
+    "N02/b10f0aa47ff58bd8/seed-3916664317": "3986a13defbe39de101ba23705c565d3407d1a7daa2bd15e8e67d0da143ebe58",
+    "N02/b10f0aa47ff58bd8/seed-3917053632": "ca3ce6770e1f58237b45cac0cf179f935d368d78b7f2be6a6492660157f5b64d",
+    "N02/b10f0aa47ff58bd8/seed-3960273238": "38dca0a98200c960cda111f2a498ab7ef0cc4db55ccbf2579f939c62d99b96e9",
+    "N02/b10f0aa47ff58bd8/seed-4031580060": "258ef44508fc8ed7b6d9fa3d9aafb5c51dfd34e50e6c621e792993fd43099030",
+    "N02/b10f0aa47ff58bd8/seed-4032035626": "d606034cb48d712014b2649c6982d13f802a0e257055f839eade20a91aa61812",
+    "N02/b10f0aa47ff58bd8/seed-4086843246": "5062272d5cd6f460b28269d459204e38d50b14d927e457f20363d0a033307cb6",
+    "N02/b10f0aa47ff58bd8/seed-4247315700": "72c2fcc99a7f8e16b3ad52bb37eacccd3e966d466b99a068abd7163c6824eee9",
+    "N02/d5fdc53874cce94c/seed-0009307555": "6886aa8733c3d28388aa8aabd034c874bd91840830b03915a7169f0f4de183f2",
+    "N02/d5fdc53874cce94c/seed-0047210609": "9c8e852678a81a170ed45c4189540bdecebf6f8f4726e52967a2ee030f72166b",
+    "N02/d5fdc53874cce94c/seed-0299165840": "665777262272010b70513d4c6247c344c7cce314a3d400d0f7eb584374e5059c",
+    "N02/d5fdc53874cce94c/seed-0318996048": "3d3aaebf54a4379a37f4e681ccf4908c7eadb488078066596681d032268eb627",
+    "N02/d5fdc53874cce94c/seed-0381838589": "2722dec0b0a552ce545525183a9cffb78a9d7749bf338cb0213257fdc7d01d3f",
+    "N02/d5fdc53874cce94c/seed-0397714309": "d2f02c6b9a74450a09616a42cc4317811c8fe2a8537d9ee5696aa81065d2aa77",
+    "N02/d5fdc53874cce94c/seed-0399570387": "27361cd3f6ca857ea75d43dbb103c848d8b02d3586caa3aa34b6f47381384626",
+    "N02/d5fdc53874cce94c/seed-0413224740": "8aa0097314b462e9c6d6b99cf4ce3eef560ae425269f4a03963df79bf41cdd07",
+    "N02/d5fdc53874cce94c/seed-0421518949": "21be004788733611fe61919499933fd20d4f9c28b5221c7e04f71f637125b6d2",
+    "N02/d5fdc53874cce94c/seed-0489779634": "f3301b891bc0278ffb273c669127c5894acd7b40f2c689fe37cbdaf795dd7903",
+    "N02/d5fdc53874cce94c/seed-0512159441": "ced1d4b9011aeb5c106f0e1729c9a20806532b7d0e66b960fab7ca674a379084",
+    "N02/d5fdc53874cce94c/seed-0574559682": "c8399b185390e17123f929e557636b85f564625c1016782f221bd656a51c88dd",
+    "N02/d5fdc53874cce94c/seed-0590764934": "7cbab99358e9a34998cf1b460e3eae3f4fb030b76ed0f31d88085f318fc676ea",
+    "N02/d5fdc53874cce94c/seed-0602055054": "42ba349a88bf897a285fa08759e261bd2fe135326d4d91f4c07340ef0ba33090",
+    "N02/d5fdc53874cce94c/seed-0887856988": "90071ac6c8f0717526e252712c0acf176c3e1b0925d9dadb5eccaca397991c36",
+    "N02/d5fdc53874cce94c/seed-1020610334": "c457ae248c56d56ccbbfcc42e34effeea56ec80d74dd103fe9ad54400b968d47",
+    "N02/d5fdc53874cce94c/seed-1021465397": "12d129379c91a215939e7fc93ce8066bff0ccfb177a2401b32c0181a31b9a273",
+    "N02/d5fdc53874cce94c/seed-1031084327": "55ead1b2e48f5d4ba56f56d10818a6fff687823a464b6356c4fef338dad291cd",
+    "N02/d5fdc53874cce94c/seed-1073553988": "61c79faec26e5ab4b1cfec8f93c609f1d895227fc9274ad5a710fc3750272544",
+    "N02/d5fdc53874cce94c/seed-1084031453": "cf62450aaca0ce9b99dce299cbc1ea781249941147dc817983eeb31aae3583cb",
+    "N02/d5fdc53874cce94c/seed-1094416813": "9352a42cb9c3be0e4bc54c47a2f4a6888dda516d654e6839345d0ef2332ae084",
+    "N02/d5fdc53874cce94c/seed-1116586248": "eba939b0d3e8e7bd351861469e0eb5ea66725a272a8f902b6b21147e417918fa",
+    "N02/d5fdc53874cce94c/seed-1182017534": "c475c16581fb36048197698c60f6e92c956a08a00b90f834eac8c79e0779e2e7",
+    "N02/d5fdc53874cce94c/seed-1219584832": "c0730a31dcab5ea6a463c7bd03e2e48328c0c9181e5654d79ab363f540e59dae",
+    "N02/d5fdc53874cce94c/seed-1365453713": "21d8d6d03a668317288ea9b54a4afbcdf5c31fa938fa4835b2c11537f788713a",
+    "N02/d5fdc53874cce94c/seed-1581821535": "fed37682e4020341c5fe2936bfd2e257a0649bfec8dab5d392332b520951603b",
+    "N02/d5fdc53874cce94c/seed-1596084614": "8e846b2101c80cc04ea14b3c5ef3407fdeae0ffd331192d6eb613042a6ea16d4",
+    "N02/d5fdc53874cce94c/seed-1613696816": "767213026d77002515ae774b2bb6215c20da92224e13b81ede124cff03395c23",
+    "N02/d5fdc53874cce94c/seed-1682787675": "3eac25bb083769c43fb23d11c2e2775db6bfc8f61ae1664f7a952f3bab46e1b2",
+    "N02/d5fdc53874cce94c/seed-1771304854": "2222ad75ff3d4adb1640b5552eafc77cabf2eb1e080080b793e6553286edb514",
+    "N02/d5fdc53874cce94c/seed-1815959515": "b2d3d252ef76fad506a3379ba7264f7421352b2232ce7ed63633c350e1f60add",
+    "N02/d5fdc53874cce94c/seed-1964617017": "07368d98525bf568dc33b95706fde86b944cf6f5525a1e1a19baad2834cae83d",
+    "N02/d5fdc53874cce94c/seed-2020435070": "8c4355481048c37fa4be61b8b248b140df729e74a830d3384719816e559b941e",
+    "N02/d5fdc53874cce94c/seed-2020773319": "3de18b626e5e991dae4c7ee65a31778bf6749ee266934604835eb6ee5cfcca96",
+    "N02/d5fdc53874cce94c/seed-2084863558": "92d37518c512aef06d7478bbcb406c0a6cbf8043f439b890554c2e94b674c47d",
+    "N02/d5fdc53874cce94c/seed-2236710384": "56bee2df19b41c704a48acd4120e6dc7820df178cbeb9ebfcf7507a85cf32109",
+    "N02/d5fdc53874cce94c/seed-2380446075": "b142a7965c34b85445abe642447d1247d1968400d27579fbfa9ba59b5072b662",
+    "N02/d5fdc53874cce94c/seed-2468292890": "41ef1a69a885dae8d29524560ec7982d67535a72d284e32ef6e9a70a9dcafe53",
+    "N02/d5fdc53874cce94c/seed-2470887956": "362e74587d0529f6ae365b1d421f623c2ccea8f0ed47d491d0a9eccab6deb3cf",
+    "N02/d5fdc53874cce94c/seed-2586888255": "76c26e67e0cf16e375dc74e933b12aa1e89daa18c692014f09052ec4761af7b8",
+    "N02/d5fdc53874cce94c/seed-2736630415": "f2c5dd1b9a34e676f7bafa1af85ea763eb52a3135a2f58b507569782d052a4f0",
+    "N02/d5fdc53874cce94c/seed-2740412630": "d19e04bc1aff95c23c6dd9c3ca654e15e23aef5dc0b6ef3a378d332fba983283",
+    "N02/d5fdc53874cce94c/seed-2885402735": "a967a11ebdc43607b5572ee991c1a9ef57ec8499588faf644a3b36d6a2959bd7",
+    "N02/d5fdc53874cce94c/seed-2959873552": "b4698847d01b3da4df96ccff6577750dd67fc3ba8941e7c921d58f5cda2c9da6",
+    "N02/d5fdc53874cce94c/seed-2961024578": "a989a473e8eac9d83461d95d18bd9fa976a89139a860fff50baa4699739e6006",
+    "N02/d5fdc53874cce94c/seed-2975936911": "1b4f58806077078a27236ed42e746dd1b8fe4ec563568f031bb169e54f4970ce",
+    "N02/d5fdc53874cce94c/seed-3026686893": "2a6c018315499a8c74c12764d5f03515f3f6a2594350154b4e89c380f61ef71c",
+    "N02/d5fdc53874cce94c/seed-3072545004": "dfebe0ad714b7ae84ac72190ae0aa5136b7e770af722e48edcb790049f8344ee",
+    "N02/d5fdc53874cce94c/seed-3260670149": "fdccc1399f857207fba0b580d55753c54eec366fa15451a008fa218c3ca42dc9",
+    "N02/d5fdc53874cce94c/seed-3309086441": "adfd494554097680583d71bf66c5a740bb75b75c8ae68810ad821a695af5e146",
+    "N02/d5fdc53874cce94c/seed-3330045758": "aa34001f07b313c647ee66fe33cac21bbce847c06374d23d62cf127f1c749afe",
+    "N02/d5fdc53874cce94c/seed-3402237373": "7c8481ce37bc1645afca89f3fd566d12b740f7632c1411546b5bc0000244ed88",
+    "N02/d5fdc53874cce94c/seed-3409946759": "cfaf9dc85844fc14f3b7bd9aa35ebfa107fce1301e1b4e3d8c0ef20dd88c3394",
+    "N02/d5fdc53874cce94c/seed-3452378589": "ad08ef9c3ca49e4d3a76b6ff50e8628cdca4edfaa7b5f68fb19753912cf9fa1f",
+    "N02/d5fdc53874cce94c/seed-3513433086": "65529c9f9b2c5dc7db82d5cbb0936e4bb63019fd8561e7d4736fa8e9ff84d966",
+    "N02/d5fdc53874cce94c/seed-3553583280": "6a2ac099bb89451d88fe911e5d67068d485cc042090938c3b0a10206f7fd48ef",
+    "N02/d5fdc53874cce94c/seed-3734372770": "50d25aa6af7dda712991facdc5c1e0ae0c0ca29b7db65986fabbf8ef8ab19ab9",
+    "N02/d5fdc53874cce94c/seed-3789254437": "72b03a553c8539af96d40ce0dcba5479866c5acd2d6a01eb1d1e6e2801c0ae65",
+    "N02/d5fdc53874cce94c/seed-3813677576": "9f642e3fc88d78d1df79eb9022d20a18fb188afbb06325275f45d4170c3a4da5",
+    "N02/d5fdc53874cce94c/seed-4019027873": "7851c4649a657d2e7a4bafa4e7eaa72f158d07b3a3b9891479a40390524680db",
+    "N02/d5fdc53874cce94c/seed-4020369252": "94a9b285283a99ebf242adf9dc33439a9284de686bea6e65a5009d3e41389970",
+    "N02/d5fdc53874cce94c/seed-4052711736": "95d9fe2105bf9ed20085d000a17d06d66193cc313f3d43d33bbca45ee4f667f3",
+    "N02/d5fdc53874cce94c/seed-4101619786": "ab864f8fa168ba2539f035196d90492f64fd9b58bef6dedbe7bcd8beced8bd2c",
+    "N02/d5fdc53874cce94c/seed-4171368525": "702017a1f2821a9bfe5d94747ac80b5383c04ef6ff4f88ae52a8b21bac8f089f"
+  },
+  "resource_contrasts": {
+    "comparisons": [
+      {
+        "newcombe95": [
+          0.3980826045839261,
+          0.6482401257482395
+        ],
+        "random_minus_compact": 0.53125,
+        "seed_resource": 0.0
+      },
+      {
+        "newcombe95": [
+          0.3474754975493291,
+          0.6040471857912652
+        ],
+        "random_minus_compact": 0.484375,
+        "seed_resource": 1.0
+      }
+    ],
+    "interaction_point_estimate": 0.046875,
+    "scope": "pre-specified descriptive differences; interaction point only, no interaction or equivalence test"
+  }
+}

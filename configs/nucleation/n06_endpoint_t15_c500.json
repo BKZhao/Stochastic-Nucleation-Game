@@ -1,0 +1,68 @@
+{
+  "master_seed": 202610106,
+  "replicas_original": 8,
+  "replicas_intervention": 8,
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        -17
+      ]
+    }
+  ],
+  "shift": [
+    17,
+    12
+  ],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {
+        "count": 12,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.15,
+      "resource_max": 0.15,
+      "confirm_sweeps": 500
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Endpoint-sensitivity cell (R3b): thresholds 0.15 x confirmation 500 sweeps against the default (0.2, 250); 12 smallest-seed direction mothers, three core arms, 8 clones. Descriptive: sign stability of the paired medium-minus-small contrast. Endpoint campaign.",
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm"
+}

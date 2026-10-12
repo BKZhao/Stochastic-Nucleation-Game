@@ -1,0 +1,1135 @@
+{
+  "clone_seeds": 4,
+  "continuation_sweeps": 3000,
+  "direction_config": "configs/nucleation/n06_direction_controls.json",
+  "direction_config_sha256": "b8f1cadbfe62ea716cc2fc58b6ec9173af149750dcdf5f981069c2883d1876d1",
+  "identity": {
+    "analysis_sha256": "ce3119c594384e52eb1c48663328bfc7d8aadcedad785f9fa40b9c480043e660",
+    "clone_seeds": 4,
+    "continuation_sweeps": 3000,
+    "direction_config_sha256": "b8f1cadbfe62ea716cc2fc58b6ec9173af149750dcdf5f981069c2883d1876d1",
+    "mothers": 12
+  },
+  "interpretation": "post-confirmation continuation without the stopping rule: a reversal is any continuation whose cooperation fraction re-exceeds the 0.2 collapse threshold within the continuation window; zero reversals supports \"persistent macroscopic depletion\", any reversal demotes the claim to a finite-horizon statement",
+  "n_mothers": 12,
+  "n_reversals": 0,
+  "n_states": 36,
+  "rows": [
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12239583333333333,
+          "seed": 104717147
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 2177512229
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1228298611111111,
+          "seed": 3100747024
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1271701388888889,
+          "seed": 3104507330
+        }
+      ],
+      "confirm_time": 16306,
+      "max_cooperation": 0.1271701388888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/e00df2e5a648f793/seed-0689558693"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1449652777777778,
+          "seed": 1025923088
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1384548611111111,
+          "seed": 383470525
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1423611111111111,
+          "seed": 1207930882
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1384548611111111,
+          "seed": 235197841
+        }
+      ],
+      "confirm_time": 6930,
+      "max_cooperation": 0.1449652777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/7e534f39db28bff5/seed-0432563480"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 3302841561
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 3113123523
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1189236111111111,
+          "seed": 2998117240
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12196180555555555,
+          "seed": 3456120179
+        }
+      ],
+      "confirm_time": 27752,
+      "max_cooperation": 0.12196180555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118925405/states/growth-0.05.npz",
+      "run": "N06/4901b806aa817508/seed-0942664776"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12977430555555555,
+          "seed": 1908283878
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13151041666666666,
+          "seed": 958936183
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12977430555555555,
+          "seed": 3731212120
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1349826388888889,
+          "seed": 1738860097
+        }
+      ],
+      "confirm_time": 23232,
+      "max_cooperation": 0.1349826388888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118960116/states/growth-0.05.npz",
+      "run": "N06/f4c04fddc9d8746d/seed-0347732906"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07682291666666667,
+          "seed": 2970792937
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0759548611111111,
+          "seed": 237165670
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0759548611111111,
+          "seed": 4172387292
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0759548611111111,
+          "seed": 1346249659
+        }
+      ],
+      "confirm_time": 8276,
+      "max_cooperation": 0.07682291666666667,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0224929278/states/growth-0.05.npz",
+      "run": "N06/67e4fede8275856a/seed-0827940016"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11762152777777778,
+          "seed": 4224871518
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11762152777777778,
+          "seed": 136295619
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11762152777777778,
+          "seed": 4217434327
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11762152777777778,
+          "seed": 1435160277
+        }
+      ],
+      "confirm_time": 11869,
+      "max_cooperation": 0.11762152777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0238425964/states/growth-0.05.npz",
+      "run": "N06/4bde0f0ac955b67a/seed-0479524834"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08940972222222222,
+          "seed": 3975339872
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08984375,
+          "seed": 3301509266
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08680555555555555,
+          "seed": 1621321526
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09461805555555555,
+          "seed": 4288468481
+        }
+      ],
+      "confirm_time": 8430,
+      "max_cooperation": 0.09461805555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0254186848/states/growth-0.05.npz",
+      "run": "N06/0455db6f0bb78a4d/seed-0845523385"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11284722222222222,
+          "seed": 2539700176
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11024305555555555,
+          "seed": 1520098659
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11024305555555555,
+          "seed": 3797746989
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11024305555555555,
+          "seed": 2051357635
+        }
+      ],
+      "confirm_time": 8775,
+      "max_cooperation": 0.11284722222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 124,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0278120410/states/growth-0.05.npz",
+      "run": "N06/1bd7a6a1b0beed5c/seed-0997218935"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.14930555555555555,
+          "seed": 105819252
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.15147569444444445,
+          "seed": 224870090
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1519097222222222,
+          "seed": 957885234
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1488715277777778,
+          "seed": 2355338052
+        }
+      ],
+      "confirm_time": 15244,
+      "max_cooperation": 0.1519097222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0404008991/states/growth-0.05.npz",
+      "run": "N06/ee49a7d166468b11/seed-0263918829"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1111111111111111,
+          "seed": 1498896472
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10677083333333333,
+          "seed": 2440765213
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10807291666666667,
+          "seed": 3790827114
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10286458333333333,
+          "seed": 2227792851
+        }
+      ],
+      "confirm_time": 6624,
+      "max_cooperation": 0.1111111111111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0475060249/states/growth-0.05.npz",
+      "run": "N06/1e4142679d022b6d/seed-0513932072"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1189236111111111,
+          "seed": 1995120885
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11588541666666667,
+          "seed": 1498004110
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1189236111111111,
+          "seed": 289279104
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11631944444444445,
+          "seed": 2374822465
+        }
+      ],
+      "confirm_time": 12617,
+      "max_cooperation": 0.1189236111111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0486817206/states/growth-0.05.npz",
+      "run": "N06/1301555edfa103ab/seed-0661755072"
+    },
+    {
+      "arm": "original",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10069444444444445,
+          "seed": 1180014563
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10243055555555555,
+          "seed": 1557671989
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09852430555555555,
+          "seed": 680125990
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09722222222222222,
+          "seed": 302820239
+        }
+      ],
+      "confirm_time": 4398,
+      "max_cooperation": 0.10243055555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0544883635/states/growth-0.05.npz",
+      "run": "N06/d8bbffeeabbc5ef2/seed-0452418513"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09331597222222222,
+          "seed": 1312670962
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08897569444444445,
+          "seed": 2607784823
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09027777777777778,
+          "seed": 3158993684
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09114583333333333,
+          "seed": 2395358318
+        }
+      ],
+      "confirm_time": 14554,
+      "max_cooperation": 0.09331597222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/8dc2ab7bc9c6a8af/seed-0754856263"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13020833333333334,
+          "seed": 3641269382
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1323784722222222,
+          "seed": 3315678823
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1449652777777778,
+          "seed": 2882426483
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13585069444444445,
+          "seed": 2183774156
+        }
+      ],
+      "confirm_time": 5823,
+      "max_cooperation": 0.1449652777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/ce3b3d25d41f9ebb/seed-0162358583"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13585069444444445,
+          "seed": 3290708604
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13671875,
+          "seed": 2783228347
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13368055555555555,
+          "seed": 2831334271
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13671875,
+          "seed": 1386831180
+        }
+      ],
+      "confirm_time": 20002,
+      "max_cooperation": 0.13671875,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118925405/states/growth-0.05.npz",
+      "run": "N06/070024862479ff12/seed-1426637159"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12760416666666666,
+          "seed": 92356721
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12196180555555555,
+          "seed": 1295566515
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12630208333333334,
+          "seed": 1903806125
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11979166666666667,
+          "seed": 439654330
+        }
+      ],
+      "confirm_time": 7027,
+      "max_cooperation": 0.12760416666666666,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118960116/states/growth-0.05.npz",
+      "run": "N06/99fddec9a5630aab/seed-0398081245"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10546875,
+          "seed": 1613373465
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1076388888888889,
+          "seed": 1469111770
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10590277777777778,
+          "seed": 2146378891
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1076388888888889,
+          "seed": 4173921638
+        }
+      ],
+      "confirm_time": 7707,
+      "max_cooperation": 0.1076388888888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0224929278/states/growth-0.05.npz",
+      "run": "N06/0d0e1ad6c7dbd979/seed-1203166738"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 2532033245
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1193576388888889,
+          "seed": 2198362841
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11805555555555555,
+          "seed": 3499742599
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1154513888888889,
+          "seed": 984337624
+        }
+      ],
+      "confirm_time": 7550,
+      "max_cooperation": 0.1193576388888889,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0238425964/states/growth-0.05.npz",
+      "run": "N06/94bb5285d24d5eac/seed-0848978349"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13368055555555555,
+          "seed": 4247451825
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12760416666666666,
+          "seed": 823275986
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.125,
+          "seed": 1133508006
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1267361111111111,
+          "seed": 395541282
+        }
+      ],
+      "confirm_time": 5986,
+      "max_cooperation": 0.13368055555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0254186848/states/growth-0.05.npz",
+      "run": "N06/500504bd6eff15fc/seed-0205451003"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07291666666666667,
+          "seed": 478288730
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0759548611111111,
+          "seed": 4049995257
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07465277777777778,
+          "seed": 1262930690
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07378472222222222,
+          "seed": 2063999299
+        }
+      ],
+      "confirm_time": 8220,
+      "max_cooperation": 0.0759548611111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 124,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0278120410/states/growth-0.05.npz",
+      "run": "N06/19e9540235e41740/seed-2004251474"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11241319444444445,
+          "seed": 741837178
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1154513888888889,
+          "seed": 2407404968
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1150173611111111,
+          "seed": 3084775138
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1171875,
+          "seed": 1295016963
+        }
+      ],
+      "confirm_time": 8033,
+      "max_cooperation": 0.1171875,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0404008991/states/growth-0.05.npz",
+      "run": "N06/23c8a5196269b2cd/seed-0523188093"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10243055555555555,
+          "seed": 377100406
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10590277777777778,
+          "seed": 3944795989
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10069444444444445,
+          "seed": 2215364199
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10069444444444445,
+          "seed": 3368298738
+        }
+      ],
+      "confirm_time": 8830,
+      "max_cooperation": 0.10590277777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0475060249/states/growth-0.05.npz",
+      "run": "N06/6d87cd7409a1ad5f/seed-0514966335"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07161458333333333,
+          "seed": 2123964934
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07421875,
+          "seed": 2406232676
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07378472222222222,
+          "seed": 3955998085
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07161458333333333,
+          "seed": 545197191
+        }
+      ],
+      "confirm_time": 9865,
+      "max_cooperation": 0.07421875,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0486817206/states/growth-0.05.npz",
+      "run": "N06/59d3c53c2d9c8ec7/seed-1300789749"
+    },
+    {
+      "arm": "shifted(2, 1)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1228298611111111,
+          "seed": 2753115033
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 2339350064
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11805555555555555,
+          "seed": 3749247333
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11805555555555555,
+          "seed": 3181313579
+        }
+      ],
+      "confirm_time": 10793,
+      "max_cooperation": 0.1228298611111111,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0544883635/states/growth-0.05.npz",
+      "run": "N06/5362c91e731b6fd4/seed-0634571109"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0876736111111111,
+          "seed": 2500753278
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09071180555555555,
+          "seed": 1776012034
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08680555555555555,
+          "seed": 846594950
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0876736111111111,
+          "seed": 3861640013
+        }
+      ],
+      "confirm_time": 14275,
+      "max_cooperation": 0.09071180555555555,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 116,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "run": "N06/058e4c42f75b113c/seed-0203986966"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0959201388888889,
+          "seed": 2402209987
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0959201388888889,
+          "seed": 3738362781
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09678819444444445,
+          "seed": 873116108
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.09765625,
+          "seed": 3522737920
+        }
+      ],
+      "confirm_time": 8625,
+      "max_cooperation": 0.09765625,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "run": "N06/95083d1ec8e9553b/seed-0079084756"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 4044538706
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 1532448350
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 3856059697
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11675347222222222,
+          "seed": 294081320
+        }
+      ],
+      "confirm_time": 12186,
+      "max_cooperation": 0.11675347222222222,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118925405/states/growth-0.05.npz",
+      "run": "N06/b28d2cf1c03c7659/seed-0204367812"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.109375,
+          "seed": 413351831
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1076388888888889,
+          "seed": 1109439695
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10460069444444445,
+          "seed": 3666415953
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10243055555555555,
+          "seed": 3693074422
+        }
+      ],
+      "confirm_time": 11231,
+      "max_cooperation": 0.109375,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118960116/states/growth-0.05.npz",
+      "run": "N06/b3a628c801d36e40/seed-1465139026"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07552083333333333,
+          "seed": 3986529008
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0763888888888889,
+          "seed": 3760328681
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07682291666666667,
+          "seed": 2494051338
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07855902777777778,
+          "seed": 1276352635
+        }
+      ],
+      "confirm_time": 8927,
+      "max_cooperation": 0.07855902777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0224929278/states/growth-0.05.npz",
+      "run": "N06/fe24c578044c1bc9/seed-0696002131"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11328125,
+          "seed": 2945118581
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1115451388888889,
+          "seed": 1477299437
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10980902777777778,
+          "seed": 226227666
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1115451388888889,
+          "seed": 3698391161
+        }
+      ],
+      "confirm_time": 29201,
+      "max_cooperation": 0.11328125,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0238425964/states/growth-0.05.npz",
+      "run": "N06/75a7829155b713a4/seed-0192377274"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11328125,
+          "seed": 1130172261
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.109375,
+          "seed": 3997043913
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.11067708333333333,
+          "seed": 2801321677
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.10677083333333333,
+          "seed": 3181479052
+        }
+      ],
+      "confirm_time": 9334,
+      "max_cooperation": 0.11328125,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0254186848/states/growth-0.05.npz",
+      "run": "N06/5e5cc97ed8bfb74b/seed-1478847110"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07552083333333333,
+          "seed": 1551868583
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.0798611111111111,
+          "seed": 484904710
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.08333333333333333,
+          "seed": 181978271
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.07725694444444445,
+          "seed": 3864279531
+        }
+      ],
+      "confirm_time": 7627,
+      "max_cooperation": 0.08333333333333333,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 124,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0278120410/states/growth-0.05.npz",
+      "run": "N06/2fa4218351c7892b/seed-0638302384"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.04296875,
+          "seed": 4213486310
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.044270833333333336,
+          "seed": 469423121
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.042534722222222224,
+          "seed": 1690071125
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.04296875,
+          "seed": 1420920256
+        }
+      ],
+      "confirm_time": 10177,
+      "max_cooperation": 0.044270833333333336,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0404008991/states/growth-0.05.npz",
+      "run": "N06/168aa894214fa88c/seed-1169500325"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.13151041666666666,
+          "seed": 2153328240
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12586805555555555,
+          "seed": 2243881840
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1267361111111111,
+          "seed": 3114337142
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1284722222222222,
+          "seed": 1561944202
+        }
+      ],
+      "confirm_time": 39050,
+      "max_cooperation": 0.13151041666666666,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0475060249/states/growth-0.05.npz",
+      "run": "N06/ce9f32f2638d36a9/seed-0042376497"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1388888888888889,
+          "seed": 812597279
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.14192708333333334,
+          "seed": 606911477
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.1410590277777778,
+          "seed": 1208493304
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.14192708333333334,
+          "seed": 4046990790
+        }
+      ],
+      "confirm_time": 14097,
+      "max_cooperation": 0.14192708333333334,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 118,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0486817206/states/growth-0.05.npz",
+      "run": "N06/0c30cba67998d108/seed-0138129256"
+    },
+    {
+      "arm": "shifted(5, -17)",
+      "clones": [
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 3855384574
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 3918118176
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 1820944034
+        },
+        {
+          "final_resource": 5e-324,
+          "max_cooperation": 0.12152777777777778,
+          "seed": 3536428262
+        }
+      ],
+      "confirm_time": 7052,
+      "max_cooperation": 0.12152777777777778,
+      "mean_final_resource": 5e-324,
+      "mother_defectors": 117,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0544883635/states/growth-0.05.npz",
+      "run": "N06/7a600e895fac6c14/seed-0248484368"
+    }
+  ]
+}

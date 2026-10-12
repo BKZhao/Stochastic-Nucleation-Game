@@ -1,0 +1,52 @@
+{
+  "analysis": {
+    "alpha": 0.05,
+    "confidence": 0.95,
+    "difference_interval": "newcombe_wilson_no_continuity_correction",
+    "interim_testing": false,
+    "primary_contrast": "random_minus_compact",
+    "test": "fisher_two_sided_probability_ordering"
+  },
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 16
+    },
+    "experiment_id": "N03",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 1000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 10000
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage.shape": [
+      "compact",
+      "random"
+    ]
+  },
+  "master_seed": 202610063,
+  "replicas": 256,
+  "selection_rationale": "Single independent confirmation: random minus compact risk, L48 b1.16 D.40 mu0 m16 T10000. Exploratory selection samples excluded."
+}

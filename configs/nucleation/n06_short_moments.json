@@ -1,0 +1,47 @@
+{
+  "master_seed": 202610074,
+  "replicas_original": 64,
+  "replicas_intervention": 64,
+  "arms": ["original", "adapted", "shifted"],
+  "shift": [17, 12],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "252d539cf24a4c7a",
+    "rules": {
+      "compact_16": {"count": 15, "rule": "all"},
+      "random_16": {"count": 15, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 20,
+      "sample_every": 1,
+      "snapshot_every": 20,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Short-horizon conditional moments from the same frozen mothers as the fate continuation: a_delta(X)=E[N_D(delta)-N_D(0)]/delta and b_delta(X)=Var[N_D(delta)-N_D(0)]/delta over 64 fresh clones per mother and arm, deltas 1/2/5/10/20. Identification screen separating net drift (predicted by J_pre) from interface random activity (predicted by the edge-count second-moment identity) and locating which moment the resource arms change first. Mother identity binding enabled; not a confirmatory test.",
+  "interpretation": "conditional short-horizon drift and variance per mother and arm; identification screen, no endpoint claims"
+}

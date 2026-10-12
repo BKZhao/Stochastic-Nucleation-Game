@@ -1,0 +1,27 @@
+\documentclass[aps,pre,reprint,amsmath,amssymb,longbibliography]{revtex4-2}
+\input{preamble}
+\input{frontmatter}
+\externaldocument[main-]{main}
+\renewcommand{\thesection}{S\Roman{section}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\bibnumfmt}[1]{[S#1]}
+\renewcommand{\citenumfont}[1]{S#1}
+\begin{document}
+\raggedbottom
+\title{Supplemental Material for\\\papertitle}
+\paperauthorblock
+\maketitle
+\noindent
+This document contains complete derivations, numerical protocols, additional
+controls, and supporting spatial and dynamical results. Figures, equations,
+tables, sections, and literature citations belonging to this document carry
+an S prefix; unprefixed numbers refer to the main article.
+\input{sections/A_derivations}
+\input{sections/B_checks}
+\onecolumngrid
+\clearpage
+\input{sections/C_figures}
+\bibliography{references}
+\end{document}

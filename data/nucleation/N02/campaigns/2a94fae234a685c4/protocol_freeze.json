@@ -1,0 +1,10 @@
+{
+  "campaign_hash": "2a94fae234a685c4",
+  "git_policy": "No new commit/push; source archive and dirty provenance record actual code.",
+  "jobs": 256,
+  "maximum_site_visits": 5898240000,
+  "overlapping_seeds": 0,
+  "previous_formal_jobs": 2560,
+  "protocol_sha256": "9c51759bedc1460536e30137c939e9cfbc2f8107abb88c29ba2517168c43d9f4",
+  "timestamp_utc": "2026-10-05T16:41:59.259818+00:00"
+}

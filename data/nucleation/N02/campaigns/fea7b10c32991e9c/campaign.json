@@ -1,0 +1,93 @@
+{
+  "analysis": {
+    "formal_hypothesis_test": false,
+    "interim_testing": false,
+    "outcome_times": [
+      1000,
+      5000,
+      10000
+    ],
+    "representative_rule": "smallest dynamic seed within each geometry/resource cell and 10000-sweep outcome",
+    "scope": "Exploratory geometry x resource-intervention comparison; no equivalence, natural mutation or metastability claim.",
+    "spatial_times": [
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000
+    ],
+    "unresolved_landmark": 5000
+  },
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 16,
+      "resource_value": 0.0,
+      "shape": "compact"
+    },
+    "experiment_id": "N02",
+    "growth": {
+      "defector_fractions": [
+        0.05,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "snapshot_crossings": true
+    },
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 500,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 10000
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage": [
+      {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "random"
+      },
+      {
+        "count": 16,
+        "resource_value": 1.0,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "resource_value": 1.0,
+        "shape": "random"
+      }
+    ]
+  },
+  "master_seed": 202610067,
+  "replicas": 64,
+  "selection_rationale": "Independent 2x2 mechanism screen: geometry by initial seed resource at the fixed N03 model setting; no natural-mutation equivalence claim."
+}

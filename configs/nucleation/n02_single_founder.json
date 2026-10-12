@@ -1,0 +1,46 @@
+{
+  "master_seed": 202610064,
+  "replicas": 256,
+  "base": {
+    "experiment_id": "N02",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 10000,
+      "sample_every": 10,
+      "snapshot_every": 1000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes",
+    "damage": {
+      "count": 1,
+      "shape": "compact"
+    }
+  },
+  "selection_rationale": "Fixed-budget mechanism screening: one planted D/r0 site at the N03 setting; compare its finite-horizon risk with the independent-channel OR benchmark for 16 founders.",
+  "analysis": {
+    "benchmark": "1-(1-P1(T))^16",
+    "confidence": 0.95,
+    "interim_testing": false,
+    "formal_hypothesis_test": false,
+    "scope": "Descriptive finite-horizon mechanism screen; not a test of nucleation, causal interaction, or equivalence."
+  }
+}

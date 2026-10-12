@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig01_phase.pdf",
+      "sha256": "44439e598ac2edd40e99746e29c7356501dcfe3a35b88be613b4e9dfbb67a0ab"
+    },
+    {
+      "path": "figures/nucleation/paper/fig01_phase.png",
+      "sha256": "db248c7fe31524e0e3ff22faf0254f597c82d0d12c7a1da1bbbccd909c314e9a"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/4d9560bf3c20c245/phase.json",
+      "sha256": "5a686afc2718faf4fb914e06896af2c1f0253236d53eee013c36a986dce63e28"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_phase.py",
+      "sha256": "cc545d715bb15160a7381bac9e80d7c45ce385e5ff627752d0f64ef428e3d21e"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Complete 41 by 41 measured grid. Four panels: two collapse-probability maps, dispersed-minus-compact contrast, and D=0.4 section. 64 paths per cell, T=10000, L=48, m=16. Colors are cell estimates; white half-probability contours are interpolated guides. No interval artists, smoothing, extrapolation or significance masks. All three outcome contrasts were checked to sum to zero."
+}

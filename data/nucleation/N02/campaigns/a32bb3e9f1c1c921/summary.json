@@ -1,0 +1,2410 @@
+{
+  "cells": [
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "07526c0a72095e67",
+      "damage": {
+        "count": 4,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 4,
+      "max_strategy_cluster": 6,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "0959eea6cc5ee2b5",
+      "damage": {
+        "count": 4,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 6,
+      "max_strategy_cluster": 10,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "0dd8063e279196b2",
+      "damage": {
+        "count": 4,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 11,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "10d4bf1138fcf78c",
+      "damage": {
+        "count": 64,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 64,
+      "max_strategy_cluster": 64,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "17c370922813355c",
+      "damage": {
+        "count": 32,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 32,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "1fff51f96eee7024",
+      "damage": {
+        "count": 16,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 14,
+      "max_strategy_cluster": 15,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "2a6d171978e20768",
+      "damage": {
+        "count": 16,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "2c653c08e32f8291",
+      "damage": {
+        "count": 96,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 25,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "425a56f973a8bad3",
+      "damage": {
+        "count": 4,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 9,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "433b18791498f298",
+      "damage": {
+        "count": 8,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 10,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "44d1aa81d0f588ec",
+      "damage": {
+        "count": 96,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 96,
+      "max_strategy_cluster": 96,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "4ac3f58ace588788",
+      "damage": {
+        "count": 96,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 24,
+      "max_strategy_cluster": 24,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "5092619d0fcf70e6",
+      "damage": {
+        "count": 96,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 96,
+      "max_strategy_cluster": 96,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "529b3a3a4496e3eb",
+      "damage": {
+        "count": 96,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 96,
+      "max_strategy_cluster": 96,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "59d4091af8c3101d",
+      "damage": {
+        "count": 64,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 64,
+      "max_strategy_cluster": 64,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "5a1c1ab0d2408ad8",
+      "damage": {
+        "count": 32,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 32,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "5a24723e26ce2b43",
+      "damage": {
+        "count": 32,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 11,
+      "max_strategy_cluster": 14,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "5bee427ad6ecabb9",
+      "damage": {
+        "count": 16,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "5d5e31f9580449a9",
+      "damage": {
+        "count": 8,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 12,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "62ca1fbe1254afbd",
+      "damage": {
+        "count": 8,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 11,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "64a84ca9687ada2a",
+      "damage": {
+        "count": 16,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "682db5b12cfc4ce0",
+      "damage": {
+        "count": 32,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 32,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "697452972f0cf8a1",
+      "damage": {
+        "count": 96,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 96,
+      "max_strategy_cluster": 96,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "6ab0046fbed2e883",
+      "damage": {
+        "count": 32,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 32,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "7675d83f2daae3b7",
+      "damage": {
+        "count": 32,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 19,
+      "max_strategy_cluster": 24,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "769b33918eaa37c2",
+      "damage": {
+        "count": 8,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 5,
+      "max_strategy_cluster": 9,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "78e1263d9428c0aa",
+      "damage": {
+        "count": 16,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "7b19434ae4dad7f3",
+      "damage": {
+        "count": 64,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "7e93e46e737cb555",
+      "damage": {
+        "count": 4,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 5,
+      "max_strategy_cluster": 6,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "8b4145fef0afd9f4",
+      "damage": {
+        "count": 8,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 10,
+      "max_strategy_cluster": 12,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "964f2c837aa8deba",
+      "damage": {
+        "count": 32,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 10,
+      "max_strategy_cluster": 14,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "9a8c6eb548be9ee5",
+      "damage": {
+        "count": 64,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 12,
+      "max_strategy_cluster": 17,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "9ad57cd50c3a17a4",
+      "damage": {
+        "count": 4,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 11,
+      "max_strategy_cluster": 17,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "9e07c8b767aebc2d",
+      "damage": {
+        "count": 8,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 5,
+      "max_strategy_cluster": 10,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "a794327b8b069fe4",
+      "damage": {
+        "count": 16,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 10,
+      "max_strategy_cluster": 11,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "a91f987ecefb99fd",
+      "damage": {
+        "count": 96,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 15,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "ada21b0a9dd82a8d",
+      "damage": {
+        "count": 64,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 64,
+      "max_strategy_cluster": 64,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "b85b23236860cb53",
+      "damage": {
+        "count": 4,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 5,
+      "max_strategy_cluster": 8,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "bb21142b53079875",
+      "damage": {
+        "count": 64,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 29,
+      "max_strategy_cluster": 32,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "bc0ab50efc8aa99f",
+      "damage": {
+        "count": 64,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 64,
+      "max_strategy_cluster": 64,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "c433850e2e811ade",
+      "damage": {
+        "count": 16,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 6,
+      "max_strategy_cluster": 9,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "c97d2eb8d09c6f22",
+      "damage": {
+        "count": 16,
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 18,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "cbc461e5e2abc2a3",
+      "damage": {
+        "count": 8,
+        "shape": "stripe"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 8,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "ce48cd74b9782d69",
+      "damage": {
+        "count": 4,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 6,
+      "max_strategy_cluster": 7,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "d23cd0019b213a16",
+      "damage": {
+        "count": 96,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 24,
+      "max_strategy_cluster": 24,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "d7f8bd1aada24cec",
+      "damage": {
+        "count": 32,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 8,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "e11015804dc26882",
+      "damage": {
+        "count": 64,
+        "shape": "four_patches"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 16,
+      "max_strategy_cluster": 16,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "e4a86edeee153ef1",
+      "damage": {
+        "count": 8,
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 8,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 8,
+          "censored": 8,
+          "events": 0,
+          "survival": 1.0,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 8,
+      "max_strategy_cluster": 8,
+      "median": null,
+      "n": 8,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.15,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.12
+      },
+      "recovered": 8,
+      "rmst": 10000.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.3244075648838801
+      ],
+      "zero_event_upper95": 0.31234397806636793
+    }
+  ],
+  "completed_runs": 384,
+  "elapsed_seconds": 112.41831988468766,
+  "expected_runs": 384,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "d8624c5695d4fa9d",
+  "total_site_visits": 8847360000
+}

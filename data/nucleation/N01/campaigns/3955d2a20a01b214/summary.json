@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "L": 48,
+      "collapse_risk": 1.0,
+      "config_hash": "48982a44e1bcc1b9",
+      "damage": null,
+      "events": 2,
+      "horizon": 1000,
+      "km": [
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 2,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.5,
+          "time": 420.0
+        },
+        {
+          "at_risk": 1,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.0,
+          "time": 435.0
+        }
+      ],
+      "max_depleted_cluster": 2304,
+      "max_strategy_cluster": 2304,
+      "median": 420.0,
+      "n": 2,
+      "not_collapsed_not_recovered": 0,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.3,
+        "growth": 0.1,
+        "mutation": 0.001,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.2
+      },
+      "recovered": 0,
+      "rmst": 427.5,
+      "survival": 0.0,
+      "wilson95": [
+        0.3423802275066532,
+        1.0
+      ],
+      "zero_event_upper95": null
+    }
+  ],
+  "completed_runs": 2,
+  "elapsed_seconds": 0.7458450347185135,
+  "expected_runs": 2,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "0bd59fba2335b3b7",
+  "total_site_visits": 1969920
+}

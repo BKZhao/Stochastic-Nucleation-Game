@@ -1,0 +1,80 @@
+{
+  "analysis": {
+    "confidence": 0.95,
+    "estimand": "unconditional finite-time collapse risk after an exact-cost 16-site seed; not the mother-conditioned N06 q_B",
+    "interim_testing": false,
+    "interpolation": false,
+    "interval": "Wilson per outcome; Newcombe for independent geometry risk differences",
+    "outcomes": [
+      "recovered_A",
+      "confirmed_depletion_B",
+      "unresolved_U"
+    ]
+  },
+  "base": {
+    "campaign_note": "Finite-horizon b-D fate map for the physics manuscript; independent seeds and unchanged physical kernel.",
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 16,
+      "resource_value": 0
+    },
+    "experiment_id": "N02",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 200,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 10000
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage.shape": [
+      "compact",
+      "random"
+    ],
+    "model.diffusion": [
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6
+    ],
+    "model.temptation": [
+      1.12,
+      1.13,
+      1.14,
+      1.15,
+      1.16,
+      1.17,
+      1.18,
+      1.19,
+      1.2
+    ]
+  },
+  "master_seed": 2026100709,
+  "replicas": 64,
+  "selection_rationale": "Complete Cartesian grid around the existing b=1.16,D=0.4 baseline, frozen before this campaign. No adaptive selection or reuse of N03 confirmation seeds."
+}

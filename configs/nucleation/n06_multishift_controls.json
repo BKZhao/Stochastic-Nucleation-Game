@@ -1,0 +1,39 @@
+{
+  "master_seed": 202610075,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    {"arm": "shifted", "shift": [2, 1]},
+    {"arm": "shifted", "shift": [5, 31]},
+    {"arm": "shifted", "shift": [23, 42]},
+    {"arm": "uniform_live"},
+    {"arm": "uniform_eq"}
+  ],
+  "shift": [17, 12],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "252d539cf24a4c7a",
+    "rules": {
+      "compact_16": {"count": 15, "rule": "all"},
+      "random_16": {"count": 15, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000, "sample_every": 10, "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Multi-shift and total-matched uniform controls on the same 30 frozen mothers as the original fate campaign. Pre-registered before execution: instant drift a_1 per shift vector equals the shifted-state J_pre recorded in preregistered_multishift_predictions.json (dose-response: (2,1) mild, (5,31)/(17,12)/(23,42) strong negative); long-horizon q_B decreases directionally for every shift; uniform arms flatten structure at live/equilibrium totals (equilibrium and live totals differ by <0.2%, so uniform_eq - uniform_live isolates total, adapted - uniform_eq isolates equilibrium spatial structure at equal total). Confirmatory screen for the alignment mechanism.",
+  "interpretation": "fate endpoints for pre-registered displacement vectors and total-matched structure-removal controls; mother-level paired analysis"
+}

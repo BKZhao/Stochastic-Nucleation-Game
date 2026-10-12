@@ -1,0 +1,831 @@
+{
+  "all_strategy_trajectories_identical": true,
+  "campaign_config": "configs/nucleation/n06_mechanism_fate.json",
+  "campaign_config_sha256": "d39147960c55712934191dc34abaacd42336bf2a8778a159c1cd08e214f88750",
+  "check_sweeps": 500,
+  "failures": [],
+  "interpretation": "negative control: with the resource -> payoff coupling set to zero (a model parameter, the kernel update rule is untouched) the strategy trajectories of all arms are bitwise identical under a shared seed, so any fate-round differences must flow through the resource -> payoff channel rather than through task identity or data handling",
+  "mothers": [
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "4444e407c32f01b2",
+        "interface_harm": "23fc305380373dbe",
+        "interface_protect": "0609794e5f04df59",
+        "interface_shuffle": "e6aa0d0c20aa01bb",
+        "original": "a6a67fdbd5a798aa"
+      },
+      "resource_fields_differ": true,
+      "seed": "0078133881",
+      "shared_seed": 445685229,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0095184877/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "4bce1dc249fff19b",
+        "interface_harm": "e72af49ebc890290",
+        "interface_protect": "c2c08f6244c96357",
+        "interface_shuffle": "2f4b14a10a01c476",
+        "original": "13fc0f0187bc07bb"
+      },
+      "resource_fields_differ": true,
+      "seed": "0095184877",
+      "shared_seed": 2183205671,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118925405/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "74952c5321a66dc3",
+        "interface_harm": "233549c263bf84bf",
+        "interface_protect": "b40648c599d03275",
+        "interface_shuffle": "0052a9fd7fbb7045",
+        "original": "12d44fdb4db580ae"
+      },
+      "resource_fields_differ": true,
+      "seed": "0118925405",
+      "shared_seed": 1498917032,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0118960116/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "7b5a2e506ced795f",
+        "interface_harm": "008bf5f3052e8cce",
+        "interface_protect": "90f54f04701b8e12",
+        "interface_shuffle": "233cb01bbf2ec130",
+        "original": "aa1709b4731d676e"
+      },
+      "resource_fields_differ": true,
+      "seed": "0118960116",
+      "shared_seed": 2146704412,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0224929278/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "28dd62a3670df642",
+        "interface_harm": "00916488b476d7fe",
+        "interface_protect": "0515671beab907ea",
+        "interface_shuffle": "2d6ff68f18778693",
+        "original": "9c5b71b9bc9e3b18"
+      },
+      "resource_fields_differ": true,
+      "seed": "0224929278",
+      "shared_seed": 3218681954,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0238425964/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "4c2c5b368a77992d",
+        "interface_harm": "2a26e5b124e7204f",
+        "interface_protect": "aa3a881188fa521b",
+        "interface_shuffle": "6869710eb98e9ad0",
+        "original": "0cab453c84d7995f"
+      },
+      "resource_fields_differ": true,
+      "seed": "0238425964",
+      "shared_seed": 3716223952,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0254186848/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "286b21d489f18eb0",
+        "interface_harm": "81c81bb9faca9437",
+        "interface_protect": "48731a8c4e5cac1d",
+        "interface_shuffle": "00a7083bbdf9130a",
+        "original": "3c3b3d441d561a52"
+      },
+      "resource_fields_differ": true,
+      "seed": "0254186848",
+      "shared_seed": 1248485362,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0278120410/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "50becac6b958fd7d",
+        "interface_harm": "5e0f96ddf5275d3a",
+        "interface_protect": "7af6442eb2256f8c",
+        "interface_shuffle": "e325d8fd7bd62ce4",
+        "original": "de5ee2c5d7cb10a5"
+      },
+      "resource_fields_differ": true,
+      "seed": "0278120410",
+      "shared_seed": 2634754200,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0404008991/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "5ef6eeee22891f39",
+        "interface_harm": "b8b3484c8b40eec9",
+        "interface_protect": "717fba14e4a92fe9",
+        "interface_shuffle": "717fba14e4a92fe9",
+        "original": "5ef6eeee22891f39"
+      },
+      "resource_fields_differ": true,
+      "seed": "0404008991",
+      "shared_seed": 3083682064,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0475060249/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "11eb2209f0797ad3",
+        "interface_harm": "ecb4d79c71d7b310",
+        "interface_protect": "26d998128db02ed8",
+        "interface_shuffle": "0f610b9be9061dda",
+        "original": "11eb2209f0797ad3"
+      },
+      "resource_fields_differ": true,
+      "seed": "0475060249",
+      "shared_seed": 295170836,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0486817206/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "22899dd9da2c09d4",
+        "interface_harm": "941349ad5a97c1e2",
+        "interface_protect": "8643f3969c2a8bac",
+        "interface_shuffle": "1376f485230b9aa0",
+        "original": "44c82e334925320b"
+      },
+      "resource_fields_differ": true,
+      "seed": "0486817206",
+      "shared_seed": 2932883518,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0544883635/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "7aa5da636f7d9cf8",
+        "interface_harm": "219fbcd7f6226ea8",
+        "interface_protect": "2957ce4feb860e88",
+        "interface_shuffle": "c8db9328989372e0",
+        "original": "7c4fcd00503d5a3c"
+      },
+      "resource_fields_differ": true,
+      "seed": "0544883635",
+      "shared_seed": 4094297188,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0578261198/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "abddfb94686b4878",
+        "interface_harm": "499bf590b0ce4967",
+        "interface_protect": "bd743a28f11eb68d",
+        "interface_shuffle": "fcd5fe3be83a0dd2",
+        "original": "5ff8967270b949d4"
+      },
+      "resource_fields_differ": true,
+      "seed": "0578261198",
+      "shared_seed": 1269472726,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0619730983/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "e53855d64041db83",
+        "interface_harm": "aab1425f629b0680",
+        "interface_protect": "08cad3a63d060780",
+        "interface_shuffle": "b12f447e9bf6fd7b",
+        "original": "d9d6fd044a473be9"
+      },
+      "resource_fields_differ": true,
+      "seed": "0619730983",
+      "shared_seed": 1688174052,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0678294054/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "598a31a9ea0c888e",
+        "interface_harm": "ae19d7b5b969791f",
+        "interface_protect": "ae19d7b5b969791f",
+        "interface_shuffle": "ae19d7b5b969791f",
+        "original": "598a31a9ea0c888e"
+      },
+      "resource_fields_differ": true,
+      "seed": "0678294054",
+      "shared_seed": 1119523381,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0727633797/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "45c5e18a15ffec74",
+        "interface_harm": "426b51205e6e9627",
+        "interface_protect": "a308ac36086b6c1b",
+        "interface_shuffle": "76e7cf430e12baf7",
+        "original": "c553c2d8385cc6fe"
+      },
+      "resource_fields_differ": true,
+      "seed": "0727633797",
+      "shared_seed": 3628426831,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0761452211/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "466a4f20cf0590ce",
+        "interface_harm": "801c5fc753a35ee7",
+        "interface_protect": "9eddbe414fa0025f",
+        "interface_shuffle": "68e55b1b92ca1b9c",
+        "original": "a7cd8911ccaee581"
+      },
+      "resource_fields_differ": true,
+      "seed": "0761452211",
+      "shared_seed": 436769159,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0821866228/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "3572597dea5031bd",
+        "interface_harm": "37230961ac30357d",
+        "interface_protect": "3572597dea5031bd",
+        "interface_shuffle": "37230961ac30357d",
+        "original": "3572597dea5031bd"
+      },
+      "resource_fields_differ": true,
+      "seed": "0821866228",
+      "shared_seed": 295135641,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0872818038/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "1509877146314fce",
+        "interface_harm": "5eed534c24c9d95f",
+        "interface_protect": "e80085c9872d58bb",
+        "interface_shuffle": "e5f22389e90c7911",
+        "original": "ef59b1f3a05ffe13"
+      },
+      "resource_fields_differ": true,
+      "seed": "0872818038",
+      "shared_seed": 3909846135,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0953031418/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "16c585c76e457fc0",
+        "interface_harm": "8cddcb8fbb8659e8",
+        "interface_protect": "aa136a713626985c",
+        "interface_shuffle": "a0d28ce47bb71694",
+        "original": "af3a01f0636ec85c"
+      },
+      "resource_fields_differ": true,
+      "seed": "0953031418",
+      "shared_seed": 1557821579,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0995875261/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "009eb06a34e1fe13",
+        "interface_harm": "f7bf6aab21613533",
+        "interface_protect": "0a41b1d0f3c3dce8",
+        "interface_shuffle": "c639de28b04aef39",
+        "original": "373243946d913dfd"
+      },
+      "resource_fields_differ": true,
+      "seed": "0995875261",
+      "shared_seed": 1186426204,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1035507296/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "29e501802a74d31b",
+        "interface_harm": "6a9220db48cdc016",
+        "interface_protect": "f140607c8d0329a1",
+        "interface_shuffle": "520f3fd1eb7417b6",
+        "original": "a20d7693ba4ba7a3"
+      },
+      "resource_fields_differ": true,
+      "seed": "1035507296",
+      "shared_seed": 2532129014,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1062157313/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "f89f934fe08a4497",
+        "interface_harm": "6f665624f5af683e",
+        "interface_protect": "622d0a98256eeb83",
+        "interface_shuffle": "0a987a1e9aa1e8b7",
+        "original": "60781e68f44e31b7"
+      },
+      "resource_fields_differ": true,
+      "seed": "1062157313",
+      "shared_seed": 2572562016,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1087111986/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "1630f3b560d2bfcf",
+        "interface_harm": "fb23270f9110300f",
+        "interface_protect": "76a7e84dcd81b6b5",
+        "interface_shuffle": "e870997253dd629d",
+        "original": "7e70811a86a40b2e"
+      },
+      "resource_fields_differ": true,
+      "seed": "1087111986",
+      "shared_seed": 764415145,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1137824453/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "5bb6fa673edcd8ab",
+        "interface_harm": "28fb457d68a66920",
+        "interface_protect": "baaacec2d8b81f0e",
+        "interface_shuffle": "93af3cc3fd7dd3ed",
+        "original": "a187e143316444e1"
+      },
+      "resource_fields_differ": true,
+      "seed": "1137824453",
+      "shared_seed": 76878883,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1148997723/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "a156ec1630f84943",
+        "interface_harm": "413456e02b9949c5",
+        "interface_protect": "553e9ecd9d15f208",
+        "interface_shuffle": "3597b293cd31848e",
+        "original": "1bb1409817ccc871"
+      },
+      "resource_fields_differ": true,
+      "seed": "1148997723",
+      "shared_seed": 1754120785,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1158866661/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "c92ea9263cdc1857",
+        "interface_harm": "d72c7e791ad102a1",
+        "interface_protect": "c799ef5b8e09d7d3",
+        "interface_shuffle": "96b7393a8ec610e1",
+        "original": "8f0883f61111438b"
+      },
+      "resource_fields_differ": true,
+      "seed": "1158866661",
+      "shared_seed": 1802181577,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1179591242/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "abf1346a8a78b8b6",
+        "interface_harm": "abf1346a8a78b8b6",
+        "interface_protect": "abf1346a8a78b8b6",
+        "interface_shuffle": "abf1346a8a78b8b6",
+        "original": "abf1346a8a78b8b6"
+      },
+      "resource_fields_differ": false,
+      "seed": "1179591242",
+      "shared_seed": 2609429584,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1238548885/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "421c213013a870c8",
+        "interface_harm": "421c213013a870c8",
+        "interface_protect": "421c213013a870c8",
+        "interface_shuffle": "421c213013a870c8",
+        "original": "421c213013a870c8"
+      },
+      "resource_fields_differ": false,
+      "seed": "1238548885",
+      "shared_seed": 3421081095,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1269914316/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "c4f8e2b9dfad0c4c",
+        "interface_harm": "f9a516646fc0ee6a",
+        "interface_protect": "52fd462d932094e2",
+        "interface_shuffle": "ce27ad87b52a3b22",
+        "original": "099a89487244610b"
+      },
+      "resource_fields_differ": true,
+      "seed": "1269914316",
+      "shared_seed": 159162150,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1284891641/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "1569cbf9269671e5",
+        "interface_harm": "7721198518ffd261",
+        "interface_protect": "1569cbf9269671e5",
+        "interface_shuffle": "1569cbf9269671e5",
+        "original": "1569cbf9269671e5"
+      },
+      "resource_fields_differ": true,
+      "seed": "1284891641",
+      "shared_seed": 3524992919,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1319402621/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "7b5419e4688a1b46",
+        "interface_harm": "f1dcd1058f686283",
+        "interface_protect": "8c19b76c9decb7aa",
+        "interface_shuffle": "7b5419e4688a1b46",
+        "original": "7b5419e4688a1b46"
+      },
+      "resource_fields_differ": true,
+      "seed": "1319402621",
+      "shared_seed": 4242663325,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1322061477/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "7b46257e2386ad5c",
+        "interface_harm": "28a2e94534bf4ae4",
+        "interface_protect": "fbf662fbf26781b9",
+        "interface_shuffle": "90904a3ba032f269",
+        "original": "553e790bb5282397"
+      },
+      "resource_fields_differ": true,
+      "seed": "1322061477",
+      "shared_seed": 2736860925,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1334059980/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "b8a4772c0ef2dbd1",
+        "interface_harm": "693ebc918eff3809",
+        "interface_protect": "508e1ae69ccc540b",
+        "interface_shuffle": "b7f4c79d4be988a7",
+        "original": "7819ca9aae70e43c"
+      },
+      "resource_fields_differ": true,
+      "seed": "1334059980",
+      "shared_seed": 3557678160,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1564032977/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "dd2041ac385aa40f",
+        "interface_harm": "1af5d6ced5cd2f15",
+        "interface_protect": "d1ae5b28428a39ab",
+        "interface_shuffle": "8ead22e2ffc6bafd",
+        "original": "e24109feb3c9050a"
+      },
+      "resource_fields_differ": true,
+      "seed": "1564032977",
+      "shared_seed": 3535606156,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1602821524/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "8dbcca0c0ccdedfd",
+        "interface_harm": "cf51a6268b52d4a0",
+        "interface_protect": "870e4ebecb636caa",
+        "interface_shuffle": "fa54feaf672bb016",
+        "original": "d76d996340e1a976"
+      },
+      "resource_fields_differ": true,
+      "seed": "1602821524",
+      "shared_seed": 3720726012,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1674037932/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "8d0f3fc494ddd8b9",
+        "interface_harm": "e561e087a924287a",
+        "interface_protect": "559e1e6dce9366d8",
+        "interface_shuffle": "1ee47218b784af7c",
+        "original": "8563e8dc002e1c14"
+      },
+      "resource_fields_differ": true,
+      "seed": "1674037932",
+      "shared_seed": 2261080675,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1699374303/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "693061c08b8d43dc",
+        "interface_harm": "6bd9c0bfc5c065fe",
+        "interface_protect": "1556fc4c7884e6db",
+        "interface_shuffle": "2e283fad08811bca",
+        "original": "2c57c52d3bfe6872"
+      },
+      "resource_fields_differ": true,
+      "seed": "1699374303",
+      "shared_seed": 1779791297,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1732419094/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "e4e8adcc9da9d4be",
+        "interface_harm": "97ac0b4e669b72f4",
+        "interface_protect": "83882faa04470d43",
+        "interface_shuffle": "ad6fd6a39d265e9b",
+        "original": "59ad66ba4de49cdb"
+      },
+      "resource_fields_differ": true,
+      "seed": "1732419094",
+      "shared_seed": 3716382834,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1747884594/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "c0fd91ab7ea6aeec",
+        "interface_harm": "96055e471b3dc8d8",
+        "interface_protect": "c4fef6c8e13991e6",
+        "interface_shuffle": "4fff70757f8ebf57",
+        "original": "c4fef6c8e13991e6"
+      },
+      "resource_fields_differ": true,
+      "seed": "1747884594",
+      "shared_seed": 1305302276,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1773328925/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "575b7a158b4fbd4a",
+        "interface_harm": "a36c4ce455c0dbab",
+        "interface_protect": "2368136913372ac6",
+        "interface_shuffle": "6f0bcaf03f7eee02",
+        "original": "2458cc868264ae3b"
+      },
+      "resource_fields_differ": true,
+      "seed": "1773328925",
+      "shared_seed": 1672819235,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1780971575/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "55eca90fc04bc332",
+        "interface_harm": "f814736be51cf53a",
+        "interface_protect": "4cca67b8525f25cf",
+        "interface_shuffle": "612a735a2ffebd24",
+        "original": "2e98c0fb2e64fac6"
+      },
+      "resource_fields_differ": true,
+      "seed": "1780971575",
+      "shared_seed": 1295460218,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1785801226/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "b397cbb5b73aba2d",
+        "interface_harm": "3ac0c4b96bcee9eb",
+        "interface_protect": "5f6e3bfec75e163f",
+        "interface_shuffle": "ba40e669ec0240d1",
+        "original": "4cdf09e8e6855b2a"
+      },
+      "resource_fields_differ": true,
+      "seed": "1785801226",
+      "shared_seed": 1901514541,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1810509351/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "43b1d4d1cc298071",
+        "interface_harm": "31f988cdd7ff08c1",
+        "interface_protect": "67caec9b093328ad",
+        "interface_shuffle": "acd4b919a938e031",
+        "original": "03d43e81b398fd91"
+      },
+      "resource_fields_differ": true,
+      "seed": "1810509351",
+      "shared_seed": 2309337040,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1985285365/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "e2fc8f2d5fd42416",
+        "interface_harm": "4883c835622c99fa",
+        "interface_protect": "654e2b4ff179811a",
+        "interface_shuffle": "e4794a2b7baa4930",
+        "original": "a5ff660ed98570b9"
+      },
+      "resource_fields_differ": true,
+      "seed": "1985285365",
+      "shared_seed": 2844062748,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-1988909271/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "029d50dabb4437ee",
+        "interface_harm": "641e163860831c89",
+        "interface_protect": "bc03e060caa1cf6c",
+        "interface_shuffle": "74250d3996c74b19",
+        "original": "68de5bdf624c6c59"
+      },
+      "resource_fields_differ": true,
+      "seed": "1988909271",
+      "shared_seed": 3314534286,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-2104224222/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "ccdc0f721cdd7fe4",
+        "interface_harm": "a831b85d0eb7f19d",
+        "interface_protect": "ccdc0f721cdd7fe4",
+        "interface_shuffle": "ccdc0f721cdd7fe4",
+        "original": "ccdc0f721cdd7fe4"
+      },
+      "resource_fields_differ": true,
+      "seed": "2104224222",
+      "shared_seed": 2595862876,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    },
+    {
+      "check_sweeps": 500,
+      "mother_path": "data/nucleation/N02/5ce29c8cfdae9509/seed-2109827060/states/growth-0.05.npz",
+      "note": "strategy digests at sweep 0 and every checkpoint_every sweeps; resource digests taken after arm application",
+      "resource_digests": {
+        "defector_shuffle": "e6a8b7aa5d5f8150",
+        "interface_harm": "d7a61c5de4d9567a",
+        "interface_protect": "874a42ed011fcc73",
+        "interface_shuffle": "11d0d3b566777441",
+        "original": "6e3eaded1cacda1c"
+      },
+      "resource_fields_differ": true,
+      "seed": "2109827060",
+      "shared_seed": 183822404,
+      "strategy_digest_final": "cfc335996cfae29fdf14fd2db7ea853366d350a5d387aa3c322616e81dacd56b",
+      "strategy_trajectories_identical": true
+    }
+  ],
+  "n_mothers": 48,
+  "trivial_identity_mothers": [
+    "1179591242",
+    "1238548885"
+  ]
+}

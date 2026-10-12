@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS04_growth_distributions.pdf",
+      "sha256": "c8094e336eaba12f54678bf14d95e851aee104ae5c6dcf68b51fd46349c39a6b"
+    },
+    {
+      "path": "figures/nucleation/paper/figS04_growth_distributions.png",
+      "sha256": "02cc5be00ebe601c15af1c210c69c826ed9c31cf128614e34fe2eb2e37747ec7"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/f8abaf8f17995c22/structure.json",
+      "sha256": "e0f4b13b4e376ea8ce98b34cacb5703fcfb5ed1bb8a4e3885995b7f892c0a578"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_spacetime.py",
+      "sha256": "7beed1b5670d74d5be033ebe7a99235b58d2147995a84c739024d4a0973fef53"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Unsmoothed ECDFs of cluster counts and first-passage times, conditional on reaching each threshold by T=40000. Reacher counts are shown; not paired across geometries."
+}

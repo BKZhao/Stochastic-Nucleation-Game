@@ -1,0 +1,59 @@
+{
+  "master_seed": 202610085,
+  "replicas": 256,
+  "base": {
+    "experiment_id": "N02",
+    "model": {
+      "size": 96,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes",
+    "damage": {
+      "count": 16,
+      "shape": "compact",
+      "resource_value": 0.0
+    },
+    "growth": {
+      "defector_fractions": [
+        0.05,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "snapshot_crossings": true
+    },
+    "campaign_note": "Robustness mother bank at L=96, fixed 5% defector-fraction milestone (461 D)."
+  },
+  "selection_rationale": "Outcome-blind compact-16 crossing mother bank for the robustness round (frozen in robustness_plan.md): only crossing states with a clean event clock become mothers; no hypothesis is tested on this batch itself.",
+  "grid": {
+    "damage": [
+      {
+        "count": 16,
+        "resource_value": 0.0,
+        "shape": "compact"
+      }
+    ]
+  }
+}

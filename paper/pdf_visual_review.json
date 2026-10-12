@@ -1,0 +1,235 @@
+{
+  "reviewed_utc": "2026-10-08T15:27:07.149412+00:00",
+  "pdf_sha256": "27ef715f25490f7bb93c28f966fc7dbe0eec68dd124588d424acd76e491e8a8a",
+  "documents": {
+    "main": {
+      "path": "paper/main.pdf",
+      "pdf_sha256": "27ef715f25490f7bb93c28f966fc7dbe0eec68dd124588d424acd76e491e8a8a",
+      "pages": 11,
+      "rendered_pages": [
+        {
+          "page": 1,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-01.png",
+          "sha256": "f7c0fbc7655542db7530eead6dd8775f8809cd7c417a923d6ec888dd73db52bb",
+          "figures": []
+        },
+        {
+          "page": 2,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-02.png",
+          "sha256": "9cc4f9e4106996d4ae45cad680c56bb5c76a7ac54798c673d10c9b57a2aa11ba",
+          "figures": []
+        },
+        {
+          "page": 3,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-03.png",
+          "sha256": "20731fd463b225264e91d3ff81ff967d7b8973ba3c91beba80319648852f2ff3",
+          "figures": [
+            "1"
+          ]
+        },
+        {
+          "page": 4,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-04.png",
+          "sha256": "7c1a4bc3829263fc42ee42eb7b8a610950d082d2c27649d6d8df666912f9f7e8",
+          "figures": [
+            "2"
+          ]
+        },
+        {
+          "page": 5,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-05.png",
+          "sha256": "b90886eb5faf4b489c4e4c6e08fe0dcc982ca230a254b8b18659d98be39715d2",
+          "figures": [
+            "3"
+          ]
+        },
+        {
+          "page": 6,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-06.png",
+          "sha256": "5ec9d644f40889917698c9838604cecfaf58dea80f1bf7b83861b350aec611d1",
+          "figures": [
+            "4"
+          ]
+        },
+        {
+          "page": 7,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-07.png",
+          "sha256": "cd79cac27a21341cd4c4ca741bedd07fb68d3e48b3ecbbe19fb9ee2fb2c33534",
+          "figures": []
+        },
+        {
+          "page": 8,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-08.png",
+          "sha256": "59eeeb637e67363a1b8d1df4e47ee4a6f710efd07823484e85598b3a093e37f8",
+          "figures": [
+            "5"
+          ]
+        },
+        {
+          "page": 9,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-09.png",
+          "sha256": "9c02ce311cb87f82dd5a61305f99722ee2be33a07e7c9623ad79d6517968dbf9",
+          "figures": [
+            "6"
+          ]
+        },
+        {
+          "page": 10,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-10.png",
+          "sha256": "5ff470d948abfde9e02f535dfc21b210f44778f20824efc9a430a2cfbdac541d",
+          "figures": [
+            "7"
+          ]
+        },
+        {
+          "page": 11,
+          "path": "tmp/paper-pre-polish-20261008/main-final-pages/page-11.png",
+          "sha256": "9ea82f8521af2135e6bcefa21814d5e68ba0f5eb4596ec83cf3bd6ca571c8246",
+          "figures": []
+        }
+      ]
+    },
+    "supplement": {
+      "path": "paper/supplement.pdf",
+      "pdf_sha256": "313cdbafefa8b38ffb533945cfe6847abe01c185bd5100aaae66cfd649d8a3e6",
+      "pages": 13,
+      "rendered_pages": [
+        {
+          "page": 1,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-01.png",
+          "sha256": "98476f090efcb97fc6dd28a44d138f1f86401eb14127b37f8bb7821bd544a248",
+          "figures": []
+        },
+        {
+          "page": 2,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-02.png",
+          "sha256": "8b4e671dc4c2bd947c355ae5e647feb57d52cd0986a9aaaf54f07167e5649b68",
+          "figures": []
+        },
+        {
+          "page": 3,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-03.png",
+          "sha256": "3adfa255f87425feaae06e9a31a0a02531cd681d1a991cb9c5e1fc09312422d8",
+          "figures": []
+        },
+        {
+          "page": 4,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-04.png",
+          "sha256": "4d5a218131d88a4b64eb5254f6fa6ef7c53655202a748b4e1ba33b27124acb7f",
+          "figures": []
+        },
+        {
+          "page": 5,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-05.png",
+          "sha256": "2e6234155c59522e2fe693a72249ea06a83be7b76fadb6ec2e21120c9b811146",
+          "figures": []
+        },
+        {
+          "page": 6,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-06.png",
+          "sha256": "21e60c49a226c647f9ba45633362a14048339263e5181770d5d66e2f22f97e08",
+          "figures": []
+        },
+        {
+          "page": 7,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-07.png",
+          "sha256": "7009506ae24c1c658a56a82437e64d5cf5fa5cb0afce33994e3498ecba1e9776",
+          "figures": [
+            "S1",
+            "S2"
+          ]
+        },
+        {
+          "page": 8,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-08.png",
+          "sha256": "868c9d9607273134b51f1abe8b6e904fda7614844c63926178c62ddc518d4ca0",
+          "figures": [
+            "S3",
+            "S4"
+          ]
+        },
+        {
+          "page": 9,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-09.png",
+          "sha256": "6c28557a3297a2190f39f6cd275613c944c9cdd7347a0d77520f1ee0d86fc72d",
+          "figures": [
+            "S5"
+          ]
+        },
+        {
+          "page": 10,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-10.png",
+          "sha256": "776b167ce0f5893c2cb16f63c6512f9344901562080b3c2c56656dd969424f47",
+          "figures": [
+            "S6",
+            "S7"
+          ]
+        },
+        {
+          "page": 11,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-11.png",
+          "sha256": "197f074ca137bbb11548ae57f350045470345731ad615074d8032a14b5522453",
+          "figures": [
+            "S8"
+          ]
+        },
+        {
+          "page": 12,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-12.png",
+          "sha256": "de435fb24563438a3ac9085b81d30fae74bce12cf497a14baa4001da4d184fa1",
+          "figures": [
+            "S9",
+            "S10"
+          ]
+        },
+        {
+          "page": 13,
+          "path": "tmp/paper-pre-polish-20261008/supplement-final-pages/page-13.png",
+          "sha256": "073a57455d6b32ef85e9bcb5d5ee8d81ffd7e9d53e745e8315d01e9be265f07f",
+          "figures": [
+            "S11"
+          ]
+        }
+      ]
+    }
+  },
+  "coverage": "All 24 final pages inspected in contact sheets and page renders. Main pages 3 and 4 and supplemental pages 12 and 13 inspected at readable resolution. Main page 3 and supplemental pages 12/13 were inspected again after the final title, legend, and grouping changes.",
+  "findings": {
+    "overlap_or_clipping": [],
+    "missing_figures_or_glyphs": [],
+    "main_figures": 7,
+    "supplemental_figures": 11,
+    "all_fonts_embedded": true,
+    "sparse_orphan_pages": [],
+    "layout": "Reduced all inclusion widths. Phase maps retain 2x2 panels. Regime titles shortened, response row gaps reserved, coupled-field legends moved above data axes. All time samples preserved."
+  },
+  "remaining_warnings": {
+    "underfull_hboxes": {
+      "main": [
+        "Underfull \\hbox (badness 3780) in paragraph at lines 25--27",
+        "Underfull \\hbox (badness 1748) in paragraph at lines 34--35",
+        "Underfull \\hbox (badness 1048) in paragraph at lines 54--55",
+        "Underfull \\hbox (badness 1968) in paragraph at lines 80--81"
+      ],
+      "supplement": [
+        "Underfull \\hbox (badness 1237) in paragraph at lines 107--108",
+        "Underfull \\hbox (badness 3364) in paragraph at lines 149--23"
+      ]
+    },
+    "bibtex": "Nonblocking REVTeX control-entry and note-only Supplemental Material entry notices remain in build logs."
+  },
+  "cross_pdf_navigation": {
+    "main": {
+      "validated_links": 17,
+      "unresolved_destinations": []
+    },
+    "supplement": {
+      "validated_links": 25,
+      "unresolved_destinations": []
+    }
+  },
+  "figure_layout": {
+    "path": "tmp/paper-pre-polish-20261008/figure-layout-check.json",
+    "sha256": "6821ed46374a937569f3fc3ef71e42519e05ed23682abdd25cd75a7660e3e847"
+  }
+}

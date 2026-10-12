@@ -1,0 +1,103 @@
+{
+  "regimes": {
+    "asset": "fig00_dynamical_regimes.pdf",
+    "caption": "Finite-time outcomes and collapse times for compact and dispersed perturbations ($L=48$, $m=16$, $T=10\\,000$ MCS). (a,b) Parameter regions in which recovery ($A$), persistent depletion ($B$), or unresolved evolution ($U$) has a statistically resolved majority; gray cells have no resolved majority, as defined in Supplemental Material, Sec.~\\ref{sm-sec:checks}. (c,d) First time $t_{1/2}^{B}$ at which 50% of the full 64-trajectory ensemble has recorded event $B$; gray indicates that this level is not reached within the observation window. Each panel shows the measured $\\PhaseBPoints\\times\\PhaseDPoints$ parameter grid without interpolation. All other parameters take their reference values.",
+    "width": 0.85
+  },
+  "phase": {
+    "asset": "fig01_phase.pdf",
+    "caption": "Collapse-probability contrast between perturbation geometries. (a,b) Finite-time collapse probabilities for compact and dispersed seeds in the $(b,D)$ plane. (c) Difference $P_B^{\\rm dispersed}(T)-P_B^{\\rm compact}(T)$. (d) Cross section at $D=0.4$. Each grid point represents 64 independent realizations per geometry at $T=10\\,000$ MCS. Cell colors show measured estimates without image interpolation; white half-probability contours are visual guides obtained by interpolation. Crosses indicate the reference parameters, and lines in (d) connect measured values.",
+    "width": 0.85
+  },
+  "fields": {
+    "asset": "fig02_growth_fields.pdf",
+    "caption": "Spatial growth of finite disturbances and their resource environments. Compact and dispersed perturbations are shown in the upper and lower rows, respectively. Columns show the initial state and the first crossings of 5%, 20%, and 80% defectors; the annotated times are the actual crossing times in MCS and differ between trajectories. Resource colors and strategy-boundary contours distinguish depleted interiors from cooperative surroundings. Both examples were selected from collapse trajectories independently of their appearance. A common resource scale is used throughout; each trajectory is displayed after one fixed spatial translation. Scale bars represent 12 lattice sites. Corresponding strategy maps are shown in Fig.~\\ref{sm-fig:fullfields}.",
+    "width": 0.94
+  },
+  "alignment": {
+    "asset": "fig02_interventions.pdf",
+    "caption": "Controlled change in relative strategy--resource alignment. (a,b) Original resource field and the same field translated by $(5,-17)$ sites, with the strategy boundary unchanged. Scale bars represent 12 sites. (c) Strategy--resource cross-covariance $C_{sr}(\\mathbf d)$ across periodic translations; the circle and square mark the fields in (a,b). (d) Resource autocorrelation $\\Gamma_r(\\mathbf d)$, which is invariant under the translation. The covariance maps use a common signed color scale. These panels characterize spatial organization, not collapse probability.",
+    "width": 0.83
+  },
+  "response": {
+    "asset": "fig07_cumulative_response.pdf",
+    "caption": "Population response to translation (left) and boundary redistribution (right), relative to the original field. (a,b) Change in mean increment per MCS, $\\Delta a(t)$. (c,d) Accumulated difference $\\mathcal I_a(t)$. Means use 48 configurations and 16 continuations per treatment; translations average four rotations of $(2,1)$ (short) or $(5,-17)$ (long). Every recorded time through 20 MCS is shown.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "feedback": {
+    "asset": "fig08_coupled_response.pdf",
+    "caption": "Coupled response of the ensembles in Fig.~\\ref{fig:response}: translation (left), boundary redistribution (right). (a,b) Mean cooperation--resource paths over 20 MCS. Circles mark the common initial state (open) and endpoints (filled); arrows indicate increasing time. (c,d) Strategy--resource covariance changes, reconstructed per trajectory. These mean paths do not define a closed flow.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "kinetics": {
+    "asset": "fig03_fate_kinetics.pdf",
+    "caption": "Outcome kinetics following (a) a single-site, (b) a compact 16-site, and (c) a dispersed 16-site perturbation. Each panel uses 64 independent realizations at the reference parameters. Recovery, collapse, and unresolved probabilities partition the full ensemble. Steps occur at recorded event times; the first event label is retained.",
+    "environment": "appendixfigure",
+    "width": 0.85
+  },
+  "sections": {
+    "asset": "fig05_phase_sections.pdf",
+    "caption": "Competing outcomes along three diffusion sections. Columns show $D=0.2,0.4,0.6$; rows show recovery, collapse, and unresolved probabilities. Each panel compares the two geometries at all 41 measured payoff values, with 64 realizations per value and $T=10000$ MCS. Lines connect the sampled values. These sections distinguish transfer into unresolved evolution from transfer into collapse.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "outcomes": {
+    "asset": "figS01_recovery_unresolved.pdf",
+    "caption": "Recovery (a,b) and unresolved (c,d) probabilities for compact and dispersed perturbations. Together with Fig.~\\ref{main-fig:phase}, every parameter cell satisfies $P_A+P_B+P_U=1$ at $T=10000$ MCS. Crosses mark the reference parameters. Each cell contains 64 realizations per geometry; no interpolation is applied.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "fullfields": {
+    "asset": "figS03_full_growth_fields.pdf",
+    "caption": "Strategy and resource evolution for the examples in Fig.~\\ref{main-fig:fields}: (a) compact and (b) dispersed preparation. Columns show the initial state and first 5%, 20%, 50%, and 80% defector crossings. Red sites are defectors; resource maps share $0\\le r_i\\le1$. Time is in MCS and scale bars span 12 sites. Each trajectory uses one fixed spatial translation.",
+    "environment": "appendixfigure",
+    "width": 0.87
+  },
+  "growthdistributions": {
+    "asset": "figS04_growth_distributions.pdf",
+    "caption": "Conditional spatial and first-passage distributions. (a,b) Periodic cluster counts at first 5% and 20% crossings. (c,d) Corresponding arrival times. Curves include every trajectory reaching the specified threshold by $T=40000$ MCS; legend counts give the denominators. The reaching subsets differ between geometries and thresholds.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "interface": {
+    "asset": "fig04_interface_dynamics.pdf",
+    "caption": "Early population growth, interface bias, and activity. Columns show single-site, compact, and dispersed preparations; rows show mean $n_D$, $J_{\\rm pre}$, and $P/4$. Every recorded MCS through $t=500$ is included for all 64 realizations, including absorbed paths. Time is linear up to one MCS and logarithmic thereafter. The quantity $P/4=N\\mathbb E[Z^2]$ measures frozen first-visit activity, not a complete-cycle variance.",
+    "environment": "appendixfigure",
+    "width": 0.86
+  },
+  "windows": {
+    "asset": "fig06_conditional_moments.pdf",
+    "caption": "Finite-window drift (left) and conditional variance rate (right) after resource redistribution. Rows distinguish compact and dispersed origins. Each mean uses 15 configurations at the first 5% crossing and 64 continuations per configuration and treatment. Circles, squares, and triangles denote original, fixed-strategy-adapted, and translated $(17,12)$ fields. Lines join the five measured windows; these rates differ from the first-visit moments.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "calibration": {
+    "asset": "fig04_mechanism.pdf",
+    "caption": "Spatially heterogeneous interface sensitivity and resource rearrangements. (a) Effective sensitivity weights $W_i$. (b,c) Resource changes under the low-bias and high-bias assignments of the same existing boundary resource values. Each panel shows an unchanged strategy interface in a common $24\\times24$ periodic window (scale bar: six sites). The signed resource increments share a common color scale. Both assignments preserve the resource total, its empirical distribution, and the initial strategy--resource covariance.",
+    "width": 0.94
+  },
+  "resourcecontrols": {
+    "asset": "figS06_resource_controls.pdf",
+    "caption": "Resource adaptation at fixed strategies. (a) Equilibrium field for the strategy configuration in Fig.~\\ref{main-fig:alignment}; scale bar: 12 sites. (b) Median normalized maximum-norm difference between translated and original fields over 48 configurations. The dotted curve is the contraction bound $0.9^t$. The strategy pattern is fixed throughout; this is not a relaxation-time measurement for the coupled system.",
+    "environment": "appendixfigure",
+    "width": 0.8
+  },
+  "initialinterfaces": {
+    "asset": "fig09_initial_interfaces.pdf",
+    "caption": "Initial interface geometry and growth bias. (a,b) Compact and dispersed 16-site preparations on the $48\\times48$ lattice; red sites are defectors, pale-blue sites are cooperators, and bars span 12 sites. (c,f) Exact motif-based bias per initial defector as a function of $D$ at $b=1.16$ and of $b$ at $D=0.4$; dots mark the reference parameters and dotted curves show an isolated defector. These are frozen-initial-state diagnostics. (d,e) Fractions of interfacial edges with $a=k_C(C)$ and $c=k_C(D)$ cooperative neighbors. Numbers give percentages; the color scale is a fraction. Motifs and biases use all 64 preparations per geometry.",
+    "environment": "appendixfigure",
+    "width": 0.84
+  },
+  "resourcelayers": {
+    "asset": "fig10_resource_layers.pdf",
+    "caption": "Resource profiles and payoff gaps near a fixed strategy boundary. (a) Difference in the post-update resource field under the displayed long translation, with the strategy interface unchanged (scale bar: 12 sites). (b,c) Mean resource profiles before and after one resource update, plotted against signed periodic graph distance $\\ell$ from the interface. Negative and positive distances lie in defector and cooperator regions, respectively, with boundary sites at $\\ell=\\pm1/2$. (d) Cumulative distribution of interfacial payoff gaps after the resource update. The displayed short and long translations are $(2,1)$ and $(5,-17)$. Profiles pool lattice sites from 48 configurations within each distance shell; gap distributions pool undirected cooperator--defector edges. Only the displayed displacement vectors are used in these panels, without rotation averaging.",
+    "width": 0.8
+  },
+  "growthkinetics": {
+    "asset": "fig11_growth_kinetics.pdf",
+    "caption": "Interfacial response and finite-time fate. (a,b) Time-dependent recovery, collapse, and unresolved probabilities for compact and dispersed perturbations (64 trajectories per preparation). (c) Mean early interface activity, $\\langle P\\rangle/4$. (d) Normalized signed bias, $4\\langle J_{\\rm pre}\\rangle/\\langle P\\rangle$, a ratio of ensemble means that is set to zero when all interfaces vanish. Panels (c,d) use independent 64-trajectory early-time ensembles and retain absorbed trajectories. The lower time axes are linear through 1 MCS and logarithmic thereafter. The upper and lower rows cover distinct time windows and are not joined into continuous trajectories.",
+    "width": 0.78
+  }
+}

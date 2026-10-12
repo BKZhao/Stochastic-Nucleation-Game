@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig03_fate_kinetics.pdf",
+      "sha256": "221d89557006bd699ef8de05f73ecf5d7a23c6bca739da3f5d833d30f93f8979"
+    },
+    {
+      "path": "figures/nucleation/paper/fig03_fate_kinetics.png",
+      "sha256": "fd6c36a6f2b571a19af8fa1acea187c76cd8377d2db031c3dfd7a5f8aa9f78b3"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/c8fef4041dca429f/physics.json",
+      "sha256": "83a8c9a9a7d13547f9d7bc2b538b7a50c5911c77cbe9b4a5dc9c14806496988e"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_kinetics.py",
+      "sha256": "a5d5c4f94dc912e6b85af91c8cecb3d6a418e6218fe0243dced96ed77a7d42ac"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "One initial geometry per panel, all 64 independent paths. A/B/U empirical curves without interval shading; no smoothing and no survivor conditioning."
+}

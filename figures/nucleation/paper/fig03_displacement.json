@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig03_displacement.pdf",
+      "sha256": "814f36ec5ad9b0b9fb2d1ab621b438f0b2400f2ae1f53ea1895fae0c949d6059"
+    },
+    {
+      "path": "figures/nucleation/paper/fig03_displacement.png",
+      "sha256": "94ba5bc021def163122aef124ee90ccc86672b49673653eb0c7da028a586b075"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/2e9372f61ffee64b/r3.json",
+      "sha256": "533778e642a04a2daa7246c332d5b6cfb890adef1e1b9dd31b0a0c5b80c7ec95"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_paper_results.py",
+      "sha256": "c86315f4c75de95c73f82a8722fd1dc072a80c85dbef09359e3c6f709e3c5c75"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "One amplitude campaign only; 48 configurations, mean over two orthogonal directions before configuration resampling. Pointwise paired 95% intervals; no fitted critical length."
+}

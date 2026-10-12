@@ -1,0 +1,46 @@
+{
+  "confirmation": {
+    "path": "data/nucleation/analysis/84e608ec76114c63/confirmation.json",
+    "sha256": "a0d134a64657d65a36399a4468feef7104affcb625caaade047f5cb548f24c13"
+  },
+  "direction": {
+    "path": "data/nucleation/analysis/f0d02c561cd72ebe/direction.json",
+    "sha256": "589aa80ab9b32e3fe848361669494c7d5822d01101d66d60f3200d90fb356108"
+  },
+  "early_interface": {
+    "path": "data/nucleation/analysis/9d20420d06db4296/interface.json",
+    "sha256": "f768fc7e3d15074a1eefe315b3e1ce9b5aff25fdd70c0ce95fd3ab6f08d876b5"
+  },
+  "geometry": {
+    "path": "data/nucleation/analysis/71b13393bb500003/confirmation.json",
+    "sha256": "cdc116b71fd58b082785cdf8feaf6c3e60eeb992868223141afe116d60561777"
+  },
+  "growth": {
+    "path": "data/nucleation/analysis/9cf40e627ab5987f/growth.json",
+    "sha256": "b7a23177c655175e9fb02e7f10b5a6f8f65c740f3e450339fee92beecc31d515"
+  },
+  "mechanism": {
+    "path": "data/nucleation/analysis/102a4bb967083a9b/mechanism.json",
+    "sha256": "ed3b5e18f256e22bc14b7976c5d7508bc96edf2903405712c1569a34e3ba882e"
+  },
+  "moments": {
+    "path": "data/nucleation/analysis/412167a8b811e426/moments.json",
+    "sha256": "b53ee4dc2e9b8aee9c1fba69a8600ba5522d0f881a9b743b4de0a3b9ae7e6160"
+  },
+  "post_confirmation": {
+    "path": "data/nucleation/analysis/88ad386a4538e7fb/post_confirmation.json",
+    "sha256": "3c3ad690b60430d4fa6b82d35835fbdc2384b92244a399ca31f9348f7076fd9d"
+  },
+  "r3": {
+    "path": "data/nucleation/analysis/2e9372f61ffee64b/r3.json",
+    "sha256": "533778e642a04a2daa7246c332d5b6cfb890adef1e1b9dd31b0a0c5b80c7ec95"
+  },
+  "resource_control": {
+    "path": "data/nucleation/analysis/c20406591965431c/growth.json",
+    "sha256": "6c1dd24d5591f860369d4a5733b595091848c10bffac9344db27593d06be7609"
+  },
+  "robustness": {
+    "path": "data/nucleation/analysis/658e0f7d77cd7dae/robustness.json",
+    "sha256": "754c2555afd26c941f62d10f832f1e3c266201f1d9fee9f2d1fa68646e36b190"
+  }
+}

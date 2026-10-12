@@ -1,0 +1,112 @@
+{
+  "cells": [
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "0f8657133a810b50",
+      "damage": {
+        "count": 16,
+        "resource_field": "equilibrium",
+        "shape": "random"
+      },
+      "events": 0,
+      "horizon": 500,
+      "km": [
+        {
+          "at_risk": 64,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 64,
+          "censored": 64,
+          "events": 0,
+          "survival": 1.0,
+          "time": 500.0
+        }
+      ],
+      "max_depleted_cluster": 321,
+      "max_strategy_cluster": 343,
+      "median": null,
+      "n": 64,
+      "not_collapsed_not_recovered": 64,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.4,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.16
+      },
+      "recovered": 0,
+      "rmst": 500.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.05662405979280531
+      ],
+      "zero_event_upper95": 0.045729702330762456
+    },
+    {
+      "L": 48,
+      "collapse_risk": 0.0,
+      "config_hash": "38b62c847a480e67",
+      "damage": {
+        "count": 16,
+        "resource_field": "equilibrium",
+        "shape": "compact"
+      },
+      "events": 0,
+      "horizon": 500,
+      "km": [
+        {
+          "at_risk": 64,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 64,
+          "censored": 64,
+          "events": 0,
+          "survival": 1.0,
+          "time": 500.0
+        }
+      ],
+      "max_depleted_cluster": 60,
+      "max_strategy_cluster": 66,
+      "median": null,
+      "n": 64,
+      "not_collapsed_not_recovered": 62,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.4,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.16
+      },
+      "recovered": 2,
+      "rmst": 500.0,
+      "survival": 1.0,
+      "wilson95": [
+        0.0,
+        0.05662405979280531
+      ],
+      "zero_event_upper95": 0.045729702330762456
+    }
+  ],
+  "completed_runs": 128,
+  "elapsed_seconds": 13.14603777602315,
+  "expected_runs": 128,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "1c1e5b4e2588a0d9",
+  "total_site_visits": 147456000
+}

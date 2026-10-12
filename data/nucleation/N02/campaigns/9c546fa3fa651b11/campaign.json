@@ -1,0 +1,55 @@
+{
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "experiment_id": "N02",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.3,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 20,
+      "snapshot_every": 1000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 10000
+    },
+    "schema_version": 1,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage.count": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      96
+    ],
+    "damage.shape": [
+      "compact",
+      "stripe",
+      "four_patches",
+      "random"
+    ],
+    "model.diffusion": [
+      0.3,
+      0.45
+    ]
+  },
+  "master_seed": 20261005,
+  "replicas": 8,
+  "selection_rationale": "Exploratory bracket refinement after all 192 original seed runs collapsed and lower-b transition screening showed no depletion; b=1.16 is between 1.12 and 1.20 and is the inherited front reference. No confirmatory claim."
+}

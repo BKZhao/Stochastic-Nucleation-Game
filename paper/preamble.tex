@@ -1,0 +1,31 @@
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+% Keep title line breaks out of PDF metadata.
+\pdfstringdefDisableCommands{\def\\{ }}
+% Tectonic's XeTeX driver needs exported destination names for cross-PDF links.
+% Scope remote-link state to avoid hyperref issue latex3/hyperref#107.
+\makeatletter
+\@ifundefined{XeTeXversion}{}{%
+  \let\paper@linkfile\hyper@linkfile
+  \def\hyper@linkfile#1#2#3{%
+    \begingroup\paper@linkfile{#1}{#2}{#3}\endgroup}
+  \AtBeginDvi{\special{dvipdfmx:config C 0x10}}
+}
+\makeatother
+\graphicspath{{../figures/nucleation/paper/}}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\dblfloatpagefraction}{0.8}
+
+\makeatletter
+\newenvironment{appendixfigure}
+  {\par\addvspace{8pt}\noindent\begin{minipage}{\textwidth}\def\@captype{figure}\centering}
+  {\end{minipage}\par\addvspace{10pt}}
+\makeatother
+\input{math_commands}
+\input{phase_values}

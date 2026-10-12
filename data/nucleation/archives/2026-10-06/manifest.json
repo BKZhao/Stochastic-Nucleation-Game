@@ -1,0 +1,59 @@
+{
+  "archives": [
+    {
+      "archive": "N01.tar.gz",
+      "campaigns": [
+        "3955d2a20a01b214",
+        "6365869d6d602e52",
+        "b9b63239ce022531",
+        "cd869fba9bb17b92"
+      ],
+      "complete_runs": 962,
+      "compressed_bytes": 651486605,
+      "file_count": 14433,
+      "original_file_bytes": 724922813,
+      "sha256": "43e23077f40dc9a83c3c2cc5ef8e9f8e0350acc7b3c4b3f18ddabc2c19103b2f",
+      "stage": "N01"
+    },
+    {
+      "archive": "N02.tar.gz",
+      "campaigns": [
+        "2a94fae234a685c4",
+        "9224b6205f2eadd2",
+        "94641bbcbf07166d",
+        "9c546fa3fa651b11",
+        "a32bb3e9f1c1c921",
+        "c154a06f7aafbde0",
+        "fea7b10c32991e9c"
+      ],
+      "complete_runs": 2176,
+      "compressed_bytes": 1051075019,
+      "file_count": 53284,
+      "original_file_bytes": 1463454123,
+      "sha256": "e258bc75d393d6c51039c107f6f9e4040b051224ce894518d1d4c15b82a381f0",
+      "stage": "N02"
+    },
+    {
+      "archive": "N03.tar.gz",
+      "campaigns": [
+        "ece1d6b170fb3c1c"
+      ],
+      "complete_runs": 512,
+      "compressed_bytes": 229264687,
+      "file_count": 9645,
+      "original_file_bytes": 288333695,
+      "sha256": "e914af8e99b37eb90230e6eda27fa343bc44868d0360fa674bfd51d60a8562f8",
+      "stage": "N03"
+    }
+  ],
+  "code_archives": "data/nucleation/_sources (already tracked separately in Git)",
+  "file_checksums_sha256": "ad47b0f33d55383ad9829e34c01552251e3850d55b012b408e7027451789d80e",
+  "format_version": 1,
+  "scope": "All existing N01/N02/N03 files, including campaign records and all complete run directories; no run selection.",
+  "source_commit": "4a5de6e4200a8c47d49eed893461c849e779d6fb",
+  "total_complete_runs": 3650,
+  "total_compressed_bytes": 1931826311,
+  "total_files": 77362,
+  "total_original_file_bytes": 2476710631,
+  "verification": "All COMPLETE manifests validated; every tar member independently decompressed and SHA-256 checked against its source file."
+}

@@ -1,0 +1,68 @@
+{
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        -17
+      ]
+    }
+  ],
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 500,
+      "resource_max": 0.25,
+      "rho_max": 0.25
+    },
+    "experiment_id": "N06",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 40000
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "bind_mother_identity": true,
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm",
+  "master_seed": 202610108,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {
+        "count": 12,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "replicas_intervention": 8,
+  "replicas_original": 8,
+  "selection_rationale": "Endpoint-sensitivity cell (R3b): thresholds 0.25 x confirmation 500 sweeps against the default (0.2, 250); 12 smallest-seed direction mothers, three core arms, 8 clones. Descriptive: sign stability of the paired medium-minus-small contrast. Endpoint campaign.",
+  "shift": [
+    17,
+    12
+  ]
+}

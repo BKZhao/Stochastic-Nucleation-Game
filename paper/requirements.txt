@@ -1,0 +1,2 @@
+# Optional isolated tooling for PDF text and layout verification.
+PyMuPDF==1.26.4

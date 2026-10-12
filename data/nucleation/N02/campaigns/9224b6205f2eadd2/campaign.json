@@ -1,0 +1,86 @@
+{
+  "analysis": {
+    "formal_hypothesis_test": false,
+    "interim_testing": false,
+    "outcome_times": [
+      10000,
+      20000,
+      40000
+    ],
+    "representative_rule": "smallest dynamic seed within each geometry and 40000-sweep outcome",
+    "scope": "Descriptive progression and finite-window risk; not a nucleation, stationarity, equivalence or infinite-time test.",
+    "spatial_times": [
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      20000,
+      40000
+    ],
+    "unresolved_landmark": 10000
+  },
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 1,
+      "shape": "compact"
+    },
+    "experiment_id": "N02",
+    "growth": {
+      "defector_fractions": [
+        0.05,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "snapshot_crossings": true
+    },
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 500,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 40000
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage": [
+      {
+        "count": 1,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "shape": "random"
+      }
+    ]
+  },
+  "master_seed": 202610066,
+  "replicas": 64,
+  "selection_rationale": "Fixed-parameter horizon extension after single-founder screen; independent cohorts for local persistence, growth progression and finite-time depletion."
+}

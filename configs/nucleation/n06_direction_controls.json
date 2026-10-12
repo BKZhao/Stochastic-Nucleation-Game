@@ -1,0 +1,43 @@
+{
+  "master_seed": 202610082,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original",
+    {"arm": "shifted", "shift": [2, 1]},
+    {"arm": "shifted", "shift": [1, -2]},
+    {"arm": "shifted", "shift": [-2, -1]},
+    {"arm": "shifted", "shift": [-1, 2]},
+    {"arm": "shifted", "shift": [5, -17]},
+    {"arm": "shifted", "shift": [17, 5]},
+    {"arm": "shifted", "shift": [-5, 17]},
+    {"arm": "shifted", "shift": [-17, -5]},
+    {"arm": "shifted", "shift": [23, 42]}
+  ],
+  "shift": [17, 12],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {"count": 48, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000, "sample_every": 10, "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Direction-controlled displacement round on 48 fresh compact-16 mothers (smallest-seed rule, outcome-blind). Two magnitudes with four directions each (2.24: (2,1),(1,-2),(-2,-1),(-1,2); 17.72: (5,-17),(17,5),(-5,17),(-17,-5), the first being torus-equivalent to the previous (5,31)) plus the 23.77 point (23,42) for the magnitude curve. Primary pre-registered prediction (see preregistered_direction_predictions.json, written before these runs): the interface-resource change dB(d) = boundary_c_mean(shifted) - boundary_c_mean(original) predicts the paired fate response with Spearman(dB, delta_q_B) < 0 across mother-direction pairs; direction-dependence at fixed magnitude and the magnitude turnover are secondary. No uniform arms: total-matched decomposition was settled in the previous round.",
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm"
+}

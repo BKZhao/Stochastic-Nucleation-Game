@@ -1,0 +1,29 @@
+{
+  "archived_commit": "1f525cd6ef6064428d75d4ac4172b83839fd6bbd",
+  "cleanup": "Only the three newly downloaded temporary verification objects were removed after successful verification; original run directories, published archive files and standard Git LFS storage were retained.",
+  "local_archive_validation": "All 3650 COMPLETE directories and all 77362 archived files were validated before upload; one full job per stage was additionally restored and checked with verify_complete.",
+  "method": "git lfs fetch --refetch research HEAD using an initially empty isolated lfs.storage; every downloaded object SHA-256 and byte count matched the archival manifest",
+  "objects": [
+    {
+      "archive": "N01.tar.gz",
+      "bytes": 651486605,
+      "sha256": "43e23077f40dc9a83c3c2cc5ef8e9f8e0350acc7b3c4b3f18ddabc2c19103b2f",
+      "verified": true
+    },
+    {
+      "archive": "N02.tar.gz",
+      "bytes": 1051075019,
+      "sha256": "e258bc75d393d6c51039c107f6f9e4040b051224ce894518d1d4c15b82a381f0",
+      "verified": true
+    },
+    {
+      "archive": "N03.tar.gz",
+      "bytes": 229264687,
+      "sha256": "e914af8e99b37eb90230e6eda27fa343bc44868d0360fa674bfd51d60a8562f8",
+      "verified": true
+    }
+  ],
+  "repository": "https://github.com/BKZhao/Stochastic-Nucleation-SEG",
+  "verified_at_utc": "2026-10-06T04:03:08.365037+00:00",
+  "verified_bytes": 1931826311
+}

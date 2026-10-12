@@ -1,0 +1,65 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig02_growth_fields.pdf",
+      "sha256": "7d43f6783a4a57c1f16045a4035eb4d9c3f920dfb76986f660cc726825f73ee1"
+    },
+    {
+      "path": "figures/nucleation/paper/fig02_growth_fields.png",
+      "sha256": "9b2fe600ee196867fc227648c66bdc358b34a47d320fcc40e523b8c3e7959fa2"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/c8fef4041dca429f/physics.json",
+      "sha256": "83a8c9a9a7d13547f9d7bc2b538b7a50c5911c77cbe9b4a5dc9c14806496988e"
+    },
+    {
+      "path": "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/initial.npz",
+      "sha256": "63d2d3606a49eab857fc31f097f6a50a08aedb5dad94cb7039d1e325714a59da"
+    },
+    {
+      "path": "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.05.npz",
+      "sha256": "f080f5acd009dd126b3a79ef69faa8b93fc3f5c79c2f8f5760c413289bc53250"
+    },
+    {
+      "path": "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.2.npz",
+      "sha256": "ab13978087c94ccf3e8282050caeccf8b6309c531de60741c670d97c6182d541"
+    },
+    {
+      "path": "data/nucleation/N02/a48b35b9b55a7913/seed-0724275594/states/growth-0.8.npz",
+      "sha256": "ec6b37ae159bc0426e749180dc8d436b169f0cab3f701f6333fab53a6158bcd6"
+    },
+    {
+      "path": "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/initial.npz",
+      "sha256": "0f2e144ef0c73d486cdc9434c0594a3fec5b68d79b47abc39aea3fa133da1b78"
+    },
+    {
+      "path": "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.05.npz",
+      "sha256": "fee177b3af0a7012ca779909286ceb61bc96c3267031b2a03a0b3b0a9eb8950a"
+    },
+    {
+      "path": "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.2.npz",
+      "sha256": "f7dd7b573a116865428ace009b3a44759b4415143f11378497fc9da8cb23898d"
+    },
+    {
+      "path": "data/nucleation/N02/554bd5cce3e75adf/seed-0020995811/states/growth-0.8.npz",
+      "sha256": "b6fc72ebfe7002ef793f58d20276cd52cab83c5cf2baaac3582d65a5e54e771b"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_spacetime.py",
+      "sha256": "7beed1b5670d74d5be033ebe7a99235b58d2147995a84c739024d4a0973fef53"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Resource maps and unchanged-coordinate strategy contours, selected confirmed-B examples. Columns: initial and first 5%, 20%, 80% crossings; times are actual MCS, not common times. All stages use one fixed translation per example and the same resource scale. 12-site bars. Outcome-conditioned illustrations; ensemble statistics remain separate."
+}

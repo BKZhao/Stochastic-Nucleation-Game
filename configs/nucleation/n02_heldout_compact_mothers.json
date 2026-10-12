@@ -1,0 +1,29 @@
+{
+  "master_seed": 202610076,
+  "replicas": 128,
+  "base": {
+    "experiment_id": "N02",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000, "sample_every": 10, "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "nucleation_lifetimes",
+    "damage": {"count": 16, "shape": "compact", "resource_value": 0.0},
+    "growth": {"defector_fractions": [0.05, 0.2, 0.5, 0.8], "snapshot_crossings": true},
+    "campaign_note": "Held-out compact-16 mother generation for the confirmatory round; fresh seeds, compact protocol only."
+  },
+  "selection_rationale": "Generate independent compact-16 crossing mother states for held-out model comparison; no new hypothesis test on this batch itself.",
+  "grid": {
+    "damage": [
+      {"count": 16, "shape": "compact", "resource_value": 0.0}
+    ]
+  }
+}

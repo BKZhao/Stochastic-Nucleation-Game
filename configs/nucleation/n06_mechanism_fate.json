@@ -1,0 +1,38 @@
+{
+  "master_seed": 202610071,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original",
+    "interface_protect",
+    "interface_harm",
+    "interface_shuffle",
+    "defector_shuffle"
+  ],
+  "shift": [0, 0],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {"count": 48, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000, "sample_every": 10, "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Mechanism round on the same 48 compact mothers as the direction round (smallest-seed rule, outcome-blind, identity-bound). Controlled interface-resource rearrangement arms: every arm permutes an existing resource value multiset on a fixed node set, so total resource, the value distribution and the pre-substep boundary-cooperator mean are exactly unchanged; only which node holds which value differs. interface_protect pairs the largest boundary values with the largest linear sensitivity w_u, interface_harm the reverse, interface_shuffle a frozen random permutation, and defector_shuffle the same permutation logic on defector nodes whose own resources never enter payoffs (exactly zero predicted linear response). Primary pre-registered test (see preregistered_mechanism_predictions.json, written before these runs): the mother-level paired contrast q_B(interface_harm) - q_B(interface_protect) is positive with a mother-level cluster bootstrap 95% interval excluding zero.",
+  "interpretation": "finite-horizon fate endpoints for controlled interface-resource rearrangements at fixed total, distribution and boundary mean; local-allocation mechanism test, no infinite-time claims"
+}

@@ -1,0 +1,70 @@
+{
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "damage": {
+      "count": 16,
+      "resource_value": 0.0,
+      "shape": "compact"
+    },
+    "experiment_id": "N02",
+    "interface": {
+      "equilibrium_times": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        20,
+        50,
+        100,
+        200,
+        500
+      ]
+    },
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.4,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 10,
+      "snapshot_every": 500,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 500
+    },
+    "schema_version": 2,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "damage": [
+      {
+        "count": 1,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "shape": "compact"
+      },
+      {
+        "count": 16,
+        "shape": "random"
+      }
+    ]
+  },
+  "master_seed": 202610069,
+  "replicas": 64,
+  "selection_rationale": "Early-window interface diagnostics: per-sweep J, J_pre and boundary-resource tracking for the first 500 sweeps after planting, with fixed-strategy resource equilibrium at selected times. Mechanism screening for H-A (interface payoff structure controls early establishment); not a confirmation test of any pre-registered endpoint."
+}

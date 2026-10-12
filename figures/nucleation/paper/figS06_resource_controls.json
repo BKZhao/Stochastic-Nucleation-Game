@@ -1,0 +1,41 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS06_resource_controls.pdf",
+      "sha256": "af51d217a58966cdcbd3c1ffba8ece244a000d3dcc1b395fb226c623a8531295"
+    },
+    {
+      "path": "figures/nucleation/paper/figS06_resource_controls.png",
+      "sha256": "621d053378cc4bca7ec5f031a8c7614386acf2a9590d038cb70b0a4f14ddde1e"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/f8abaf8f17995c22/structure.json",
+      "sha256": "e0f4b13b4e376ea8ce98b34cacb5703fcfb5ed1bb8a4e3885995b7f892c0a578"
+    },
+    {
+      "path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "sha256": "1a907fc806210d2f01149b94b1eb477bcb5789a583c0dc9937039ca6dfa80ec4"
+    },
+    {
+      "path": "code/nucleation_interface.py",
+      "sha256": "05a57361dc58c02f6de9ae2fdaf80b954b0f34ad18923df0bce1da62df25d989"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_resource_controls.py",
+      "sha256": "11620de45f1d330add6c69d971a09c59e4a0ea100caf11978f3731abd444debd"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Equilibrium field for the fixed strategy used in the alignment figure, solved to tolerance 1e-13. Reference parameters g=0.1, delta=0.5, D=0.4; 12-site bar. Fixed-strategy difference decays deterministically: median and variation computed across 48 configurations; only the median is drawn. The bound is not a fitted coupled-system relaxation time. Mean-balance residuals are reported numerically, not as a redundant identity scatter."
+}

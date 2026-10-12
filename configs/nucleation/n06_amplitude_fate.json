@@ -1,0 +1,124 @@
+{
+  "master_seed": 202610110,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        4,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        6,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        8,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        11,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        14,
+        0
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        4
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        6
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        8
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        11
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        0,
+        14
+      ]
+    }
+  ],
+  "shift": [
+    17,
+    12
+  ],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {
+        "count": 48,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Amplitude densification (frozen in follow-up plan): five magnitude layers 4/6/8/11/14 with two orthogonal axis directions each, on the 48 direction-round mothers, to locate the finite-time harm-to-protect turnover between |d|=2.24 and 17.72; per-mother direction means first, then mother-level resampling. Endpoint campaign.",
+  "interpretation": "fate endpoints for direction-controlled displacement vectors; mother-level paired analysis against the same mothers' original arm"
+}

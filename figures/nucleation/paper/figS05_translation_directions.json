@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS05_translation_directions.pdf",
+      "sha256": "0eed23b976afcd3a06bd8b1240936c5328c7ae580bc4d15da3f6c71dba5b8c68"
+    },
+    {
+      "path": "figures/nucleation/paper/figS05_translation_directions.png",
+      "sha256": "84bce9671ea0cdf125b0bf2b8df9a5d74e2a037a727086ae147adf761d2b4f17"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/f0d02c561cd72ebe/direction.json",
+      "sha256": "589aa80ab9b32e3fe848361669494c7d5822d01101d66d60f3200d90fb356108"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_paper_results.py",
+      "sha256": "9c84dd50136faeb4efa5ff65e2fd6e5b6e61d11ffb5830f7b1af0e5245572f68"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Four sampled rotations of each reference vector, 48 configurations, 16 continuations per treatment; point estimates. Connecting segments are guides between measurements, not interpolation evidence or proof of isotropy."
+}

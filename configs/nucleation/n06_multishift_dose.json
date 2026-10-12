@@ -1,0 +1,78 @@
+{
+  "master_seed": 202610079,
+  "replicas_original": 32,
+  "replicas_intervention": 32,
+  "arms": [
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        31
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        23,
+        42
+      ]
+    }
+  ],
+  "shift": [
+    17,
+    12
+  ],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "252d539cf24a4c7a",
+    "rules": {
+      "compact_16": {
+        "count": 15,
+        "rule": "all"
+      },
+      "random_16": {
+        "count": 15,
+        "rule": "smallest_seed"
+      }
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 20,
+      "sample_every": 1,
+      "snapshot_every": 20,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Dose-response validation of the pre-registered instant predictions: measured a_1 for three new displacement vectors versus the J_pre(shifted) values recorded before execution; 32 clones per mother and arm, 20 sweeps.",
+  "interpretation": "short-horizon instant drift validation across displacement magnitudes"
+}

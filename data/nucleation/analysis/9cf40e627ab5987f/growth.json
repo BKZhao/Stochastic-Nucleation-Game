@@ -1,0 +1,4064 @@
+{
+  "analysis": {
+    "formal_hypothesis_test": false,
+    "interim_testing": false,
+    "outcome_times": [
+      10000,
+      20000,
+      40000
+    ],
+    "representative_rule": "smallest dynamic seed within each geometry and 40000-sweep outcome",
+    "scope": "Descriptive progression and finite-window risk; not a nucleation, stationarity, equivalence or infinite-time test.",
+    "spatial_times": [
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      20000,
+      40000
+    ],
+    "unresolved_landmark": 10000
+  },
+  "analysis_sources": {
+    "code/b0_fast.py": "1d05a3111fa1f87bf7837dfdf9add31a55850300f6e12a82a7aa76b7934a0e68",
+    "code/b_eco.py": "660c8c320fa286da463f27d7c22c2e52ee133c00c47f532bb211cc65089c4acb",
+    "code/b_eco_multilayer.py": "5560d99522839e29d80c4eff5dcbb3c51355694087097d006fac57a8c760722c",
+    "code/b_eco_unified.py": "ed3ec7436e3066a50e7a61c2d936f1b29dd97938057cf9083e1b70acffb4f682",
+    "code/lattice.py": "c69c6d58d3d07bf9821fafb1a51c41636c22520783634a1bc1465e55a27e428a",
+    "code/mean_field.py": "143e4a2ecd2e219f9cd49b4eacccb845d17ebac33f1eb4aa6304ae3bdfea31b4",
+    "code/nucleation_diagnostics.py": "b4c9b831c0c225488f42b76784a7885ea0c6abed1229aed04388fe5fefd67b6d",
+    "code/nucleation_progress.py": "e1b858e4099f5211a759efcad22dcd0b14916055c35c854b827a3ee41ff7adc2",
+    "code/nucleation_seeds.py": "e4d2521d86aeba9cb64d328da55330e4d7c4556c7d9b0146357313687c9b4ae6",
+    "code/nucleation_survival.py": "7c06865a6529e69c04cbe0d007f932801667d182e5df4048789a22b6b4fe3fac",
+    "code/observables.py": "3b4dd17677ebd953b2642835c0aa60ddbf3aa22107b1442439aeb0f5b88fab69",
+    "code/plotstyle.py": "43a5ea1cd3b356f4f9c9068509e1d181b125533ceebe8e853c8199ff587a04bc",
+    "code/research_clusters.py": "a0f2c0e0e4b3b34bd83e93bf7f82bd9071c221e13f118aca11ac4bd779ea6406",
+    "code/research_events.py": "3bd8d09112bf31ed14ea0e203feeb886db3351c2e8ec7958d38a6afdb8d11e21",
+    "code/research_state.py": "15f6d08b52c18ffe00c6003aa7e9d8da40fe9164a172d23d9f94841aaa80ca39",
+    "experiments/analyze_nucleation_confirmation.py": "14d22ac118094b79ddd47414f90fcb98d64ceab98c2a9106656dbe708ebeeb49",
+    "experiments/analyze_nucleation_followup.py": "85f78d9377f00c576e4e23ffc10482f0e9b0d1feb1852e30bbac5eff8c2e615c",
+    "experiments/analyze_nucleation_founders.py": "8dca1521291c32b75b0ce7cfcbc0e7c08d8502785d1307914ad0dd06d2932e9a",
+    "experiments/analyze_nucleation_growth.py": "a7cdcc401f1b5a2870850df1457845ca4c4742ce38b1463acd3e97303cdf6e0c",
+    "experiments/common.py": "da0c9f57bcd659da224f46647661b25ffb6ebaa6fdcaf6ac41b9810d235ddcbd",
+    "experiments/fig01_trajectories.py": "e1bde56a44775df73bd17550bb22977352360d6419dc2078ad6c8e5a2f598e55",
+    "experiments/fig02_phase.py": "3f1a1b4f004a8145f71ff6a22b1ce925e4ebfc5ac2961f2726a8d62e010131f7",
+    "experiments/fig03_hysteresis.py": "786178b6cebebc4695d259ddd0dcd645bd8629d0950d299ed3713cae5a1c827e",
+    "experiments/fig04_wave.py": "16f9ab049d2055fce9d5e9fd196829984d9295d58faa20a5b16049eab938df44",
+    "experiments/fig05_csd.py": "c51b162af13212ad6d228153a2d0fe70f00e498c5cee2a4cf7abf1119f467d0e",
+    "experiments/fig06_multilayer_temp.py": "9f762ba479a55817cbe490a45c42ba54d6c9958844748c0bfd4519eb5877fe0a",
+    "experiments/front_summary.py": "74e53ba030c18d8eb16177adf23a758d2f9b543da6a82eb213098a5ced2a01e6",
+    "experiments/multilayer_response.py": "a8f06c0e46bfcc6f8ec9f0c2b97958ce4b690cea91e8e78a36df3822f40e298c",
+    "experiments/nucleation_campaign.py": "5d274110667aa4a81a76dba85b15a03e411836d57378ce12d3ff1f2c528630a9",
+    "experiments/nucleation_growth_analysis.py": "6e363c21a590b34df018ec31740a3352b0befbe5c366e759459a007a546779ad",
+    "experiments/nucleation_observation.py": "c6485c7c5e59df142e6b45c70c4643c03d975ad98176cac36c2c57aeb5c7a334",
+    "experiments/nucleation_runner.py": "f4ec1d9ccb6d17df3de2b889d18cc599ea0311de810fa2efb5b6fbe8b48ac4a0",
+    "experiments/plot_fig1_detrule.py": "a9a2358cbfe35f5a1f5433b901e7c39c0b2b7927540b29d45b206f7e9d9b7fc3",
+    "experiments/plot_fig2_multilayer.py": "0bc0e2254b11d21e0139286db2feec4746e59b9785f91c544aaa0c2f0d540790",
+    "experiments/plot_fig3_v3.py": "c562905f8099e81acbd71b91410caa9c528f717200747fd9f99bc8c00e1044f7",
+    "experiments/plot_fig4_v3.py": "f874934f1f97be028b4faa1c315746216b64a95f7686daa0239e0bba55070f8c",
+    "experiments/plot_fig5_v3.py": "0d244d48f074fe6a41c86cb9dbf610079f50166bdd1d63de7337ca5c2128ea29",
+    "experiments/plot_fig_amplitude.py": "200ba1a0c746a23b8a13c81d874624a9c8f4d1c88371c0a3f3665c9003c65762",
+    "experiments/plot_fig_atlas.py": "3110c733449e2398550cbb5ea58a8cbc79d705af8a35757494336c36597d8c10",
+    "experiments/plot_fig_dynamics.py": "e46cb7a09a68d35895a5871ac84ccb6190871b7e19d6f95c60b13784fdc6db47",
+    "experiments/plot_fig_mscaling.py": "ef1dcb98cd22bee856233c8875fe26153e10e0037b035fb31bcba52667832a6e",
+    "experiments/plot_fig_multisync.py": "e94c57912124b3a24c153abc8c8749d4c459e66c1aa66de4e33e199cb89c1fbe",
+    "experiments/plot_fig_networks.py": "6b1b55af3d77a488919f667a2106faeea94ad3b4932e778a60cc0b23733aeb93",
+    "experiments/plot_fig_pattern.py": "e0fb49afbc2b841fac6834903c8fda237f4f2dd76aaad24a1cfcfbcb0f5e852c",
+    "experiments/plot_fig_robustness.py": "3594e122fc903f8fd8379ca6d78ed566191236211b3a0310db6bfad959c618bf",
+    "experiments/plot_fig_robustness_maps.py": "cd7ceadea935f13f61d0d51c0407511ae90107d71d3f8234313400cf2f0010e2",
+    "experiments/plot_fig_topology.py": "3f648c31352686606acc77f521efd8bd48ca71a47da66064ffe8b9b44d615c4d",
+    "experiments/plot_fig_traj.py": "f88402baf08be2ada5e39413f90999ceab955ac2bd17a4a46578e34300daef2f",
+    "experiments/plot_fig_wavecrit.py": "bbfb277bb96ab495262fc6af81838dd17d5b79a39ea54289aaab1e2e419e9272",
+    "experiments/plot_fig_wavespeed.py": "5ff33a097873d1cfac1784791d6a1bcf06dde2bedd865b4bcdd2b7fbcd606ba1",
+    "experiments/plot_nucleation_confirmation.py": "827a5004c14eede026c55e91b2b74baf15d2a999b63314c34300feeab8937418",
+    "experiments/plot_nucleation_followup.py": "cda05ff0a843a2f8fd4030a8a02114f88c61ca6b91bf66792b576f2fa80894d1",
+    "experiments/plot_nucleation_founders.py": "eb3d4c23e73f3bbc249c5e265a34e5777e878ac888d94efde93a83a24e464615",
+    "experiments/plot_nucleation_growth.py": "d23ddf19ce1dcb4bcd3f584d09e56fa27e36b72209871af6168059e749a4e425",
+    "experiments/plot_nucleation_screening.py": "683f174ff86e38ed7c9732cd6684bbcdfbf837729b1440bb1d100e75b6bdded0",
+    "experiments/plot_style.py": "3948512c91778ba787e7743cb95d1c0664de39e5c6da062cbe37f732d2440d92",
+    "experiments/pubstyle.py": "56ac26730bd241cd122b6d6a02e50e8c6d590add70b12f5615e86d334021da94",
+    "experiments/research_common.py": "629f89bb1687dc0474b5e9812bdd1faeb24833e7c4141c0f56a11260c6f2d7c1",
+    "experiments/revision_contract.py": "0263a253bc2998b118a48d2a6c5c8479ad35488e5e1c5be9dcf38b01f1504b87",
+    "experiments/revision_io.py": "8256efb6afe0274d35280f95726a94505d6ef1105601908caa1cdcd057900d4c",
+    "experiments/run_collapse_wave.py": "c56431d76c22aa489dc68b77bc824466d6a9b32d21e1d5d9240634802f5522ee",
+    "experiments/run_coupling_comparison.py": "052b7e170bb73bfff741343968036a322dd318ed17a9d745c39ec163f1a01eff",
+    "experiments/run_csd.py": "7a228fcaf1a3a6d591f5b684132c8e1c5632e5af2dde142d0b320e331dd8b061",
+    "experiments/run_dynamics_examples.py": "f41bebfc8cbebf85092eb4708f1b210dcca1003d414034c8e63a02146d3c93b1",
+    "experiments/run_early_warning.py": "af3a56cce18c5ee533f6c5438d7abde649c111e9980874bd90b296f6d3f8bf36",
+    "experiments/run_eco_bistab.py": "5a35f093e0977d827f3716e9be7e7bc7d72b971df6fe06041093c5fd5391f0bc",
+    "experiments/run_eco_hyst.py": "bf78d5a2a82fd3f23bae278ef9ea1af0093240177cbbdd1c8bc2e9d34695177d",
+    "experiments/run_eco_phase.py": "d29b9997110ed118bd67201380df62f9a5933f13cf866de2d83e48e86e98f22d",
+    "experiments/run_hysteresis.py": "8bbc86dd7cd1298afda1a5d8a0f41c30c65fb2a84d6f7b77295b03cd5849c45f",
+    "experiments/run_mscaling.py": "f5b1effa8adc60f0f61f3c326ae2791907b20d15df7aeb9c4c2fb2057235048a",
+    "experiments/run_multilayer_map.py": "466336b1be3e163cf77be81d7123babd835792a55f6f79482f2e4ed1269ebd23",
+    "experiments/run_multilayer_phase.py": "96ca22b33ffcc65af2fab4e2a42a0127b577f28361d80804b47a5d8aaa886727",
+    "experiments/run_nucleation_confirmation.py": "4615fd9520c11b30403d9cc7da39b7af923bcabd3e9aed3d8880be45a147ec2c",
+    "experiments/run_nucleation_pilot.py": "f268c6c32e9b9b41ea2d06df6994c63f6f39619e0b11e54eac32ec181f698fcd",
+    "experiments/run_nucleation_seeds.py": "5b132eeaeecb7573e27289aa00bf426faee3316a65b7fe058eabfc0643f53853",
+    "experiments/run_oscillation_validation.py": "50b1da4f0a47496657eba0a71ff9a7d10b44527ed40d77e38d71df91efe0ff55",
+    "experiments/run_pgg_topo.py": "213d54ffdd7e90dfaef7467e6081ee788dcdb8d28067dedeb93a104a6102da11",
+    "experiments/run_phase_maps.py": "d0f5912671e8431b684f84e250c75635b4dddbb35d1a27af2be1b67cf878c483",
+    "experiments/run_phase_scaling.py": "49664d7d2b1773b42fdab4fa3894c91692a035eb313d9219a872035e16b62ae8",
+    "experiments/run_robustness.py": "b664b1b01a8319498e019ce2bcc33a5a89c29deb59bb126268db80da653e3e8d",
+    "experiments/run_stats.py": "09360f28329d8da74e6ca9d7d44cee12d5ec910587c3953c7608f63fe5a853be",
+    "experiments/run_topology.py": "f02b680f110a33719b151e277174caf29717ad2fc1e1bd660059a533246ad172",
+    "experiments/run_topology_prod.py": "949a52b3bd5884541af58a89d200e7555ff4cca002bd30f8ae7d4b6063b68995",
+    "experiments/run_transition_scan.py": "f91c431658a71519676c20f7a81034d28d7d24b6a05a47f9d150f7712638d00c",
+    "experiments/run_unified_phase.py": "429b088aa5bc80aa4b57dd387d7f5ecbfd0def985a1a304670b4bf853df82f4a",
+    "experiments/run_wave_critical.py": "df29417f0495649cae02ace8e1894e82cbf4a4fc4b43f6fe1d0a3852c9a11fd6",
+    "experiments/run_wave_map.py": "f3a6f4a4cdaf7aadd1e37b9784dd928c87061f80355a51403c47f761b8b48dae",
+    "experiments/run_wave_scaling.py": "0462136ae532e151d4ecccf9a200bfd074e217d628d96f4586aa7e89b68e6dd7",
+    "experiments/run_wave_speed.py": "4c7d002cbd0993dcb1345e4bd836831300ce4ccbf4b54d084098ef0529abfb64"
+  },
+  "campaign": "9224b6205f2eadd2",
+  "groups": {
+    "compact_1": {
+      "damage": {
+        "count": 1,
+        "shape": "compact"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 32,
+          "rmst": 10000.0,
+          "survival": 1.0,
+          "unresolved": 32,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.09375,
+          "events": 6,
+          "horizon": 20000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 10959.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 14379.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 14899.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 16750.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 17716.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 19846.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 58,
+              "events": 0,
+              "survival": 0.90625,
+              "time": 20000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 42,
+          "rmst": 19602.328125,
+          "survival": 0.90625,
+          "unresolved": 16,
+          "wilson95": [
+            0.04367825258519838,
+            0.1898287959964559
+          ]
+        },
+        {
+          "collapse_risk": 0.125,
+          "events": 8,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 10959.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 14379.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 14899.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 16750.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 17716.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 19846.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 27658.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 27897.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 56,
+              "events": 0,
+              "survival": 0.875,
+              "time": 40000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 51,
+          "rmst": 37345.375,
+          "survival": 0.875,
+          "unresolved": 5,
+          "wilson95": [
+            0.06472242663330453,
+            0.2277456182112994
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 9732.25,
+              "median": 7906.5,
+              "n": 20,
+              "q25": 3401.0,
+              "q75": 13003.25
+            },
+            "reached_by_time": {
+              "10000": 13,
+              "20000": 18,
+              "40000": 20
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.35,
+                "median": 2.0,
+                "n": 20,
+                "q25": 1.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.04537760416666667,
+                "median": 0.045355902777777776,
+                "n": 20,
+                "q25": 0.044270833333333336,
+                "q75": 0.046440972222222224
+              },
+              "largest_share": {
+                "mean": 0.9239096384749867,
+                "median": 0.9746474861130893,
+                "n": 20,
+                "q25": 0.8740833333333333,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.9354087968636344,
+                "median": 0.9368908966544189,
+                "n": 20,
+                "q25": 0.9331274514305328,
+                "q75": 0.9378048512346538
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 20,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 14203.125,
+              "median": 11878.5,
+              "n": 8,
+              "q25": 10492.5,
+              "q75": 17586.0
+            },
+            "reached_by_time": {
+              "10000": 1,
+              "20000": 6,
+              "40000": 8
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.5,
+                "median": 1.0,
+                "n": 8,
+                "q25": 1.0,
+                "q75": 1.25
+              },
+              "depleted_fraction": {
+                "mean": 0.1936306423611111,
+                "median": 0.19401041666666666,
+                "n": 8,
+                "q25": 0.193359375,
+                "q75": 0.19466145833333334
+              },
+              "largest_share": {
+                "mean": 0.9989292767646121,
+                "median": 1.0,
+                "n": 8,
+                "q25": 0.9994577006507592,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.77559259710026,
+                "median": 0.7756980162111989,
+                "n": 8,
+                "q25": 0.7750193765775308,
+                "q75": 0.7771939385833212
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 8,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 17186.125,
+              "median": 15629.0,
+              "n": 8,
+              "q25": 13075.75,
+              "q75": 20514.0
+            },
+            "reached_by_time": {
+              "10000": 1,
+              "20000": 6,
+              "40000": 8
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.25,
+                "median": 2.0,
+                "n": 8,
+                "q25": 1.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.4912651909722222,
+                "median": 0.4913194444444444,
+                "n": 8,
+                "q25": 0.490234375,
+                "q75": 0.4925130208333333
+              },
+              "largest_share": {
+                "mean": 0.9987016666954103,
+                "median": 0.9991349474495541,
+                "n": 8,
+                "q25": 0.9980480043003759,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.46093676981398335,
+                "median": 0.4604122046415683,
+                "n": 8,
+                "q25": 0.45937444843099023,
+                "q75": 0.4631528448783445
+              },
+              "winding": {
+                "mean": 0.375,
+                "median": 0.0,
+                "n": 8,
+                "q25": 0.0,
+                "q75": 1.0
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 18470.125,
+              "median": 16876.5,
+              "n": 8,
+              "q25": 14511.0,
+              "q75": 21536.0
+            },
+            "reached_by_time": {
+              "10000": 0,
+              "20000": 6,
+              "40000": 8
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.125,
+                "median": 1.0,
+                "n": 8,
+                "q25": 1.0,
+                "q75": 1.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7948133680555556,
+                "median": 0.7957899305555556,
+                "n": 8,
+                "q25": 0.7931857638888888,
+                "q75": 0.7961154513888888
+              },
+              "largest_share": {
+                "mean": 0.9998644251626898,
+                "median": 1.0,
+                "n": 8,
+                "q25": 1.0,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.17335673622587439,
+                "median": 0.1733843644687909,
+                "n": 8,
+                "q25": 0.17154344359120743,
+                "q75": 0.1756118476929151
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 8,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 6553.125,
+              "median": 4865.5,
+              "n": 8,
+              "q25": 2627.75,
+              "q75": 6921.25
+            },
+            "end": "0.2",
+            "not_reached_both": 56,
+            "original_n": 64,
+            "reached_both": 8,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2983.0,
+              "median": 2556.5,
+              "n": 8,
+              "q25": 2224.5,
+              "q75": 3423.25
+            },
+            "end": "0.5",
+            "not_reached_both": 56,
+            "original_n": 64,
+            "reached_both": 8,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1284.0,
+              "median": 1354.5,
+              "n": 8,
+              "q25": 1158.25,
+              "q75": 1439.75
+            },
+            "end": "0.8",
+            "not_reached_both": 56,
+            "original_n": 64,
+            "reached_both": 8,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 292.875,
+              "median": 277.0,
+              "n": 8,
+              "q25": 260.25,
+              "q75": 285.5
+            },
+            "end": "B_confirm",
+            "not_reached_both": 56,
+            "original_n": 64,
+            "reached_both": 8,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/494ce5b4881bd00f/seed-1736587891",
+          "seed": 1736587891
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/494ce5b4881bd00f/seed-0276735010",
+          "seed": 276735010
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/494ce5b4881bd00f/seed-1024450428",
+          "seed": 1024450428
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 1.328125,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0016072591145833333,
+            "median": 0.0013020833333333333,
+            "n": 64,
+            "q25": 0.00043402777777777775,
+            "q75": 0.0022786458333333335
+          },
+          "depleted_fraction": {
+            "mean": 0.0006917317708333334,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0008680555555555555
+          },
+          "largest_share": {
+            "mean": 0.8563983568220856,
+            "median": 1.0,
+            "n": 59,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9960163102066824,
+            "median": 0.9966593188584073,
+            "n": 64,
+            "q25": 0.9947144348573304,
+            "q75": 0.9977463925104938
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 59
+        },
+        {
+          "clusters": {
+            "mean": 1.46875,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0030924479166666665,
+            "median": 0.001953125,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.004014756944444444
+          },
+          "depleted_fraction": {
+            "mean": 0.002027723524305555,
+            "median": 0.0008680555555555555,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.002387152777777778
+          },
+          "largest_share": {
+            "mean": 0.8222265915588897,
+            "median": 0.9691699604743083,
+            "n": 56,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9934048127220242,
+            "median": 0.9948178535717284,
+            "n": 64,
+            "q25": 0.9908233379952527,
+            "q75": 0.9971214488244998
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 56
+        },
+        {
+          "clusters": {
+            "mean": 1.515625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.004672580295138888,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.006076388888888889
+          },
+          "depleted_fraction": {
+            "mean": 0.0035196940104166665,
+            "median": 0.0010850694444444445,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0048828125
+          },
+          "largest_share": {
+            "mean": 0.8562400487047352,
+            "median": 1.0,
+            "n": 56,
+            "q25": 0.7142857142857143,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9912247494800659,
+            "median": 0.994348384002135,
+            "n": 64,
+            "q25": 0.9886152645692302,
+            "q75": 0.9972520124419664
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 56
+        },
+        {
+          "clusters": {
+            "mean": 1.546875,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.005927191840277778,
+            "median": 0.003255208333333333,
+            "n": 64,
+            "q25": 0.0011935763888888888,
+            "q75": 0.006944444444444444
+          },
+          "depleted_fraction": {
+            "mean": 0.004672580295138889,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.005642361111111111
+          },
+          "largest_share": {
+            "mean": 0.8245335997208116,
+            "median": 0.9492234169653524,
+            "n": 56,
+            "q25": 0.6625,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9893787855172191,
+            "median": 0.9917721627801825,
+            "n": 64,
+            "q25": 0.9864600711438753,
+            "q75": 0.9966137058820962
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 56
+        },
+        {
+          "clusters": {
+            "mean": 1.296875,
+            "median": 1.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.009006076388888888,
+            "median": 0.002170138888888889,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0078125
+          },
+          "depleted_fraction": {
+            "mean": 0.007771809895833333,
+            "median": 0.0006510416666666666,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.006184895833333334
+          },
+          "largest_share": {
+            "mean": 0.841017805928815,
+            "median": 0.9444444444444444,
+            "n": 43,
+            "q25": 0.6944444444444444,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9864931283663917,
+            "median": 0.9954070855405018,
+            "n": 64,
+            "q25": 0.9859698454493037,
+            "q75": 0.9999999999999998
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 43
+        },
+        {
+          "clusters": {
+            "mean": 1.109375,
+            "median": 0.5,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0189208984375,
+            "median": 0.00043402777777777775,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004774305555555556
+          },
+          "depleted_fraction": {
+            "mean": 0.01795111762152778,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.002712673611111111
+          },
+          "largest_share": {
+            "mean": 0.8082184123365896,
+            "median": 0.8809523809523809,
+            "n": 32,
+            "q25": 0.6115384615384616,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9766973269981996,
+            "median": 0.9989177015964787,
+            "n": 64,
+            "q25": 0.9895579856585315,
+            "q75": 0.9999999999999998
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.015625,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 32
+        },
+        {
+          "clusters": {
+            "mean": 0.7241379310344828,
+            "median": 0.0,
+            "n": 58,
+            "q25": 0.0,
+            "q75": 1.0
+          },
+          "confirmed_before_or_at": 6,
+          "defector_fraction": {
+            "mean": 0.0059117576628352495,
+            "median": 0.0,
+            "n": 58,
+            "q25": 0.0,
+            "q75": 0.0018446180555555555
+          },
+          "depleted_fraction": {
+            "mean": 0.005245749521072797,
+            "median": 0.0,
+            "n": 58,
+            "q25": 0.0,
+            "q75": 0.0006510416666666666
+          },
+          "largest_share": {
+            "mean": 0.8170619472452649,
+            "median": 0.8069767441860465,
+            "n": 16,
+            "q25": 0.7045454545454546,
+            "q75": 1.0
+          },
+          "observed_nonB": 58,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.991376808736149,
+            "median": 0.9999999999999998,
+            "n": 58,
+            "q25": 0.9956792994050199,
+            "q75": 0.9999999999999998
+          },
+          "time": 20000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 58,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 16
+        },
+        {
+          "clusters": {
+            "mean": 0.19642857142857142,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "confirmed_before_or_at": 8,
+          "defector_fraction": {
+            "mean": 0.0003177703373015873,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "depleted_fraction": {
+            "mean": 0.00020926339285714285,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "largest_share": {
+            "mean": 0.77,
+            "median": 0.8333333333333334,
+            "n": 5,
+            "q25": 0.6,
+            "q75": 0.9166666666666666
+          },
+          "observed_nonB": 56,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9992893628906714,
+            "median": 0.9999999999999998,
+            "n": 56,
+            "q25": 0.9999999999999998,
+            "q75": 0.9999999999999998
+          },
+          "time": 40000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 5
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.25,
+          "events": 8,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 10959.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 14379.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 14899.0
+            },
+            {
+              "at_risk": 29,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 16750.0
+            },
+            {
+              "at_risk": 28,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 17716.0
+            },
+            {
+              "at_risk": 27,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 19846.0
+            },
+            {
+              "at_risk": 26,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 27658.0
+            },
+            {
+              "at_risk": 25,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 27897.0
+            },
+            {
+              "at_risk": 24,
+              "censored": 24,
+              "events": 0,
+              "survival": 0.75,
+              "time": 40000.0
+            }
+          ],
+          "median": null,
+          "n": 32,
+          "recovered": 19,
+          "rmst": 34690.75,
+          "survival": 0.75,
+          "unresolved": 5,
+          "wilson95": [
+            0.1325240091850904,
+            0.4210655899424448
+          ]
+        },
+        "landmark": 10000,
+        "n": 32,
+        "original_n": 64,
+        "pending_confirmation": 0
+      }
+    },
+    "compact_16": {
+      "damage": {
+        "count": 16,
+        "shape": "compact"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.0,
+          "events": 0,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 64,
+              "events": 0,
+              "survival": 1.0,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 32,
+          "rmst": 10000.0,
+          "survival": 1.0,
+          "unresolved": 32,
+          "wilson95": [
+            0.0,
+            0.05662405979280531
+          ]
+        },
+        {
+          "collapse_risk": 0.046875,
+          "events": 3,
+          "horizon": 20000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 10745.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 15909.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 16403.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 61,
+              "events": 0,
+              "survival": 0.953125,
+              "time": 20000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 39,
+          "rmst": 19735.265625,
+          "survival": 0.953125,
+          "unresolved": 22,
+          "wilson95": [
+            0.01606901678629298,
+            0.1289965374009368
+          ]
+        },
+        {
+          "collapse_risk": 0.140625,
+          "events": 9,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 10745.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 15909.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 16403.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 21073.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 24615.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 26394.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 26545.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 26875.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 28637.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 55,
+              "events": 0,
+              "survival": 0.859375,
+              "time": 40000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 48,
+          "rmst": 37456.1875,
+          "survival": 0.859375,
+          "unresolved": 7,
+          "wilson95": [
+            0.07578572556030859,
+            0.24616281741577017
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 13877.318181818182,
+              "median": 14790.5,
+              "n": 22,
+              "q25": 7141.5,
+              "q75": 19901.0
+            },
+            "reached_by_time": {
+              "10000": 7,
+              "20000": 16,
+              "40000": 22
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.5,
+                "median": 2.0,
+                "n": 22,
+                "q25": 2.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.045257260101010104,
+                "median": 0.045355902777777776,
+                "n": 22,
+                "q25": 0.044270833333333336,
+                "q75": 0.046440972222222224
+              },
+              "largest_share": {
+                "mean": 0.9271082364001881,
+                "median": 0.9785587975243147,
+                "n": 22,
+                "q25": 0.8779339321935671,
+                "q75": 0.9914345711759505
+              },
+              "resource": {
+                "mean": 0.9355604380051227,
+                "median": 0.9366440270161802,
+                "n": 22,
+                "q25": 0.933840950153125,
+                "q75": 0.9378722708712904
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 22,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 17837.11111111111,
+              "median": 19135.0,
+              "n": 9,
+              "q25": 12705.0,
+              "q75": 22776.0
+            },
+            "reached_by_time": {
+              "10000": 1,
+              "20000": 5,
+              "40000": 9
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.5555555555555554,
+                "median": 2.0,
+                "n": 9,
+                "q25": 1.0,
+                "q75": 4.0
+              },
+              "depleted_fraction": {
+                "mean": 0.19367283950617284,
+                "median": 0.1935763888888889,
+                "n": 9,
+                "q25": 0.19140625,
+                "q75": 0.19401041666666666
+              },
+              "largest_share": {
+                "mean": 0.992326651106751,
+                "median": 0.9978494623655914,
+                "n": 9,
+                "q25": 0.9870410367170627,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.77446820342911,
+                "median": 0.7745534576914462,
+                "n": 9,
+                "q25": 0.7733148712349605,
+                "q75": 0.7767096803362444
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 9,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 20393.333333333332,
+              "median": 23236.0,
+              "n": 9,
+              "q25": 14297.0,
+              "q75": 25149.0
+            },
+            "reached_by_time": {
+              "10000": 1,
+              "20000": 4,
+              "40000": 9
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.0,
+                "median": 2.0,
+                "n": 9,
+                "q25": 1.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.4916570216049383,
+                "median": 0.4913194444444444,
+                "n": 9,
+                "q25": 0.4895833333333333,
+                "q75": 0.4930555555555556
+              },
+              "largest_share": {
+                "mean": 0.9988478301080352,
+                "median": 0.9991386735572783,
+                "n": 9,
+                "q25": 0.9982683982683983,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.46400792211623987,
+                "median": 0.4645410574255258,
+                "n": 9,
+                "q25": 0.46139857268883383,
+                "q75": 0.4674747003916991
+              },
+              "winding": {
+                "mean": 0.6666666666666666,
+                "median": 1.0,
+                "n": 9,
+                "q25": 0.0,
+                "q75": 1.0
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 21644.555555555555,
+              "median": 24331.0,
+              "n": 9,
+              "q25": 16149.0,
+              "q75": 26289.0
+            },
+            "reached_by_time": {
+              "10000": 0,
+              "20000": 3,
+              "40000": 9
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.8888888888888888,
+                "median": 2.0,
+                "n": 9,
+                "q25": 1.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7939814814814814,
+                "median": 0.7934027777777778,
+                "n": 9,
+                "q25": 0.7934027777777778,
+                "q75": 0.7960069444444444
+              },
+              "largest_share": {
+                "mean": 0.9991580847040553,
+                "median": 0.9994603345925526,
+                "n": 9,
+                "q25": 0.9983739837398374,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.17040194414898555,
+                "median": 0.17007602536604163,
+                "n": 9,
+                "q25": 0.16792793211474255,
+                "q75": 0.17200723027297304
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 9,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 6012.0,
+              "median": 5358.0,
+              "n": 9,
+              "q25": 2875.0,
+              "q75": 8137.0
+            },
+            "end": "0.2",
+            "not_reached_both": 55,
+            "original_n": 64,
+            "reached_both": 9,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2556.222222222222,
+              "median": 2421.0,
+              "n": 9,
+              "q25": 1855.0,
+              "q75": 2774.0
+            },
+            "end": "0.5",
+            "not_reached_both": 55,
+            "original_n": 64,
+            "reached_both": 9,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1251.2222222222222,
+              "median": 1223.0,
+              "n": 9,
+              "q25": 1095.0,
+              "q75": 1323.0
+            },
+            "end": "0.8",
+            "not_reached_both": 55,
+            "original_n": 64,
+            "reached_both": 9,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 266.1111111111111,
+              "median": 263.0,
+              "n": 9,
+              "q25": 254.0,
+              "q75": 282.0
+            },
+            "end": "B_confirm",
+            "not_reached_both": 55,
+            "original_n": 64,
+            "reached_both": 9,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/a48b35b9b55a7913/seed-0724275594",
+          "seed": 724275594
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/a48b35b9b55a7913/seed-0088359297",
+          "seed": 88359297
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/a48b35b9b55a7913/seed-0571413629",
+          "seed": 571413629
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 1.453125,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0029771592881944445,
+            "median": 0.0026041666666666665,
+            "n": 64,
+            "q25": 0.0016276041666666665,
+            "q75": 0.004014756944444444
+          },
+          "depleted_fraction": {
+            "mean": 0.0018107096354166665,
+            "median": 0.0013020833333333333,
+            "n": 64,
+            "q25": 0.00043402777777777775,
+            "q75": 0.0026041666666666665
+          },
+          "largest_share": {
+            "mean": 0.8717077716503268,
+            "median": 1.0,
+            "n": 64,
+            "q25": 0.8,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9935582241977865,
+            "median": 0.9940939001786029,
+            "n": 64,
+            "q25": 0.9918998369590281,
+            "q75": 0.9956255640764597
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 1.390625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.003316243489583333,
+            "median": 0.002387152777777778,
+            "n": 64,
+            "q25": 0.0013020833333333333,
+            "q75": 0.004340277777777778
+          },
+          "depleted_fraction": {
+            "mean": 0.0022176106770833335,
+            "median": 0.0013020833333333333,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.002712673611111111
+          },
+          "largest_share": {
+            "mean": 0.8952817343946375,
+            "median": 1.0,
+            "n": 62,
+            "q25": 0.8616071428571428,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9931509156434254,
+            "median": 0.9945686001723064,
+            "n": 64,
+            "q25": 0.9906854913457629,
+            "q75": 0.9969187118680165
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 62
+        },
+        {
+          "clusters": {
+            "mean": 1.546875,
+            "median": 1.5,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.003743489583333333,
+            "median": 0.001953125,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.005642361111111111
+          },
+          "depleted_fraction": {
+            "mean": 0.002570258246527778,
+            "median": 0.0008680555555555555,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0030381944444444445
+          },
+          "largest_share": {
+            "mean": 0.8590029060858835,
+            "median": 0.9240384615384616,
+            "n": 58,
+            "q25": 0.7067307692307692,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9926478092327128,
+            "median": 0.994786851096277,
+            "n": 64,
+            "q25": 0.9902901726877917,
+            "q75": 0.9968983132788372
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 58
+        },
+        {
+          "clusters": {
+            "mean": 1.609375,
+            "median": 1.0,
+            "n": 64,
+            "q25": 1.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.005282931857638888,
+            "median": 0.004340277777777778,
+            "n": 64,
+            "q25": 0.0008680555555555555,
+            "q75": 0.006184895833333334
+          },
+          "depleted_fraction": {
+            "mean": 0.004170735677083334,
+            "median": 0.002170138888888889,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.005316840277777778
+          },
+          "largest_share": {
+            "mean": 0.8411031640032973,
+            "median": 1.0,
+            "n": 54,
+            "q25": 0.673076923076923,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9897591204249621,
+            "median": 0.990902398730899,
+            "n": 64,
+            "q25": 0.985738898596129,
+            "q75": 0.997191023522005
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 54
+        },
+        {
+          "clusters": {
+            "mean": 1.265625,
+            "median": 1.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.007609049479166666,
+            "median": 0.002170138888888889,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.007486979166666666
+          },
+          "depleted_fraction": {
+            "mean": 0.006218804253472222,
+            "median": 0.00043402777777777775,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004448784722222222
+          },
+          "largest_share": {
+            "mean": 0.9210071257921877,
+            "median": 1.0,
+            "n": 47,
+            "q25": 0.8792270531400965,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.988357166255972,
+            "median": 0.9939506276989489,
+            "n": 64,
+            "q25": 0.9875863928735557,
+            "q75": 0.9999999999999998
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 47
+        },
+        {
+          "clusters": {
+            "mean": 1.25,
+            "median": 0.5,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.017320421006944444,
+            "median": 0.00021701388888888888,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.006076388888888889
+          },
+          "depleted_fraction": {
+            "mean": 0.016262478298611112,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.004340277777777778
+          },
+          "largest_share": {
+            "mean": 0.8232283014517285,
+            "median": 0.9212121212121211,
+            "n": 32,
+            "q25": 0.6666666666666666,
+            "q75": 1.0
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9784767089794006,
+            "median": 0.9989347936139858,
+            "n": 64,
+            "q25": 0.9877692638064723,
+            "q75": 0.9999999999999998
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.015625,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 32
+        },
+        {
+          "clusters": {
+            "mean": 0.8852459016393442,
+            "median": 0.0,
+            "n": 61,
+            "q25": 0.0,
+            "q75": 1.0
+          },
+          "confirmed_before_or_at": 3,
+          "defector_fraction": {
+            "mean": 0.020996983151183972,
+            "median": 0.0,
+            "n": 61,
+            "q25": 0.0,
+            "q75": 0.006076388888888889
+          },
+          "depleted_fraction": {
+            "mean": 0.02004354508196721,
+            "median": 0.0,
+            "n": 61,
+            "q25": 0.0,
+            "q75": 0.004340277777777778
+          },
+          "largest_share": {
+            "mean": 0.8751627658057936,
+            "median": 0.9841666666666666,
+            "n": 22,
+            "q25": 0.8115384615384615,
+            "q75": 1.0
+          },
+          "observed_nonB": 61,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9741053710167408,
+            "median": 0.9999999999999998,
+            "n": 61,
+            "q25": 0.9836571317565332,
+            "q75": 0.9999999999999998
+          },
+          "time": 20000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 61,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 22
+        },
+        {
+          "clusters": {
+            "mean": 0.3090909090909091,
+            "median": 0.0,
+            "n": 55,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "confirmed_before_or_at": 9,
+          "defector_fraction": {
+            "mean": 0.001057449494949495,
+            "median": 0.0,
+            "n": 55,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "depleted_fraction": {
+            "mean": 0.0008680555555555555,
+            "median": 0.0,
+            "n": 55,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "largest_share": {
+            "mean": 0.6672542735042735,
+            "median": 0.6923076923076923,
+            "n": 7,
+            "q25": 0.5361111111111111,
+            "q75": 0.734375
+          },
+          "observed_nonB": 55,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9978645407861557,
+            "median": 0.9999999999999998,
+            "n": 55,
+            "q25": 0.9999999999999998,
+            "q75": 0.9999999999999998
+          },
+          "time": 40000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 55,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 7
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.28125,
+          "events": 9,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 10745.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 15909.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 16403.0
+            },
+            {
+              "at_risk": 29,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 21073.0
+            },
+            {
+              "at_risk": 28,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 24615.0
+            },
+            {
+              "at_risk": 27,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 26394.0
+            },
+            {
+              "at_risk": 26,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 26545.0
+            },
+            {
+              "at_risk": 25,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 26875.0
+            },
+            {
+              "at_risk": 24,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 28637.0
+            },
+            {
+              "at_risk": 23,
+              "censored": 23,
+              "events": 0,
+              "survival": 0.71875,
+              "time": 40000.0
+            }
+          ],
+          "median": null,
+          "n": 32,
+          "recovered": 16,
+          "rmst": 34912.375,
+          "survival": 0.71875,
+          "unresolved": 7,
+          "wilson95": [
+            0.1556458049774277,
+            0.4537450942591657
+          ]
+        },
+        "landmark": 10000,
+        "n": 32,
+        "original_n": 64,
+        "pending_confirmation": 0
+      }
+    },
+    "random_16": {
+      "damage": {
+        "count": 16,
+        "shape": "random"
+      },
+      "n": 64,
+      "outcomes": [
+        {
+          "collapse_risk": 0.484375,
+          "events": 31,
+          "horizon": 10000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3007.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3125.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 3265.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 3549.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 3839.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 3901.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 4291.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 4914.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 5600.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 5937.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.828125,
+              "time": 6015.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 6117.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.796875,
+              "time": 6303.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 6374.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.765625,
+              "time": 6660.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 6696.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.734375,
+              "time": 6885.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 7033.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.703125,
+              "time": 7156.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6875,
+              "time": 7394.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.671875,
+              "time": 7536.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.65625,
+              "time": 7627.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.640625,
+              "time": 8171.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.625,
+              "time": 8945.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.609375,
+              "time": 9044.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.59375,
+              "time": 9095.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.578125,
+              "time": 9263.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5625,
+              "time": 9444.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.546875,
+              "time": 9666.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.53125,
+              "time": 9670.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.515625,
+              "time": 9781.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 33,
+              "events": 0,
+              "survival": 0.515625,
+              "time": 10000.0
+            }
+          ],
+          "median": null,
+          "n": 64,
+          "recovered": 3,
+          "rmst": 8379.734375,
+          "survival": 0.515625,
+          "unresolved": 30,
+          "wilson95": [
+            0.3663355166543264,
+            0.6041839852141988
+          ]
+        },
+        {
+          "collapse_risk": 0.671875,
+          "events": 43,
+          "horizon": 20000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3007.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3125.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 3265.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 3549.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 3839.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 3901.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 4291.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 4914.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 5600.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 5937.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.828125,
+              "time": 6015.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 6117.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.796875,
+              "time": 6303.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 6374.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.765625,
+              "time": 6660.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 6696.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.734375,
+              "time": 6885.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 7033.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.703125,
+              "time": 7156.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6875,
+              "time": 7394.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.671875,
+              "time": 7536.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.65625,
+              "time": 7627.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.640625,
+              "time": 8171.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.625,
+              "time": 8945.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.609375,
+              "time": 9044.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.59375,
+              "time": 9095.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.578125,
+              "time": 9263.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5625,
+              "time": 9444.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.546875,
+              "time": 9666.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.53125,
+              "time": 9670.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.515625,
+              "time": 9781.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5,
+              "time": 10152.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.484375,
+              "time": 10257.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.46875,
+              "time": 10765.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.453125,
+              "time": 10837.0
+            },
+            {
+              "at_risk": 29,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.4375,
+              "time": 11169.0
+            },
+            {
+              "at_risk": 28,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.421875,
+              "time": 11810.0
+            },
+            {
+              "at_risk": 27,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.40625,
+              "time": 13343.0
+            },
+            {
+              "at_risk": 26,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.390625,
+              "time": 14823.0
+            },
+            {
+              "at_risk": 25,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.375,
+              "time": 17485.0
+            },
+            {
+              "at_risk": 24,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.359375,
+              "time": 17799.0
+            },
+            {
+              "at_risk": 23,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.34375,
+              "time": 18229.0
+            },
+            {
+              "at_risk": 22,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.328125,
+              "time": 18538.0
+            },
+            {
+              "at_risk": 21,
+              "censored": 21,
+              "events": 0,
+              "survival": 0.328125,
+              "time": 20000.0
+            }
+          ],
+          "median": 10152.0,
+          "n": 64,
+          "recovered": 14,
+          "rmst": 12367.34375,
+          "survival": 0.328125,
+          "unresolved": 7,
+          "wilson95": [
+            0.549991058490915,
+            0.7742944209553081
+          ]
+        },
+        {
+          "collapse_risk": 0.734375,
+          "events": 47,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 64,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.984375,
+              "time": 3007.0
+            },
+            {
+              "at_risk": 63,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.96875,
+              "time": 3125.0
+            },
+            {
+              "at_risk": 62,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.953125,
+              "time": 3265.0
+            },
+            {
+              "at_risk": 61,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9375,
+              "time": 3549.0
+            },
+            {
+              "at_risk": 60,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.921875,
+              "time": 3839.0
+            },
+            {
+              "at_risk": 59,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.90625,
+              "time": 3901.0
+            },
+            {
+              "at_risk": 58,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.890625,
+              "time": 4291.0
+            },
+            {
+              "at_risk": 57,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.875,
+              "time": 4914.0
+            },
+            {
+              "at_risk": 56,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.859375,
+              "time": 5600.0
+            },
+            {
+              "at_risk": 55,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.84375,
+              "time": 5937.0
+            },
+            {
+              "at_risk": 54,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.828125,
+              "time": 6015.0
+            },
+            {
+              "at_risk": 53,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8125,
+              "time": 6117.0
+            },
+            {
+              "at_risk": 52,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.796875,
+              "time": 6303.0
+            },
+            {
+              "at_risk": 51,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.78125,
+              "time": 6374.0
+            },
+            {
+              "at_risk": 50,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.765625,
+              "time": 6660.0
+            },
+            {
+              "at_risk": 49,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.75,
+              "time": 6696.0
+            },
+            {
+              "at_risk": 48,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.734375,
+              "time": 6885.0
+            },
+            {
+              "at_risk": 47,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.71875,
+              "time": 7033.0
+            },
+            {
+              "at_risk": 46,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.703125,
+              "time": 7156.0
+            },
+            {
+              "at_risk": 45,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6875,
+              "time": 7394.0
+            },
+            {
+              "at_risk": 44,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.671875,
+              "time": 7536.0
+            },
+            {
+              "at_risk": 43,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.65625,
+              "time": 7627.0
+            },
+            {
+              "at_risk": 42,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.640625,
+              "time": 8171.0
+            },
+            {
+              "at_risk": 41,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.625,
+              "time": 8945.0
+            },
+            {
+              "at_risk": 40,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.609375,
+              "time": 9044.0
+            },
+            {
+              "at_risk": 39,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.59375,
+              "time": 9095.0
+            },
+            {
+              "at_risk": 38,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.578125,
+              "time": 9263.0
+            },
+            {
+              "at_risk": 37,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5625,
+              "time": 9444.0
+            },
+            {
+              "at_risk": 36,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.546875,
+              "time": 9666.0
+            },
+            {
+              "at_risk": 35,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.53125,
+              "time": 9670.0
+            },
+            {
+              "at_risk": 34,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.515625,
+              "time": 9781.0
+            },
+            {
+              "at_risk": 33,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5,
+              "time": 10152.0
+            },
+            {
+              "at_risk": 32,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.484375,
+              "time": 10257.0
+            },
+            {
+              "at_risk": 31,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.46875,
+              "time": 10765.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.453125,
+              "time": 10837.0
+            },
+            {
+              "at_risk": 29,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.4375,
+              "time": 11169.0
+            },
+            {
+              "at_risk": 28,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.421875,
+              "time": 11810.0
+            },
+            {
+              "at_risk": 27,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.40625,
+              "time": 13343.0
+            },
+            {
+              "at_risk": 26,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.390625,
+              "time": 14823.0
+            },
+            {
+              "at_risk": 25,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.375,
+              "time": 17485.0
+            },
+            {
+              "at_risk": 24,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.359375,
+              "time": 17799.0
+            },
+            {
+              "at_risk": 23,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.34375,
+              "time": 18229.0
+            },
+            {
+              "at_risk": 22,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.328125,
+              "time": 18538.0
+            },
+            {
+              "at_risk": 21,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.3125,
+              "time": 21399.0
+            },
+            {
+              "at_risk": 20,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.296875,
+              "time": 25324.0
+            },
+            {
+              "at_risk": 19,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.28125,
+              "time": 25754.0
+            },
+            {
+              "at_risk": 18,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.265625,
+              "time": 34486.0
+            },
+            {
+              "at_risk": 17,
+              "censored": 17,
+              "events": 0,
+              "survival": 0.265625,
+              "time": 40000.0
+            }
+          ],
+          "median": 10152.0,
+          "n": 64,
+          "recovered": 14,
+          "rmst": 18101.140625,
+          "survival": 0.265625,
+          "unresolved": 3,
+          "wilson95": [
+            0.6151712627143486,
+            0.8270362092577739
+          ]
+        }
+      ],
+      "progression": {
+        "crossings": {
+          "0.05": {
+            "first_time": {
+              "mean": 1057.3968253968253,
+              "median": 289.0,
+              "n": 63,
+              "q25": 207.0,
+              "q75": 393.5
+            },
+            "reached_by_time": {
+              "10000": 61,
+              "20000": 62,
+              "40000": 63
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 12.555555555555555,
+                "median": 13.0,
+                "n": 63,
+                "q25": 11.0,
+                "q75": 15.0
+              },
+              "depleted_fraction": {
+                "mean": 0.0367407958553792,
+                "median": 0.03689236111111111,
+                "n": 63,
+                "q25": 0.034722222222222224,
+                "q75": 0.03884548611111111
+              },
+              "largest_share": {
+                "mean": 0.4721618833234028,
+                "median": 0.43333333333333335,
+                "n": 63,
+                "q25": 0.3278225806451613,
+                "q75": 0.6223140495867768
+              },
+              "resource": {
+                "mean": 0.918488364925295,
+                "median": 0.9167737760861026,
+                "n": 63,
+                "q25": 0.9148376128780356,
+                "q75": 0.9218106355021912
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 63,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.2": {
+            "first_time": {
+              "mean": 6250.510638297872,
+              "median": 4532.0,
+              "n": 47,
+              "q25": 1941.0,
+              "q75": 6571.0
+            },
+            "reached_by_time": {
+              "10000": 39,
+              "20000": 44,
+              "40000": 47
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 4.191489361702128,
+                "median": 4.0,
+                "n": 47,
+                "q25": 3.0,
+                "q75": 5.5
+              },
+              "depleted_fraction": {
+                "mean": 0.19101839539007093,
+                "median": 0.1918402777777778,
+                "n": 47,
+                "q25": 0.1892361111111111,
+                "q75": 0.1931423611111111
+              },
+              "largest_share": {
+                "mean": 0.9412720129277993,
+                "median": 0.978448275862069,
+                "n": 47,
+                "q25": 0.9190972480822224,
+                "q75": 0.9924545391207413
+              },
+              "resource": {
+                "mean": 0.7665735999488172,
+                "median": 0.7687009249792875,
+                "n": 47,
+                "q25": 0.7598785529478926,
+                "q75": 0.7734430549265048
+              },
+              "winding": {
+                "mean": 0.0,
+                "median": 0.0,
+                "n": 47,
+                "q25": 0.0,
+                "q75": 0.0
+              }
+            }
+          },
+          "0.5": {
+            "first_time": {
+              "mean": 8777.510638297872,
+              "median": 7464.0,
+              "n": 47,
+              "q25": 4476.5,
+              "q75": 9661.0
+            },
+            "reached_by_time": {
+              "10000": 35,
+              "20000": 43,
+              "40000": 47
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 2.425531914893617,
+                "median": 2.0,
+                "n": 47,
+                "q25": 2.0,
+                "q75": 3.0
+              },
+              "depleted_fraction": {
+                "mean": 0.49056220449172566,
+                "median": 0.4908854166666667,
+                "n": 47,
+                "q25": 0.4891493055555556,
+                "q75": 0.4921875
+              },
+              "largest_share": {
+                "mean": 0.99756805689097,
+                "median": 0.9982698961937716,
+                "n": 47,
+                "q25": 0.9973980899768919,
+                "q75": 0.9991360689532663
+              },
+              "resource": {
+                "mean": 0.4602465754430426,
+                "median": 0.45981899841486357,
+                "n": 47,
+                "q25": 0.45722700348314804,
+                "q75": 0.4629058363660826
+              },
+              "winding": {
+                "mean": 0.3404255319148936,
+                "median": 0.0,
+                "n": 47,
+                "q25": 0.0,
+                "q75": 1.0
+              }
+            }
+          },
+          "0.8": {
+            "first_time": {
+              "mean": 9911.978723404256,
+              "median": 8693.0,
+              "n": 47,
+              "q25": 5934.0,
+              "q75": 10743.0
+            },
+            "reached_by_time": {
+              "10000": 33,
+              "20000": 43,
+              "40000": 47
+            },
+            "spatial": {
+              "clusters": {
+                "mean": 1.7659574468085106,
+                "median": 1.0,
+                "n": 47,
+                "q25": 1.0,
+                "q75": 2.0
+              },
+              "depleted_fraction": {
+                "mean": 0.7939106826241136,
+                "median": 0.7938368055555556,
+                "n": 47,
+                "q25": 0.7925347222222222,
+                "q75": 0.7951388888888888
+              },
+              "largest_share": {
+                "mean": 0.9994696501832819,
+                "median": 1.0,
+                "n": 47,
+                "q25": 0.9989195001330924,
+                "q75": 1.0
+              },
+              "resource": {
+                "mean": 0.17228431250688717,
+                "median": 0.1723959399164412,
+                "n": 47,
+                "q25": 0.16973468895895102,
+                "q75": 0.17446496422044533
+              },
+              "winding": {
+                "mean": 1.0,
+                "median": 1.0,
+                "n": 47,
+                "q25": 1.0,
+                "q75": 1.0
+              }
+            }
+          }
+        },
+        "original_n": 64,
+        "scope": "conditional first-crossing descriptions; reversible population thresholds, not nucleus times",
+        "segments": [
+          {
+            "duration": {
+              "mean": 4990.234042553191,
+              "median": 3252.0,
+              "n": 47,
+              "q25": 1692.0,
+              "q75": 5905.5
+            },
+            "end": "0.2",
+            "not_reached_both": 17,
+            "original_n": 64,
+            "reached_both": 47,
+            "same_sweep": 0,
+            "start": "0.05"
+          },
+          {
+            "duration": {
+              "mean": 2527.0,
+              "median": 2518.0,
+              "n": 47,
+              "q25": 1704.5,
+              "q75": 2967.0
+            },
+            "end": "0.5",
+            "not_reached_both": 17,
+            "original_n": 64,
+            "reached_both": 47,
+            "same_sweep": 0,
+            "start": "0.2"
+          },
+          {
+            "duration": {
+              "mean": 1134.468085106383,
+              "median": 1106.0,
+              "n": 47,
+              "q25": 921.0,
+              "q75": 1297.5
+            },
+            "end": "0.8",
+            "not_reached_both": 17,
+            "original_n": 64,
+            "reached_both": 47,
+            "same_sweep": 0,
+            "start": "0.5"
+          },
+          {
+            "duration": {
+              "mean": 268.29787234042556,
+              "median": 267.0,
+              "n": 47,
+              "q25": 252.5,
+              "q75": 276.0
+            },
+            "end": "B_confirm",
+            "not_reached_both": 17,
+            "original_n": 64,
+            "reached_both": 47,
+            "same_sweep": 0,
+            "start": "0.8"
+          }
+        ]
+      },
+      "representatives": {
+        "confirmed": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/554bd5cce3e75adf/seed-0020995811",
+          "seed": 20995811
+        },
+        "recovered": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/554bd5cce3e75adf/seed-0094993728",
+          "seed": 94993728
+        },
+        "unresolved": {
+          "path": "/home/bingkun_zhao/projects/eco/nucleation/data/nucleation/N02/554bd5cce3e75adf/seed-0123927584",
+          "seed": 123927584
+        }
+      },
+      "spatial": [
+        {
+          "clusters": {
+            "mean": 15.65625,
+            "median": 15.0,
+            "n": 64,
+            "q25": 13.0,
+            "q75": 18.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.026889377170138888,
+            "median": 0.025607638888888888,
+            "n": 64,
+            "q25": 0.022352430555555556,
+            "q75": 0.03125
+          },
+          "depleted_fraction": {
+            "mean": 0.015428331163194444,
+            "median": 0.014973958333333332,
+            "n": 64,
+            "q25": 0.011176215277777778,
+            "q75": 0.018229166666666668
+          },
+          "largest_share": {
+            "mean": 0.2858652838193357,
+            "median": 0.26658163265306123,
+            "n": 64,
+            "q25": 0.20993589743589744,
+            "q75": 0.3508771929824561
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9417339422631004,
+            "median": 0.9427213786164399,
+            "n": 64,
+            "q25": 0.9370570162495279,
+            "q75": 0.9471001022898448
+          },
+          "time": 100,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 10.53125,
+            "median": 11.0,
+            "n": 64,
+            "q25": 9.0,
+            "q75": 12.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.05497911241319444,
+            "median": 0.05056423611111111,
+            "n": 64,
+            "q25": 0.04025607638888889,
+            "q75": 0.0681423611111111
+          },
+          "depleted_fraction": {
+            "mean": 0.045206705729166664,
+            "median": 0.041015625,
+            "n": 64,
+            "q25": 0.028645833333333332,
+            "q75": 0.059244791666666664
+          },
+          "largest_share": {
+            "mean": 0.4794226674895469,
+            "median": 0.4580439814814815,
+            "n": 64,
+            "q25": 0.3437689508793208,
+            "q75": 0.5966182020929833
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9096588844424511,
+            "median": 0.9150388639050804,
+            "n": 64,
+            "q25": 0.8922008544045362,
+            "q75": 0.9310597760243988
+          },
+          "time": 500,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 8.296875,
+            "median": 8.0,
+            "n": 64,
+            "q25": 7.0,
+            "q75": 10.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.0674709743923611,
+            "median": 0.046875,
+            "n": 64,
+            "q25": 0.032552083333333336,
+            "q75": 0.0812717013888889
+          },
+          "depleted_fraction": {
+            "mean": 0.059502495659722224,
+            "median": 0.04036458333333333,
+            "n": 64,
+            "q25": 0.024956597222222224,
+            "q75": 0.0740017361111111
+          },
+          "largest_share": {
+            "mean": 0.5907639254572788,
+            "median": 0.573700208692496,
+            "n": 64,
+            "q25": 0.43085676037483267,
+            "q75": 0.7579781537802527
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9000624183110304,
+            "median": 0.9199163819404486,
+            "n": 64,
+            "q25": 0.8816305753378012,
+            "q75": 0.9438715839643841
+          },
+          "time": 1000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 5.4375,
+            "median": 6.0,
+            "n": 64,
+            "q25": 3.75,
+            "q75": 7.0
+          },
+          "confirmed_before_or_at": 0,
+          "defector_fraction": {
+            "mean": 0.10863579644097224,
+            "median": 0.06293402777777778,
+            "n": 64,
+            "q25": 0.037651909722222224,
+            "q75": 0.1179470486111111
+          },
+          "depleted_fraction": {
+            "mean": 0.10160997178819445,
+            "median": 0.056206597222222224,
+            "n": 64,
+            "q25": 0.03244357638888889,
+            "q75": 0.11067708333333333
+          },
+          "largest_share": {
+            "mean": 0.7485317840946635,
+            "median": 0.7599206349206349,
+            "n": 64,
+            "q25": 0.6460310868533461,
+            "q75": 0.8994188226471691
+          },
+          "observed_nonB": 64,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.8616832308935185,
+            "median": 0.909450410399,
+            "n": 64,
+            "q25": 0.8484236989280561,
+            "q75": 0.9337940028565701
+          },
+          "time": 2000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 64,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 64
+        },
+        {
+          "clusters": {
+            "mean": 3.7142857142857144,
+            "median": 3.0,
+            "n": 56,
+            "q25": 2.0,
+            "q75": 5.0
+          },
+          "confirmed_before_or_at": 8,
+          "defector_fraction": {
+            "mean": 0.18666294642857142,
+            "median": 0.11263020833333333,
+            "n": 56,
+            "q25": 0.021158854166666668,
+            "q75": 0.2648654513888889
+          },
+          "depleted_fraction": {
+            "mean": 0.18151661706349206,
+            "median": 0.10655381944444445,
+            "n": 56,
+            "q25": 0.016818576388888888,
+            "q75": 0.2601996527777778
+          },
+          "largest_share": {
+            "mean": 0.8761600914591864,
+            "median": 0.9788927609694281,
+            "n": 56,
+            "q25": 0.8341145833333333,
+            "q75": 0.9971086933871471
+          },
+          "observed_nonB": 56,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.7885234867033376,
+            "median": 0.8635035138344132,
+            "n": 56,
+            "q25": 0.700550294562261,
+            "q75": 0.962353532416461
+          },
+          "time": 5000,
+          "total": 64,
+          "winding": {
+            "mean": 0.16071428571428573,
+            "median": 0.0,
+            "n": 56,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 56
+        },
+        {
+          "clusters": {
+            "mean": 2.272727272727273,
+            "median": 2.0,
+            "n": 33,
+            "q25": 1.0,
+            "q75": 3.0
+          },
+          "confirmed_before_or_at": 31,
+          "defector_fraction": {
+            "mean": 0.14514941077441076,
+            "median": 0.014756944444444444,
+            "n": 33,
+            "q25": 0.00390625,
+            "q75": 0.10590277777777778
+          },
+          "depleted_fraction": {
+            "mean": 0.1421243686868687,
+            "median": 0.012586805555555556,
+            "n": 33,
+            "q25": 0.0026041666666666665,
+            "q75": 0.10069444444444445
+          },
+          "largest_share": {
+            "mean": 0.8967794271099859,
+            "median": 0.9982229330840755,
+            "n": 30,
+            "q25": 0.8046046287367405,
+            "q75": 1.0
+          },
+          "observed_nonB": 33,
+          "pending_confirmation": 2,
+          "resource": {
+            "mean": 0.8403241408006202,
+            "median": 0.9770716063708077,
+            "n": 33,
+            "q25": 0.8715359995231415,
+            "q75": 0.9917544143177418
+          },
+          "time": 10000,
+          "total": 64,
+          "winding": {
+            "mean": 0.12121212121212122,
+            "median": 0.0,
+            "n": 33,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 30
+        },
+        {
+          "clusters": {
+            "mean": 1.1904761904761905,
+            "median": 0.0,
+            "n": 21,
+            "q25": 0.0,
+            "q75": 2.0
+          },
+          "confirmed_before_or_at": 43,
+          "defector_fraction": {
+            "mean": 0.025276951058201057,
+            "median": 0.0,
+            "n": 21,
+            "q25": 0.0,
+            "q75": 0.006076388888888889
+          },
+          "depleted_fraction": {
+            "mean": 0.023974867724867725,
+            "median": 0.0,
+            "n": 21,
+            "q25": 0.0,
+            "q75": 0.003472222222222222
+          },
+          "largest_share": {
+            "mean": 0.8268440736779822,
+            "median": 0.8888888888888888,
+            "n": 7,
+            "q25": 0.8571428571428571,
+            "q75": 0.9544359218028782
+          },
+          "observed_nonB": 21,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9693029782867422,
+            "median": 0.9999999999999998,
+            "n": 21,
+            "q25": 0.9898851960116514,
+            "q75": 0.9999999999999998
+          },
+          "time": 20000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 21,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 7
+        },
+        {
+          "clusters": {
+            "mean": 0.8235294117647058,
+            "median": 0.0,
+            "n": 17,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "confirmed_before_or_at": 47,
+          "defector_fraction": {
+            "mean": 0.0055147058823529415,
+            "median": 0.0,
+            "n": 17,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "depleted_fraction": {
+            "mean": 0.004901960784313726,
+            "median": 0.0,
+            "n": 17,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "largest_share": {
+            "mean": 0.7297734627831716,
+            "median": 0.6893203883495146,
+            "n": 3,
+            "q25": 0.5946601941747574,
+            "q75": 0.8446601941747574
+          },
+          "observed_nonB": 17,
+          "pending_confirmation": 0,
+          "resource": {
+            "mean": 0.9917366656515675,
+            "median": 0.9999999999999998,
+            "n": 17,
+            "q25": 0.9999999999999998,
+            "q75": 0.9999999999999998
+          },
+          "time": 40000,
+          "total": 64,
+          "winding": {
+            "mean": 0.0,
+            "median": 0.0,
+            "n": 17,
+            "q25": 0.0,
+            "q75": 0.0
+          },
+          "with_defectors": 3
+        }
+      ],
+      "unresolved_followup": {
+        "extinct_resource_pending": 0,
+        "final": {
+          "collapse_risk": 0.5333333333333333,
+          "events": 16,
+          "horizon": 40000,
+          "km": [
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 0,
+              "survival": 1.0,
+              "time": 0.0
+            },
+            {
+              "at_risk": 30,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9666666666666667,
+              "time": 10152.0
+            },
+            {
+              "at_risk": 29,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9333333333333333,
+              "time": 10257.0
+            },
+            {
+              "at_risk": 28,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.9,
+              "time": 10765.0
+            },
+            {
+              "at_risk": 27,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8666666666666667,
+              "time": 10837.0
+            },
+            {
+              "at_risk": 26,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8333333333333334,
+              "time": 11169.0
+            },
+            {
+              "at_risk": 25,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.8,
+              "time": 11810.0
+            },
+            {
+              "at_risk": 24,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7666666666666667,
+              "time": 13343.0
+            },
+            {
+              "at_risk": 23,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7333333333333334,
+              "time": 14823.0
+            },
+            {
+              "at_risk": 22,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.7000000000000001,
+              "time": 17485.0
+            },
+            {
+              "at_risk": 21,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6666666666666667,
+              "time": 17799.0
+            },
+            {
+              "at_risk": 20,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6333333333333334,
+              "time": 18229.0
+            },
+            {
+              "at_risk": 19,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.6000000000000001,
+              "time": 18538.0
+            },
+            {
+              "at_risk": 18,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5666666666666668,
+              "time": 21399.0
+            },
+            {
+              "at_risk": 17,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5333333333333334,
+              "time": 25324.0
+            },
+            {
+              "at_risk": 16,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.5000000000000001,
+              "time": 25754.0
+            },
+            {
+              "at_risk": 15,
+              "censored": 0,
+              "events": 1,
+              "survival": 0.4666666666666668,
+              "time": 34486.0
+            },
+            {
+              "at_risk": 14,
+              "censored": 14,
+              "events": 0,
+              "survival": 0.4666666666666668,
+              "time": 40000.0
+            }
+          ],
+          "median": 34486.0,
+          "n": 30,
+          "recovered": 11,
+          "rmst": 27738.999999999996,
+          "survival": 0.4666666666666668,
+          "unresolved": 3,
+          "wilson95": [
+            0.361422996198733,
+            0.6976761109230025
+          ]
+        },
+        "landmark": 10000,
+        "n": 30,
+        "original_n": 64,
+        "pending_confirmation": 2
+      }
+    }
+  },
+  "input_versions": [
+    [
+      "3bc69847e1b07697221566a45f75d1bf152e2db8",
+      "326b9d818f48ee3e"
+    ]
+  ],
+  "interpretation": "finite-window first-depletion and conditional growth descriptions; not causal, metastable or infinite-time conclusions",
+  "manifests": {
+    "N02/494ce5b4881bd00f/seed-0276735010": "503d339893acc1cf02796d1c13d04921afff8b7cd5a8944da1944f5f6737939a",
+    "N02/494ce5b4881bd00f/seed-0338979890": "718a78530f7223682ee4759e72e5448037486e2c7e56faa5c26653f12f10bbdd",
+    "N02/494ce5b4881bd00f/seed-0385964363": "e72692d6fe3e72b85d17d58d5fe23a6082628100dcd55ac2768ca2cbbf3cf66e",
+    "N02/494ce5b4881bd00f/seed-0412443170": "a9c806637c3e5b9d3b09d12ad7b8eab108e201fe52389c1ea6fdccadd018428b",
+    "N02/494ce5b4881bd00f/seed-0429825171": "d541d72463b21c2761e7a324169f60cfc8cdadd046f9de0dfbd7bde2e4168348",
+    "N02/494ce5b4881bd00f/seed-0447015683": "140414b10bf4655ee80d64c1dfe1708648b0f93abca044da509f195ab817475b",
+    "N02/494ce5b4881bd00f/seed-0544796085": "2620b2bd7343d6ba8951c3c641b79a22ddf2e3cf459031ec7c3a97932ee03f7f",
+    "N02/494ce5b4881bd00f/seed-0572715327": "6d4ae166c28703f35700afe7061c0a9f16baf4cd0ae0ae1493d2129d576a55ad",
+    "N02/494ce5b4881bd00f/seed-0715993457": "c6f0c7dd104277a5124eb13df49cffa40c741a539439ea9e0fcb92be133e0e22",
+    "N02/494ce5b4881bd00f/seed-0741627339": "ed6933ca83442156633e3d02aa5cd57f704a96ec53b6d283b4242641a98b0cb5",
+    "N02/494ce5b4881bd00f/seed-0751161298": "6e95adf18e3683d24f895cdcbcc115e7a83859b2ab40d4596365568edbb7ffcd",
+    "N02/494ce5b4881bd00f/seed-0753631215": "8d6c4952baa45c40c219cf783bf64b0b6fc0fa6691592ba6c7a712797870fcf6",
+    "N02/494ce5b4881bd00f/seed-0782907848": "dbe849a8b7cf399153eb70053adce09ffaa9687e82a16732fc65fade4c151251",
+    "N02/494ce5b4881bd00f/seed-0874340746": "7ea457c73b5647148ed3abcf9df9e5f151d430a189f5e9182e4239916ec1ad81",
+    "N02/494ce5b4881bd00f/seed-0899650255": "c9084bafcee56cbf8c4d36010794ec0a68a61498772dad3b25011b88b10afe79",
+    "N02/494ce5b4881bd00f/seed-1024450428": "d34b6d42f4f99d70a8f939bc224f7a42d705f125c51fea3415e4f8925032045f",
+    "N02/494ce5b4881bd00f/seed-1115802027": "346c2b17324d075a01b8a6f9b61de0c2fe2ac83ef9ebbb2e4ac3c2f7b9295be5",
+    "N02/494ce5b4881bd00f/seed-1142348168": "2016ddb91fa7acd984ed91322f986a9160a4584a6f6f2eb29bc6f9b464904882",
+    "N02/494ce5b4881bd00f/seed-1191838004": "7d70c46934325f5746cffebc7290d4a942e26988512b7252ce7495faa3a73ae9",
+    "N02/494ce5b4881bd00f/seed-1292885474": "aa422e0df1df807f5e591951b2f98d1b9a7dd74159eb725389c0e92acd1c1b76",
+    "N02/494ce5b4881bd00f/seed-1431993555": "40d91c007f2882f7af3353bf8386cd2cd1690275778491a08c937ecc1fcb8937",
+    "N02/494ce5b4881bd00f/seed-1442197272": "1bff76a371787ad16bd5aac561dbf55576cd81f18853f0fb6dc45c04d3ed955b",
+    "N02/494ce5b4881bd00f/seed-1668897033": "dc5927a556716be076adda3a32aeb5da3ac19c14419a4ffd72f36825012aa171",
+    "N02/494ce5b4881bd00f/seed-1736587891": "566f6833e2392e7cfe42cf6d26a2287219108c43f716c1c129e8d5b13adcd229",
+    "N02/494ce5b4881bd00f/seed-1799057767": "7278e034cdaa7be92997e2e41b2f224a9d4f4addc79afeac619436cf026e9551",
+    "N02/494ce5b4881bd00f/seed-1885345917": "57d1f4476de3fb299cfc51a403de79eda3d946e464ef61ca4376ae75e44269bf",
+    "N02/494ce5b4881bd00f/seed-1947615794": "7c54338b4ddb3cc0e0b194db287e33a40e8e705d091642435f780ce9201f18c3",
+    "N02/494ce5b4881bd00f/seed-2019931985": "18020457d1e4a56ac269d8e39c453d8a11435a2c59811f33f4f25a63b689dbe1",
+    "N02/494ce5b4881bd00f/seed-2067065936": "ca5fd15927f75705d1d751c68d7ad3475aedb6af2330c30cdb5a7d313c1ed66d",
+    "N02/494ce5b4881bd00f/seed-2167088019": "b840db72b333ee4642c8ffedd0997a1f0cf0000057d3f7f4f7d499370d4ab775",
+    "N02/494ce5b4881bd00f/seed-2179765203": "d6c6be265a0d5f1b94e66e18cb1f3fb0781ab116b8336d9369e8ce3bbf4d31a0",
+    "N02/494ce5b4881bd00f/seed-2203740976": "fc8108733d0393b27420e8b57c8a0569cce01503fcadbe3cedf5a222bfbf539e",
+    "N02/494ce5b4881bd00f/seed-2204814047": "60bec0144188022ad9592ca2b308704979dbd67ec7c60a3e7fcf8fd9ef273cb4",
+    "N02/494ce5b4881bd00f/seed-2263820601": "1ee7fba2ea52822e13b1c94b6711be90c85e513c6762f62821ae13ff38298aa0",
+    "N02/494ce5b4881bd00f/seed-2278882979": "264485ff73d8ef3e93813175bbd3d30fbeb6a446816adffa61f6a8c05343523b",
+    "N02/494ce5b4881bd00f/seed-2313505759": "5eeadd0b64618102cbf1bf4ec80d78465ad66c469fa86e222aa2bfae46b76016",
+    "N02/494ce5b4881bd00f/seed-2366923920": "c9668cd62ccb4348bc83f1010b3f9505a65f1a1854928b128dfbe16248ea6298",
+    "N02/494ce5b4881bd00f/seed-2377158823": "4a1dec65667f9145f72a276c6ed4de58c2909a85a65e4396eca902b679b32c51",
+    "N02/494ce5b4881bd00f/seed-2413081250": "30315b93b47b8eb73123a41cfb37dd08fc0fabe66eadbbd5a4233d66e100575a",
+    "N02/494ce5b4881bd00f/seed-2540873464": "38c722ebdcc60608c92e19a4e94574ad89fd41f87747d1c643ef83d2781375ea",
+    "N02/494ce5b4881bd00f/seed-2559476374": "356be0ae1c5b77b0c610ce626bbf323127c5e50bcc550467d585fabdd8d0b811",
+    "N02/494ce5b4881bd00f/seed-2651524332": "b37e7670054864fbbdecb52c6992100f1b929b0029c1dac7171246cf6937b35a",
+    "N02/494ce5b4881bd00f/seed-2785789090": "55fbb10a22d39a15bdd401192e909c4321426b2e383627e1cf406b13057d20d9",
+    "N02/494ce5b4881bd00f/seed-2816899561": "ccfb116d1561209a8cf0770a706ddf9a0688f4ecdab67030ea4675df3eda72c8",
+    "N02/494ce5b4881bd00f/seed-2828681847": "8eae90aaf9e0a0bdd73ef480cf4c15f72fd1d02e26ad461fa4817c058a6fede8",
+    "N02/494ce5b4881bd00f/seed-2855375342": "73e2c1c5a4b560938dfd82dc0c96f88574e07d28a733ce3e45869965f161be5a",
+    "N02/494ce5b4881bd00f/seed-2861489446": "0841b98958b9e54155944e4a24249a2ee90f9eca8467d726bbf373463ed54d9e",
+    "N02/494ce5b4881bd00f/seed-2896735011": "46ffebaed66990da90bfff03f77e525882f75784b5e4b2959e504d6a15e41370",
+    "N02/494ce5b4881bd00f/seed-2899796570": "4d7b0e986a262835847e19cd146aec18e0f77dbb9bf5f0004bf9dc8fe58827cd",
+    "N02/494ce5b4881bd00f/seed-2926209894": "d7982a67f56fe9e33ce9850dcc1e5772fbe7a55c65e0869bea79aa2e79b68ca7",
+    "N02/494ce5b4881bd00f/seed-3079092273": "33e507c047d2574f45912b2f848b2703d67d47b10f6670ae2054ff37888ac510",
+    "N02/494ce5b4881bd00f/seed-3203969851": "ffa86746fe3bd3a2a08be1b81e445a8703ef82e49439f505830c26cce22cee6d",
+    "N02/494ce5b4881bd00f/seed-3229549411": "dc734086c4127a661551e5e7203b67b1009186f8e8bb6ab2a91e4f5c9bedd145",
+    "N02/494ce5b4881bd00f/seed-3292223090": "3755e28e20d900e3a9210f8a6af240651c1033634b6916d494d3fe6eb7401c28",
+    "N02/494ce5b4881bd00f/seed-3294596601": "e1c93ae360cd65d47aa36c4ce096d146f155f62887cc8899b171eb30f2602e30",
+    "N02/494ce5b4881bd00f/seed-3367954346": "3eb48054a86edd85df660bd1a9771918c1c296df3cb09d77bc0a2228dd7b876c",
+    "N02/494ce5b4881bd00f/seed-3368438802": "b8a710e5b25847ce77d054eeadb6bea65b1b8ecc3eed7f47019905bfcced856e",
+    "N02/494ce5b4881bd00f/seed-3436919746": "3f612f0cfaee6a6838b7be78d37754b0b96756060974e836310a4138eb06b8f4",
+    "N02/494ce5b4881bd00f/seed-3458424449": "10578e2ff1e068c6395be20936d24778eaca0af7550864cbc9b953558e913081",
+    "N02/494ce5b4881bd00f/seed-3545934663": "7a185ca8a383190c8d66aaccd93cbc1b8fad525ec93ae28b12cca451c164f8fa",
+    "N02/494ce5b4881bd00f/seed-3655214082": "f33b23800cd403d5c56c82131336bc44c69224275ccbb7be8c49d1af15c27fb2",
+    "N02/494ce5b4881bd00f/seed-3682232664": "a52f1e532048d470256698be0c1b705c84bf29ad9c7e1cf692ded71c258a1c72",
+    "N02/494ce5b4881bd00f/seed-3955567158": "1631b974cd2a6977956fa1def8ca75e8be8063d0895d2bba440049c239fccd77",
+    "N02/494ce5b4881bd00f/seed-4073055143": "dcc750ced59d6427bce5afd089d4ddb0fa466b6d6d2c57808a82f5629600e4c2",
+    "N02/554bd5cce3e75adf/seed-0020995811": "c96bce8385d0f0b0d87211cfcf8305bf92e1676e88e0e3341aab95bd1604c6dd",
+    "N02/554bd5cce3e75adf/seed-0094993728": "19006d3a8d9cf679ce46805e873c70a95bbc61af5ef06ae6c6768fd8a12ed54a",
+    "N02/554bd5cce3e75adf/seed-0105267905": "c8dcdb3b0cedfd0a8d14b5f8795e581f3f1b4a4763d13877ac277d79009af8fc",
+    "N02/554bd5cce3e75adf/seed-0123927584": "8bf8fef5a5fab0fe76eebdbafc11a0cc3d7144c9f6fe0d6e069fc4ce9898503a",
+    "N02/554bd5cce3e75adf/seed-0161927148": "b9c410fb8117825a16175787958c63d07763f180d094252b4ad1052f85a5a078",
+    "N02/554bd5cce3e75adf/seed-0168172284": "70db819ffd4203c0c253b6efea132aa2cd7914373fff9c50e3530e4eefff1109",
+    "N02/554bd5cce3e75adf/seed-0186632583": "3bda24b8319003b43756f94e50e29f01b856afc43d6f80d53af35ac5da5816a7",
+    "N02/554bd5cce3e75adf/seed-0343171835": "04d947713b52aa89787e60cb4e2c75c7e8138463f0d5057eeb7afca681041ffb",
+    "N02/554bd5cce3e75adf/seed-0361118711": "1bf9558409f4ab5abb3387c7433137bee770eeb4382fa4160c672fd8fa26a9d0",
+    "N02/554bd5cce3e75adf/seed-0493505552": "9983c74053fe78fe1a3aa22d939b5da63a585b8556f0ca11d56739bf3b72797a",
+    "N02/554bd5cce3e75adf/seed-0648096356": "61b124b7261e19c450732e8341ffba29b399267da5cb3893fbaa86f94427ae57",
+    "N02/554bd5cce3e75adf/seed-0676960367": "b519511515f8b67db3c1558d4ab1674cd50ca843ba5443bb60cdaecbc41c6c90",
+    "N02/554bd5cce3e75adf/seed-0747394742": "135029ee04c4c0509adc32c3f1a92478c00f27b3b32f0e0b0493ba347038878a",
+    "N02/554bd5cce3e75adf/seed-0803128677": "29e4fd6a1ed32fa11c90fb14268296efdf75b2d4f72ecf00cbe2fb46bbf5a65c",
+    "N02/554bd5cce3e75adf/seed-0814067362": "ffad832ae0957075e394ba34a52c81149d50e768c93c48973eee6e3fd4886806",
+    "N02/554bd5cce3e75adf/seed-0854892271": "6ba5bc2c6b2b8ca88e0f38013307ee761895597d67a05072d26e3fbe1547a299",
+    "N02/554bd5cce3e75adf/seed-0860711252": "dd7006f2c9742494f2add9dd69c1b355727c94eb75acc0ca57d389ee8c01f3bc",
+    "N02/554bd5cce3e75adf/seed-0969268246": "c1e2d3de8934b0df6f306bb0f85cd09a474af0bf01164a4ae9f3412e58afd021",
+    "N02/554bd5cce3e75adf/seed-0974760116": "be924c08d6e6f654d0ae62ead21317629d5c9334ec7500589c3f7fc3ea071364",
+    "N02/554bd5cce3e75adf/seed-1273414695": "8df623451b33b3066bdf1b5ad1d571716c0b2dc27f96c167db980ccf3fbe6777",
+    "N02/554bd5cce3e75adf/seed-1298287338": "dc396570931f81d1a7c8b40544b07fdb1a129cedbe34edabec9bc6352461aa9e",
+    "N02/554bd5cce3e75adf/seed-1311525352": "c8a95c2c2042ed7bc9fcc3b181dc2626ee0c3c220566cd4ec1e4597d87004eef",
+    "N02/554bd5cce3e75adf/seed-1443496463": "a87fa2fd7662c3f6fb22e6bbf37ce076700d218c3bec8beaed082483bfbdbcb5",
+    "N02/554bd5cce3e75adf/seed-1504374999": "a4c741773165edb9805e4d3b5b9a3160eca899ae13d8252c4d4d8a7f43e3ca40",
+    "N02/554bd5cce3e75adf/seed-1560940254": "17c549aa6b016266ee08e1ae0bc94373ef674e4b9996c78eaf26e2c14b44e31e",
+    "N02/554bd5cce3e75adf/seed-1674942517": "1f9ec9718b5ac34ce8e28b6a8f8aea7a72100a8c55473a09388e9d03164441d0",
+    "N02/554bd5cce3e75adf/seed-1751153938": "db55979c32a3ca58565a3dc8cb186b4b58bf768951d197f6290e98e3823a4473",
+    "N02/554bd5cce3e75adf/seed-1834416026": "bcea676fa16f2437f643aae76ed712fb4e5b40c139277a7d8ca3153a76ea448e",
+    "N02/554bd5cce3e75adf/seed-1899143069": "a8b0f82ebfc2132a4696ddf30f921840d1fa65c11c29fc6f15ec18a15d75046d",
+    "N02/554bd5cce3e75adf/seed-2096825965": "90123bbf3d141d5f9ffecd517f697589f7223f8c3a4d8519681fd03d37add885",
+    "N02/554bd5cce3e75adf/seed-2248148014": "55a7ab173535d6a6b854ebc66c478e7abc9cb437619913409169f82b0946be82",
+    "N02/554bd5cce3e75adf/seed-2252258995": "de94054429efca9be129acfade3f51ff5064447c15d24eca3673db7883a4f945",
+    "N02/554bd5cce3e75adf/seed-2339974201": "a3e5b69d02df37752c2dff6bc2845b6fa9e1f1d59df36ee6d70c29ba64e96b19",
+    "N02/554bd5cce3e75adf/seed-2438194074": "d531d5d6fed517a95d8a3b333f5426e2b0193006f1b726b1002f49722c9b1dd8",
+    "N02/554bd5cce3e75adf/seed-2612536888": "b6f02747e5e16dcff2af15b24c2f1d6c41391c31bf077ff21a6807909274314b",
+    "N02/554bd5cce3e75adf/seed-2810291891": "a4469af983b11324be0092b06ff5252832184971b4d118b772b4a74cf7e6c573",
+    "N02/554bd5cce3e75adf/seed-2846958258": "57690628e297c032ab38339cc615332354b47c898aa701b0443833e015ccd206",
+    "N02/554bd5cce3e75adf/seed-2872984052": "10a30395572a86b22835856a142d8dfea2db4b3be652e4c39904ee58471375c9",
+    "N02/554bd5cce3e75adf/seed-2994588044": "93357b6f0a6f230f93fd6fc0855e9ab0c3f420cebedace063b3008d8ea254f26",
+    "N02/554bd5cce3e75adf/seed-3157270062": "dbe195ca59ecb5d44c40157b4364d583f6355679d9b2deb6d97f0ca97c73c95c",
+    "N02/554bd5cce3e75adf/seed-3239599289": "f9d7ee3834b08f9fbb03c57908f385362c82cf04843f8e492322ecd1b957fc12",
+    "N02/554bd5cce3e75adf/seed-3322537292": "f704b6c901c98b84791857b535c06168148de382bd9c989c4c4087609d76aa0c",
+    "N02/554bd5cce3e75adf/seed-3362088453": "29bc2f6e44c8b91055888f73ae889289b10dd1945e9dc912f113db0a344f8d2e",
+    "N02/554bd5cce3e75adf/seed-3379062620": "254c4bf1c41ce809345d42c0efc8cddc11be15a7e23ad20151afe39bbde75a0c",
+    "N02/554bd5cce3e75adf/seed-3405447685": "733de065552ad6046995892d8fc1ac24f0fb333a2787f62e3ac4f495d85f07a7",
+    "N02/554bd5cce3e75adf/seed-3411499119": "bb847c7719657bf9b957d37b6360ac4e4d99f4a976a7484f05992acc2b9791c7",
+    "N02/554bd5cce3e75adf/seed-3451264622": "b2a2dfdf7bddcf54c9b8965bcc3d0db13aa1fedc8baf563deed894b470da633b",
+    "N02/554bd5cce3e75adf/seed-3634585268": "553e8a660c3ba3636df4a0d94b71351266940fbe7f2b1ac8ecbccd7618254ea9",
+    "N02/554bd5cce3e75adf/seed-3645921798": "a7943d7e05ab43a1dd6cf941978cc5152b179538d0d54a48e510fa1891f79bbf",
+    "N02/554bd5cce3e75adf/seed-3663705724": "8cbe7aa64323e049651be74eb89b1d692a48154197760decf52a96aec90ff7d2",
+    "N02/554bd5cce3e75adf/seed-3738856756": "f3d0a667e3941fa6d79f005f98fd44211375e3dab4f2c5f511b7cbba9d7ba678",
+    "N02/554bd5cce3e75adf/seed-3824066238": "700f00cd6f23af2dfcc7f006971f96cbf6e5fdbbf0c61787d822ec8d6855f5cb",
+    "N02/554bd5cce3e75adf/seed-3831864357": "aa474ee09440f3d8518e27f50ec2b5d68c2be293e8f060756c59c9b986f4e5cd",
+    "N02/554bd5cce3e75adf/seed-3926759885": "11787b7f09da59665d403af2f43d46491ce56c04067599f39ba908d116ca4b5d",
+    "N02/554bd5cce3e75adf/seed-3930954595": "72f5f7864da1d5a3bd8f47f2a2e1a84697287751db091ef76419dbca5fa8f109",
+    "N02/554bd5cce3e75adf/seed-3939222691": "9ad3c4164c180350f7cf9530fc1d081345d2d64dcd0a0bafae6262aefd4eaaf8",
+    "N02/554bd5cce3e75adf/seed-3966371686": "9b8a39c832afb3ba7d567b1b17c968be8262bc83176c5fb8110d342fa412ed1a",
+    "N02/554bd5cce3e75adf/seed-3983346316": "10416b073ce7c22ca6f2abbf17153e3380cda5b4aec63da6b7028b297de95b5f",
+    "N02/554bd5cce3e75adf/seed-3992488756": "269fdd1f13aa09c95c10c8227500c4ee5f97e6330bb99992e7e289551a0c475e",
+    "N02/554bd5cce3e75adf/seed-4085992268": "44f10fe5b31a83404d3f1e83c463150330b7b6d28290e6360aad1735a6a7c0ce",
+    "N02/554bd5cce3e75adf/seed-4167667453": "c6777c09166a5c9d4a24420c44e14c1089197fe81bbb51ef6d66a41d87ae1dd5",
+    "N02/554bd5cce3e75adf/seed-4250371919": "e14f405fe973127640e5b7b993ecbb076a6600416a61982cbb9af22e77bd6443",
+    "N02/554bd5cce3e75adf/seed-4256635141": "b5fe59053a569e79327f4cfb86f6c040bf7f955c220442e95f1f6f569bff6a08",
+    "N02/554bd5cce3e75adf/seed-4266525027": "aff64ca094c8ebf1cf7d1ccee47470f9ef3c32bb92ae8d8ebc2d85080b0fa8b6",
+    "N02/a48b35b9b55a7913/seed-0088359297": "d6eae25352101c15b69eb8c720af5c6ba8037809e505bd33b19299e77f361f49",
+    "N02/a48b35b9b55a7913/seed-0207690946": "2ee41cb16d8311484a47e14fc03dce0cd0a5da4363f10d894f9c1c8d29929018",
+    "N02/a48b35b9b55a7913/seed-0323856326": "5ba97863bf9effdaa1754bb3c81e908ac8ee68b67e75f62498a21895d5b69efc",
+    "N02/a48b35b9b55a7913/seed-0342178750": "33fe0a701f95c046ad5262666c2a3faab79634899166c1fc8410016a25ef0e23",
+    "N02/a48b35b9b55a7913/seed-0423486037": "74c54be83a05f48f02470011c35bf2706a36375dc986db40da64909ea3b26368",
+    "N02/a48b35b9b55a7913/seed-0464281011": "584e6c821310163388e9f2c665f5be8a9b28766c3b3a3d1d68515d475d263a87",
+    "N02/a48b35b9b55a7913/seed-0571413629": "8f70a4ec21271d052b0ac0c0f6cad92f6a612c63bdc263d325a60591095f43ff",
+    "N02/a48b35b9b55a7913/seed-0576321557": "8a3b1ee38236410b69bec69ac3af2dcea3259a8ba3d0e28b544c17fbf7d27e84",
+    "N02/a48b35b9b55a7913/seed-0622148132": "b13894f8ca14d1623655eccb9c865f73602f5e71dcc6745185f586da53a25e00",
+    "N02/a48b35b9b55a7913/seed-0625765363": "e0b00f21cdca4bb6d01e6fbe370b102a7c33c3aaf1faf68db4105bf78963565d",
+    "N02/a48b35b9b55a7913/seed-0673625689": "59013306f1b8f580cc729ae66b54c0129ac53b3eab187b16a23a86a7b2e69ba8",
+    "N02/a48b35b9b55a7913/seed-0724275594": "c7ce7d9bf6b5fb847ef7c797e0b676575abe3074a22c520113b8379e70455f5f",
+    "N02/a48b35b9b55a7913/seed-0763570742": "1bc7089e842be604ade2d598a56eff635562905e94197abfa74f34815356716b",
+    "N02/a48b35b9b55a7913/seed-0812595746": "8d7dd2e0b091a74bae04705a133ea64f72681658d0a7101093664ad1e07a44e5",
+    "N02/a48b35b9b55a7913/seed-1013129245": "98933de8304b7d3a7e83ab769f4d1374832a3290a76ef86c2d704eeefbbbc368",
+    "N02/a48b35b9b55a7913/seed-1202026344": "0a53f7bdc8bb2d824cfc39c9d182f57abbc8646eaba372b8f61f11f19d087a46",
+    "N02/a48b35b9b55a7913/seed-1219221853": "8822a21147b0159e279b494e2b6a628aa64c6a1c7f8358ad7a0484615a424860",
+    "N02/a48b35b9b55a7913/seed-1306106944": "08d9faf5459f6ce4a1983ffaef214c008fc16cb699e659478b39c5ec7dbf5dbc",
+    "N02/a48b35b9b55a7913/seed-1348780445": "b264b9258765a33be3b1b843bc5d730ad019b91088d929146d01fabed5c8e1f5",
+    "N02/a48b35b9b55a7913/seed-1393033744": "deea34ae09c31fedb5ff8da1d6d0b9b43fd0ea8d71833aff932c0d79567db5c5",
+    "N02/a48b35b9b55a7913/seed-1393191652": "332651245d627ab00fcaa39472032b20e15d9f5d284150a8aba9ae5b03955e45",
+    "N02/a48b35b9b55a7913/seed-1510233969": "0ff9adcedd217c33961b20abd8da0a5ad7ff22a9297c890bd29e20838e4f7404",
+    "N02/a48b35b9b55a7913/seed-1528718269": "e780fb1754a17fe2b3f67f4814cedfb0b3af2c3b40202ebd8ab635a9d6765676",
+    "N02/a48b35b9b55a7913/seed-1673897953": "08aa261f300fcea68f8a4296b2b0d4eae20ca6dbade619b743f270a7f80b8c11",
+    "N02/a48b35b9b55a7913/seed-1688189870": "02c99fab6c7ec9b68fe46d294c3bed301dac07d9dba05afc21eed43e62756180",
+    "N02/a48b35b9b55a7913/seed-1721142400": "5a760a85142ed6eadad73b539ab44e4e6110714ffe1dd54272b000fb49110207",
+    "N02/a48b35b9b55a7913/seed-1729210406": "350d3a876bb1d244a09e25b070eef0cd9e88bac519f6929a29e216ba1ae01ef2",
+    "N02/a48b35b9b55a7913/seed-1762445521": "f6c255458032eebb8aed231fb3ab979d343d70de33bdc1e70f7629a6b7802874",
+    "N02/a48b35b9b55a7913/seed-1921564063": "09cb0aafcf2506ca4999f112ccff00dee3b97037ecd8d78324bf00d76dbc6b88",
+    "N02/a48b35b9b55a7913/seed-1950760627": "8d62dbb62b0b4946e1ce4e2f633950e53df616e6417830c07344b9c93355ae72",
+    "N02/a48b35b9b55a7913/seed-2009394591": "3e0bf91fe72219c8d6e8587ab51c7f2045b9475fcc38d85bf865191db0a715ee",
+    "N02/a48b35b9b55a7913/seed-2029596485": "27cd30591d52c414903b8c1f34a1dee35c1818c7da3dbba65bb0e89f95d98841",
+    "N02/a48b35b9b55a7913/seed-2242187490": "eaad79e00aaac64784aef5f277fb48f5c25533a9b5dcfc46b6d6658d56ced754",
+    "N02/a48b35b9b55a7913/seed-2245318614": "964a3a974daa0f67623e21e3029178adfe2b786b3b4a5f7e1561eaf73d2e45fb",
+    "N02/a48b35b9b55a7913/seed-2316600635": "84f8b7e78b94a28754b0b201445eeae1ac609e3cae6b0d96b905990cd010349c",
+    "N02/a48b35b9b55a7913/seed-2357362878": "edd36b6dd5688eb20e155673c2bdd56642af11dc6aead81bf4f3bb1e157d6c15",
+    "N02/a48b35b9b55a7913/seed-2360795925": "8ffe75c1da2ec95eef92c21e97e49f71dad07da7278f692bd1f6079d5c4301ef",
+    "N02/a48b35b9b55a7913/seed-2392163289": "0def33820b78cd17a97cb1417d598f5e194557f30b25d4548885b56d8b968f8d",
+    "N02/a48b35b9b55a7913/seed-2460528768": "e403f9fb7122ff583ecaa1940b383227942ce9b92b379642148a438c25b588d8",
+    "N02/a48b35b9b55a7913/seed-2542793729": "2b8fe4ba702db6653d27938d64da64681199fc28c4c28374fe1b440619b2340b",
+    "N02/a48b35b9b55a7913/seed-2596097613": "36c7bdc74b2ca4f65c3ca36a7e02deca342addfd1713131afe875ab4ec3e1630",
+    "N02/a48b35b9b55a7913/seed-2622608259": "588d083f780a9efd883837edc8288215f350968765756f0ef1e4423717fcdba7",
+    "N02/a48b35b9b55a7913/seed-2710781153": "ad78823e690f89a0193a88eeda4e9259acfe144977f473522d7b0578318b82c0",
+    "N02/a48b35b9b55a7913/seed-2761854391": "fad5ec1b85d98add8416af464db63a7c9ec4f0057cb88645161c6b3129ac9364",
+    "N02/a48b35b9b55a7913/seed-2776073455": "304c9596e2949acecb10dfeb0609faa676cbb986645bec2dab1760fa8a7fb4e8",
+    "N02/a48b35b9b55a7913/seed-2836272125": "e952f4c56b37fee10bf37dde211f7ddeb82c68731bb8b132ad0b9d40284f0ae7",
+    "N02/a48b35b9b55a7913/seed-2841158885": "426fd179cbbe4e0e17d054a7186e0d2a17ebecbe737457c8ce413018ca794eb2",
+    "N02/a48b35b9b55a7913/seed-2854851597": "3db84a300aa3395e2f8b87eef58d754026434ea677dab40c9db17c5244dd52c9",
+    "N02/a48b35b9b55a7913/seed-3083118491": "460a944abe85c604cc98e827854038bdb86b468a71a18fe9963a7a1778db8282",
+    "N02/a48b35b9b55a7913/seed-3138654544": "45e6c4ed622c9cb82ec86d0a5a736d4927db163ae34aeb7a3cc9defa1654d474",
+    "N02/a48b35b9b55a7913/seed-3168448125": "2db10b720048ee3bce7b54410bdf0e7baca1a9bc149672e55a736cca337cda69",
+    "N02/a48b35b9b55a7913/seed-3271358255": "cfbab1af81749fd7a580dc9d24d5a6b37aa2ef131263b03716171a5f23fb98ed",
+    "N02/a48b35b9b55a7913/seed-3420603652": "554badfb145881403e516cfcbb114561db4e239c47cdc90b45d28d051a058bba",
+    "N02/a48b35b9b55a7913/seed-3441473820": "fe9d9c08b21f6929f675a1bcaf6e69b4331400dab52928eb587587d199627ed2",
+    "N02/a48b35b9b55a7913/seed-3509657654": "f8960519ba90f33cef115c73033a9ba3e6712277f2cfbda9c42d1dbd79085dc4",
+    "N02/a48b35b9b55a7913/seed-3582131815": "291d97ca6f8766d50de4c509dae3a0ca362ab58f9a2117044fa807fbb7d0b18b",
+    "N02/a48b35b9b55a7913/seed-3605802358": "b2ffde38c85fc193b682d276d2c101c767e764e9d9064cf925bf5be3b4056d7a",
+    "N02/a48b35b9b55a7913/seed-4184549585": "65fdf2b2e32add56edb3527b539bc3559410cb4d923e1d1ea1e52545bb9e1277",
+    "N02/a48b35b9b55a7913/seed-4198485421": "541a0a7790c3d09247c4bca84a1c069489233a076676b0648870c524c893bb1d",
+    "N02/a48b35b9b55a7913/seed-4224098923": "5c23f2bd8bc4959a04195178eccacc38b25b948e4af0caeee59422874401e175",
+    "N02/a48b35b9b55a7913/seed-4239285116": "66acf8027e7a44ab3caac27412458fe4a67039369cd436033c87f5ac192c9696",
+    "N02/a48b35b9b55a7913/seed-4256789819": "931a853c3bc394cdbcbbf5af88ebf2948ac15dcf5a0623a3f2ab243bda6784ca",
+    "N02/a48b35b9b55a7913/seed-4261092774": "0c2296bf0375f38cc0e78a9de3b5c00c4db33839953b4fdfd6459d0122b7eee9",
+    "N02/a48b35b9b55a7913/seed-4279259452": "1e3d387832efa463479501a68b98e054032d756f71d63171f503124a8711c3ec"
+  },
+  "resource_contrasts": null
+}

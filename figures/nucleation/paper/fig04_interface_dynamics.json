@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig04_interface_dynamics.pdf",
+      "sha256": "4dbde0b51b2e9a475d0550fcd9ca2d3d17c1e3fef2340cd5ce5e3dfda3b072d4"
+    },
+    {
+      "path": "figures/nucleation/paper/fig04_interface_dynamics.png",
+      "sha256": "831c7e56606109734e8c471658b52d67d0ac79cc7b75197d70b9e5a81ff5a83c"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/c8fef4041dca429f/physics.json",
+      "sha256": "83a8c9a9a7d13547f9d7bc2b538b7a50c5911c77cbe9b4a5dc9c14806496988e"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_kinetics.py",
+      "sha256": "a5d5c4f94dc912e6b85af91c8cecb3d6a418e6218fe0243dced96ed77a7d42ac"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "All recorded MCS 0..500, one geometry and one observable per panel; 64 paths, including all-C absorptions. Ensemble means, no smoothing or interval shading. Symlog time linear 0..1 then logarithmic. P/4 is frozen-visit activity, not a full-MCS variance."
+}

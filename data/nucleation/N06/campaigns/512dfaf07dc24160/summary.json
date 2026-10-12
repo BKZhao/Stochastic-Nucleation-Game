@@ -1,0 +1,459 @@
+{
+  "completed_runs": 1536,
+  "elapsed_seconds": 716.1859642239287,
+  "groups": {
+    "compact_16/original": {
+      "mean_q_A": 0.11458333333333333,
+      "mean_q_B": 0.8645833333333334,
+      "mean_q_U": 0.020833333333333332,
+      "mothers": [
+        {
+          "n": 16,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-0265160583",
+          "q_A": 0.0,
+          "q_B": 0.9375,
+          "q_U": 0.0625,
+          "source_time": 4315
+        },
+        {
+          "n": 16,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-0672876835",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 36778
+        },
+        {
+          "n": 16,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-0934513840",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 14988
+        },
+        {
+          "n": 16,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-0958193195",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 4956
+        },
+        {
+          "n": 16,
+          "parent_defectors": 211,
+          "parent_run_id": "seed-1019570035",
+          "q_A": 0.0,
+          "q_B": 1.0,
+          "q_U": 0.0,
+          "source_time": 10873
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1169968436",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 5828
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1210015609",
+          "q_A": 0.0625,
+          "q_B": 0.875,
+          "q_U": 0.0625,
+          "source_time": 18031
+        },
+        {
+          "n": 16,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-1212029645",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 26061
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1288828820",
+          "q_A": 0.0,
+          "q_B": 0.875,
+          "q_U": 0.125,
+          "source_time": 18104
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1459390222",
+          "q_A": 0.0625,
+          "q_B": 0.875,
+          "q_U": 0.0625,
+          "source_time": 20586
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1511479761",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 22138
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1543580558",
+          "q_A": 0.3125,
+          "q_B": 0.625,
+          "q_U": 0.0625,
+          "source_time": 10303
+        },
+        {
+          "n": 16,
+          "parent_defectors": 212,
+          "parent_run_id": "seed-1618021744",
+          "q_A": 0.0,
+          "q_B": 1.0,
+          "q_U": 0.0,
+          "source_time": 5586
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1642007432",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 24405
+        },
+        {
+          "n": 16,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-1678782295",
+          "q_A": 0.0625,
+          "q_B": 0.9375,
+          "q_U": 0.0,
+          "source_time": 7934
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1787229332",
+          "q_A": 0.0,
+          "q_B": 1.0,
+          "q_U": 0.0,
+          "source_time": 9430
+        },
+        {
+          "n": 16,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-2209553496",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 11605
+        },
+        {
+          "n": 16,
+          "parent_defectors": 212,
+          "parent_run_id": "seed-2390262858",
+          "q_A": 0.25,
+          "q_B": 0.75,
+          "q_U": 0.0,
+          "source_time": 19858
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-2553298959",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 14697
+        },
+        {
+          "n": 16,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-2891570868",
+          "q_A": 0.1875,
+          "q_B": 0.75,
+          "q_U": 0.0625,
+          "source_time": 18670
+        },
+        {
+          "n": 16,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-2926116031",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 19252
+        },
+        {
+          "n": 16,
+          "parent_defectors": 209,
+          "parent_run_id": "seed-2974057933",
+          "q_A": 0.0625,
+          "q_B": 0.875,
+          "q_U": 0.0625,
+          "source_time": 3469
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-2977570684",
+          "q_A": 0.1875,
+          "q_B": 0.8125,
+          "q_U": 0.0,
+          "source_time": 21719
+        },
+        {
+          "n": 16,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-2981202825",
+          "q_A": 0.0,
+          "q_B": 1.0,
+          "q_U": 0.0,
+          "source_time": 3090
+        }
+      ],
+      "n_mothers": 24,
+      "n_runs": 384
+    },
+    "compact_16/shifted": {
+      "mean_q_A": 0.15451388888888887,
+      "mean_q_B": 0.8038194444444443,
+      "mean_q_U": 0.041666666666666664,
+      "mothers": [
+        {
+          "n": 48,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-0265160583",
+          "q_A": 0.125,
+          "q_B": 0.8333333333333334,
+          "q_U": 0.04166666666666663,
+          "source_time": 4315
+        },
+        {
+          "n": 48,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-0672876835",
+          "q_A": 0.1875,
+          "q_B": 0.7291666666666666,
+          "q_U": 0.08333333333333337,
+          "source_time": 36778
+        },
+        {
+          "n": 48,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-0934513840",
+          "q_A": 0.25,
+          "q_B": 0.625,
+          "q_U": 0.125,
+          "source_time": 14988
+        },
+        {
+          "n": 48,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-0958193195",
+          "q_A": 0.2708333333333333,
+          "q_B": 0.7083333333333334,
+          "q_U": 0.02083333333333337,
+          "source_time": 4956
+        },
+        {
+          "n": 48,
+          "parent_defectors": 211,
+          "parent_run_id": "seed-1019570035",
+          "q_A": 0.041666666666666664,
+          "q_B": 0.9583333333333334,
+          "q_U": 0.0,
+          "source_time": 10873
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1169968436",
+          "q_A": 0.25,
+          "q_B": 0.7291666666666666,
+          "q_U": 0.02083333333333337,
+          "source_time": 5828
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1210015609",
+          "q_A": 0.25,
+          "q_B": 0.7083333333333334,
+          "q_U": 0.04166666666666663,
+          "source_time": 18031
+        },
+        {
+          "n": 48,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-1212029645",
+          "q_A": 0.3541666666666667,
+          "q_B": 0.6041666666666666,
+          "q_U": 0.04166666666666663,
+          "source_time": 26061
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1288828820",
+          "q_A": 0.1875,
+          "q_B": 0.7916666666666666,
+          "q_U": 0.02083333333333337,
+          "source_time": 18104
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1459390222",
+          "q_A": 0.041666666666666664,
+          "q_B": 0.9375,
+          "q_U": 0.02083333333333337,
+          "source_time": 20586
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1511479761",
+          "q_A": 0.08333333333333333,
+          "q_B": 0.875,
+          "q_U": 0.04166666666666663,
+          "source_time": 22138
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1543580558",
+          "q_A": 0.1875,
+          "q_B": 0.75,
+          "q_U": 0.0625,
+          "source_time": 10303
+        },
+        {
+          "n": 48,
+          "parent_defectors": 212,
+          "parent_run_id": "seed-1618021744",
+          "q_A": 0.125,
+          "q_B": 0.7708333333333334,
+          "q_U": 0.10416666666666663,
+          "source_time": 5586
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-1642007432",
+          "q_A": 0.08333333333333333,
+          "q_B": 0.9166666666666666,
+          "q_U": 0.0,
+          "source_time": 24405
+        },
+        {
+          "n": 48,
+          "parent_defectors": 206,
+          "parent_run_id": "seed-1678782295",
+          "q_A": 0.20833333333333334,
+          "q_B": 0.75,
+          "q_U": 0.04166666666666663,
+          "source_time": 7934
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-1787229332",
+          "q_A": 0.16666666666666666,
+          "q_B": 0.7708333333333334,
+          "q_U": 0.0625,
+          "source_time": 9430
+        },
+        {
+          "n": 48,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-2209553496",
+          "q_A": 0.16666666666666666,
+          "q_B": 0.8125,
+          "q_U": 0.02083333333333337,
+          "source_time": 11605
+        },
+        {
+          "n": 48,
+          "parent_defectors": 212,
+          "parent_run_id": "seed-2390262858",
+          "q_A": 0.125,
+          "q_B": 0.75,
+          "q_U": 0.125,
+          "source_time": 19858
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-2553298959",
+          "q_A": 0.041666666666666664,
+          "q_B": 0.9375,
+          "q_U": 0.02083333333333337,
+          "source_time": 14697
+        },
+        {
+          "n": 48,
+          "parent_defectors": 205,
+          "parent_run_id": "seed-2891570868",
+          "q_A": 0.125,
+          "q_B": 0.875,
+          "q_U": 0.0,
+          "source_time": 18670
+        },
+        {
+          "n": 48,
+          "parent_defectors": 207,
+          "parent_run_id": "seed-2926116031",
+          "q_A": 0.041666666666666664,
+          "q_B": 0.9375,
+          "q_U": 0.02083333333333337,
+          "source_time": 19252
+        },
+        {
+          "n": 48,
+          "parent_defectors": 209,
+          "parent_run_id": "seed-2974057933",
+          "q_A": 0.125,
+          "q_B": 0.8125,
+          "q_U": 0.0625,
+          "source_time": 3469
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-2977570684",
+          "q_A": 0.20833333333333334,
+          "q_B": 0.7916666666666666,
+          "q_U": 0.0,
+          "source_time": 21719
+        },
+        {
+          "n": 48,
+          "parent_defectors": 208,
+          "parent_run_id": "seed-2981202825",
+          "q_A": 0.0625,
+          "q_B": 0.9166666666666666,
+          "q_U": 0.02083333333333337,
+          "source_time": 3090
+        }
+      ],
+      "n_mothers": 24,
+      "n_runs": 1152
+    }
+  },
+  "interpretation": "same-scale finite-horizon fate probabilities per mother and arm; committor-style screening, not infinite-time or causal claims",
+  "source_hash": "e48a9977e53f6eed",
+  "total_site_visits": 101400231936
+}

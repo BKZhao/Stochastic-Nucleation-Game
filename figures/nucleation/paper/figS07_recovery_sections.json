@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS07_recovery_sections.pdf",
+      "sha256": "ce3c77a6ec1a0473b2142cd060bb135c371382009ceb3ef681e456d00c3ce794"
+    },
+    {
+      "path": "figures/nucleation/paper/figS07_recovery_sections.png",
+      "sha256": "38583639cd3d4585fae107c279ba3972a3424294248d56be038e44284ed3c2cc"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/4d9560bf3c20c245/phase.json",
+      "sha256": "5a686afc2718faf4fb914e06896af2c1f0253236d53eee013c36a986dce63e28"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_phase.py",
+      "sha256": "bc9c47421667b7de16b6b514ade34b981dca99c49ebff0994f21f175caf4c97d"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Five measured diffusion values, one per panel; only two geometry curves. All 41 b values are retained without smoothing. Wilson pointwise 95% bands, 64 independent trajectories per point, T=10000. Outcomes are separated into figures."
+}

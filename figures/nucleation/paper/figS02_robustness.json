@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/figS02_robustness.pdf",
+      "sha256": "f6e34e8b18a9950ffb6b636415ddc4f71760e1d9bc3f5c3158637165c8fac8cf"
+    },
+    {
+      "path": "figures/nucleation/paper/figS02_robustness.png",
+      "sha256": "2b0f37e5ee4eeaf32d5503112021e8914f29aff5586d836fe73854511018e1c8"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/2e9372f61ffee64b/r3.json",
+      "sha256": "533778e642a04a2daa7246c332d5b6cfb890adef1e1b9dd31b0a0c5b80c7ec95"
+    },
+    {
+      "path": "data/nucleation/analysis/658e0f7d77cd7dae/robustness.json",
+      "sha256": "754c2555afd26c941f62d10f832f1e3c266201f1d9fee9f2d1fa68646e36b190"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_robustness.py",
+      "sha256": "c58e900578019d3e520e75bee4f0d8d52855f1e95858cebb3ce750176f3b1662"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Numeric physical coordinates throughout. Pointwise paired 95% intervals; segments between measured values guide the eye, with no fitted size or threshold law. Only horizon values share a continuation sample. Saturated and ineligible cases are reported in prose, never displayed as precise zero effects."
+}

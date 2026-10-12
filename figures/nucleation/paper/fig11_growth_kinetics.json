@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig11_growth_kinetics.pdf",
+      "sha256": "5273a71689721d7f86f924d71ad7e961aef4eaaff59ff451304a0329cc8a1240"
+    },
+    {
+      "path": "figures/nucleation/paper/fig11_growth_kinetics.png",
+      "sha256": "221942323e67aa91c77c188ce57fb56ad3831bf3eda84543fbfd0a3649ccf336"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/c8fef4041dca429f/physics.json",
+      "sha256": "83a8c9a9a7d13547f9d7bc2b538b7a50c5911c77cbe9b4a5dc9c14806496988e"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_kinetics.py",
+      "sha256": "a5d5c4f94dc912e6b85af91c8cecb3d6a418e6218fe0243dced96ed77a7d42ac"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Top: full-ensemble fate probabilities through 40000 MCS, event-time steps. Bottom: all recorded times through 500 MCS, all 64 preparations per geometry, mean interface activity P/4 and normalized bias 4*mean(Jpre)/mean(P). The latter is a ratio of ensemble means, not the mean of individual ratios; zero by convention only when every interface is empty. Distinct archived ensembles and time windows; no joined trajectories, interval artists or smoothing."
+}

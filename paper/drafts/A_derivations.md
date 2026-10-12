@@ -1,0 +1,234 @@
+<!-- Problem Alignment Notes: P3. Full derivations for the local theory; empirical results remain separate from formal statements. -->
+# Mathematical derivations
+\label{sec:proofs}
+
+## First-visit law and exponent clipping
+
+Fix a strategy field and the resource field used for imitation. A cooperator copying a defector contributes $+1$ to the defector increment $Z$; the reverse copying event contributes $-1$. All other visits contribute zero. Uniform selection of the first site and its neighbor gives
+$$
+\label{eq:probabilities}
+p_+=\frac{1}{4N}\sum_{e\in\mathcal I}F(x_e),
+\qquad
+p_-=\frac{1}{4N}\sum_{e\in\mathcal I}F(-x_e).
+$$
+An undirected interface edge can be sampled in either orientation, each with probability $1/(4N)$ during the first visit. All other visits leave the defector count unchanged. The remaining probability is $1-p_+-p_-$; it is nonnegative because the square lattice has at most $2N$ undirected edges and $p_++p_-=P/(4N)\le1/2$. The relations below follow from the symmetry of the smooth Fermi rule and concern the single visit conditioned on the initial configuration.
+
+To prove complementarity, write $F(x)=e^x/(1+e^x)$ and $F(-x)=1/(1+e^x)$. Their sum is one. Expressing the hyperbolic functions through exponentials also gives $2F(x)-1=\tanh(x/2)$. Substituting into Eq.~\eqref{eq:probabilities} yields $p_+-p_-=J/N$ and $p_++p_-=P/(4N)$. Since $Z\in\{-1,0,1\}$, its mean is $p_+-p_-$ and its second moment is $p_++p_-$. Subtracting the squared mean proves the variance in Eq.~\eqref{main-eq:moments}.
+
+Moreover, $0<F(x)<1$ implies $|2F(x)-1|\le1$. The finite-sum triangle inequality gives
+$$
+\label{eq:drift_bound}
+|J|\le\frac14\sum_{e\in\mathcal I}|2F(x_e)-1|
+\le\frac P4.
+$$
+When $P=0$, all three first-visit moments vanish. These statements require no independence between successive visits: they describe one visit conditioned on its initial state.
+
+For the numerical clipping convention, define $c_M(x)=\max\{-M,\min(M,x)\}$ with $M=30$. It obeys $c_M(-x)=-c_M(x)$, including at the clipping endpoints. Thus $F(c_M(x))+F(c_M(-x))=1$, and the same second-moment identity holds exactly. The exact clipped mean uses
+$$
+\label{eq:clipped}
+J^{(M)}=\frac14\sum_{e\in\mathcal I}
+\tanh[c_M(x_e)/2]
+$$
+in place of the smooth $J$. The identities for the clipped mean use $J^{(M)}$, whereas the smooth diagnostic $J$ is used for the sensitivity derivatives and reported interface-bias plots. These statements are algebraic properties of the clipping convention; they do not equate exact real arithmetic with floating-point simulation behavior.
+
+## Initial interface geometry
+
+Immediately after seeding, every cooperator has resource one and every defector has resource zero. The local reaction leaves these values unchanged. If a boundary cooperator has $a$ cooperative neighbors, its resource after diffusion is
+$$
+\label{eq:initial_resource}
+r_C^+=1-\frac D4(4-a).
+$$
+Consider a neighboring defector with $c$ cooperative neighbors. The initial payoff difference on this edge is therefore
+$$
+\label{eq:initial_gap}
+\Pi_D-\Pi_C
+=bc-a\!\left[1+\lambda\sigma
+ \left(1-\frac D2(4-a)\right)\right]
+$$
+on the positive reward branch. Let $H_{ac}$ count interface edges having these two neighbor counts, where $0\le a\le3$ and $1\le c\le4$. Grouping the interface sum gives
+$$
+\label{eq:motifs}
+J_{\rm pre}(0)=\frac14
+\sum_{a=0}^{3}\sum_{c=1}^{4}
+H_{ac}\tanh\!\left[\frac{\Pi_D(c)-\Pi_C(a)}{2K}\right].
+$$
+For an isolated defector, $H_{3,4}=4$ and all other counts vanish. Substitution proves Eq.~\eqref{main-eq:isolated}. Its zero-bias temptation is
+$$
+\label{eq:isolated_zero}
+b_0(D)=\frac34[1+\lambda\sigma(1-D/2)].
+$$
+At the reference coupling, this is $1.125-0.1875D$. It is an initial local payoff balance, not a predicted depletion threshold. Multiple seeds can alter one another's neighbor counts and resource environments, which is why the measured $H_{ac}$ rather than $m$ controls their initial interface bias.
+
+## Total resource balance and diffusion modes
+
+Define $u_i$ by Eq.~\eqref{main-eq:resource}. Every site appears four times in the nearest-neighbor sum on the periodic lattice. Hence
+$$
+\label{eq:resource_total}
+\sum_i r_i^+
+=(1-D)\sum_i u_i+\frac D4\sum_i\sum_{j\sim i}u_j
+=\sum_i u_i.
+$$
+Expanding the local increment yields
+$$
+\label{eq:local_balance}
+u_i-r_i=g s_i-\delta r_i+(\delta-g)s_i r_i.
+$$
+Summation and division by $N>0$ give the first line of Eq.~\eqref{main-eq:balance}. Substituting $\langle sr\rangle=\rho\bar r+C_{sr}$ and collecting terms proves the covariance form. This derivation retains the spatial correlation exactly. Dropping $C_{sr}$ would be an additional closure assumption.
+
+For a fixed set of sites $\Omega$, the same calculation separates local reaction from transport:
+$$
+\label{eq:flux}
+\sum_{i\in\Omega}(r_i^+-u_i)
+=\frac D4
+\sum_{\substack{i\in\Omega,\ j\notin\Omega\\j\sim i}}
+(u_j-u_i).
+$$
+To obtain this expression, write each diffusion increment as $(D/4)\sum_{j\sim i}(u_j-u_i)$. For an internal pair $i,j\in\Omega$, the two terms are opposite and cancel. Only boundary-crossing pairs remain. The formula concerns a fixed region during the resource substep; a moving strategy domain has additional membership changes. We do not infer a measured front velocity or a flux-controlled growth law from this identity.
+
+For pure diffusion, a lattice Fourier mode with wave vector $(k_x,k_y)$ has multiplier
+$$
+\label{eq:diffusion_mode}
+\Lambda_D(k_x,k_y)=
+1-D+\frac D2(\cos k_x+\cos k_y),
+$$
+with $k_\alpha=2\pi n_\alpha/L$. Each pair of opposite translations contributes $2\cos k_\alpha$ times the mode, giving Eq.~\eqref{eq:diffusion_mode}. The same relation follows for separable real sine and cosine modes by the angle-addition identities. Since each cosine lies in $[-1,1]$,
+$$
+\label{eq:mode_bound}
+1-2D\le\Lambda_D\le1,
+\qquad |\Lambda_D|\le1.
+$$
+For even $L$, the checkerboard mode has multiplier $1-2D$, which is negative when $D>1/2$. Diffusion can therefore reverse a mode's sign without increasing its magnitude. For perturbations about a homogeneous resource equilibrium, local reaction multiplies this factor by $1-g$ in an all-cooperator field or by $1-\delta$ in an all-defector field. For a nonuniform strategy pattern, multiplication by $A_s$ mixes the Fourier modes. A single diffusion eigenvalue does not determine the duration of a resource intervention in the coupled system.
+
+## Existence, uniqueness, and accuracy of the adapted field
+
+For fixed $s$, the local maps are $f_C(r)=(1-g)r+g$ and $f_D(r)=(1-\delta)r$. If $r\in[0,1]$ and $0\le g,\delta\le1$, both maps remain in $[0,1]$. Diffusion is a convex average, so $T_s$ maps the closed cube $[0,1]^N$ into itself.
+
+For two fields, the local differences satisfy $|f_{s_i}(r_i)-f_{s_i}(\widetilde r_i)|\le q|r_i-\widetilde r_i|$, where $q=\max\{1-g,1-\delta\}$. Nonnegative averaging weights with unit row sum give
+$$
+\label{eq:average}
+\begin{aligned}
+|T_s(r)_i-T_s(\widetilde r)_i|
+&\le\sum_j (M_D)_{ij}q|r_j-\widetilde r_j|\\
+&\le q\|r-\widetilde r\|_\infty.
+\end{aligned}
+$$
+Taking the maximum and applying induction proves Eq.~\eqref{main-eq:contraction}.
+
+If $0<g,\delta\le1$, then $q<1$. Starting from any $r^{(0)}$ in the cube, set $r^{(n+1)}=T_s(r^{(n)})$. Consecutive differences obey
+$$
+\label{eq:iterate_gap}
+\|r^{(n+1)}-r^{(n)}\|_\infty
+\le q^n\|r^{(1)}-r^{(0)}\|_\infty.
+$$
+For $m>n$, sum these differences to obtain
+$$
+\label{eq:cauchy}
+\|r^{(m)}-r^{(n)}\|_\infty
+\le\frac{q^n}{1-q}\|r^{(1)}-r^{(0)}\|_\infty.
+$$
+The finite-dimensional real space is complete, so the sequence converges. The cube is closed, hence its limit belongs to the cube. Continuity of $T_s$ makes the limit a fixed point. Two fixed points at distance $d$ satisfy $d\le qd$, forcing $d=0$. This proves existence, uniqueness, and convergence to the physical adapted field through the Banach contraction theorem.
+
+The affine form also displays the equilibrium equation explicitly:
+$$
+\label{eq:equilibrium_linear}
+(I-M_DA_s)r_{\rm eq}=gM_Ds.
+$$
+Since $\|M_DA_s\|_\infty\le q<1$, its inverse can be represented by the convergent geometric operator series. This is an alternative expression for the same fixed point, not a separate physical approximation.
+
+For any trial field $r$, the triangle inequality and contraction give
+$$
+\label{eq:residual_proof}
+\begin{aligned}
+\|r-r_{\rm eq}\|_\infty
+&\le\|r-T_s(r)\|_\infty
+  +\|T_s(r)-T_s(r_{\rm eq})\|_\infty\\
+&\le\|r-T_s(r)\|_\infty+q\|r-r_{\rm eq}\|_\infty.
+\end{aligned}
+$$
+Rearranging proves Eq.~\eqref{main-eq:equilibrium_error}. If an iteration stops when $\|r^{(n+1)}-r^{(n)}\|_\infty\le\varepsilon$ and returns the new iterate, one further use of contraction gives
+$$
+\label{eq:returned_error}
+\|r^{(n+1)}-r_{\rm eq}\|_\infty
+\le\frac{q}{1-q}\varepsilon.
+$$
+For $q=0.9$ and a stopping tolerance of $10^{-13}$, the real-arithmetic returned-iterate bound is $9\times10^{-13}$, provided termination occurs by the tolerance criterion. The implementation also imposes a 500-step cap; reaching that cap alone does not certify the same accuracy. These bounds do not account for floating-point roundoff.
+
+The diagnostics $\eta$ and $J_{\rm eq}$ in Eq.~\eqref{main-eq:adaptation} use this fixed-strategy field. In the coupled system, both $s$ and its equilibrium field change. Their definitions do not imply that $\eta$ or $J-J_{\rm eq}$ is a sufficient coordinate for future depletion.
+
+## Sensitivity through the resource substep
+
+For one interface edge incident on a boundary cooperator $u$, write
+$$
+\label{eq:edge_derivative}
+J_e=\frac14\tanh z_{uv},
+\qquad
+\frac{\partial z_{uv}}{\partial r_u}
+=-\frac{\lambda\sigma k_C(u)}{K}.
+$$
+On the positive reward branch, $R'=2\lambda\sigma$. Applying the derivative $(\tanh z)'=1-\tanh^2z$ and summing all incident defector edges proves Eq.~\eqref{main-eq:sensitivity}. The strategy pattern and neighbor counts are held fixed. A defector's own resource does not enter its payoff, so its direct derivative in $J(s,r)$ vanishes.
+
+The intervention is applied to $r$, whereas imitation uses $T_s(r)$. For a direction $h$, the affine resource map gives the exact variation
+$$
+\label{eq:resource_variation}
+T_s(r+\epsilon h)-T_s(r)=\epsilon M_DA_sh.
+$$
+At a smooth reference point, the chain rule yields
+$$
+\label{eq:chain}
+\begin{aligned}
+\left.\frac{d}{d\epsilon}J(s,T_s(r+\epsilon h))\right|_0
+&=-w^\mathsf{T}M_DA_sh\\
+&=-\sum_u a_u(M_D^\mathsf{T}w)_u h_u.
+\end{aligned}
+$$
+The second line follows by exchanging the finite sums; it does not require independent resources. Symmetry of periodic nearest-neighbor diffusion gives $M_D^\mathsf{T}=M_D$, producing $W_u$ in Eq.~\eqref{main-eq:effective_weight}. The Taylor remainder is quadratic in the maximum norm, for fixed $N$, strategies, and model parameters with $K>0$, along perturbations whose entire segment remains on the positive reward branch. Indeed, $|\tanh''z|\le2$ bounds the remainder of an edge contribution by $(\Delta z_{uv})^2/4$. Convex diffusion and the local slopes give $|\Delta z_{uv}|\le |\lambda\sigma|k_C(u)q\|h\|_\infty/K$. Summing over the fixed interface proves the stated order, with a constant no larger than $9P(\lambda\sigma)^2q^2/(4K^2)$ because a boundary cooperator has at most three cooperative neighbors. This constant is not uniform as $K\to0$ or the interface grows. Finite permutations are evaluated with the nonlinear expression.
+
+This derivation also explains why moving resource among defectors can affect the next strategy-update cycle. Their direct weights $w_u$ vanish, but a neighboring boundary cooperator can contribute to $W_u$ through diffusion. There is no general geometry-independent ratio between the two intervention responses.
+
+## Rearrangement inequality and invariants
+
+Let $\mathcal B$ be the fixed set of boundary cooperators. On this set, $a_u=1-g$ is common, so maximizing the linear protective response amounts to maximizing $\sum_{u\in\mathcal B}W_u r_{\pi(u)}$ over permutations $\pi$. Order the weights as $W_1\le\cdots\le W_m$ and the resource values as $r_1\le\cdots\le r_m$. The rearrangement inequality states
+$$
+\label{eq:rearrangement}
+\sum_{i=1}^m W_i r_{m+1-i}
+\le \sum_{i=1}^m W_i r_{\pi(i)}
+\le \sum_{i=1}^m W_i r_i.
+$$
+For completeness, consider two weights $W_i\le W_j$ and values $r_i\le r_j$. The gain from aligning their orders is
+$$
+\label{eq:exchange}
+(W_i r_i+W_j r_j)-(W_i r_j+W_j r_i)
+=(W_j-W_i)(r_j-r_i)\ge0.
+$$
+Whenever an assignment is not ordered, exchanging an inverted pair cannot decrease the objective. Repeated exchanges reach the same-order assignment in finitely many steps, proving the upper bound. Reversing the ordering proves the lower bound. Ties yield zero exchange gain and do not change the result.
+
+For any function $\phi$ of a resource value, bijectivity of $\pi$ gives
+$$
+\label{eq:permutation}
+\sum_{u\in\mathcal B}\phi(r_{\pi(u)})
+=\sum_{u\in\mathcal B}\phi(r_u).
+$$
+Taking $\phi(r)=r$ proves preservation of the boundary total and mean. Taking indicator functions proves preservation of the empirical resource distribution. Sites outside $\mathcal B$ are unchanged, so the global distribution and total are also preserved. The nonnegative factor $1-g$ retains the ordering of the linear objective; at $g=1$ it vanishes. The full nonlinear $J_{\rm pre}$ and the continuation fate need not share these extrema.
+
+## Translation preserves resource autocorrelation
+
+On the finite periodic lattice, the map $i\mapsto i-\mathbf d$ is a bijection and commutes with every other translation. Since it also preserves the spatial mean, the autocorrelation of a translated field is
+$$
+\label{eq:translation_autocorrelation_proof}
+\begin{aligned}
+\Gamma_{\mathcal T_{\mathbf d}r}(\mathbf a)
+&=\frac1N\sum_i(r_{i-\mathbf d}-\bar r)
+                  (r_{i+\mathbf a-\mathbf d}-\bar r)\\
+&=\frac1N\sum_j(r_j-\bar r)(r_{j+\mathbf a}-\bar r)
+=\Gamma_r(\mathbf a).
+\end{aligned}
+$$
+The substitution $j=i-\mathbf d$ proves the result at every lag. The covariance with an untranslated strategy field has no analogous invariance, because the strategy factor changes under the same reindexing.
+
+## Cumulative response and finite event counts
+
+The cumulative relation in Eq.~\eqref{main-eq:cumulative_response} follows by summing consecutive differences of $\mathbb E_a[n_D(u)]-\mathbb E_0[n_D(u)]$. Interior terms cancel and the initial term vanishes because the strategies initially coincide. Since $0\le n_D\le N$ and the sum is finite, expectation and summation commute without an independence assumption.
+
+For the empirical reach decomposition, let $\mathcal B_T$ and $\mathcal R_T$ contain the realizations that collapse and reach the selected population threshold by $T$. Here $\mathcal B_T\subseteq\mathcal R_T$. Multiplying the reaching fraction by the conditional collapse fraction cancels $|\mathcal R_T|$, provided this count is positive, proving the sample counterpart of Eq.~\eqref{main-eq:reach_decomposition}. The two reported reaching counts are nonzero. Similarly, the eventual collapsed set contains $\mathcal B_T$ and is contained in $\mathcal B_T\cup\mathcal U_T$. Monotonicity of finite cardinality gives Eq.~\eqref{eq:unresolved_bound}.
+
+Subtracting the two resource balances with equal initial $\rho$ and $\bar r$ proves Eq.~\eqref{main-eq:translation_balance}. Solving the same balance for $C_{sr}$ when $\delta\ne g$ proves Eq.~\eqref{eq:reconstruct_covariance}.

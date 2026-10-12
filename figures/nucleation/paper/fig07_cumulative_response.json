@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig07_cumulative_response.pdf",
+      "sha256": "5277e9289f8a87f6a944d68582b295ee838afe2cb2e016dd2f1e4ec4314de3d8"
+    },
+    {
+      "path": "figures/nucleation/paper/fig07_cumulative_response.png",
+      "sha256": "c50574250a253ab2e64e7d5c15fb9d1c376f2c4856f25dada12db6dc96db0115"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/046677470a7a2a82/response.json",
+      "sha256": "f2e4642153b88ba4b524459c164ac828cbff7b471b274268f400f37bc56661d0"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_response.py",
+      "sha256": "7440832c95126fc81688d41cab5c04ee590b398c333cc658e2e6a8e2dce3701b"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Paired instantaneous and cumulative population differences against original. 48 configurations per sample, 16 continuations per arm; four translation directions averaged within magnitude first. Curves show ensemble means without interval shading. Uncertainty remains in the analysis; no smoothing or fitted time scales."
+}

@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig02_interventions.pdf",
+      "sha256": "ea6ebaa33f21f48fcabfd11f41d404ceb2581684b5120469622b477d5dd04cca"
+    },
+    {
+      "path": "figures/nucleation/paper/fig02_interventions.png",
+      "sha256": "eb5593796958ad0d881d1c062c3a2fa13365e585bca1a8a0599d990ec14a7171"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/f8abaf8f17995c22/structure.json",
+      "sha256": "e0f4b13b4e376ea8ce98b34cacb5703fcfb5ed1bb8a4e3885995b7f892c0a578"
+    },
+    {
+      "path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "sha256": "1a907fc806210d2f01149b94b1eb477bcb5789a583c0dc9937039ca6dfa80ec4"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_interventions.py",
+      "sha256": "f78fa337ade7e9065ee009aeb93c138ce2448c90a71d0726e187a7f5a39cdc17"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "Four equal square panels. One fixed strategy configuration; original and (5,-17)-translated resources share the same resource color scale and 12-site bars. Full periodic cross-covariance and resource autocorrelation share a signed scale. Circle/square identify the displayed fields. Structural maps are not maps of collapse probability. No displacement-risk inset."
+}

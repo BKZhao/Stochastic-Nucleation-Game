@@ -1,0 +1,38 @@
+{
+  "master_seed": 202610073,
+  "replicas_original": 16,
+  "replicas_intervention": 16,
+  "arms": [
+    "original",
+    "interface_protect",
+    "interface_harm",
+    "interface_shuffle",
+    "defector_shuffle"
+  ],
+  "shift": [0, 0],
+  "bind_mother_identity": true,
+  "mothers": {
+    "campaign": "4e622f30b5bb7f8a",
+    "rules": {
+      "compact_16": {"count": 48, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48, "temptation": 1.16, "growth": 0.1, "depletion": 0.5,
+      "coupling": 0.5, "strength": 1.0, "selection_noise": 0.1,
+      "mutation": 0.0, "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 20, "sample_every": 1, "snapshot_every": 20,
+      "stop_after_collapse": true
+    },
+    "collapse": {"rho_max": 0.2, "resource_max": 0.2, "confirm_sweeps": 250},
+    "clusters": {"resource_cutoff": 0.3},
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Short-horizon dose companion of the mechanism round: same 48 mothers, same five arms, 16 clones each, every sweep recorded. Measures the first-sweep drift a_1 per mother and arm to test the chain dJ_pre(arm) -> a_1(arm) -> delta_q_B(arm) against the frozen linear sensitivity prediction. Not an endpoint measurement.",
+  "interpretation": "first-sweep conditional drift per mother and rearrangement arm; identification of the local-allocation mechanism, no endpoint claims"
+}

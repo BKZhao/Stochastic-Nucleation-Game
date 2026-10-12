@@ -1,0 +1,55 @@
+{
+  "master_seed": 20261005,
+  "replicas": 8,
+  "base": {
+    "experiment_id": "N02",
+    "model": {
+      "size": 48,
+      "temptation": 1.12,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.3
+    },
+    "protocol": {
+      "t_max_sweeps": 10000,
+      "sample_every": 20,
+      "snapshot_every": 1000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 1,
+    "study": "nucleation_lifetimes"
+  },
+  "grid": {
+    "model.diffusion": [
+      0.15,
+      0.3
+    ],
+    "damage.count": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      96
+    ],
+    "damage.shape": [
+      "compact",
+      "stripe",
+      "four_patches",
+      "random"
+    ]
+  },
+  "selection_rationale": "Exploratory follow-up: b=1.20, D=0.30 saturated at 192/192 events; N01 b=1.12 offers low-risk and intermediate-risk cells. Not confirmatory."
+}

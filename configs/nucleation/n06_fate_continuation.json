@@ -1,0 +1,46 @@
+{
+  "master_seed": 202610073,
+  "replicas_original": 32,
+  "replicas_intervention": 16,
+  "arms": ["original", "adapted", "shifted"],
+  "shift": [17, 12],
+  "mothers": {
+    "campaign": "252d539cf24a4c7a",
+    "rules": {
+      "compact_16": {"count": 15, "rule": "all"},
+      "random_16": {"count": 15, "rule": "smallest_seed"}
+    }
+  },
+  "base": {
+    "experiment_id": "N06",
+    "model": {
+      "size": 48,
+      "temptation": 1.16,
+      "growth": 0.1,
+      "depletion": 0.5,
+      "coupling": 0.5,
+      "strength": 1.0,
+      "selection_noise": 0.1,
+      "mutation": 0.0,
+      "diffusion": 0.4
+    },
+    "protocol": {
+      "t_max_sweeps": 40000,
+      "sample_every": 10,
+      "snapshot_every": 10000,
+      "stop_after_collapse": true
+    },
+    "collapse": {
+      "rho_max": 0.2,
+      "resource_max": 0.2,
+      "confirm_sweeps": 250
+    },
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "selection_rationale": "Same-scale fate continuation from 5% crossing mother states, common horizon 40000 sweeps. Mothers chosen outcome-blind (all compact_16 crossing states; smallest-seed 15 of random_16) from the fresh-seed replication campaign. Directional predictions registered from measured J diagnostics before any continuation: (1) random-source mothers on the original field keep high q_B (marginal-band grinding continues); (2) the adapted arm replaces the field with the fixed-strategy equilibrium, whose measured J_eq is negative at growing random16 states (median about -2.6), so q_B should fall; (3) the shifted arm (fixed translation (17,12), preserving totals, histogram and autocorrelation) breaks strategy-resource alignment and should also lower q_B, weakly; (4) compact-source mothers get their first fate measurement with no directional prediction. Screening-level committor estimates with per-mother Wilson noise; unresolved stays unresolved.",
+  "interpretation": "finite-horizon fate probabilities per mother and resource arm; no infinite-time committor, no causal decomposition of the original geometry risk difference"
+}

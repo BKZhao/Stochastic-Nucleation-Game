@@ -1,0 +1,67 @@
+{
+  "cells": [
+    {
+      "L": 48,
+      "collapse_risk": 0.00390625,
+      "config_hash": "76437ac572193ecf",
+      "damage": {
+        "count": 1,
+        "shape": "compact"
+      },
+      "events": 1,
+      "horizon": 10000,
+      "km": [
+        {
+          "at_risk": 256,
+          "censored": 0,
+          "events": 0,
+          "survival": 1.0,
+          "time": 0.0
+        },
+        {
+          "at_risk": 256,
+          "censored": 0,
+          "events": 1,
+          "survival": 0.99609375,
+          "time": 8648.0
+        },
+        {
+          "at_risk": 255,
+          "censored": 255,
+          "events": 0,
+          "survival": 0.99609375,
+          "time": 10000.0
+        }
+      ],
+      "max_depleted_cluster": 2080,
+      "max_strategy_cluster": 2084,
+      "median": null,
+      "n": 256,
+      "not_collapsed_not_recovered": 114,
+      "parameters": {
+        "coupling": 0.5,
+        "depletion": 0.5,
+        "diffusion": 0.4,
+        "growth": 0.1,
+        "mutation": 0.0,
+        "selection_noise": 0.1,
+        "strength": 1.0,
+        "temptation": 1.16
+      },
+      "recovered": 141,
+      "rmst": 9994.71875,
+      "survival": 0.99609375,
+      "wilson95": [
+        0.0006898821669617927,
+        0.021790975380582507
+      ],
+      "zero_event_upper95": null
+    }
+  ],
+  "completed_runs": 256,
+  "elapsed_seconds": 87.4687584862113,
+  "expected_runs": 256,
+  "interpretation": "parameter screening only; no metastability or single-nucleus claim",
+  "source_hash": "ac8856879e865545",
+  "total_site_visits": 5895124992
+}

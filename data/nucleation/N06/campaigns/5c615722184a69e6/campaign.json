@@ -1,0 +1,69 @@
+{
+  "arms": [
+    "original",
+    {
+      "arm": "shifted",
+      "shift": [
+        2,
+        1
+      ]
+    },
+    {
+      "arm": "shifted",
+      "shift": [
+        5,
+        -17
+      ]
+    }
+  ],
+  "base": {
+    "clusters": {
+      "resource_cutoff": 0.3
+    },
+    "collapse": {
+      "confirm_sweeps": 250,
+      "resource_max": 0.2,
+      "rho_max": 0.2
+    },
+    "experiment_id": "N06",
+    "model": {
+      "coupling": 0.5,
+      "depletion": 0.5,
+      "diffusion": 0.6,
+      "growth": 0.1,
+      "mutation": 0.0,
+      "selection_noise": 0.1,
+      "size": 48,
+      "strength": 1.0,
+      "temptation": 1.16
+    },
+    "protocol": {
+      "sample_every": 1,
+      "snapshot_every": 20,
+      "stop_after_collapse": true,
+      "t_max_sweeps": 20
+    },
+    "schema_version": 2,
+    "study": "fate_of_perturbations"
+  },
+  "bind_mother_identity": true,
+  "interpretation": "first-sweep conditional drift per mother and arm; identification only",
+  "master_seed": 202610103,
+  "mothers": {
+    "campaign": "72bd4aa5edb4308d",
+    "rules": {
+      "compact_16": {
+        "count": 24,
+        "rule": "smallest_seed"
+      }
+    },
+    "snapshot": "growth-0.05.npz"
+  },
+  "replicas_intervention": 16,
+  "replicas_original": 16,
+  "selection_rationale": "Robustness cell d06 (frozen in robustness_plan.md): 24 smallest-seed outcome-bound compact-16 mothers from bank 72bd4aa5edb4308d at the growth-0.05.npz milestone; same lattice-unit shifts (2,1) and (5,-17) Short-horizon dose companion measuring first-sweep drift a_1 per arm; not an endpoint measurement.",
+  "shift": [
+    17,
+    12
+  ]
+}

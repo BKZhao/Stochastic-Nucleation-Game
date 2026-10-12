@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "path": "figures/nucleation/paper/fig10_resource_layers.pdf",
+      "sha256": "3ebb89ab559cd4e17363db8781e232ca434ebb793ceb8ef80b50fe067d939f88"
+    },
+    {
+      "path": "figures/nucleation/paper/fig10_resource_layers.png",
+      "sha256": "b9fefbf5b120d53e9aa1310bbe77f9f4df292186ef690ab916b43f6bea7b5e2b"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/nucleation/analysis/9ebf2064a9d421a3/microstructure.json",
+      "sha256": "f1935643f36c66db2965065a592f1fc2b8920e7902281d9a49109bd738da2917"
+    },
+    {
+      "path": "experiments/analyze_nucleation_microstructure.py",
+      "sha256": "f0b9216e3b4f01223593d0aefde690ea416b0a7748078ec27dbf6ad175b2bd5d"
+    },
+    {
+      "path": "code/nucleation_interface.py",
+      "sha256": "05a57361dc58c02f6de9ae2fdaf80b954b0f34ad18923df0bce1da62df25d989"
+    },
+    {
+      "path": "data/nucleation/N02/5ce29c8cfdae9509/seed-0078133881/states/growth-0.05.npz",
+      "sha256": "1a907fc806210d2f01149b94b1eb477bcb5789a583c0dc9937039ca6dfa80ec4"
+    }
+  ],
+  "plotting_sources": [
+    {
+      "path": "experiments/plot_nucleation_microstructure.py",
+      "sha256": "6afafd82bca40d6ae8cf833e910c2a9aa39b9eaeb9762dba975d7e2df576e9ba"
+    },
+    {
+      "path": "experiments/nucleation_paper_inputs.py",
+      "sha256": "20435d1313e0cc7126ceb3ac21b0fb5de02f72cade2135b88533d3212584aa0c"
+    },
+    {
+      "path": "experiments/pubstyle.py",
+      "sha256": "7f0f0cc48cc9b7afe7fd0304e95c5cfd14b3480cce081365ca56b27441bb2fd5"
+    }
+  ],
+  "selection": "All 48 saved first-5%-crossing configurations used in the direction ensemble. Short/long labels denote vectors (2,1) and (5,-17), with no angular pooling. Four equal square axes. Periodic nearest-opposite-strategy graph distance minus half a site, negative in D, positive in C. Profiles pool sites per shell; full bin counts are in the analysis. Display range -4 to 12 sites. CDF pools every undirected C-D edge after one resource update. Map is medium-minus-original for first lexical path; no outcome selection. Scale bar: 12 sites."
+}

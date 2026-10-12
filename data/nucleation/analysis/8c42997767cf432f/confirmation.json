@@ -1,0 +1,407 @@
+{
+  "heldout": {
+    "deltas": {
+      "M1_minus_M0": {
+        "auc": {
+          "bootstrap95": [
+            0.33908483734402856,
+            0.6315061688311688
+          ],
+          "mean": 0.48951735128936985
+        },
+        "brier": {
+          "bootstrap95": [
+            -0.020462850428787052,
+            0.00109286452510951
+          ],
+          "mean": -0.009653531563064465
+        },
+        "spearman": {
+          "bootstrap95": [
+            0.6096925940982175,
+            1.1186740630588712
+          ],
+          "mean": 0.8732212965177402
+        }
+      },
+      "M2_minus_M1": {
+        "auc": {
+          "bootstrap95": [
+            -0.1447943392737443,
+            -0.018198529411764613
+          ],
+          "mean": -0.07645009570657962
+        },
+        "brier": {
+          "bootstrap95": [
+            0.007342784417952547,
+            0.021218885756557376
+          ],
+          "mean": 0.013831465487753625
+        },
+        "spearman": {
+          "bootstrap95": [
+            -0.28419499611895216,
+            -0.06555914496834636
+          ],
+          "mean": -0.16943125597315886
+        }
+      }
+    },
+    "groups": {
+      "compact_16": 35,
+      "random_16": 30
+    },
+    "model_specs": {
+      "M0": [
+        "defectors"
+      ],
+      "M1": [
+        "defectors",
+        "interface_edges",
+        "n_clusters",
+        "resource_mean"
+      ],
+      "M2": [
+        "defectors",
+        "interface_edges",
+        "n_clusters",
+        "resource_mean",
+        "eta_mean"
+      ]
+    },
+    "models": {
+      "M0": {
+        "auc": 0.3008274231678487,
+        "brier": 0.03256262347077299,
+        "spearman": -0.3297779463408555,
+        "weights": {
+          "defectors": -0.0046856252875037835,
+          "intercept": 0.5197272444632666
+        }
+      },
+      "M1": {
+        "auc": 0.7884160756501182,
+        "brier": 0.023003908852519496,
+        "spearman": 0.5491170326383323,
+        "weights": {
+          "defectors": -0.1028501378021574,
+          "intercept": 0.5770389405750634,
+          "interface_edges": 0.24786086507253952,
+          "n_clusters": 0.26984827612420953,
+          "resource_mean": -0.13611658169941027
+        }
+      },
+      "M2": {
+        "auc": 0.7127659574468085,
+        "brier": 0.036752248572285234,
+        "spearman": 0.3786991258785855,
+        "weights": {
+          "defectors": -0.195911205581612,
+          "eta_mean": 0.9456501629477707,
+          "intercept": 0.589115049343519,
+          "interface_edges": 0.20729568221648398,
+          "n_clusters": 0.011524424480015533,
+          "resource_mean": 0.463084665125641
+        }
+      }
+    },
+    "n_heldout": 65,
+    "n_training": 30,
+    "note": "ridge logistic lambda=1 standardized, unpenalised intercept, fit on training mothers only; q_B estimated from 16-32 clones carries binomial noise shared by all models"
+  },
+  "identity": {
+    "analysis_sources": {
+      "code/b0_fast.py": "1d05a3111fa1f87bf7837dfdf9add31a55850300f6e12a82a7aa76b7934a0e68",
+      "code/b_eco.py": "660c8c320fa286da463f27d7c22c2e52ee133c00c47f532bb211cc65089c4acb",
+      "code/b_eco_multilayer.py": "5560d99522839e29d80c4eff5dcbb3c51355694087097d006fac57a8c760722c",
+      "code/b_eco_unified.py": "ed3ec7436e3066a50e7a61c2d936f1b29dd97938057cf9083e1b70acffb4f682",
+      "code/lattice.py": "c69c6d58d3d07bf9821fafb1a51c41636c22520783634a1bc1465e55a27e428a",
+      "code/mean_field.py": "143e4a2ecd2e219f9cd49b4eacccb845d17ebac33f1eb4aa6304ae3bdfea31b4",
+      "code/nucleation_diagnostics.py": "b4c9b831c0c225488f42b76784a7885ea0c6abed1229aed04388fe5fefd67b6d",
+      "code/nucleation_interface.py": "d38cdd3a0d37cbd29038858697536674aee91d3268fc547f9807bbe8f7358b0e",
+      "code/nucleation_progress.py": "e1b858e4099f5211a759efcad22dcd0b14916055c35c854b827a3ee41ff7adc2",
+      "code/nucleation_seeds.py": "e4d2521d86aeba9cb64d328da55330e4d7c4556c7d9b0146357313687c9b4ae6",
+      "code/nucleation_survival.py": "7c06865a6529e69c04cbe0d007f932801667d182e5df4048789a22b6b4fe3fac",
+      "code/observables.py": "3b4dd17677ebd953b2642835c0aa60ddbf3aa22107b1442439aeb0f5b88fab69",
+      "code/plotstyle.py": "43a5ea1cd3b356f4f9c9068509e1d181b125533ceebe8e853c8199ff587a04bc",
+      "code/research_clusters.py": "a0f2c0e0e4b3b34bd83e93bf7f82bd9071c221e13f118aca11ac4bd779ea6406",
+      "code/research_events.py": "3bd8d09112bf31ed14ea0e203feeb886db3351c2e8ec7958d38a6afdb8d11e21",
+      "code/research_state.py": "15f6d08b52c18ffe00c6003aa7e9d8da40fe9164a172d23d9f94841aaa80ca39",
+      "experiments/analyze_nucleation_confirmation.py": "14d22ac118094b79ddd47414f90fcb98d64ceab98c2a9106656dbe708ebeeb49",
+      "experiments/analyze_nucleation_confirmatory.py": "702b8dc7e27c8a0d1fe55b8f5944a230e267a53b01cb5bf47ee5333be4126df5",
+      "experiments/analyze_nucleation_fate.py": "cf9878b010eedd6465f86b7cc95cb814a6da87ebd68f0319820373033287aeea",
+      "experiments/analyze_nucleation_followup.py": "85f78d9377f00c576e4e23ffc10482f0e9b0d1feb1852e30bbac5eff8c2e615c",
+      "experiments/analyze_nucleation_founders.py": "8dca1521291c32b75b0ce7cfcbc0e7c08d8502785d1307914ad0dd06d2932e9a",
+      "experiments/analyze_nucleation_growth.py": "a7cdcc401f1b5a2870850df1457845ca4c4742ce38b1463acd3e97303cdf6e0c",
+      "experiments/analyze_nucleation_interface.py": "0acd93170e91bd904d59f3fec8ccfed19a11be782bfb6fa6de512bdbfaba36ef",
+      "experiments/analyze_nucleation_moments.py": "bf6d1525624cd11b9ac083874d3381d1b6a03f247b5fb88dae81096034afd7d2",
+      "experiments/common.py": "da0c9f57bcd659da224f46647661b25ffb6ebaa6fdcaf6ac41b9810d235ddcbd",
+      "experiments/fig01_trajectories.py": "e1bde56a44775df73bd17550bb22977352360d6419dc2078ad6c8e5a2f598e55",
+      "experiments/fig02_phase.py": "3f1a1b4f004a8145f71ff6a22b1ce925e4ebfc5ac2961f2726a8d62e010131f7",
+      "experiments/fig03_hysteresis.py": "786178b6cebebc4695d259ddd0dcd645bd8629d0950d299ed3713cae5a1c827e",
+      "experiments/fig04_wave.py": "16f9ab049d2055fce9d5e9fd196829984d9295d58faa20a5b16049eab938df44",
+      "experiments/fig05_csd.py": "c51b162af13212ad6d228153a2d0fe70f00e498c5cee2a4cf7abf1119f467d0e",
+      "experiments/fig06_multilayer_temp.py": "9f762ba479a55817cbe490a45c42ba54d6c9958844748c0bfd4519eb5877fe0a",
+      "experiments/front_summary.py": "74e53ba030c18d8eb16177adf23a758d2f9b543da6a82eb213098a5ced2a01e6",
+      "experiments/multilayer_response.py": "a8f06c0e46bfcc6f8ec9f0c2b97958ce4b690cea91e8e78a36df3822f40e298c",
+      "experiments/nucleation_campaign.py": "5d274110667aa4a81a76dba85b15a03e411836d57378ce12d3ff1f2c528630a9",
+      "experiments/nucleation_growth_analysis.py": "6e363c21a590b34df018ec31740a3352b0befbe5c366e759459a007a546779ad",
+      "experiments/nucleation_observation.py": "c6485c7c5e59df142e6b45c70c4643c03d975ad98176cac36c2c57aeb5c7a334",
+      "experiments/nucleation_runner.py": "8fff3957d6790ea040ed1f437017faef6eb5fe1ffc1ecd5d5724c7204c2a4efd",
+      "experiments/plot_fig1_detrule.py": "a9a2358cbfe35f5a1f5433b901e7c39c0b2b7927540b29d45b206f7e9d9b7fc3",
+      "experiments/plot_fig2_multilayer.py": "0bc0e2254b11d21e0139286db2feec4746e59b9785f91c544aaa0c2f0d540790",
+      "experiments/plot_fig3_v3.py": "c562905f8099e81acbd71b91410caa9c528f717200747fd9f99bc8c00e1044f7",
+      "experiments/plot_fig4_v3.py": "f874934f1f97be028b4faa1c315746216b64a95f7686daa0239e0bba55070f8c",
+      "experiments/plot_fig5_v3.py": "0d244d48f074fe6a41c86cb9dbf610079f50166bdd1d63de7337ca5c2128ea29",
+      "experiments/plot_fig_amplitude.py": "200ba1a0c746a23b8a13c81d874624a9c8f4d1c88371c0a3f3665c9003c65762",
+      "experiments/plot_fig_atlas.py": "3110c733449e2398550cbb5ea58a8cbc79d705af8a35757494336c36597d8c10",
+      "experiments/plot_fig_dynamics.py": "e46cb7a09a68d35895a5871ac84ccb6190871b7e19d6f95c60b13784fdc6db47",
+      "experiments/plot_fig_mscaling.py": "ef1dcb98cd22bee856233c8875fe26153e10e0037b035fb31bcba52667832a6e",
+      "experiments/plot_fig_multisync.py": "e94c57912124b3a24c153abc8c8749d4c459e66c1aa66de4e33e199cb89c1fbe",
+      "experiments/plot_fig_networks.py": "6b1b55af3d77a488919f667a2106faeea94ad3b4932e778a60cc0b23733aeb93",
+      "experiments/plot_fig_pattern.py": "e0fb49afbc2b841fac6834903c8fda237f4f2dd76aaad24a1cfcfbcb0f5e852c",
+      "experiments/plot_fig_robustness.py": "3594e122fc903f8fd8379ca6d78ed566191236211b3a0310db6bfad959c618bf",
+      "experiments/plot_fig_robustness_maps.py": "cd7ceadea935f13f61d0d51c0407511ae90107d71d3f8234313400cf2f0010e2",
+      "experiments/plot_fig_topology.py": "3f648c31352686606acc77f521efd8bd48ca71a47da66064ffe8b9b44d615c4d",
+      "experiments/plot_fig_traj.py": "f88402baf08be2ada5e39413f90999ceab955ac2bd17a4a46578e34300daef2f",
+      "experiments/plot_fig_wavecrit.py": "bbfb277bb96ab495262fc6af81838dd17d5b79a39ea54289aaab1e2e419e9272",
+      "experiments/plot_fig_wavespeed.py": "5ff33a097873d1cfac1784791d6a1bcf06dde2bedd865b4bcdd2b7fbcd606ba1",
+      "experiments/plot_nucleation_confirmation.py": "827a5004c14eede026c55e91b2b74baf15d2a999b63314c34300feeab8937418",
+      "experiments/plot_nucleation_fate.py": "b3efe01c5754bbd391f5ece8315da03154ebd6d0c426cadf0947334cbf9ee172",
+      "experiments/plot_nucleation_followup.py": "cda05ff0a843a2f8fd4030a8a02114f88c61ca6b91bf66792b576f2fa80894d1",
+      "experiments/plot_nucleation_founders.py": "eb3d4c23e73f3bbc249c5e265a34e5777e878ac888d94efde93a83a24e464615",
+      "experiments/plot_nucleation_growth.py": "d23ddf19ce1dcb4bcd3f584d09e56fa27e36b72209871af6168059e749a4e425",
+      "experiments/plot_nucleation_interface.py": "ef7e70585fa16ed48f24b854282abbb7d0de2dda567b69e84d1f9a62eaec9d2f",
+      "experiments/plot_nucleation_screening.py": "683f174ff86e38ed7c9732cd6684bbcdfbf837729b1440bb1d100e75b6bdded0",
+      "experiments/plot_style.py": "3948512c91778ba787e7743cb95d1c0664de39e5c6da062cbe37f732d2440d92",
+      "experiments/pubstyle.py": "56ac26730bd241cd122b6d6a02e50e8c6d590add70b12f5615e86d334021da94",
+      "experiments/research_common.py": "d82af4c8a7067447b2c0dd8c46c8ad07013205f647c3189cd5432aabb388fc4c",
+      "experiments/revision_contract.py": "0263a253bc2998b118a48d2a6c5c8479ad35488e5e1c5be9dcf38b01f1504b87",
+      "experiments/revision_io.py": "8256efb6afe0274d35280f95726a94505d6ef1105601908caa1cdcd057900d4c",
+      "experiments/run_collapse_wave.py": "c56431d76c22aa489dc68b77bc824466d6a9b32d21e1d5d9240634802f5522ee",
+      "experiments/run_coupling_comparison.py": "052b7e170bb73bfff741343968036a322dd318ed17a9d745c39ec163f1a01eff",
+      "experiments/run_csd.py": "7a228fcaf1a3a6d591f5b684132c8e1c5632e5af2dde142d0b320e331dd8b061",
+      "experiments/run_dynamics_examples.py": "f41bebfc8cbebf85092eb4708f1b210dcca1003d414034c8e63a02146d3c93b1",
+      "experiments/run_early_warning.py": "af3a56cce18c5ee533f6c5438d7abde649c111e9980874bd90b296f6d3f8bf36",
+      "experiments/run_eco_bistab.py": "5a35f093e0977d827f3716e9be7e7bc7d72b971df6fe06041093c5fd5391f0bc",
+      "experiments/run_eco_hyst.py": "bf78d5a2a82fd3f23bae278ef9ea1af0093240177cbbdd1c8bc2e9d34695177d",
+      "experiments/run_eco_phase.py": "d29b9997110ed118bd67201380df62f9a5933f13cf866de2d83e48e86e98f22d",
+      "experiments/run_hysteresis.py": "8bbc86dd7cd1298afda1a5d8a0f41c30c65fb2a84d6f7b77295b03cd5849c45f",
+      "experiments/run_mscaling.py": "f5b1effa8adc60f0f61f3c326ae2791907b20d15df7aeb9c4c2fb2057235048a",
+      "experiments/run_multilayer_map.py": "466336b1be3e163cf77be81d7123babd835792a55f6f79482f2e4ed1269ebd23",
+      "experiments/run_multilayer_phase.py": "96ca22b33ffcc65af2fab4e2a42a0127b577f28361d80804b47a5d8aaa886727",
+      "experiments/run_nucleation_confirmation.py": "4615fd9520c11b30403d9cc7da39b7af923bcabd3e9aed3d8880be45a147ec2c",
+      "experiments/run_nucleation_fate.py": "f491ef1e9148d761d7616d92ed469a7b340e52b2fff39ab0cd85c00f5f893add",
+      "experiments/run_nucleation_pilot.py": "f268c6c32e9b9b41ea2d06df6994c63f6f39619e0b11e54eac32ec181f698fcd",
+      "experiments/run_nucleation_seeds.py": "5b132eeaeecb7573e27289aa00bf426faee3316a65b7fe058eabfc0643f53853",
+      "experiments/run_oscillation_validation.py": "50b1da4f0a47496657eba0a71ff9a7d10b44527ed40d77e38d71df91efe0ff55",
+      "experiments/run_pgg_topo.py": "213d54ffdd7e90dfaef7467e6081ee788dcdb8d28067dedeb93a104a6102da11",
+      "experiments/run_phase_maps.py": "d0f5912671e8431b684f84e250c75635b4dddbb35d1a27af2be1b67cf878c483",
+      "experiments/run_phase_scaling.py": "49664d7d2b1773b42fdab4fa3894c91692a035eb313d9219a872035e16b62ae8",
+      "experiments/run_robustness.py": "b664b1b01a8319498e019ce2bcc33a5a89c29deb59bb126268db80da653e3e8d",
+      "experiments/run_stats.py": "09360f28329d8da74e6ca9d7d44cee12d5ec910587c3953c7608f63fe5a853be",
+      "experiments/run_topology.py": "f02b680f110a33719b151e277174caf29717ad2fc1e1bd660059a533246ad172",
+      "experiments/run_topology_prod.py": "949a52b3bd5884541af58a89d200e7555ff4cca002bd30f8ae7d4b6063b68995",
+      "experiments/run_transition_scan.py": "f91c431658a71519676c20f7a81034d28d7d24b6a05a47f9d150f7712638d00c",
+      "experiments/run_unified_phase.py": "429b088aa5bc80aa4b57dd387d7f5ecbfd0def985a1a304670b4bf853df82f4a",
+      "experiments/run_wave_critical.py": "df29417f0495649cae02ace8e1894e82cbf4a4fc4b43f6fe1d0a3852c9a11fd6",
+      "experiments/run_wave_map.py": "f3a6f4a4cdaf7aadd1e37b9784dd928c87061f80355a51403c47f761b8b48dae",
+      "experiments/run_wave_scaling.py": "0462136ae532e151d4ecccf9a200bfd074e217d628d96f4586aa7e89b68e6dd7",
+      "experiments/run_wave_speed.py": "4c7d002cbd0993dcb1345e4bd836831300ce4ccbf4b54d084098ef0529abfb64"
+    }
+  },
+  "interpretation": "confirmatory screening: pre-registered displacement directions, total-matched structure decomposition and held-out nested model comparison; no causal or infinite-time claims",
+  "multishift": {
+    "compact_16/shifted(2, 1)": {
+      "interval": {
+        "bootstrap95": [
+          0.00625,
+          0.15625
+        ],
+        "mean": 0.08333333333333333,
+        "n": 15,
+        "normal_approx95": [
+          0.005705387486420091,
+          0.16096127918024655
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.153396564343472
+      },
+      "mean_delta": 0.08333333333333333,
+      "mothers_lower": 3,
+      "n_mothers": 15
+    },
+    "compact_16/shifted(23, 42)": {
+      "interval": {
+        "bootstrap95": [
+          -0.125,
+          0.022916666666666665
+        ],
+        "mean": -0.05,
+        "n": 15,
+        "normal_approx95": [
+          -0.12765862276802648,
+          0.027658622768026456
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.15345718341888442
+      },
+      "mean_delta": -0.05,
+      "mothers_lower": 8,
+      "n_mothers": 15
+    },
+    "compact_16/shifted(5, 31)": {
+      "interval": {
+        "bootstrap95": [
+          -0.2,
+          -0.07083333333333333
+        ],
+        "mean": -0.13333333333333333,
+        "n": 15,
+        "normal_approx95": [
+          -0.20028596360458967,
+          -0.06638070306207701
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.1323016259843213
+      },
+      "mean_delta": -0.13333333333333333,
+      "mothers_lower": 14,
+      "n_mothers": 15
+    },
+    "compact_16/uniform_eq": {
+      "interval": {
+        "bootstrap95": [
+          -0.17083333333333334,
+          -0.029166666666666667
+        ],
+        "mean": -0.10416666666666667,
+        "n": 15,
+        "normal_approx95": [
+          -0.17802093071803954,
+          -0.030312402615293804
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.1459395871422079
+      },
+      "mean_delta": -0.10416666666666667,
+      "mothers_lower": 11,
+      "n_mothers": 15
+    },
+    "compact_16/uniform_live": {
+      "interval": {
+        "bootstrap95": [
+          -0.17291666666666666,
+          -0.06666666666666667
+        ],
+        "mean": -0.12083333333333333,
+        "n": 15,
+        "normal_approx95": [
+          -0.17622134374246531,
+          -0.06544532292420135
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.10944937947136414
+      },
+      "mean_delta": -0.12083333333333333,
+      "mothers_lower": 12,
+      "n_mothers": 15
+    },
+    "random_16/shifted(2, 1)": {
+      "interval": {
+        "bootstrap95": [
+          -0.08541666666666667,
+          0.027083333333333334
+        ],
+        "mean": -0.029166666666666667,
+        "n": 15,
+        "normal_approx95": [
+          -0.08847941953341706,
+          0.030146086200083723
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.11720485982529337
+      },
+      "mean_delta": -0.029166666666666667,
+      "mothers_lower": 9,
+      "n_mothers": 15
+    },
+    "random_16/shifted(23, 42)": {
+      "interval": {
+        "bootstrap95": [
+          -0.10416666666666667,
+          0.020833333333333332
+        ],
+        "mean": -0.0375,
+        "n": 15,
+        "normal_approx95": [
+          -0.10357528820794956,
+          0.028575288207949558
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.13056795576031882
+      },
+      "mean_delta": -0.0375,
+      "mothers_lower": 6,
+      "n_mothers": 15
+    },
+    "random_16/shifted(5, 31)": {
+      "interval": {
+        "bootstrap95": [
+          -0.09166666666666666,
+          0.020833333333333332
+        ],
+        "mean": -0.0375,
+        "n": 15,
+        "normal_approx95": [
+          -0.09551347955898845,
+          0.020513479558988447
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.11463743311601396
+      },
+      "mean_delta": -0.0375,
+      "mothers_lower": 9,
+      "n_mothers": 15
+    },
+    "random_16/uniform_eq": {
+      "interval": {
+        "bootstrap95": [
+          -0.13958333333333334,
+          0.020833333333333332
+        ],
+        "mean": -0.05416666666666667,
+        "n": 15,
+        "normal_approx95": [
+          -0.13665887954291447,
+          0.028325546209581137
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.16300859055656572
+      },
+      "mean_delta": -0.05416666666666667,
+      "mothers_lower": 9,
+      "n_mothers": 15
+    },
+    "random_16/uniform_live": {
+      "interval": {
+        "bootstrap95": [
+          -0.15,
+          0.018802083333332574
+        ],
+        "mean": -0.07083333333333333,
+        "n": 15,
+        "normal_approx95": [
+          -0.15795955191736288,
+          0.016292885250696207
+        ],
+        "note": "mother-level resampling; post-hoc approximate intervals, no multiplicity control",
+        "sd": 0.17216560929468325
+      },
+      "mean_delta": -0.07083333333333333,
+      "mothers_lower": 12,
+      "n_mothers": 15
+    }
+  }
+}
